@@ -17,8 +17,8 @@ Editări locale → git (GitHub privat) → deploy pe server 167.233.202.96 (con
 
 - [x] modul greentech_focus_financiar
 - [x] modul greentech_theme
-- [ ] .gitignore + istorie curată
-- [ ] scripturi deploy server + PUBLICA local
+- [x] .gitignore + istorie curată (branch `main`, commit `c7959f6`)
+- [x] scripturi deploy server + PUBLICA local
 - [ ] repo GitHub privat + deploy key
 - [ ] verificare cheie SSH server (host key schimbat!)
 - [ ] bootstrap server (clone + addons_path)
