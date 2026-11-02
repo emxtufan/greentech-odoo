@@ -1,6 +1,6 @@
 {
     "name": "GreenTech — Integrare SAF-T și e-Transport",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "author": "GreenTech",
     "license": "LGPL-3",
     "depends": ["tbs_saft_d406", "tbs_anaf_duk_validator",

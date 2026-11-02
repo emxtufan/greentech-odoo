@@ -7,6 +7,7 @@ import re
 from dateutil.relativedelta import relativedelta
 from odoo import api, fields, models, Command
 from odoo.exceptions import AccessError, UserError, ValidationError
+from odoo.addons.greentech_anaf_d112.services.duk import resolve_duk_dir, resolve_java
 from ..services import calculation as calc, runtime
 
 
@@ -214,8 +215,7 @@ class Declaration(models.Model):
             rec.runtime_status = "\n".join(runtime.readiness(*rec._runtime())[1]) or "Validator D300 și Java disponibile; executați validarea."
 
     def _runtime(self):
-        cfg = self.env["ir.config_parameter"].sudo()
-        return cfg.get_param("gt_d300.duk_dir", ""), cfg.get_param("gt_anaf.java_path", "")
+        return resolve_duk_dir(self.env, "gt_d300.duk_dir", "d300"), resolve_java(self.env)
 
     @api.model_create_multi
     def create(self, vals_list):

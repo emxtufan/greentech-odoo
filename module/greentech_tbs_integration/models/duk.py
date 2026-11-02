@@ -2,7 +2,6 @@
 import hashlib
 import json
 import os
-import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -10,8 +9,7 @@ from pathlib import Path
 from lxml import etree
 from odoo import api, models
 from odoo.exceptions import AccessError
-
-ROOT = Path(__file__).resolve().parents[3]
+from odoo.addons.greentech_anaf_d112.services.duk import resolve_duk_dir, resolve_java
 
 
 class Duk(models.AbstractModel):
@@ -20,16 +18,12 @@ class Duk(models.AbstractModel):
     @api.private
     @api.model
     def get_duk_path(self):
-        return str(ROOT / "tools/anaf/d406")
+        return resolve_duk_dir(self.env, "gt_anaf.d406_dir", "d406")
 
     @api.model
     def _java_executable(self):
         """Use a Java runtime from PATH, with the bundled Windows JDK as fallback."""
-        java = shutil.which("java")
-        if java:
-            return java
-        bundled = ROOT / "tools/java/jdk8u504-b01/bin/java.exe"
-        return str(bundled) if bundled.is_file() else None
+        return resolve_java(self.env)
 
     @api.private
     @api.model
@@ -69,8 +63,10 @@ class Duk(models.AbstractModel):
                 return failure("Declarațiile nu pot conține DTD sau entități externe.")
         except (ValueError, etree.XMLSyntaxError) as exc:
             return failure("XML invalid: " + str(exc))
-        folder = {"D406": "d406", "D300": "d300", "D112": "duk"}[duk_code]
-        runtime = ROOT / "tools/anaf" / folder
+        runtime = Path(resolve_duk_dir(
+            self.env,
+            {"D406": "gt_anaf.d406_dir", "D300": "gt_d300.duk_dir", "D112": "gt_anaf.duk_dir"}[duk_code],
+            {"D406": "d406", "D300": "d300", "D112": "duk"}[duk_code]))
         java = self._java_executable()
         jar = self._find_jar(str(runtime))
         if not jar or not java:

@@ -1,6 +1,6 @@
 {
     "name": "ANAF - D300 Decont TVA",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "summary": "D300 2026: contabilitate, trasabilitate, regularizări, XML și validare ANAF",
     "author": "Greentech Professionals SRL",
     "license": "AGPL-3",

@@ -9,6 +9,34 @@ import tempfile
 
 from .document import fingerprint, semantic_equal
 
+REPO_ROOT = Path(__file__).resolve().parents[3]
+TOOLS_DEFAULT = REPO_ROOT / "motor" / "tools" / "anaf"
+
+
+def _param(env, key):
+    return (env["ir.config_parameter"].sudo().get_param(key, "") or "").strip()
+
+
+def resolve_duk_dir(env, key, sub):
+    p = _param(env, key)
+    if p and Path(p).is_dir():
+        return p
+    base = _param(env, "gt_anaf.tools_dir")
+    base = Path(base) if base and Path(base).is_dir() else TOOLS_DEFAULT
+    return str(base / sub)
+
+
+def resolve_java(env):
+    p = _param(env, "gt_anaf.java_path")
+    if p and Path(p).is_file():
+        return p
+    found = shutil.which("java")
+    if found:
+        return found
+    bundled = REPO_ROOT / "motor" / "tools" / "java" / "jdk8u504-b01" / "bin" / "java.exe"
+    return str(bundled) if bundled.is_file() else ""
+
+
 REQUIRED = (
     "DUKIntegrator.jar", "lib/D112Validator.jar", "lib/D112Pdf.jar",
     "lib/DecValidation.jar", "lib/DecPdf.jar", "lib/Validator.jar",

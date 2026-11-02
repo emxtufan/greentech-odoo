@@ -76,8 +76,7 @@ class Declaration(models.Model):
             record.total_payment = employer.get("attrs", {}).get("totalPlata_A", "")
 
     def _runtime_paths(self):
-        params = self.env["ir.config_parameter"].sudo()
-        return params.get_param("gt_anaf.duk_dir", ""), params.get_param("gt_anaf.java_path", "")
+        return duk.resolve_duk_dir(self.env, "gt_anaf.duk_dir", "duk"), duk.resolve_java(self.env)
 
     def _compute_runtime(self):
         dist, java = self._runtime_paths()
