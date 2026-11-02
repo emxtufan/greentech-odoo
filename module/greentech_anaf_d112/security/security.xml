@@ -4,6 +4,9 @@
         <field name="name">ANAF — Declarația 112</field>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     </record>
+    <record id="base.group_system" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_anaf'))]"/>
+    </record>
     <record id="d112_company_rule" model="ir.rule">
         <field name="name">D112 — firme autorizate</field>
         <field name="model_id" ref="model_gt_anaf_d112"/>

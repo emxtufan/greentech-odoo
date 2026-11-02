@@ -1,6 +1,6 @@
 {
     "name": "ANAF - Declarația 112",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "summary": "D112: angajator, asigurați, XML, validare oficială și dosarul declarației",
     "author": "Greentech Professionals SRL",
     "license": "AGPL-3",

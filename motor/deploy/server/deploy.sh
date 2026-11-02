@@ -205,6 +205,26 @@ else
     echo "Cod actualizat, niciun modul de actualizat"
 fi
 
+if [ -n "$INS" ]; then
+    if ! DUPA=$(runuser -u postgres -- psql -d "$DB" -Atc "select name from ir_module_module where state='installed'"); then
+        echo "EROARE: nu pot reciti modulele instalate din baza $DB." >&2
+        exit 1
+    fi
+    LIPSA=""
+    IFS=',' read -r -a cerute <<< "$INS"
+    for modul in "${cerute[@]}"; do
+        if printf '%s\n' "$DUPA" | grep -qxF "$modul"; then
+            continue
+        fi
+        LIPSA="${LIPSA:+$LIPSA,}$modul"
+    done
+    if [ -n "$LIPSA" ]; then
+        conditie=$(printf '%s' "$LIPSA" | sed "s/,/','/g")
+        echo "EROARE: module neinstalate: $LIPSA (dependente lipsa sau biblioteci Python lipsa). Verifica: runuser -u postgres -- psql -d $DB -Atc \"select name,state from ir_module_module where name in ('$conditie')\"" >&2
+        exit 1
+    fi
+fi
+
 if ! verifica_health; then
     mesaj_rollback
     exit 1
