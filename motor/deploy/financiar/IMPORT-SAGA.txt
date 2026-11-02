@@ -1,0 +1,71 @@
+IMPORT SAGA - MODUL REUTILIZABIL
+
+LOCAL
+http://127.0.0.1:8070/odoo/action-512?db=greentech_financiar_test
+Financiar > Import SAGA > Importa backup .fdb
+
+Firma DARIUSMED S.R.L., CUI 22465902, a fost importata local separat de
+GreenTech DEMO. Selecteaza firma din selectorul de companii pentru facturi,
+contabilitate si meniurile de istoric. Datele reale nu sunt sincronizate automat
+cu serverul.
+
+SERVER
+Pachetul de actualizare este un singur fisier:
+logs/saga-deploy/actualizeaza-import-saga.py
+
+1. Copiaza acest fisier prin Bitvise SFTP in /var/www/Green/.
+2. In terminalul Bitvise ruleaza:
+   python3 /var/www/Green/actualizeaza-import-saga.py --install
+
+Instalatorul verifica mediul, pregateste cititorul Firebird embedded, il testeaza
+cu o baza sintetica fara date personale, face backup si instaleaza numai modulul
+in serviciul financiar existent. Nginx, DNS si serviciile celorlalte site-uri
+nu sunt modificate. Aplicatia financiara are o scurta oprire la instalare.
+
+La succes apare SAGA_MODULE_LIVE_OK si adresa exacta a noului meniu.
+Daca apare OPRIT, nu sterge nimic si trimite eroarea pentru diagnostic.
+
+CORECTIE CITITOR LINUX (19.10.2026)
+Pachetul saga-fdb-access-20261019-1 reinstaleaza fdb si six cu drepturi de citire
+pentru serviciu, fara reutilizarea cache-ului restrictiv. Pastreaza versiunea six.
+Verifica fdb.connect ca utilizator gt_financiar si afiseaza SAGA_FDB_IMPORT_OK,
+apoi testeaza motorul embedded si afiseaza SAGA_FIREBIRD_READER_OK.
+Ambele verificari trebuie sa treaca inainte de oprirea Odoo sau modificarea bazei.
+Daca instalatorul anterior a dat AttributeError: module 'fdb' has no attribute
+'connect', inlocuieste doar actualizeaza-import-saga.py si repeta aceeasi comanda.
+
+CORECTIE MOTOR ENGINE12
+Pachetul saga-engine12-path-20261019-2 inlocuieste legatura simbolica privata a
+motorului cu o copie verificata SHA256 a bibliotecii din pachetul Ubuntu instalat.
+Bibliotecile de sistem nu sunt inlocuite. Sunt preluate si resursele internationale
+Firebird 3 disponibile in pachetele instalate. SAGA_ENGINE12_MODULE_OK confirma,
+sub utilizatorul gt_financiar, ca functia firebird_plugin apartine exact fisierului
+privat solicitat. Testul bazei sintetice trebuie in continuare sa treaca inainte
+de oprirea Odoo. Verificarea pe Linux ramane dependenta de rularea pe server.
+
+Dupa instalarea pe server, incarci cont_baza.fdb din browser, completezi firma,
+apoi folosesti Analizeaza backupul si Importa firma. Nu mai copiezi tabele sau
+fisiere de date prin SFTP pentru fiecare import.
+
+Pachetul nu contine backupul DARIUSMED, date personale sau parole.
+Executia instalatorului pe Linux nu a putut fi verificata in aceasta sesiune.
+Validarea sa efectiva se face pe server; testul cititorului ruleaza inainte
+de oprirea aplicatiei financiare.
+
+LIMITE
+Import initial intr-o firma noua. Un CUI deja existent sau un backup deja
+importat sunt blocate pentru a evita dublarea. Importul incremental nu este
+implementat.
+
+Profil verificat: SAGA Firebird 3, documente in RON fara TVA. Cazurile de TVA,
+valuta, stocuri si detalii salariale suplimentare sunt oprite explicit pana la
+implementarea si verificarea maparii. Imobilizarile si antetele de state sunt
+istorice; nu se genereaza amortizare noua, fluturasi lipsa sau declaratii ANAF.
+PDF/XML/recipise externe bazei trebuie preluate separat daca sunt necesare.
+
+Documentatie completa:
+custom_addons/greentech_saga_import/README.md
+Rezultate verificari:
+logs/saga-migration/local-import-result.json
+logs/saga-migration/core-tests.json
+logs/saga-migration/security-tests.json

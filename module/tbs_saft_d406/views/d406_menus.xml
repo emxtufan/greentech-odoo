@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_d406_root"
+              name="D406 SAF-T"
+              parent="account.menu_finance_reports"
+              sequence="90"/>
+
+    <menuitem id="menu_d406_export"
+              name="Export D406 SAF-T"
+              parent="menu_d406_root"
+              action="action_d406_export_wizard"
+              sequence="10"/>
+
+    <menuitem id="menu_d406_nomenclature"
+              name="ANAF Nomenclatures"
+              parent="menu_d406_root"
+              sequence="20"/>
+
+    <menuitem id="menu_d406_account"
+              name="Chart of Accounts"
+              parent="menu_d406_nomenclature"
+              action="action_d406_account"
+              sequence="10"/>
+
+    <menuitem id="menu_d406_tax_type"
+              name="Tax Types"
+              parent="menu_d406_nomenclature"
+              action="action_d406_tax_type"
+              sequence="20"/>
+
+    <menuitem id="menu_d406_tax_code"
+              name="Tax Codes"
+              parent="menu_d406_nomenclature"
+              action="action_d406_tax_code"
+              sequence="30"/>
+
+    <menuitem id="menu_d406_uom_code"
+              name="Units of Measure"
+              parent="menu_d406_nomenclature"
+              action="action_d406_uom_code"
+              sequence="40"/>
+
+    <menuitem id="menu_d406_invoice_type"
+              name="Invoice Types"
+              parent="menu_d406_nomenclature"
+              action="action_d406_invoice_type"
+              sequence="50"/>
+
+    <menuitem id="menu_d406_payment_method"
+              name="Payment Methods"
+              parent="menu_d406_nomenclature"
+              action="action_d406_payment_method"
+              sequence="60"/>
+
+</odoo>

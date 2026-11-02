@@ -1,0 +1,39 @@
+ODOO 19 - INSTALAREA LOCALA REPARATA
+
+1. Porneste 03-PORNESTE-ODOO.cmd si lasa fereastra deschisa.
+   Daca serverul ruleaza deja, nu este necesara o a doua instanta.
+2. Ruleaza 08-DESCHIDE-ODOO.cmd.
+   Se deschide http://127.0.0.1:8069/odoo?db=EMI.
+   Utilizator: admin. Parola este copiata automat pentru lipire cu CTRL+V.
+3. Modulul GreenTech -> Echipamente este instalat.
+
+PAROLE
+- config/acces-local.json: datele initiale ale contului Odoo local.
+- 07-COPIAZA-MASTER-PASSWORD.cmd: parola de administrare a bazelor.
+- Parola PostgreSQL postgres este separata de cele doua de mai sus.
+- Daca schimbi parola contului Odoo, copia locala nu se actualizeaza automat.
+
+FISIERE SI JURNALE
+- Configuratie activa: config/odoo.conf.
+- Date si atasamente active: data-runtime/.
+- Jurnalul pornirii normale: logs/odoo.log.
+- Verificari: logs/verificare-functionala.json si logs/verificare-creare-baza.txt.
+- Nu publica fisierele cu parole, jurnalele sau directoarele de date.
+
+REMEDIERE
+Crearea Odoo cu template0 impunea LC_COLLATE=C, dar mostenea
+LC_CTYPE=English_United States.1252. PostgreSQL 18 pe Windows refuza
+conexiunea la baza rezultata. db_template=template1 pastreaza ambele
+setari compatibile. Scriptul de configurare a fost corectat pentru viitor.
+
+Baza EMI incompleta a fost pastrata sub numele
+EMI_incompleta_20261019_113350, cu conexiunile dezactivate.
+Baza construction_erp a ramas nemodificata.
+Directorul data/ original a fost pastrat. data-runtime/ este cel activ.
+
+Backup complet: baza PostgreSQL EMI si directorul data-runtime/filestore/EMI.
+
+Corectie suplimentara PostgreSQL 18: in odoo/odoo/service/db.py,
+_drop_conn opreste doar conexiunile client, nu procesele autovacuum.
+Revizuieste aceasta corectie daca actualizezi sursele Odoo.
+Raportul final pe portul 8069: logs/verificare-finala.json.

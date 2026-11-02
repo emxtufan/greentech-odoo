@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+period_access,State salarii RO,model_gt_ro_payroll_period,group_payroll,1,1,1,1
+line_access,Salariati stat RO,model_gt_ro_payroll_line,group_payroll,1,1,1,1

@@ -1,0 +1,649 @@
+id,code,name,name_en,chart
+d406_account_bal_soc_com_1,1,Clasa 1 – Conturi de capitaluri,Class 1 – Capital accounts,bal_soc_com
+d406_account_bal_soc_com_10,10,10 Capital şi rezerve,10 Capital and reserves,bal_soc_com
+d406_account_bal_soc_com_101,101,101 Capital,101 Capital,bal_soc_com
+d406_account_bal_soc_com_1011,1011,1011 Capital subscris nevărsat,1011 Subscribed capital not paid,bal_soc_com
+d406_account_bal_soc_com_1012,1012,1012 Capital subscris vărsat,1012 Subscribed capital paid,bal_soc_com
+d406_account_bal_soc_com_1015,1015,1015 Patrimoniul regiei,1015 Patrimony (autonomous public sector entities),bal_soc_com
+d406_account_bal_soc_com_1016,1016,1016 Patrimoniul public,1016 Public patrimony,bal_soc_com
+d406_account_bal_soc_com_1017,1017,1017 Patrimoniul privat,1017 Private patrimony,bal_soc_com
+d406_account_bal_soc_com_1018,1018,1018 Patrimoniul institutelor naţionale de cercetare-dezvoltare,1018 National institutes of research and development patrimony,bal_soc_com
+d406_account_bal_soc_com_103,103,103 Alte elemente de capitaluri proprii,103 Other components of equity,bal_soc_com
+d406_account_bal_soc_com_1031,1031,1031 Beneficii acordate angajaţilor sub forma instrumentelor de capitaluri proprii,1031 Benefits granted to employees as equity instruments,bal_soc_com
+d406_account_bal_soc_com_1033,1033,1033 Diferenţe de curs valutar în relaţie cu investiţia netă într-o entitate străină,1033 Foreign exchange differences related to a net investment in a foreign operation,bal_soc_com
+d406_account_bal_soc_com_1038,1038,1038 Diferenţe din modificarea valorii juste a activelor financiare disponibile în vederea vânzării şi alte elemente de capitaluri proprii,1038 Differences from changes in the fair value of available-for-sale financial assets and other equity elements,bal_soc_com
+d406_account_bal_soc_com_104,104,104 Prime de capital,104 Premium related to capital,bal_soc_com
+d406_account_bal_soc_com_1041,1041,1041 Prime de emisiune,1041 Share premium,bal_soc_com
+d406_account_bal_soc_com_1042,1042,1042 Prime de fuziune/divizare,1042 Merger premium,bal_soc_com
+d406_account_bal_soc_com_1043,1043,1043 Prime de aport,1043 Share premium contribution in kind,bal_soc_com
+d406_account_bal_soc_com_1044,1044,1044 Prime de conversie a obligaţiunilor în acţiuni,1044 Debenture conversion premium,bal_soc_com
+d406_account_bal_soc_com_105,105,105 Rezerve din reevaluare,105 Revaluation reserve,bal_soc_com
+d406_account_bal_soc_com_106,106,106 Rezerve,106 Reserves,bal_soc_com
+d406_account_bal_soc_com_1061,1061,1061 Rezerve legale,1061 Legal reserve,bal_soc_com
+d406_account_bal_soc_com_1063,1063,1063 Rezerve statutare sau contractuale,1063 Statutory or contractual capital reserve,bal_soc_com
+d406_account_bal_soc_com_1068,1068,1068 Alte rezerve,1068 Other reserves,bal_soc_com
+d406_account_bal_soc_com_107,107,107 Diferenţe de curs valutar din conversie,107 Foreign exchange differences on translation,bal_soc_com
+d406_account_bal_soc_com_108,108,108 Interese care nu controlează8,108 Non-controlling interests8,bal_soc_com
+d406_account_bal_soc_com_1081,1081,1081 Interese care nu controlează - rezultatul exerciţiului financiar,1081 Non-controlling interests - profit (loss) for the period,bal_soc_com
+d406_account_bal_soc_com_1082,1082,1082 Interese care nu controlează - alte capitaluri proprii,1082 Non-controlling interests – other own capital,bal_soc_com
+d406_account_bal_soc_com_109,109,109 Acţiuni proprii,109 Own shares,bal_soc_com
+d406_account_bal_soc_com_1091,1091,1091 Acţiuni proprii deţinute pe termen scurt,1091 Short-term own shares,bal_soc_com
+d406_account_bal_soc_com_1092,1092,1092 Acţiuni proprii deţinute pe termen lung,1092 Long-term own shares,bal_soc_com
+d406_account_bal_soc_com_1095,1095,1095 Acţiuni proprii reprezentând titluri deţinute de societatea absorbită la societatea absorbantă,1095 Shares of the absorbing entity owned by the entity absorbed,bal_soc_com
+d406_account_bal_soc_com_11,11,11 Rezultatul reportat,11 Retained earnings,bal_soc_com
+d406_account_bal_soc_com_117,117,117 Rezultatul reportat,117 Retained earnings,bal_soc_com
+d406_account_bal_soc_com_1171,1171,1171 Rezultatul reportat reprezentând profitul nerepartizat sau pierderea neacoperită,1171 Profit/loss carried forward,bal_soc_com
+d406_account_bal_soc_com_1172,1172,"1172 Rezultatul reportat provenit din adoptarea pentru prima dată a IAS, mai puţin IAS 299","1172 Retained earnings due to the adoption of IAS for the first time, with the exception of IAS 299",bal_soc_com
+d406_account_bal_soc_com_1173,1173,1173 Rezultatul reportat provenit din modificările politicilor contabile,1173 Retained earnings resulting from changes in accounting policies,bal_soc_com
+d406_account_bal_soc_com_1174,1174,1174 Rezultatul reportat provenit din corectarea erorilor contabile,1174 Retained earnings resulting from the correction of accounting errors,bal_soc_com
+d406_account_bal_soc_com_1175,1175,1175 Rezultatul reportat reprezentând surplusul realizat din rezerve din reevaluare,1175 Retained earnings representing the realized revaluation reserve surplus,bal_soc_com
+d406_account_bal_soc_com_1176,1176,1176 Rezultatul reportat provenit din trecerea la aplicarea reglementărilor contabile conforme cu directivele europene,1176 Retained earnings arising from the transition to accounting regulations conforming to European Directives,bal_soc_com
+d406_account_bal_soc_com_12,12,12 Rezultatul exerciţiului financiar,12 Profit (loss) for the period,bal_soc_com
+d406_account_bal_soc_com_121,121,121 Profit sau pierdere,121 Profit (loss) for the period,bal_soc_com
+d406_account_bal_soc_com_129,129,129 Repartizarea profitului,129 Profit appropriation,bal_soc_com
+d406_account_bal_soc_com_14,14,"14 Câştiguri sau pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","14 Gains or losses in respect of issuance, redemption, sale, free transfer or cancellation of own equity instruments",bal_soc_com
+d406_account_bal_soc_com_141,141,141 Câștiguri legate de vânzarea sau anularea instrumentelor de capitaluri proprii,141 Gains in respect of sales or cancellation of own equity instruments,bal_soc_com
+d406_account_bal_soc_com_1411,1411,1411 Câştiguri legate de vânzarea instrumentelor de capitaluri proprii,1411 Gains in respect of sales of own equity instruments,bal_soc_com
+d406_account_bal_soc_com_1412,1412,1412 Câştiguri legate de anularea instrumentelor de capitaluri proprii,1412 Gains in respect of cancellation of own equity instruments,bal_soc_com
+d406_account_bal_soc_com_149,149,"149 Pierderi legate de emiterea, răscumpărarea, vânzarea, cedarea cu titlu gratuit sau anularea instrumentelor de capitaluri proprii","149 Losses in respect of issuance, redemption, sale, free transfer or cancellation of own equity instruments",bal_soc_com
+d406_account_bal_soc_com_1491,1491,1491 Pierderi rezultate din vânzarea instrumentelor de capitaluri proprii,1491 Losses in respect of sales from own equity instruments,bal_soc_com
+d406_account_bal_soc_com_1495,1495,"1495 Pierderi rezultate din reorganizări, care sunt determinate de anularea titlurilor deţinute","1495 Losses arising from reorganizations, caused by cancellation of equity instruments held",bal_soc_com
+d406_account_bal_soc_com_1496,1496,"1496 Pierderi rezultate din reorganizari de societati, corespunzatoare activului net negativ al societatii absorbite","1496 Losses resulting from company reorganizations, corresponding to the negative net asset of the absorbed company",bal_soc_com
+d406_account_bal_soc_com_1498,1498,1498 Alte pierderi legate de instrumentele de capitaluri proprii,1498 Other losses from own equity instruments,bal_soc_com
+d406_account_bal_soc_com_15,15,15 Provizioane,15 Provisions,bal_soc_com
+d406_account_bal_soc_com_151,151,151 Provizioane,151 Provisions,bal_soc_com
+d406_account_bal_soc_com_1511,1511,1511 Provizioane pentru litigii,1511 Provisions for litigation,bal_soc_com
+d406_account_bal_soc_com_1512,1512,1512 Provizioane pentru garanţii acordate clienţilor,1512 Provisions for guarantees to customers,bal_soc_com
+d406_account_bal_soc_com_1513,1513,1513 Provizioane pentru dezafectare imobilizări corporale şi alte acţiuni similare legate de acestea,1513 Provisions for the decommissioning of tangible non-current assets and other similar actions,bal_soc_com
+d406_account_bal_soc_com_1514,1514,1514 Provizioane pentru restructurare,1514 Provisions for restructuring costs,bal_soc_com
+d406_account_bal_soc_com_1515,1515,1515 Provizioane pentru pensii şi obligaţii similare,1515 Provisions for pensions and similar obligations,bal_soc_com
+d406_account_bal_soc_com_1516,1516,1516 Provizioane pentru impozite,1516 Provisions for taxes,bal_soc_com
+d406_account_bal_soc_com_1517,1517,1517 Provizioane pentru terminarea contractului de muncă,1517 Provisions for termination of employment contract,bal_soc_com
+d406_account_bal_soc_com_1518,1518,1518 Alte provizioane,1518 Other provisions,bal_soc_com
+d406_account_bal_soc_com_16,16,16 Împrumuturi și datorii asimilate,16 Loans and similar debts,bal_soc_com
+d406_account_bal_soc_com_161,161,161 Împrumuturi din emisiuni de obligaţiuni,161 Debenture loans,bal_soc_com
+d406_account_bal_soc_com_1614,1614,1614 Împrumuturi externe din emisiuni de obligaţiuni garantate de stat,1614 Foreign debenture loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_1615,1615,1615 Împrumuturi externe din emisiuni de obligaţiuni garantate de bănci,1615 Foreign debenture loans guaranteed by banks,bal_soc_com
+d406_account_bal_soc_com_1617,1617,1617 Împrumuturi interne din emisiuni de obligaţiuni garantate de stat,1617 Domestic debenture loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_1618,1618,1618 Alte împrumuturi din emisiuni de obligaţiuni,1618 Other debenture loans,bal_soc_com
+d406_account_bal_soc_com_162,162,162 Credite bancare pe termen lung,162 Long-term bank loans,bal_soc_com
+d406_account_bal_soc_com_1621,1621,1621 Credite bancare pe termen lung,1621 Long-term bank loans,bal_soc_com
+d406_account_bal_soc_com_1622,1622,1622 Credite bancare pe termen lung nerambursate la scadenţă,1622 Long-term bank loans in arrears,bal_soc_com
+d406_account_bal_soc_com_1623,1623,1623 Credite externe guvernamentale,1623 Foreign Government loans,bal_soc_com
+d406_account_bal_soc_com_1624,1624,1624 Credite bancare externe garantate de stat,1624 Foreign loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_1625,1625,1625 Credite bancare externe garantate de bănci,1625 Foreign loans guaranteed by banks,bal_soc_com
+d406_account_bal_soc_com_1626,1626,1626 Credite de la trezoreria statului,1626 State Treasury loans,bal_soc_com
+d406_account_bal_soc_com_1627,1627,1627 Credite bancare interne garantate de stat,1627 Domestic loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_166,166,166 Datorii care privesc imobilizările financiare,166 Debts relating to financial assets,bal_soc_com
+d406_account_bal_soc_com_1661,1661,1661 Datorii faţă de entităţile afiliate,1661 Debts towards affiliated entities,bal_soc_com
+d406_account_bal_soc_com_1663,1663,1663 Datorii faţă de entităţile asociate şi entităţile controlate în comun,1663 Debts towards associates and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_167,167,167 Alte împrumuturi şi datorii asimilate,167 Other loans and similar debts,bal_soc_com
+d406_account_bal_soc_com_168,168,168 Dobânzi aferente împrumuturilor şi datoriilor asimilate,168 Accrued interest on loans and similar debts,bal_soc_com
+d406_account_bal_soc_com_1681,1681,1681 Dobânzi aferente împrumuturilor din emisiuni de obligaţiuni,1681 Accrued interest on debenture loans,bal_soc_com
+d406_account_bal_soc_com_1682,1682,1682 Dobânzi aferente creditelor bancare pe termen lung,1682 Accrued interest on long-term bank loans,bal_soc_com
+d406_account_bal_soc_com_1685,1685,1685 Dobânzi aferente datoriilor faţă de entităţile afiliate,1685 Accrued interest on debts towards affiliated entities,bal_soc_com
+d406_account_bal_soc_com_1686,1686,1686 Dobânzi aferente datoriilor faţă de entităţile asociate şi entităţile controlate în comun,1686 Accrued interest on debts towards associates and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_1687,1687,1687 Dobânzi aferente altor împrumuturi şi datorii asimilate,1687 Accrued interest on other loans and similar debts,bal_soc_com
+d406_account_bal_soc_com_169,169,169 Prime privind rambursarea obligațiunilor și a altor datorii,169 Premiums for reimbursement of bonds and other debts,bal_soc_com
+d406_account_bal_soc_com_1691,1691,1691 Prime privind rambursarea obligaţiunilor,1691 Premium from reimbursement of bonds,bal_soc_com
+d406_account_bal_soc_com_1692,1692,1692 Prime privind rambursarea altor datorii,1692 Premium from reimbursement of other debts,bal_soc_com
+d406_account_bal_soc_com_2,2,Clasa 2 – Conturi de imobilizări,Class 2 – Non-current assets,bal_soc_com
+d406_account_bal_soc_com_20,20,20 Imobilizări necorporale,20 Intangible assets,bal_soc_com
+d406_account_bal_soc_com_201,201,201 Cheltuieli de constituire,201 Set-up costs,bal_soc_com
+d406_account_bal_soc_com_203,203,203 Cheltuieli de dezvoltare,203 Development costs,bal_soc_com
+d406_account_bal_soc_com_205,205,"205 Concesiuni, brevete, licenţe, mărci comerciale, drepturi şi active similare","205 Concessions, patents, licences, trademarks and similar rights and assets",bal_soc_com
+d406_account_bal_soc_com_206,206,206 Active necorporale de explorare şi evaluare a resurselor minerale,206 Intangible assets related to exploration for and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_207,207,207 Fond comercial,207 Goodwill,bal_soc_com
+d406_account_bal_soc_com_2071,2071,2071 Fond comercial pozitiv,2071 Positive goodwill,bal_soc_com
+d406_account_bal_soc_com_2075,2075,2075 Fond comercial negativ,2075 Gain on a bargain purchase,bal_soc_com
+d406_account_bal_soc_com_208,208,208 Alte imobilizări necorporale,208 Other intangible assets,bal_soc_com
+d406_account_bal_soc_com_21,21,21 Imobilizări corporale,21 Tangible assets,bal_soc_com
+d406_account_bal_soc_com_211,211,211 Terenuri şi amenajări de terenuri,211 Freehold land and land improvements,bal_soc_com
+d406_account_bal_soc_com_2111,2111,2111 Terenuri,2111 Freehold land,bal_soc_com
+d406_account_bal_soc_com_2112,2112,2112 Amenajări de terenuri,2112 Land improvements,bal_soc_com
+d406_account_bal_soc_com_212,212,212 Construcţii,212 Buildings,bal_soc_com
+d406_account_bal_soc_com_213,213,213 Instalaţii tehnice şi mijloace de transport,"213 Plant, machinery and motor vehicles",bal_soc_com
+d406_account_bal_soc_com_2131,2131,"2131 Echipamente tehnologice (maşini, utilaje şi instalaţii de lucru)",2131 Plant and machinery,bal_soc_com
+d406_account_bal_soc_com_2132,2132,"2132 Aparate şi instalaţii de măsurare, control şi reglare","2132 Measurement, control and adjustment devices",bal_soc_com
+d406_account_bal_soc_com_2133,2133,2133 Mijloace de transport,2133 Motor vehicles,bal_soc_com
+d406_account_bal_soc_com_214,214,"214 Mobilier, aparatură birotică, echipamente de protecţie a valorilor umane şi materiale şi alte active corporale",214 Fixtures and fittings,bal_soc_com
+d406_account_bal_soc_com_215,215,215 Investiţii imobiliare,215 Investment property,bal_soc_com
+d406_account_bal_soc_com_216,216,216 Active corporale de explorare şi evaluare a resurselor minerale,216 Tangible assets related to exploration for and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_217,217,217 Active biologice productive,217 Bearer biological assets,bal_soc_com
+d406_account_bal_soc_com_22,22,22 Imobilizări corporale în curs de aprovizionare,22 Tangible assets in transit,bal_soc_com
+d406_account_bal_soc_com_223,223,223 Instalații tehnice şi mijloace de transport în curs de aprovizionare,"223 Plant, machinery and motor vehicles in transit",bal_soc_com
+d406_account_bal_soc_com_224,224,"224 Mobilier, aparatură birotică, echipamente de protecție a valorilor umane și materiale și alte active corporale în curs de aprovizionare",224 Fixtures and fittings in transit,bal_soc_com
+d406_account_bal_soc_com_227,227,227 Active biologice productive în curs de aprovizionare,227 Bearer biological assets in transit,bal_soc_com
+d406_account_bal_soc_com_23,23,23 Imobilizări în curs,23 Non-current assets in progress,bal_soc_com
+d406_account_bal_soc_com_231,231,231 Imobilizări corporale în curs de execuţie,231 Tangible assets in progress,bal_soc_com
+d406_account_bal_soc_com_235,235,235 Investiţii imobiliare în curs de execuţie,235 Investment property in progress,bal_soc_com
+d406_account_bal_soc_com_26,26,26 Imobilizări financiare,26 Financial assets,bal_soc_com
+d406_account_bal_soc_com_261,261,261 Acţiuni deţinute la entităţile afiliate,261 Shares in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_262,262,262 Acţiuni deţinute la entităţi asociate,262 Shares in associates,bal_soc_com
+d406_account_bal_soc_com_263,263,263 Acţiuni deţinute la entităţi controlate în comun,263 Shares in jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_264,264,264 Titluri puse în echivalenţă,264 Investments accounted for using the equity method,bal_soc_com
+d406_account_bal_soc_com_265,265,265 Alte titluri imobilizate,265 Other long term investments,bal_soc_com
+d406_account_bal_soc_com_266,266,266 Certificate verzi amânate,266 Deferred green certificates,bal_soc_com
+d406_account_bal_soc_com_267,267,267 Creanţe imobilizate,267 Long term receivables,bal_soc_com
+d406_account_bal_soc_com_2671,2671,2671 Sume de încasat de la entităţile afiliate,2671 Amounts to be collected from affiliated entities,bal_soc_com
+d406_account_bal_soc_com_2672,2672,2672 Dobânda aferentă sumelor de încasat de la entităţile afiliate,2672 Accrued interest on amounts to be collected from affiliated entities,bal_soc_com
+d406_account_bal_soc_com_2673,2673,2673 Creanţe faţă de entităţile asociate şi entităţile controlate în comun,2673 Receivables from associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_2674,2674,2674 Dobânda aferentă creanţelor faţă de entităţile asociate şi entităţile controlate în comun,2674 Accrued interest on receivables from associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_2675,2675,2675 Împrumuturi acordate pe termen lung,2675 Long term loans,bal_soc_com
+d406_account_bal_soc_com_2676,2676,2676 Dobânda aferentă împrumuturilor acordate pe termen lung,2676 Accrued interest on long term loans,bal_soc_com
+d406_account_bal_soc_com_2677,2677,2677 Obligaţiuni achiziţionate cu ocazia emisiunilor efectuate de terți,2677 Bonds acquired on third party issuances,bal_soc_com
+d406_account_bal_soc_com_2678,2678,2678 Alte creanţe imobilizate,2678 Other long term receivables,bal_soc_com
+d406_account_bal_soc_com_2679,2679,2679 Dobânzi aferente altor creanţe imobilizate,2679 Accrued interest on other long term receivables,bal_soc_com
+d406_account_bal_soc_com_269,269,269 Vărsăminte de efectuat pentru imobilizări financiare,269 Amounts payable in relation with financial non-current assets,bal_soc_com
+d406_account_bal_soc_com_2691,2691,2691 Vărsăminte de efectuat privind acţiunile deţinute la entităţile afiliate,2691 Amounts payable in relation with investments in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_2692,2692,2692 Vărsăminte de efectuat privind acţiunile deţinute la entităţi asociate,2692 Amounts payable in relation with investments in associated entities,bal_soc_com
+d406_account_bal_soc_com_2693,2693,2693 Vărsăminte de efectuat privind acţiunile deţinute la entităţi controlate în comun,2693 Amounts payable in relation with investments in jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_2695,2695,2695 Vărsăminte de efectuat pentru alte imobilizări financiare,2695 Amounts payable in relation with other financial assets,bal_soc_com
+d406_account_bal_soc_com_28,28,28 Amortizări privind imobilizările,28 Depreciation of non-current assets,bal_soc_com
+d406_account_bal_soc_com_280,280,280 Amortizări privind imobilizările necorporale,280 Amortization of intangible assets,bal_soc_com
+d406_account_bal_soc_com_2801,2801,2801 Amortizarea cheltuielilor de constituire,2801 Amortization of set-up costs,bal_soc_com
+d406_account_bal_soc_com_2803,2803,2803 Amortizarea cheltuielilor de dezvoltare,2803 Amortization of development costs,bal_soc_com
+d406_account_bal_soc_com_2805,2805,"2805 Amortizarea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare","2805 Amortization of concessions, patents, licences, trademarks and similar rights and assets",bal_soc_com
+d406_account_bal_soc_com_2806,2806,2806 Amortizarea activelor necorporale de explorare şi evaluare a resurselor minerale,2806 Amortization of intangible assets related to exploration and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_2807,2807,2807 Amortizarea fondului comercial,2807 Amortization of goodwill,bal_soc_com
+d406_account_bal_soc_com_2808,2808,2808 Amortizarea altor imobilizări necorporale,2808 Amortization of other intangible assets,bal_soc_com
+d406_account_bal_soc_com_281,281,281 Amortizări privind imobilizările corporale,281 Depreciation of tangible assets,bal_soc_com
+d406_account_bal_soc_com_2811,2811,2811 Amortizarea amenajărilor de terenuri,2811 Depreciation of land improvements,bal_soc_com
+d406_account_bal_soc_com_2812,2812,2812 Amortizarea construcţiilor,2812 Depreciation of buildings,bal_soc_com
+d406_account_bal_soc_com_2813,2813,2813 Amortizarea instalaţiilor şi mijloacelor de transport,"2813 Depreciation of plant, machinery and motor vehicles",bal_soc_com
+d406_account_bal_soc_com_2814,2814,2814 Amortizarea altor imobilizări corporale,2814 Depreciation of other tangible assets,bal_soc_com
+d406_account_bal_soc_com_2815,2815,2815 Amortizarea investiţiilor imobiliare,2815 Depreciation of investment property,bal_soc_com
+d406_account_bal_soc_com_2816,2816,2816 Amortizarea activelor corporale de explorare şi evaluare a resurselor minerale,2816 Depreciation of tangible assets related to exploration for and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_2817,2817,2817 Amortizarea activelor biologice productive,2817 Depreciation of bearer biological assets,bal_soc_com
+d406_account_bal_soc_com_29,29,29 Ajustări pentru deprecierea sau pierderea de valoare a imobilizărilor,29 Impairment of non-current assets,bal_soc_com
+d406_account_bal_soc_com_290,290,290 Ajustări pentru deprecierea imobilizărilor necorporale,290 Impairment of intangible assets,bal_soc_com
+d406_account_bal_soc_com_2903,2903,2903 Ajustări pentru deprecierea cheltuielilor de dezvoltare,2903 Impairment of development costs,bal_soc_com
+d406_account_bal_soc_com_2905,2905,"2905 Ajustări pentru deprecierea concesiunilor, brevetelor, licenţelor, mărcilor comerciale, drepturilor şi activelor similare","2905 Impairment of concessions, patents, licences, trademarks and similar rights and assets",bal_soc_com
+d406_account_bal_soc_com_2906,2906,2906 Ajustări pentru deprecierea activelor necorporale de explorare şi evaluare a resurselor minerale,2906 Impaiment of intangible assets related to exploration for and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_2908,2908,2908 Ajustări pentru deprecierea altor imobilizări necorporale,2908 Impairment of other intangible assets,bal_soc_com
+d406_account_bal_soc_com_291,291,291 Ajustări pentru deprecierea imobilizărilor corporale,291 Impairment of tangible assets,bal_soc_com
+d406_account_bal_soc_com_2911,2911,2911 Ajustări pentru deprecierea terenurilor şi amenajărilor de terenuri,2911 Impairment of land and land improvements,bal_soc_com
+d406_account_bal_soc_com_2912,2912,2912 Ajustări pentru deprecierea construcţiilor,2912 Impairment of buildings,bal_soc_com
+d406_account_bal_soc_com_2913,2913,2913 Ajustări pentru deprecierea instalaţiilor și mijloacelor de transport,"2913 Impairment of plant, machinery and motor vehicles",bal_soc_com
+d406_account_bal_soc_com_2914,2914,2914 Ajustări pentru deprecierea altor imobilizări corporale,2914 Impairment of other tangible assets,bal_soc_com
+d406_account_bal_soc_com_2915,2915,2915 Ajustări pentru deprecierea investiţiilor imobiliare,2915 Impairment of investment property,bal_soc_com
+d406_account_bal_soc_com_2916,2916,2916 Ajustări pentru deprecierea activelor corporale de explorare şi evaluare a resurselor minerale,2916 Impaiment of tangible assets related to exploration for and evaluation of mineral resources,bal_soc_com
+d406_account_bal_soc_com_2917,2917,2917 Ajustări pentru deprecierea activelor biologice productive,2917 Impairment of bearer biological assets,bal_soc_com
+d406_account_bal_soc_com_293,293,293 Ajustări pentru deprecierea imobilizărilor în curs de execuție,293 Impairment of non-current assets in progress,bal_soc_com
+d406_account_bal_soc_com_2931,2931,2931 Ajustări pentru deprecierea imobilizărilor corporale în curs de execuţie,2931 Impairment of tangible assets in progress,bal_soc_com
+d406_account_bal_soc_com_2935,2935,2935 Ajustări pentru deprecierea investiţiilor imobiliare în curs de execuţie,2935 Impairment of investment property in progress,bal_soc_com
+d406_account_bal_soc_com_296,296,296 Ajustări pentru pierderea de valoare a imobilizărilor financiare,296 Impairment of financial assets,bal_soc_com
+d406_account_bal_soc_com_2961,2961,2961 Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate,2961 Impairment of investments in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_2962,2962,2962 Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţi asociate şi entităţi controlate în comun,2962 Impairment of investment in associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_2963,2963,2963 Ajustări pentru pierderea de valoare a altor titluri imobilizate,2963 Impairment of other long term investments,bal_soc_com
+d406_account_bal_soc_com_2964,2964,2964 Ajustări pentru pierderea de valoare a sumelor de încasat de la entităţile afiliate,2964 Impairment of amounts to be collected from affiliated entities,bal_soc_com
+d406_account_bal_soc_com_2965,2965,2965 Ajustări pentru pierderea de valoare a creanţelor faţă de entităţile asociate şi entităţile controlate în comun,2965 Impairment of receivables in relation with associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_2966,2966,2966 Ajustări pentru pierderea de valoare a împrumuturilor acordate pe termen lung,2966 Impairment of long term loans,bal_soc_com
+d406_account_bal_soc_com_2968,2968,2968 Ajustări pentru pierderea de valoare a altor creanţe imobilizate,2968 Impairment of other receivables,bal_soc_com
+d406_account_bal_soc_com_3,3,Clasa 3 - Conturi de stocuri şi producţie în curs de execuţie,Class 3 - Inventories and work in progress,bal_soc_com
+d406_account_bal_soc_com_30,30,30 Stocuri de materii prime şi materiale,30 Raw materials and consumables,bal_soc_com
+d406_account_bal_soc_com_301,301,301 Materii prime,301 Raw materials,bal_soc_com
+d406_account_bal_soc_com_302,302,302 Materiale consumabile,302 Consumables,bal_soc_com
+d406_account_bal_soc_com_3021,3021,3021 Materiale auxiliare,3021 Auxiliary materials,bal_soc_com
+d406_account_bal_soc_com_3022,3022,3022 Combustibili,3022 Fuel,bal_soc_com
+d406_account_bal_soc_com_3023,3023,3023 Materiale pentru ambalat,3023 Packaging materials,bal_soc_com
+d406_account_bal_soc_com_3024,3024,3024 Piese de schimb,3024 Spare parts,bal_soc_com
+d406_account_bal_soc_com_3025,3025,3025 Seminţe şi materiale de plantat,3025 Seeds and sapling,bal_soc_com
+d406_account_bal_soc_com_3026,3026,3026 Furaje,3026 Fodder,bal_soc_com
+d406_account_bal_soc_com_3028,3028,3028 Alte materiale consumabile,3028 Other consumables,bal_soc_com
+d406_account_bal_soc_com_303,303,303 Materiale de natura obiectelor de inventar,303 Materials in the form of small inventory,bal_soc_com
+d406_account_bal_soc_com_308,308,308 Diferenţe de preţ la materii prime şi materiale,308 Price differences on raw materials and consumables,bal_soc_com
+d406_account_bal_soc_com_32,32,32 Stocuri în curs de aprovizionare,32 Inventories in transit,bal_soc_com
+d406_account_bal_soc_com_321,321,321 Materii prime în curs de aprovizionare,321 Raw materials in transit,bal_soc_com
+d406_account_bal_soc_com_322,322,322 Materiale consumabile în curs de aprovizionare,322 Consumables in transit,bal_soc_com
+d406_account_bal_soc_com_323,323,323 Materiale de natura obiectelor de inventar în curs de aprovizionare,323 Materials in the form of small inventory in transit,bal_soc_com
+d406_account_bal_soc_com_326,326,326 Active biologice de natura stocurilor în curs de aprovizionare,326 Biological assets in the form of inventory in transit,bal_soc_com
+d406_account_bal_soc_com_327,327,327 Mărfuri în curs de aprovizionare,327 Goods purchased for resale in transit,bal_soc_com
+d406_account_bal_soc_com_328,328,328 Ambalaje în curs de aprovizionare,328 Packaging materials in transit,bal_soc_com
+d406_account_bal_soc_com_33,33,33 Producţie în curs de execuţie,33 Work in progress,bal_soc_com
+d406_account_bal_soc_com_331,331,331 Produse în curs de execuţie,331 Work in progress,bal_soc_com
+d406_account_bal_soc_com_332,332,332 Servicii în curs de execuţie,332 Services in progress,bal_soc_com
+d406_account_bal_soc_com_34,34,34 Produse,34 Goods,bal_soc_com
+d406_account_bal_soc_com_341,341,341 Semifabricate,341 Semi-finished goods,bal_soc_com
+d406_account_bal_soc_com_345,345,345 Produse finite,345 Finished goods,bal_soc_com
+d406_account_bal_soc_com_346,346,346 Produse reziduale,346 Residual products,bal_soc_com
+d406_account_bal_soc_com_347,347,347 Produse agricole,347 Agricultural products,bal_soc_com
+d406_account_bal_soc_com_348,348,348 Diferenţe de preţ la produse,348 Price differences on goods,bal_soc_com
+d406_account_bal_soc_com_35,35,35 Stocuri aflate la terţi,35 Inventories at third parties,bal_soc_com
+d406_account_bal_soc_com_351,351,351 Materii şi materiale aflate la terţi,351 Raw materials and consumables at third parties,bal_soc_com
+d406_account_bal_soc_com_354,354,354 Produse aflate la terţi,354 Goods at third parties,bal_soc_com
+d406_account_bal_soc_com_356,356,356 Active biologice de natura stocurilor aflate la terţi,356 Biological assets in the form of inventory at third parties,bal_soc_com
+d406_account_bal_soc_com_357,357,357 Mărfuri aflate la terţi,357 Goods for resale at third parties,bal_soc_com
+d406_account_bal_soc_com_358,358,358 Ambalaje aflate la terţi,358 Packaging materials at third parties,bal_soc_com
+d406_account_bal_soc_com_36,36,36 Active biologice de natura stocurilor,36 Biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_361,361,361 Active biologice de natura stocurilor,361 Biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_368,368,368 Diferenţe de preţ la active biologice de natura stocurilor,368 Price differences on biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_37,37,37 Mărfuri,37 Goods purchased for resale,bal_soc_com
+d406_account_bal_soc_com_371,371,371 Mărfuri,371 Goods purchased for resale,bal_soc_com
+d406_account_bal_soc_com_378,378,378 Diferenţe de preţ la mărfuri,378 Price differences on goods purchased for resale,bal_soc_com
+d406_account_bal_soc_com_38,38,38 Ambalaje,38 Packaging,bal_soc_com
+d406_account_bal_soc_com_381,381,381 Ambalaje,381 Packaging materials,bal_soc_com
+d406_account_bal_soc_com_388,388,388 Diferenţe de preţ la ambalaje,388 Price differences on packaging,bal_soc_com
+d406_account_bal_soc_com_39,39,39 Ajustări pentru deprecierea stocurilor şi producţiei în curs de execuţie,39 Write-down of inventories and work in progress,bal_soc_com
+d406_account_bal_soc_com_391,391,391 Ajustări pentru deprecierea materiilor prime,391 Write-down of raw materials,bal_soc_com
+d406_account_bal_soc_com_392,392,392 Ajustări pentru deprecierea materialelor,392 Write-down of consumables,bal_soc_com
+d406_account_bal_soc_com_3921,3921,3921 Ajustări pentru deprecierea materialelor consumabile,3921 Write-down of consumables,bal_soc_com
+d406_account_bal_soc_com_3922,3922,3922 Ajustări pentru deprecierea materialelor de natura obiectelor de inventar,3922 Wrtite-down of materials in the form of small inventory,bal_soc_com
+d406_account_bal_soc_com_393,393,393 Ajustări pentru deprecierea producţiei în curs de execuţie,393 Write-down of work in progress,bal_soc_com
+d406_account_bal_soc_com_394,394,394 Ajustări pentru deprecierea produselor,394 Write-down of goods,bal_soc_com
+d406_account_bal_soc_com_3941,3941,3941 Ajustări pentru deprecierea semifabricatelor,3941 Write-down of semi finished goods,bal_soc_com
+d406_account_bal_soc_com_3945,3945,3945 Ajustări pentru deprecierea produselor finite,3945 Write-down of finished goods,bal_soc_com
+d406_account_bal_soc_com_3946,3946,3946 Ajustări pentru deprecierea produselor reziduale,3946 Write-down of residual products,bal_soc_com
+d406_account_bal_soc_com_3947,3947,3947 Ajustări pentru deprecierea produselor agricole,3947 Write-down of agricultural products,bal_soc_com
+d406_account_bal_soc_com_395,395,395 Ajustări pentru deprecierea stocurilor aflate la terţi,395 Write-down of inventories held at third parties,bal_soc_com
+d406_account_bal_soc_com_3951,3951,3951 Ajustări pentru deprecierea materiilor şi materialelor aflate la terţi,3951 Write-down of raw materials and consumables at third parties,bal_soc_com
+d406_account_bal_soc_com_3952,3952,3952 Ajustări pentru deprecierea semifabricatelor aflate la terţi,3952 Write-down of semi finished goods at third parties,bal_soc_com
+d406_account_bal_soc_com_3953,3953,3953 Ajustări pentru deprecierea produselor finite aflate la terţi,3953 Write-down of finished goods at third parties,bal_soc_com
+d406_account_bal_soc_com_3954,3954,3954 Ajustări pentru deprecierea produselor reziduale aflate la terţi,3954 Write-down of residual products at third parties,bal_soc_com
+d406_account_bal_soc_com_3955,3955,3955 Ajustări pentru deprecierea produselor agricole aflate la terţi,3955 Write-down of agricultural products at third parties,bal_soc_com
+d406_account_bal_soc_com_3956,3956,3956 Ajustări pentru deprecierea activelor biologice de natura stocurilor aflate la terţi,3956 Write-down of biological assets in the form of inventory at third parties,bal_soc_com
+d406_account_bal_soc_com_3957,3957,3957 Ajustări pentru deprecierea mărfurilor aflate la terţi,3957 Write-down of goods for resale at third parties,bal_soc_com
+d406_account_bal_soc_com_3958,3958,3958 Ajustări pentru deprecierea ambalajelor aflate la terţi,3958 Write-down of packaging materials at third Parties,bal_soc_com
+d406_account_bal_soc_com_396,396,396 Ajustări pentru deprecierea activelor biologice de natura stocurilor,396 Write-down of biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_397,397,397 Ajustări pentru deprecierea mărfurilor,397 Write-down of goods purchased for resale,bal_soc_com
+d406_account_bal_soc_com_398,398,398 Ajustări pentru deprecierea ambalajelor,398 Write-down of packaging materials,bal_soc_com
+d406_account_bal_soc_com_4,4,Clasa 4 - Conturi de terţi,Class 4 - Third party accounts,bal_soc_com
+d406_account_bal_soc_com_40,40,40 Furnizori şi conturi asimilate,40 Suppliers and similar accounts,bal_soc_com
+d406_account_bal_soc_com_401,401,401 Furnizori,401 Suppliers,bal_soc_com
+d406_account_bal_soc_com_403,403,403 Efecte de plătit,403 Bills of exchange payable,bal_soc_com
+d406_account_bal_soc_com_404,404,404 Furnizori de imobilizări,404 Suppliers of non-current assets,bal_soc_com
+d406_account_bal_soc_com_405,405,405 Efecte de plătit pentru imobilizări,405 Bills of exchange payable to suppliers of non-current assets,bal_soc_com
+d406_account_bal_soc_com_408,408,408 Furnizori - facturi nesosite,408 Suppliers - invoices to be received,bal_soc_com
+d406_account_bal_soc_com_409,409,409 Furnizori - debitori,409 Advance payments to suppliers,bal_soc_com
+d406_account_bal_soc_com_4091,4091,4091 Furnizori-debitori pentru cumpărări de bunuri de natura stocurilor,4091 Advance payments to suppliers for the purchase of inventories,bal_soc_com
+d406_account_bal_soc_com_4092,4092,4092 Furnizori-debitori pentru prestări de servicii,4092 Advance payments to suppliers for the purchase of services,bal_soc_com
+d406_account_bal_soc_com_4093,4093,4093 Avansuri acordate pentru imobilizări corporale,4093 Advance payments for the purchase of tangible assets,bal_soc_com
+d406_account_bal_soc_com_4094,4094,4094 Avansuri acordate pentru imobilizări necorporale,4094 Advance payments for the purchase of intangible assets,bal_soc_com
+d406_account_bal_soc_com_41,41,41 Clienţi şi conturi asimilate,41 Customers and similar accounts,bal_soc_com
+d406_account_bal_soc_com_411,411,411 Clienţi,411 Customers,bal_soc_com
+d406_account_bal_soc_com_4111,4111,4111 Clienţi,4111 Customers,bal_soc_com
+d406_account_bal_soc_com_4118,4118,4118 Clienţi incerţi sau în litigiu,4118 Doubtful customers or customers involved in litigation,bal_soc_com
+d406_account_bal_soc_com_413,413,413 Efecte de primit de la clienţi,413 Bills of exchange receivable,bal_soc_com
+d406_account_bal_soc_com_418,418,418 Clienţi - facturi de întocmit,418 Customers - invoices to be issued,bal_soc_com
+d406_account_bal_soc_com_419,419,419 Clienţi – creditori,419 Advance payments from customers,bal_soc_com
+d406_account_bal_soc_com_42,42,42 Personal şi conturi asimilate,42 Payroll and similar accounts,bal_soc_com
+d406_account_bal_soc_com_421,421,421 Personal - salarii datorate,421 Employees - salaries payable,bal_soc_com
+d406_account_bal_soc_com_423,423,423 Personal - ajutoare materiale datorate,423 Other social benefits granted to employees,bal_soc_com
+d406_account_bal_soc_com_424,424,424 Prime reprezentând participarea personalului la profit14,424 Profit share payable to employees14,bal_soc_com
+d406_account_bal_soc_com_425,425,425 Avansuri acordate personalului,425 Advances to employees,bal_soc_com
+d406_account_bal_soc_com_426,426,426 Drepturi de personal neridicate,426 Employees’ rights not claimed,bal_soc_com
+d406_account_bal_soc_com_427,427,427 Reţineri din salarii datorate terţilor,427 Retentions from salaries payable to third parties,bal_soc_com
+d406_account_bal_soc_com_428,428,428 Alte datorii şi creanţe în legătură cu personalul,428 Other employee-related debts and claims,bal_soc_com
+d406_account_bal_soc_com_4281,4281,4281 Alte datorii în legătură cu personalul,4281 Other employee-related debts,bal_soc_com
+d406_account_bal_soc_com_4282,4282,4282 Alte creanţe în legătură cu personalul,4282 Other employee-related claims,bal_soc_com
+d406_account_bal_soc_com_43,43,"43 Asigurări sociale, protecţia socială şi conturi asimilate",43 Social security and similar accounts,bal_soc_com
+d406_account_bal_soc_com_431,431,431 Asigurări sociale,431 Social security,bal_soc_com
+d406_account_bal_soc_com_4311,4311,4311 Contribuţia unităţii la asigurările sociale,4311 Company’s contribution to social security,bal_soc_com
+d406_account_bal_soc_com_4312,4312,4312 Contribuţia personalului la asigurările sociale,4312 Employees’ contribution to pension fund,bal_soc_com
+d406_account_bal_soc_com_4313,4313,4313 Contribuţia angajatorului pentru asigurările sociale de sănătate,4313 Company’s contribution to health insurance,bal_soc_com
+d406_account_bal_soc_com_4314,4314,4314 Contribuţia angajaţilor pentru asigurările sociale de sănătate,4314 Employees’ contribution to health insurance,bal_soc_com
+d406_account_bal_soc_com_4315,4315,4315 Contribuţia de asigurări sociale,4315 Social insurance contribution,bal_soc_com
+d406_account_bal_soc_com_4316,4316,4316 Contribuţia de asigurări sociale de sănătate,4316 Health social insurance contribution,bal_soc_com
+d406_account_bal_soc_com_4318,4318,4318 Alte contribuţii pentru asigurările sociale de sănătate,4318 Other health social insurance contributions,bal_soc_com
+d406_account_bal_soc_com_436,436,436 Contribuţia asiguratorie pentru muncă,436 Labor asiguratory contribution,bal_soc_com
+d406_account_bal_soc_com_437,437,437 Ajutor de şomaj,437 Unemployment fund,bal_soc_com
+d406_account_bal_soc_com_4371,4371,4371 Contribuţia unităţii la fondul de şomaj,4371 Company’s contribution to unemployment fund,bal_soc_com
+d406_account_bal_soc_com_4372,4372,4372 Contribuţia personalului la fondul de şomaj,4372 Employees’ contribution to unemployment fund,bal_soc_com
+d406_account_bal_soc_com_438,438,438 Alte datorii şi creanţe sociale,438 Other personnel-related debts and claims,bal_soc_com
+d406_account_bal_soc_com_4381,4381,4381 Alte datorii sociale,4381 Other personnel-related debts,bal_soc_com
+d406_account_bal_soc_com_4382,4382,4382 Alte creanţe sociale,4382 Other personnel-related claims,bal_soc_com
+d406_account_bal_soc_com_44,44,"44 Bugetul statului, fonduri speciale şi conturi asimilate","44 Amounts payable to the state budget, special funds and similar accounts",bal_soc_com
+d406_account_bal_soc_com_441,441,441 Impozitul pe profit/venit,441 Income tax,bal_soc_com
+d406_account_bal_soc_com_4411,4411,4411 Impozitul pe profit,4411 Profit tax,bal_soc_com
+d406_account_bal_soc_com_4415,4415,4415 Impozitul specific unor activităţi,4415 Specific tax on certain activities,bal_soc_com
+d406_account_bal_soc_com_4417,4417,4417 Impozitul pe profit la nivelul impozitului minim pe cifra de afaceri,4417 Profit tax at the minimum turnover tax level,bal_soc_com
+d406_account_bal_soc_com_4418,4418,4418 Impozitul pe venit,4418 Income tax,bal_soc_com
+d406_account_bal_soc_com_442,442,442 Taxa pe valoarea adăugată,442 Value added tax,bal_soc_com
+d406_account_bal_soc_com_4423,4423,4423 TVA de plată,4423 VAT payable,bal_soc_com
+d406_account_bal_soc_com_4424,4424,4424 TVA de recuperat,4424 VAT receivable,bal_soc_com
+d406_account_bal_soc_com_4426,4426,4426 TVA deductibilă,4426 Input VAT,bal_soc_com
+d406_account_bal_soc_com_4427,4427,4427 TVA colectată,4427 Output VAT,bal_soc_com
+d406_account_bal_soc_com_4428,4428,4428 TVA neexigibilă,4428 VAT under settlement,bal_soc_com
+d406_account_bal_soc_com_444,444,444 Impozitul pe venituri de natura salariilor,444 Tax on salaries,bal_soc_com
+d406_account_bal_soc_com_445,445,445 Subvenţii,445 Subsidies,bal_soc_com
+d406_account_bal_soc_com_4451,4451,4451 Subvenţii guvernamentale,4451 Government subsidies,bal_soc_com
+d406_account_bal_soc_com_4452,4452,4452 Împrumuturi nerambursabile cu caracter de subvenţii,4452 Non-repayable loans in the form of grants,bal_soc_com
+d406_account_bal_soc_com_4458,4458,4458 Alte sume primite cu caracter de subvenţii,4458 Other amounts received as subsidies,bal_soc_com
+d406_account_bal_soc_com_446,446,"446 Alte impozite, taxe şi vărsăminte asimilate",446 Other taxes and similar liabilities,bal_soc_com
+d406_account_bal_soc_com_447,447,447 Fonduri speciale - taxe şi vărsăminte asimilate,447 Special funds - taxes and similar liabilities,bal_soc_com
+d406_account_bal_soc_com_448,448,448 Alte datorii şi creanţe cu bugetul statului,448 Other debts and claims with the Treasury,bal_soc_com
+d406_account_bal_soc_com_4481,4481,4481 Alte datorii faţă de bugetul statului,4481 Other debts payable to the Treasury,bal_soc_com
+d406_account_bal_soc_com_4482,4482,4482 Alte creanţe privind bugetul statului,4482 Other claims receivable from the Treasury,bal_soc_com
+d406_account_bal_soc_com_45,45,45 Grup şi actionari / asociaţi,45 Group and shareholders / associates,bal_soc_com
+d406_account_bal_soc_com_451,451,451 Decontări între entităţile afiliate,451 Settlement between affiliated entities,bal_soc_com
+d406_account_bal_soc_com_4511,4511,4511 Decontări între entităţile afiliate,4511 Settlement between affiliated entities,bal_soc_com
+d406_account_bal_soc_com_4518,4518,4518 Dobânzi aferente decontărilor între entităţile afiliate,4518 Accrued interest for settlement between affiliated entities,bal_soc_com
+d406_account_bal_soc_com_453,453,453 Decontări cu entitățile asociate și entitățile controlate în comun,453 Settlement between associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_4531,4531,4531 Decontări cu entitățile asociate și entitățile controlate,4531 Settlement between associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_4538,4538,4538 Dobânzi aferente decontărilor cu entitățile asociate și entitățile controlate în comun,4538 Accrued interest for settlement between associated and jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_455,455,455 Sume datorate acţionarilor/asociaţilor,455 Amounts owed to shareholders,bal_soc_com
+d406_account_bal_soc_com_4551,4551,4551 Acţionari/asociaţi – conturi curente,4551 Shareholders / associates – current accounts,bal_soc_com
+d406_account_bal_soc_com_4558,4558,4558 Acţionari/asociaţi – dobânzi la conturi curente,4558 Accrued interest on shareholders’ – current accounts,bal_soc_com
+d406_account_bal_soc_com_456,456,456 Decontări cu acţionarii/asociaţii privind capitalul,456 Transactions with shareholders / associates related to capital,bal_soc_com
+d406_account_bal_soc_com_457,457,457 Dividende de plată,457 Dividends payable,bal_soc_com
+d406_account_bal_soc_com_458,458,458 Decontări din operaţii în participaţie,458 Transactions related to joint operations,bal_soc_com
+d406_account_bal_soc_com_4581,4581,4581 Decontări din operaţii în participaţie - pasiv,4581 Transactions related to joint operations - liability,bal_soc_com
+d406_account_bal_soc_com_4582,4582,4582 Decontări din operaţii în participaţie - activ,4582 Transactions related to joint operations - asset,bal_soc_com
+d406_account_bal_soc_com_46,46,46 Debitori şi creditori diverşi,46 Sundry debtors and creditors,bal_soc_com
+d406_account_bal_soc_com_461,461,461 Debitori diverşi,461 Sundry debtors,bal_soc_com
+d406_account_bal_soc_com_462,462,462 Creditori diverşi,462 Sundry creditors,bal_soc_com
+d406_account_bal_soc_com_463,463,463 Creanţe reprezentând dividende repartizate în cursul exerciţiului financiar,463 Receivables representing dividends distributed during the financial year,bal_soc_com
+d406_account_bal_soc_com_466,466,466 Decontări din operaţiuni de fiducie,466 Settlements from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_4661,4661,4661 Datorii din operaţiuni de fiducie,4661 Debts from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_4662,4662,4662 Creanţe din operaţiuni de fiducie,4662 Receivables from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_467,467,467 Datorii aferente distribuirior interimare de dividende,467 Debts related to dividend interim distribution,bal_soc_com
+d406_account_bal_soc_com_47,47,"47 Conturi de subvenţii, regularizare şi asimilate","47 Accruals, subsidies and similar accounts",bal_soc_com
+d406_account_bal_soc_com_471,471,471 Cheltuieli înregistrate în avans,471 Deferred expenses,bal_soc_com
+d406_account_bal_soc_com_472,472,472 Venituri înregistrate în avans,472 Deferred income,bal_soc_com
+d406_account_bal_soc_com_473,473,473 Decontări din operaţii în curs de clarificare,473 Suspense account,bal_soc_com
+d406_account_bal_soc_com_475,475,475 Subvenţii pentru investiţii,475 Investment subsidies,bal_soc_com
+d406_account_bal_soc_com_4751,4751,4751 Subvenţii guvernamentale pentru investiţii,4751 Governmental investment subsidiese,bal_soc_com
+d406_account_bal_soc_com_4752,4752,4752 Împrumuturi nerambursabile cu caracter de subvenţii pentru investiţii,4752 Non-repayable loans in the form of investment subsidies,bal_soc_com
+d406_account_bal_soc_com_4753,4753,4753 Donaţii pentru investiţii,4753 Investment donations,bal_soc_com
+d406_account_bal_soc_com_4754,4754,4754 Plusuri de inventar de natura imobilizărilor,4754 Inventory surpluses in the form of non-current assets,bal_soc_com
+d406_account_bal_soc_com_4758,4758,4758 Alte sume primite cu caracter de subvenţii pentru investiţii,4758 Other amounts received in the form of investment subsidies,bal_soc_com
+d406_account_bal_soc_com_478,478,478 Venituri în avans aferente activelor primite prin transfer de la clienţi,478 Deferred income related to assets received by transfer from customers,bal_soc_com
+d406_account_bal_soc_com_48,48,48 Decontări în cadrul unităţii,48 Internal transactions,bal_soc_com
+d406_account_bal_soc_com_481,481,481 Decontări între unitate şi subunităţi,481 Transactions between the entity and sub-units,bal_soc_com
+d406_account_bal_soc_com_482,482,482 Decontări între subunităţi,482 Transactions between sub-units,bal_soc_com
+d406_account_bal_soc_com_49,49,49 Ajustări pentru deprecierea creanţelor,49 Allowances for doubtful debts,bal_soc_com
+d406_account_bal_soc_com_490,490,490 Ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor,490 Allowances for depreciation of the receivables representing advances to suppliers,bal_soc_com
+d406_account_bal_soc_com_4901,4901,4901 Ajustări pentru deprecierea creanţelor aferente cumpărărilor de bunuri de natura stocurilor,4901 Allowances for depreciation of the receivables related to acquistions of inventories,bal_soc_com
+d406_account_bal_soc_com_4902,4902,4902 Ajustări pentru deprecierea creanţelor aferente prestărilor de servicii,4902 Allowances for depreciation of the receivables related to provisions of services,bal_soc_com
+d406_account_bal_soc_com_4903,4903,4903 Ajustări pentru deprecierea creanţelor aferente imobilizărilor corporale,4903 Allowances for depreciation of the receivables related to fixed assets,bal_soc_com
+d406_account_bal_soc_com_4904,4904,4904 Ajustări pentru deprecierea creanţelor aferente imobilizărilor necorporale,4904 Allowances for depreciation of the receivables related to intangible assets,bal_soc_com
+d406_account_bal_soc_com_491,491,491 Ajustări pentru deprecierea creanţelor - clienţi,491 Allowances for doubtful customers,bal_soc_com
+d406_account_bal_soc_com_495,495,495 Ajustări pentru deprecierea creanţelor – decontări în cadrul grupului şi cu acţionarii/asociaţii,495 Allowances for doubtful debts from group companies and shareholders / associates,bal_soc_com
+d406_account_bal_soc_com_496,496,496 Ajustări pentru deprecierea creanţelor - debitori diverşi,496 Allowances for doubtful sundry debtors,bal_soc_com
+d406_account_bal_soc_com_5,5,Clasa 5 - Conturi de trezorerie,Class 5 - Treasury accounts,bal_soc_com
+d406_account_bal_soc_com_50,50,50 Investiţii pe termen scurt,50 Short term investments,bal_soc_com
+d406_account_bal_soc_com_501,501,501 Acţiuni deţinute la entităţile afiliate,501 Shares in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_505,505,505 Obligaţiuni emise şi răscumpărate,505 Redeemed debentures,bal_soc_com
+d406_account_bal_soc_com_506,506,506 Obligaţiuni,506 Debentures,bal_soc_com
+d406_account_bal_soc_com_507,507,507 Certificate verzi primite,507 Green certificates received,bal_soc_com
+d406_account_bal_soc_com_508,508,508 Alte investiţii pe termen scurt şi creanţe asimilate,508 Other short term investments and related receivables,bal_soc_com
+d406_account_bal_soc_com_5081,5081,5081 Alte titluri de plasament,5081 Other short term financial investments,bal_soc_com
+d406_account_bal_soc_com_5088,5088,5088 Dobânzi la obligaţiuni şi titluri de plasament,5088 Accrued interest on debentures and short term investments,bal_soc_com
+d406_account_bal_soc_com_509,509,509 Vărsăminte de efectuat pentru investiţiile pe termen scurt,509 Amounts payable for short term financial investments,bal_soc_com
+d406_account_bal_soc_com_5091,5091,5091 Vărsăminte de efectuat pentru acţiunile deţinute la entităţile afiliate,5091 Amounts payable for shares in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_5092,5092,5092 Vărsăminte de efectuat pentru alte investiţii pe termen scurt,5092 Amounts payable for other short term financial investments,bal_soc_com
+d406_account_bal_soc_com_51,51,51 Conturi la bănci,51 Bank accounts,bal_soc_com
+d406_account_bal_soc_com_511,511,511 Valori de încasat,511 Outstanding lodgements,bal_soc_com
+d406_account_bal_soc_com_5112,5112,5112 Cecuri de încasat,5112 Cheques,bal_soc_com
+d406_account_bal_soc_com_5113,5113,5113 Efecte de încasat,5113 Bills of exchange held to maturity,bal_soc_com
+d406_account_bal_soc_com_5114,5114,5114 Efecte remise spre scontare,5114 Bills of exchange forwarded for discount,bal_soc_com
+d406_account_bal_soc_com_512,512,512 Conturi curente la bănci,512 Cash at bank,bal_soc_com
+d406_account_bal_soc_com_5121,5121,5121 Conturi la bănci în lei,5121 Cash at bank in lei,bal_soc_com
+d406_account_bal_soc_com_5124,5124,5124 Conturi la bănci în valută,5124 Cash at bank in foreign currencies,bal_soc_com
+d406_account_bal_soc_com_5125,5125,5125 Sume în curs de decontare,5125 Amounts under settlement,bal_soc_com
+d406_account_bal_soc_com_5126,5126,5126 Conturi la bănci în lei - TVA defalcat,5126 Cash at bank in lei - VAT paid separately,bal_soc_com
+d406_account_bal_soc_com_5127,5127,5127 Conturi la bănci în valută - TVA defalcat,5127 Cash at bank in foreign currency - VAT paid separately,bal_soc_com
+d406_account_bal_soc_com_518,518,518 Dobânzi,518 Interest,bal_soc_com
+d406_account_bal_soc_com_5186,5186,5186 Dobânzi de plătit,5186 Accrued interest payable,bal_soc_com
+d406_account_bal_soc_com_5187,5187,5187 Dobânzi de încasat,5187 Accrued interest receivable,bal_soc_com
+d406_account_bal_soc_com_519,519,519 Credite bancare pe termen scurt,519 Short term bank loans,bal_soc_com
+d406_account_bal_soc_com_5191,5191,5191 Credite bancare pe termen scurt,5191 Short term bank loans,bal_soc_com
+d406_account_bal_soc_com_5192,5192,5192 Credite bancare pe termen scurt nerambursate la scadenţă,5192 Short term bank loans in arrears,bal_soc_com
+d406_account_bal_soc_com_5193,5193,5193 Credite externe guvernamentale,5193 Foreign government loans,bal_soc_com
+d406_account_bal_soc_com_5194,5194,5194 Credite externe garantate de stat,5194 Foreign loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_5195,5195,5195 Credite externe garantate de bănci,5195 Foreign loans guaranteed by banks,bal_soc_com
+d406_account_bal_soc_com_5196,5196,5196 Credite de la Trezoreria Statului,5196 State Treasury loans,bal_soc_com
+d406_account_bal_soc_com_5197,5197,5197 Credite interne garantate de stat,5197 Domestic loans guaranteed by the State,bal_soc_com
+d406_account_bal_soc_com_5198,5198,5198 Dobânzi aferente creditelor bancare pe termen scurt,5198 Accrued interest on short term loans,bal_soc_com
+d406_account_bal_soc_com_53,53,53 Casa,53 Petty cash,bal_soc_com
+d406_account_bal_soc_com_531,531,531 Casa,531 Petty cash,bal_soc_com
+d406_account_bal_soc_com_5311,5311,5311 Casa în lei,5311 Petty cash in lei,bal_soc_com
+d406_account_bal_soc_com_5314,5314,5314 Casa în valută,5314 Petty cash in foreign currencies,bal_soc_com
+d406_account_bal_soc_com_532,532,532 Alte valori,532 Cash equivalents,bal_soc_com
+d406_account_bal_soc_com_5321,5321,5321 Timbre fiscale şi poştale,5321 Postage and fiscal stamps,bal_soc_com
+d406_account_bal_soc_com_5322,5322,5322 Bilete de tratament şi odihnă,5322 Holiday vouchers,bal_soc_com
+d406_account_bal_soc_com_5323,5323,5323 Tichete şi bilete de călătorie,5323 Transport tickets,bal_soc_com
+d406_account_bal_soc_com_5328,5328,5328 Alte valori,5328 Other cash equivalents,bal_soc_com
+d406_account_bal_soc_com_54,54,54 Acreditive,54 Letters of credit,bal_soc_com
+d406_account_bal_soc_com_541,541,541 Acreditive,541 Letters of credit,bal_soc_com
+d406_account_bal_soc_com_5411,5411,5411 Acreditive în lei,5411 Letters of credit in lei,bal_soc_com
+d406_account_bal_soc_com_5414,5414,5414 Acreditive în valută,5414 Letters of credit in foreign currencies,bal_soc_com
+d406_account_bal_soc_com_542,542,542 Avansuri de trezorerie16,542 Cash advances16,bal_soc_com
+d406_account_bal_soc_com_58,58,58 Viramente interne,58 Internal transfers,bal_soc_com
+d406_account_bal_soc_com_581,581,581 Viramente interne,581 Internal transfers,bal_soc_com
+d406_account_bal_soc_com_59,59,59 Ajustări pentru pierderea de valoare a conturilor de trezorerie,59 Impairment of treasury accounts,bal_soc_com
+d406_account_bal_soc_com_591,591,591 Ajustări pentru pierderea de valoare a acţiunilor deţinute la entităţile afiliate,591 Impairment of shares in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_595,595,595 Ajustări pentru pierderea de valoare a obligaţiunilor emise şi răscumpărate,595 Impairment of redeemed debentures,bal_soc_com
+d406_account_bal_soc_com_596,596,596 Ajustări pentru pierderea de valoare a obligaţiunilor,596 Impairment of debentures,bal_soc_com
+d406_account_bal_soc_com_598,598,598 Ajustări pentru pierderea de valoare a altor investiţii pe termen scurt şi creanţe asimilate,598 Impairment of other short-term financial investments and related receivables,bal_soc_com
+d406_account_bal_soc_com_6,6,Clasa 6 – Conturi de cheltuieli,Class 6 - Expense accounts,bal_soc_com
+d406_account_bal_soc_com_60,60,60 Cheltuieli privind stocurile si alte consumuri,60 Expenses related to inventories and other consumption,bal_soc_com
+d406_account_bal_soc_com_601,601,601 Cheltuieli cu materiile prime,601 Raw materials,bal_soc_com
+d406_account_bal_soc_com_602,602,602 Cheltuieli cu materialele consumabile,602 Consumables,bal_soc_com
+d406_account_bal_soc_com_6021,6021,6021 Cheltuieli cu materialele auxiliare,6021 Auxiliary materials,bal_soc_com
+d406_account_bal_soc_com_6022,6022,6022 Cheltuieli privind combustibilii,6022 Fuel,bal_soc_com
+d406_account_bal_soc_com_6023,6023,6023 Cheltuieli privind materialele pentru ambalat,6023 Packaging materials,bal_soc_com
+d406_account_bal_soc_com_6024,6024,6024 Cheltuieli privind piesele de schimb,6024 Spare parts,bal_soc_com
+d406_account_bal_soc_com_6025,6025,6025 Cheltuieli privind seminţele şi materialele de plantat,6025 Seeds and sapling,bal_soc_com
+d406_account_bal_soc_com_6026,6026,6026 Cheltuieli privind furajele,6026 Fodder,bal_soc_com
+d406_account_bal_soc_com_6028,6028,6028 Cheltuieli privind alte materiale consumabile,6028 Other consumables,bal_soc_com
+d406_account_bal_soc_com_603,603,603 Cheltuieli privind materialele de natura obiectelor de inventar,603 Materials in the form of small inventory,bal_soc_com
+d406_account_bal_soc_com_604,604,604 Cheltuieli privind materialele nestocate,604 Materials not stored,bal_soc_com
+d406_account_bal_soc_com_605,605,605 Cheltuieli privind utilitatile,605 Expenses regarding utilities,bal_soc_com
+d406_account_bal_soc_com_6051,6051,6051 Cheltuieli privind consumul de energie,6051 Expenses regarding energy consumption,bal_soc_com
+d406_account_bal_soc_com_6052,6052,6052 Cheltuieli privind consumul de apă,6052 Expenses regarding water consumption,bal_soc_com
+d406_account_bal_soc_com_6053,6053,6053 Cheltulieli privind consumul de gaze naturale,6053 Washing on the consumption of natural gas,bal_soc_com
+d406_account_bal_soc_com_6058,6058,6058 Cheltuieli cu alte utilitati,6058 Expenses with other utilities,bal_soc_com
+d406_account_bal_soc_com_606,606,606 Cheltuieli privind activele biologice de natura stocurilor,606 Losses related to biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_607,607,607 Cheltuieli privind mărfurile,607 Goods for resale,bal_soc_com
+d406_account_bal_soc_com_608,608,608 Cheltuieli privind ambalajele,608 Packaging costs,bal_soc_com
+d406_account_bal_soc_com_609,609,609 Reduceri comerciale primite,609 Trade discounts received,bal_soc_com
+d406_account_bal_soc_com_61,61,61 Cheltuieli cu serviciile executate de terţi,61 Third party services,bal_soc_com
+d406_account_bal_soc_com_611,611,611 Cheltuieli cu întreţinerea şi reparaţiile,611 Maintenance and repair expenses,bal_soc_com
+d406_account_bal_soc_com_612,612,"612 Cheltuieli cu redevenţele, locaţiile de gestiune şi chiriile",612 Royalties and rental expenses,bal_soc_com
+d406_account_bal_soc_com_6121,6121,6121 Cheltuieli cu redeventele,6121 Royalty expenses,bal_soc_com
+d406_account_bal_soc_com_6122,6122,6122 Cheltuieli cu locatiile de gestiun,6122 Expenses with management locations,bal_soc_com
+d406_account_bal_soc_com_6123,6123,6123 Cheltuieli cu chiriile,6123 Rent expenses,bal_soc_com
+d406_account_bal_soc_com_613,613,613 Cheltuieli cu primele de asigurare,613 Insurance premiums,bal_soc_com
+d406_account_bal_soc_com_614,614,614 Cheltuieli cu studiile şi cercetările,614 Research expenses,bal_soc_com
+d406_account_bal_soc_com_615,615,615 Cheltuieli cu pregătirea personalului,615 Staff training expenses,bal_soc_com
+d406_account_bal_soc_com_616,616,616 Cheltuieli aferente drepturilor de proprietate intelectual,616 Expenses related to intellectual property rights,bal_soc_com
+d406_account_bal_soc_com_617,617,617 Cheltuieli de management,617 Management expenses,bal_soc_com
+d406_account_bal_soc_com_618,618,618 Cheltuieli de consultanta,618 Consulting expenses,bal_soc_com
+d406_account_bal_soc_com_62,62,62 Cheltuieli cu alte servicii executate de terţi,62 Other third party services,bal_soc_com
+d406_account_bal_soc_com_621,621,621 Cheltuieli cu colaboratorii,621 Externally contracted manpower,bal_soc_com
+d406_account_bal_soc_com_622,622,622 Cheltuieli privind comisioanele şi onorariile,622 Commissions and fees,bal_soc_com
+d406_account_bal_soc_com_623,623,"623 Cheltuieli de protocol, reclamă şi publicitate","623 Entertaining, promotion and advertising",bal_soc_com
+d406_account_bal_soc_com_6231,6231,6231 Cheltuieli de protocol,6231 Protocol expenses,bal_soc_com
+d406_account_bal_soc_com_6232,6232,6232 Cheltuieli de reclamă şi publicitate,6232 Advertising and publicity expenses,bal_soc_com
+d406_account_bal_soc_com_624,624,624 Cheltuieli cu transportul de bunuri şi personal,624 Transport of goods and personnel,bal_soc_com
+d406_account_bal_soc_com_625,625,"625 Cheltuieli cu deplasări, detaşări şi transferări",625 Travel,bal_soc_com
+d406_account_bal_soc_com_626,626,626 Cheltuieli poştale şi taxe de telecomunicaţii,626 Postage and telecommunications,bal_soc_com
+d406_account_bal_soc_com_627,627,627 Cheltuieli cu serviciile bancare şi asimilate,627 Bank commissions and similar charges,bal_soc_com
+d406_account_bal_soc_com_628,628,628 Alte cheltuieli cu serviciile executate de terţi,628 Other third party services,bal_soc_com
+d406_account_bal_soc_com_63,63,"63 Cheltuieli cu alte impozite, taxe şi vărsăminte asimilate","63 Other taxes, duties and similar expenses",bal_soc_com
+d406_account_bal_soc_com_635,635,"635 Cheltuieli cu alte impozite, taxe şi vărsăminte asimilate","635 Other taxes, duties and similar expenses",bal_soc_com
+d406_account_bal_soc_com_6351,6351,6351 Cheltuieli cu impozitul suplimentar pentru sectoarele de activitate specifice,6351 Expenditures with the additional tax for specific sectors of activity,bal_soc_com
+d406_account_bal_soc_com_64,64,64 Cheltuieli cu personalul,64 Personnel expenses,bal_soc_com
+d406_account_bal_soc_com_641,641,641 Cheltuieli cu salariile personalului,641 Salaries,bal_soc_com
+d406_account_bal_soc_com_642,642,642 Cheltuieli cu avantajele în natură și tichetele acordate salariaţilor,642 Expenses with benefits in kind and meal tickets,bal_soc_com
+d406_account_bal_soc_com_6421,6421,6421 Cheltuieli cu avantajele în natură acordate salariaţilor,6421 Expenses with benefits in kind for employees,bal_soc_com
+d406_account_bal_soc_com_6422,6422,6422 Cheltuieli cu tichetele acordate salariaților,6422 Expenses with meal tickets granted to employees,bal_soc_com
+d406_account_bal_soc_com_643,643,643 Cheltuieli cu remunerarea în instrumente de capitaluri proprii,643 Expenses with remunerations in the form of own equity instruments,bal_soc_com
+d406_account_bal_soc_com_644,644,644 Cheltuieli cu primele reprezentând participarea personalului la profit,644 Expenses with bonuses for employees from profit,bal_soc_com
+d406_account_bal_soc_com_645,645,645 Cheltuieli privind asigurările şi protecţia socială,645 Social security contributions,bal_soc_com
+d406_account_bal_soc_com_6451,6451,6451 Cheltuieli privind contribuţia unităţii la asigurările sociale,6451 Expenses with company’s contribution to social security,bal_soc_com
+d406_account_bal_soc_com_6452,6452,6452 Cheltuieli privind contribuţia unităţii pentru ajutorul de şomaj,6452 Expenses with company’s contribution to unemployment fund,bal_soc_com
+d406_account_bal_soc_com_6453,6453,6453 Cheltuieli privind contribuţia angajatorului pentru asigurările sociale de sănătate,6453 Expenses with company’s contribution to health insurance,bal_soc_com
+d406_account_bal_soc_com_6455,6455,6455 Cheltuieli privind contribuţia unităţii la asigurările de viaţă,6455 Expenses with company’s contribution to life insurance,bal_soc_com
+d406_account_bal_soc_com_6456,6456,6456 Cheltuieli privind contribuţia unităţii la fondurile de pensii facultative,6456 Expenses with company’s contribution to optional pension funds,bal_soc_com
+d406_account_bal_soc_com_6457,6457,6457 Cheltuieli privind contribuția societății la primele de asigurare voluntară de sănătate,6457 Expenses with company’s contribution to insurance premiums,bal_soc_com
+d406_account_bal_soc_com_6458,6458,6458 Alte cheltuieli privind asigurările și protecția socială,6458 Other social security and welfare contributions,bal_soc_com
+d406_account_bal_soc_com_646,646,646 Cheltuieli privind contribuţia asiguratorie pentru muncă,646 Expenses regarding asiguratory labor contribution,bal_soc_com
+d406_account_bal_soc_com_6461,6461,6461 Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare salariaţilor,6461 Expenses regarding asiguratory labor contribution corresponding to employees,bal_soc_com
+d406_account_bal_soc_com_6462,6462,"6462 Cheltuieli privind contribuţia asiguratorie pentru muncă corespunzătoare altor persoane, decât salariaţii","6462 Expenses regarding asiguratory labor contribution corresponding to persons, other than employees",bal_soc_com
+d406_account_bal_soc_com_65,65,65 Alte cheltuieli de exploatare,65 Other operating expenses,bal_soc_com
+d406_account_bal_soc_com_651,651,651 Cheltuieli din operaţiuni de fiducie,651 Expenses from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_6511,6511,6511 Cheltuieli ocazionate de constituirea fiduciei,6511 Expenses arising from setting of the fiduciary agreement,bal_soc_com
+d406_account_bal_soc_com_6512,6512,6512 Cheltuieli din derularea operaţiunilor de fiducie,6512 Expenses from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_6513,6513,6513 Cheltuieli din lichidarea operaţiunilor de fiducie,6513 Expenses arising from fiduciary liquidating operations,bal_soc_com
+d406_account_bal_soc_com_652,652,652 Cheltuieli cu protecţia mediului înconjurător,652 Expenses with the environment protection,bal_soc_com
+d406_account_bal_soc_com_654,654,654 Pierderi din creanţe şi debitori diverşi,654 Bad debts written off,bal_soc_com
+d406_account_bal_soc_com_655,655,655 Cheltuieli din reevaluarea imobilizărilor corporale,655 Expenses from revaluation of tangible assets,bal_soc_com
+d406_account_bal_soc_com_658,658,658 Alte cheltuieli de exploatare,658 Other operating expenses,bal_soc_com
+d406_account_bal_soc_com_6581,6581,"6581 Despăgubiri, amenzi şi penalităţi","6581 Compensations, fines and penalties",bal_soc_com
+d406_account_bal_soc_com_6582,6582,6582 Donaţii acordate,6582 Gifts and subsidies granted,bal_soc_com
+d406_account_bal_soc_com_6583,6583,6583 Cheltuieli privind activele cedate şi alte operaţii de capital,6583 Net value of assets disposed of and other capital transactions,bal_soc_com
+d406_account_bal_soc_com_6584,6584,6584 Cheltuieli cu sumele sau bunurile acordate ca sponsorizări,6584 Expenses with the amounts or goods granted as sponsorship,bal_soc_com
+d406_account_bal_soc_com_6586,6586,6586 Cheltuieli reprezentând transferuri şi contribuţii datorate în baza unor acte normative speciale,6586 Expenses with transfers and contributions caused by special laws,bal_soc_com
+d406_account_bal_soc_com_6587,6587,6587 Cheltuieli privind calamităţile şi alte evenimente similare,6587 Expenses with natural disasters and other similar events,bal_soc_com
+d406_account_bal_soc_com_6588,6588,6588 Alte cheltuieli de exploatare,6588 Other operating expenses,bal_soc_com
+d406_account_bal_soc_com_66,66,66 Cheltuieli financiare,66 Financial expenses,bal_soc_com
+d406_account_bal_soc_com_663,663,663 Pierderi din creanţe legate de participaţii,663 Losses on amounts receivable in relation with long term financial investments,bal_soc_com
+d406_account_bal_soc_com_664,664,664 Cheltuieli privind investiţiile financiare cedate,664 Losses on disposal of financial investments,bal_soc_com
+d406_account_bal_soc_com_6641,6641,6641 Cheltuieli privind imobilizările financiare cedate,6641 Losses on disposal of long term financial investments,bal_soc_com
+d406_account_bal_soc_com_6642,6642,6642 Pierderi din investiţiile pe termen scurt cedate,6642 Losses on disposal of short term financial investments,bal_soc_com
+d406_account_bal_soc_com_665,665,665 Cheltuieli din diferenţe de curs valutar,665 Foreign exchange losses,bal_soc_com
+d406_account_bal_soc_com_6651,6651,6651 Diferenţe nefavorabile de curs valutar legate de elementele monetare exprimate în valută,6651 Foreign exchange losses related to monetary items denominated in a foreign currency,bal_soc_com
+d406_account_bal_soc_com_6652,6652,6652 Diferenţe nefavorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiţia netă într-o entitate străină,6652 Foreign exchange losses from measuring of monetary items as part of a net investment in a foreign operation,bal_soc_com
+d406_account_bal_soc_com_666,666,666 Cheltuieli privind dobânzile,666 Interest expense,bal_soc_com
+d406_account_bal_soc_com_667,667,667 Cheltuieli privind sconturile acordate,667 Discounts granted,bal_soc_com
+d406_account_bal_soc_com_668,668,668 Alte cheltuieli financiare,668 Other financial expenses,bal_soc_com
+d406_account_bal_soc_com_68,68,"68 Cheltuieli cu amortizările, provizioanele şi ajustările pentru depreciere sau pierdere de valoare",68 Depreciation and provisions; adjustments for impairment losses,bal_soc_com
+d406_account_bal_soc_com_681,681,"681 Cheltuieli de exploatare privind amortizările, provizioanele şi ajustările pentru depreciere","681 Depreciation and provisions, adjustments for impairment losses - operating expenses",bal_soc_com
+d406_account_bal_soc_com_6811,6811,6811 Cheltuieli de exploatare privind amortizarea imobilizărilor,6811 Depreciation of non current assets,bal_soc_com
+d406_account_bal_soc_com_6812,6812,6812 Cheltuieli de exploatare privind provizioanele,6812 Provisions,bal_soc_com
+d406_account_bal_soc_com_6813,6813,6813 Cheltuieli de exploatare privind ajustările pentru deprecierea imobilizărilor,6813 Impairment losses on non current assets,bal_soc_com
+d406_account_bal_soc_com_6814,6814,6814 Cheltuieli de exploatare privind ajustările pentru deprecierea activelor circulante,6814 Impairment of current assets,bal_soc_com
+d406_account_bal_soc_com_6817,6817,6817 Cheltuieli de exploatare privind ajustările pentru deprecierea fondului comercial,6817 Impairment losses on goodwill,bal_soc_com
+d406_account_bal_soc_com_6818,6818,6818 Cheltuieli de exploatare privind ajustările pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor,6818 Operating expenses on adjustments for impairment of receivables representing advances to suppliers,bal_soc_com
+d406_account_bal_soc_com_686,686,"686 Cheltuieli financiare privind amortizările, provizioanele şi ajustările pentru pierdere de valoare","686 Impairment losses, write down of financial assets and provisions",bal_soc_com
+d406_account_bal_soc_com_6861,6861,6861 Cheltuieli privind actualizarea provizioanelor,6861 Expenses on unwinding of provisions,bal_soc_com
+d406_account_bal_soc_com_6863,6863,6863 Cheltuieli financiare privind ajustările pentru pierderea de valoare a imobilizărilor financiare,6863 Impairment losses on financial non-current assets,bal_soc_com
+d406_account_bal_soc_com_6864,6864,6864 Cheltuieli financiare privind ajustările pentru pierderea de valoare a activelor circulante,6864 Impairment losses on financial current assets,bal_soc_com
+d406_account_bal_soc_com_6865,6865,6865 Cheltuieli financiare privind amortizarea diferenţelor aferente titlurilor de stat,6865 Amortisation of differences on government securities,bal_soc_com
+d406_account_bal_soc_com_6868,6868,6868 Cheltuieli financiare privind amortizarea primelor de rambursare a obligaţiunilor şi a altor datorii,6868 Amortisation of premiums of redemption on debentures and other debts,bal_soc_com
+d406_account_bal_soc_com_69,69,69 Cheltuieli cu impozitul pe profit şi alte impozite,69 Income tax and other taxes,bal_soc_com
+d406_account_bal_soc_com_691,691,691 Cheltuieli cu impozitul pe profit,691 Income tax,bal_soc_com
+d406_account_bal_soc_com_694,694,694 Cheltuieli cu impozitul pe profit rezultat din decontarile in cadrul grupului fiscal in domeniul impozitului pe profit,694 Profit tax expenses resulting from settlements within the fiscal group in the field of profit tax,bal_soc_com
+d406_account_bal_soc_com_695,695,695 Cheltuieli cu impozitul specific unor activităţi,695 Activity-specific tax expenses,bal_soc_com
+d406_account_bal_soc_com_697,697,697 Cheltuieli cu impozitul pe profit la nivelul impozitului minim pe cifra de afaceri,697 Expenses with the profit tax at the level of the minimum turnover tax,bal_soc_com
+d406_account_bal_soc_com_698,698,698 Cheltuieli cu impozitul pe venit şi cu alte impozite care nu apar în elementele de mai sus,698 Other taxes not included above,bal_soc_com
+d406_account_bal_soc_com_7,7,Clasa 7 – Conturi de venituri,Class 7 - Revenue accounts,bal_soc_com
+d406_account_bal_soc_com_70,70,70 Cifra de afaceri netă,70 Net turnover,bal_soc_com
+d406_account_bal_soc_com_701,701,"701 Venituri din vânzarea produselor finite, produselor agricole şi a activelor biologice de natura stocurilor","701 Sales of finished goods, agricultural products and biologicat assets in the form of inventory",bal_soc_com
+d406_account_bal_soc_com_7015,7015,7015 Venituri din vânzarea produselor finite,7015 Sales of finished goods,bal_soc_com
+d406_account_bal_soc_com_7017,7017,7017 Venituri din vânzarea produselor agricole,7017 Sales of agricultural products,bal_soc_com
+d406_account_bal_soc_com_7018,7018,7018 Venituri din vânzarea activelor biologice de natura stocurilor,7018 Sales of biological assets in the form of inventory,bal_soc_com
+d406_account_bal_soc_com_702,702,702 Venituri din vânzarea semifabricatelor,702 Sales of semi-finished goods,bal_soc_com
+d406_account_bal_soc_com_703,703,703 Venituri din vânzarea produselor reziduale,703 Sales of residual products,bal_soc_com
+d406_account_bal_soc_com_704,704,704 Venituri din servicii prestate,704 Services rendered,bal_soc_com
+d406_account_bal_soc_com_705,705,705 Venituri din studii şi cercetări,705 Revenues from research studies,bal_soc_com
+d406_account_bal_soc_com_706,706,"706 Venituri din redevenţe, locaţii de gestiune şi chirii",706 Rental and royalty income,bal_soc_com
+d406_account_bal_soc_com_707,707,707 Venituri din vânzarea mărfurilor,707 Sale of goods purchased for resale,bal_soc_com
+d406_account_bal_soc_com_708,708,708 Venituri din activităţi diverse,708 Revenues from sundry activities,bal_soc_com
+d406_account_bal_soc_com_709,709,709 Reduceri comerciale acordate,709 Trade discounts offered,bal_soc_com
+d406_account_bal_soc_com_71,71,71 Venituri aferente costului de producţie în curs de execuţie,71 Revenues associated to the production cost of the work in progress,bal_soc_com
+d406_account_bal_soc_com_711,711,711 Venituri aferente costurilor stocurilor de produse,711 Revenues associated with the costs of the completed production,bal_soc_com
+d406_account_bal_soc_com_712,712,712 Venituri aferente costurilor serviciilor în curs de execuţie,712 Revenues associated with the cost of services in progress,bal_soc_com
+d406_account_bal_soc_com_72,72,72 Venituri din producţia de imobilizări,72 Own work capitalised,bal_soc_com
+d406_account_bal_soc_com_721,721,721 Venituri din producţia de imobilizări necorporale,721 Capitalised costs of intangible non-current assets,bal_soc_com
+d406_account_bal_soc_com_722,722,722 Venituri din producţia de imobilizări corporale,722 Capitalised costs of tangible non-current assets,bal_soc_com
+d406_account_bal_soc_com_725,725,725 Venituri din producţia de investiţii imobiliare,725 Capitalised costs of investmet property,bal_soc_com
+d406_account_bal_soc_com_74,74,74 Venituri din subvenţii de exploatare,74 Subsidies for operating activities,bal_soc_com
+d406_account_bal_soc_com_741,741,741 Venituri din subvenţii de exploatare,741 Subsidies for operating activities,bal_soc_com
+d406_account_bal_soc_com_7411,7411,7411 Venituri din subvenţii de exploatare aferente cifrei de afaceri20,7411 Subsidies related to the turnover20,bal_soc_com
+d406_account_bal_soc_com_7412,7412,7412 Venituri din subvenţii de exploatare pentru materii prime şi materiale,7412 Subsidies for raw materials and consumables,bal_soc_com
+d406_account_bal_soc_com_7413,7413,7413 Venituri din subvenţii de exploatare pentru alte cheltuieli externe,7413 Subsidies for other external costs,bal_soc_com
+d406_account_bal_soc_com_7414,7414,7414 Venituri din subvenţii de exploatare pentru plata personalului,7414 Subsidies for wages and salaries,bal_soc_com
+d406_account_bal_soc_com_7415,7415,7415 Venituri din subvenţii de exploatare pentru asigurări şi protecţie socială,7415 Subsidies for social security contributions,bal_soc_com
+d406_account_bal_soc_com_7416,7416,7416 Venituri din subvenţii de exploatare pentru alte cheltuieli de exploatare,7416 Subsidies for other operating expenses,bal_soc_com
+d406_account_bal_soc_com_7417,7417,7417 Venituri din subvenţii de exploatare în caz de calamităţi şi alte evenimente similare,7417 Subsidies for natural disasters and other similar events,bal_soc_com
+d406_account_bal_soc_com_7418,7418,7418 Venituri din subvenţii de exploatare pentru dobânda datorată,7418 Subsidies related to interest payable,bal_soc_com
+d406_account_bal_soc_com_7419,7419,7419 Venituri din subvenţii de exploatare aferente altor venituri,7419 Subsidies related to other income,bal_soc_com
+d406_account_bal_soc_com_75,75,75 Alte venituri din exploatare,75 Other operating revenues,bal_soc_com
+d406_account_bal_soc_com_751,751,751 Venituri din operaţiuni de fiducie,751 Revenues from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_7511,7511,7511 Venituri ocazionate de constituirea fiduciei,7511 Revenues arising from setting of the fiduciary agreement,bal_soc_com
+d406_account_bal_soc_com_7512,7512,7512 Venituri din derularea operaţiunilor de fiducie,7512 Revenues from fiduciary operations,bal_soc_com
+d406_account_bal_soc_com_7513,7513,7513 Venituri din lichidarea operaţiunilor de fiducie,7513 Revenues arising from legal fiduciary liquidating operations,bal_soc_com
+d406_account_bal_soc_com_754,754,754 Venituri din creanţe reactivate şi debitori diverşi,754 Bad debts written off and subsequently collected,bal_soc_com
+d406_account_bal_soc_com_755,755,755 Venituri din reevaluarea imobilizărilor corporale,755 Revenues from revaluation of tangible assets,bal_soc_com
+d406_account_bal_soc_com_758,758,758 Alte venituri din exploatare,758 Other operating revenues,bal_soc_com
+d406_account_bal_soc_com_7581,7581,"7581 Venituri din despăgubiri, amenzi şi penalităţi","7581 Compensations, fines and penalties",bal_soc_com
+d406_account_bal_soc_com_7582,7582,7582 Venituri din donaţii primite,7582 Gifts and subsidies received,bal_soc_com
+d406_account_bal_soc_com_7583,7583,7583 Venituri din vânzarea activelor şi alte operaţiuni de capital,7583 Proceeds from disposal of assets and other capital transactions,bal_soc_com
+d406_account_bal_soc_com_7584,7584,7584 Venituri din subvenţii pentru investiţii,7584 Amortisation of investment subsidies,bal_soc_com
+d406_account_bal_soc_com_7586,7586,7586 Venituri reprezentând transferuri cuvenite în baza unor acte normative speciale,7586 Revenues representing due transfers based on special normative acts,bal_soc_com
+d406_account_bal_soc_com_7588,7588,7588 Alte venituri din exploatare,7588 Other operating revenues,bal_soc_com
+d406_account_bal_soc_com_76,76,76 Venituri financiare,76 Financial revenues,bal_soc_com
+d406_account_bal_soc_com_761,761,761 Venituri din imobilizări financiare,761 Revenues from long term financial investments,bal_soc_com
+d406_account_bal_soc_com_7611,7611,7611 Venituri din acţiuni deţinute la entităţile afiliate,7611 Revenues from shares in affiliated entities,bal_soc_com
+d406_account_bal_soc_com_7612,7612,7612 Venituri din acţiuni deţinute la entităţi asociate,7612 Revenues from shares on associated entities,bal_soc_com
+d406_account_bal_soc_com_7613,7613,7613 Venituri din acţiuni deţinute la entităţi controlate în comun,7613 Revenues from shares on jointly controlled entities,bal_soc_com
+d406_account_bal_soc_com_7615,7615,7615 Venituri din alte imobilizări financiare,7615 Revenues from other long term financial assets,bal_soc_com
+d406_account_bal_soc_com_762,762,762 Venituri din investiţii financiare pe termen scurt,762 Revenues from short term financial investments,bal_soc_com
+d406_account_bal_soc_com_764,764,764 Venituri din investiţii financiare cedate,764 Revenues on disposal of financial investments,bal_soc_com
+d406_account_bal_soc_com_7641,7641,7641 Venituri din imobilizări financiare cedate,7641 Revenues on disposal of long term financial investments,bal_soc_com
+d406_account_bal_soc_com_7642,7642,7642 Câştiguri din investiţii pe termen scurt cedate,7642 Gains on disposal of short term financial investments,bal_soc_com
+d406_account_bal_soc_com_765,765,765 Venituri din diferenţe de curs valutar,765 Foreign exchange gains,bal_soc_com
+d406_account_bal_soc_com_7651,7651,7651 Diferenţe favorabile de curs valutar legate de elementele monetare exprimate în valută,7651 Foreign exchange gains related to monetary items denominated in a foreign currency,bal_soc_com
+d406_account_bal_soc_com_7652,7652,7652 Diferenţe favorabile de curs valutar din evaluarea elementelor monetare care fac parte din investiţia netă într-o entitate străină,7652 Foreign exchange gains from measuring of monetary items as part of a net investment in a foreign entity,bal_soc_com
+d406_account_bal_soc_com_766,766,766 Venituri din dobânzi,766 Interest income,bal_soc_com
+d406_account_bal_soc_com_767,767,767 Venituri din sconturi obţinute,767 Discounts received,bal_soc_com
+d406_account_bal_soc_com_768,768,768 Alte venituri financiare,768 Other financial revenues,bal_soc_com
+d406_account_bal_soc_com_78,78,"78 Venituri din provizioane, amortizări şi ajustări pentru depreciere sau pierdere de valoare","78 Write back of provisions, amortization and adjustments for depreciation or impairment losses",bal_soc_com
+d406_account_bal_soc_com_781,781,781 Venituri din provizioane şi ajustări pentru depreciere privind activitatea de exploatare,781 Write back of provisions and adjustments for operating impairment losses,bal_soc_com
+d406_account_bal_soc_com_7812,7812,7812 Venituri din provizioane,7812 Write back of provisions,bal_soc_com
+d406_account_bal_soc_com_7813,7813,7813 Venituri din ajustări pentru deprecierea imobilizărilor,7813 Reversal of impairment losses on non-current assets,bal_soc_com
+d406_account_bal_soc_com_7814,7814,7814 Venituri din ajustări pentru deprecierea activelor circulante,7814 Reversal of write-down of current assets,bal_soc_com
+d406_account_bal_soc_com_7815,7815,7815 Venituri din fondul comercial negativ,7815 Revenues from negative goodwill,bal_soc_com
+d406_account_bal_soc_com_7818,7818,7818 Venituri din ajustări pentru deprecierea creanţelor reprezentând avansuri acordate furnizorilor,7818 Revenue from adjustments for impairment of receivables representing advances to suppliers,bal_soc_com
+d406_account_bal_soc_com_786,786,786 Venituri financiare din amortizări şi ajustări pentru pierdere de valoare,786 Reversal of adjustments for amortization and impairment losses,bal_soc_com
+d406_account_bal_soc_com_7863,7863,7863 Venituri financiare din ajustări pentru pierderea de valoare a imobilizărilor financiare,7863 Reversal of impairment losses on financial non-current assets,bal_soc_com
+d406_account_bal_soc_com_7864,7864,7864 Venituri financiare din ajustări pentru pierderea de valoare a activelor circulante,7864 Reversal of write-down of financial current assets,bal_soc_com
+d406_account_bal_soc_com_7865,7865,7865 Venituri financiare din amortizarea diferenţelor aferente titlurilor de stat,7865 Financial income from amortization of differences related to government securities,bal_soc_com
+d406_account_bal_soc_com_79,79,79 Venituri din impozitul pe profit,79 Income from the profit tax,bal_soc_com
+d406_account_bal_soc_com_794,794,794 Venituri din impozitul pe profit rezultat din decontarile in cadrul grupului fiscal in domeniul impozitului pe profit,794 Income from the profit tax resulting from the settlements within the fiscal group in the field of profit tax,bal_soc_com
+d406_account_bal_soc_com_8,8,Clasa 8 – Conturi speciale,Class 8 - Special accounts,bal_soc_com
+d406_account_bal_soc_com_80,80,80 Conturi în afara bilanţului,80 Off-balance sheet accounts,bal_soc_com
+d406_account_bal_soc_com_801,801,801 Angajamente acordate,801 Commitments,bal_soc_com
+d406_account_bal_soc_com_8011,8011,8011 Giruri şi garanţii acordate,8011 Guarantees and endorsements,bal_soc_com
+d406_account_bal_soc_com_8018,8018,8018 Alte angajamente acordate,8018 Other commitments,bal_soc_com
+d406_account_bal_soc_com_802,802,802 Angajamente primite,802 Commitments received,bal_soc_com
+d406_account_bal_soc_com_8021,8021,8021 Giruri şi garanţii primite,8021 Guarantees and endorsements,bal_soc_com
+d406_account_bal_soc_com_8028,8028,8028 Alte angajamente primite,8028 Other commitments received,bal_soc_com
+d406_account_bal_soc_com_803,803,803 Alte conturi în afara bilanţului,803 Other off-balance sheet accounts,bal_soc_com
+d406_account_bal_soc_com_8031,8031,8031 Imobilizări corporale luate cu chirie,8031 Leased tangible assets,bal_soc_com
+d406_account_bal_soc_com_8032,8032,8032 Valori materiale primite spre prelucrare sau reparare,8032 Assets held for processing or repair,bal_soc_com
+d406_account_bal_soc_com_8033,8033,8033 Valori materiale primite în păstrare sau custodie,8033 Assets held in custody,bal_soc_com
+d406_account_bal_soc_com_8034,8034,"8034 Debitori scoşi din activ, urmăriţi în continuare",8034 Receivables written off but still followed up,bal_soc_com
+d406_account_bal_soc_com_8035,8035,8035 Stocuri de natura obiectelor de inventar date în folosinţă,8035 Inventory under the form of used small inventory,bal_soc_com
+d406_account_bal_soc_com_8036,8036,"8036 Redevenţe, locaţii de gestiune, chirii şi alte datorii asimilate","8036 Royalties, rents and similar debts",bal_soc_com
+d406_account_bal_soc_com_8037,8037,8037 Efecte scontate neajunse la scadenţă,8037 Bills of exchange discounted before maturity,bal_soc_com
+d406_account_bal_soc_com_8038,8038,"8038 Bunuri primite în administrare, concesiune şi cu chirie","8038 Patrimony received for administration, concession and rented",bal_soc_com
+d406_account_bal_soc_com_8039,8039,8039 Alte valori în afara bilanţului,8039 Other off-balance sheet items,bal_soc_com
+d406_account_bal_soc_com_804,804,804 Certificate verzi,804 Green certificates,bal_soc_com
+d406_account_bal_soc_com_805,805,"805 Dobânzi aferente contractelor de leasing şi altor contracte asimilate, neajunse la scadenţă",805 Interest for the leasing and other assimilated contracts not held till maturity,bal_soc_com
+d406_account_bal_soc_com_8051,8051,8051 Dobânzi de plătit,8051 Interest payable,bal_soc_com
+d406_account_bal_soc_com_8052,8052,8052 Dobânzi de încasat,8052 Interest receivable,bal_soc_com
+d406_account_bal_soc_com_806,806,806 Certificate de emisii de gaze cu efect de seră,806 Certificates for green house gases emissions,bal_soc_com
+d406_account_bal_soc_com_807,807,807 Active contingente,807 Contingent assets,bal_soc_com
+d406_account_bal_soc_com_808,808,808 Datorii contingente,808 Contingent liabilities,bal_soc_com
+d406_account_bal_soc_com_809,809,809 Creanţe preluate prin cesionare,809 Assignment of receivables,bal_soc_com
+d406_account_bal_soc_com_89,89,89 Bilanţ,89 Balance sheet,bal_soc_com
+d406_account_bal_soc_com_891,891,891 Bilanţ de deschidere,891 Opening balance sheet,bal_soc_com
+d406_account_bal_soc_com_892,892,892 Bilanţ de închidere,892 Closing balance sheet,bal_soc_com
+d406_account_bal_soc_com_9,9,Clasa 9 – Conturi de gestiune,Class 9 – Management accounts,bal_soc_com
+d406_account_bal_soc_com_90,90,90 Decontări interne,90 Internal transactions,bal_soc_com
+d406_account_bal_soc_com_901,901,901 Decontări interne privind cheltuielile,901 Internal transactions relating to expenses,bal_soc_com
+d406_account_bal_soc_com_902,902,902 Decontări interne privind producţia obţinută,902 Internal transactions related to costs of conversion,bal_soc_com
+d406_account_bal_soc_com_903,903,903 Decontări interne privind diferenţele de preţ,903 Internal transactions relating to price differences,bal_soc_com
+d406_account_bal_soc_com_92,92,92 Conturi de calculaţie,92 Cost accounts,bal_soc_com
+d406_account_bal_soc_com_921,921,921 Cheltuielile activităţii de bază,921 Costs related to the core business,bal_soc_com
+d406_account_bal_soc_com_922,922,922 Cheltuielile activităţilor auxiliare,922 Costs related to auxiliary activities,bal_soc_com
+d406_account_bal_soc_com_923,923,923 Cheltuieli indirecte de producţie,923 Production overheads,bal_soc_com
+d406_account_bal_soc_com_924,924,924 Cheltuieli generale de administraţie,924 Administrative overheads,bal_soc_com
+d406_account_bal_soc_com_925,925,925 Cheltuieli de desfacere,925 Distribution costs,bal_soc_com
+d406_account_bal_soc_com_93,93,93 Costul producţiei,93 Production cost,bal_soc_com
+d406_account_bal_soc_com_931,931,931 Costul producţiei obţinute,931 Cost of output,bal_soc_com
+d406_account_bal_soc_com_933,933,933 Costul producţiei în curs de execuţie,933 Cost of work in progress,bal_soc_com

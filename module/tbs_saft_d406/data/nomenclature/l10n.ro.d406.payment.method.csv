@@ -1,0 +1,6 @@
+id,code,mechanism_code,name,name_en
+d406_payment_method_01,01,10,01 - Numerar,01 - Cash
+d406_payment_method_02,02,27,02 - Compensare,02 - Offset/ Netting
+d406_payment_method_03,03,2,03 - Fără numerar,03 - Non-Cash
+d406_payment_method_98,98,ZZZ,98 - Definit de comun acord,98 - Mutually defined
+d406_payment_method_99,99,1,99 - Instrument nedefinit,99 - Instrument not defined

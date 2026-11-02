@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+ <t t-name="greentech_ro_vat_journals.Journal">
+  <div class="gt-vat-journal">
+   <div t-if="!data" class="alert alert-secondary">Alege perioada și apasă „Actualizează jurnalul”.</div>
+   <t t-else="">
+    <div t-if="data.warnings.length" class="alert alert-warning">
+     <strong>De verificat înainte de utilizarea raportului: <t t-esc="data.warnings.length"/></strong>
+     <details><summary>Vezi observațiile</summary><ul><li t-foreach="data.warnings" t-as="warning" t-key="warning"><t t-esc="warning"/></li></ul></details>
+    </div>
+    <h4>1. Totaluri pe categorii <small>RON</small></h4>
+    <div class="gt-vat-scroll"><table class="table table-sm table-hover gt-vat-summary">
+     <thead><tr><th>Categorie</th><th>Rânduri</th><th t-foreach="columns" t-as="col" t-key="col[0]"><t t-esc="col[1]"/></th></tr></thead>
+     <tbody>
+      <tr t-foreach="data.summary" t-as="row" t-key="row.category"
+          t-att-class="state.category === row.category ? 'table-primary' : ''" t-on-click="() => this.category(row.category)">
+       <td><t t-esc="row.category"/></td><td><t t-esc="row.count"/></td>
+       <td t-foreach="columns" t-as="col" t-key="col[0]" class="gt-num"><t t-esc="number(row[col[0]])"/></td>
+      </tr>
+      <tr class="gt-total" t-on-click="() => this.category('')"><td>TOTAL / toate categoriile</td><td><t t-esc="data.rows.length"/></td>
+       <td t-foreach="columns" t-as="col" t-key="col[0]" class="gt-num"><t t-esc="number(data.totals[col[0]])"/></td>
+      </tr>
+     </tbody>
+    </table></div>
+    <h4>2. Documente <small t-esc="state.category || 'Toate categoriile'"/></h4>
+    <div class="gt-vat-scroll"><table class="table table-sm table-hover gt-vat-documents">
+     <thead><tr><th>Data</th><th>Document / partener</th><th t-foreach="columns" t-as="col" t-key="col[0]"><t t-esc="col[1]"/></th><th>Sursă</th></tr></thead>
+     <tbody><tr t-foreach="rows" t-as="row" t-key="row.id"
+       t-att-class="state.selected === row.id ? 'table-primary' : ''" t-on-click="() => this.state.selected = row.id">
+      <td><t t-esc="row.date"/></td><td><strong t-esc="row.document"/><br/><t t-esc="row.partner"/>
+       <small class="d-block" t-esc="row.vat_number"/><small t-if="row.note" class="text-warning d-block" t-esc="row.note"/></td>
+      <td t-foreach="columns" t-as="col" t-key="col[0]" class="gt-num"><t t-esc="number(row[col[0]])"/></td>
+      <td><button class="btn btn-sm btn-outline-primary" t-on-click.stop="() => this.open(row.move_id)">Deschide</button></td>
+     </tr></tbody>
+    </table></div>
+    <h4>3. Plăți / încasări și compensări</h4>
+    <p t-if="!selected" class="text-muted">Selectează un rând din tabelul de documente.</p>
+    <t t-else="">
+     <p><strong t-esc="selected.document"/> · <t t-esc="selected.partner"/></p>
+     <p t-if="!selected.cash_basis" class="text-muted">TVA la factură: exigibilitatea nu depinde de plata documentului.</p>
+     <p t-elif="!selected.payments.length" class="text-muted">Nicio decontare până la sfârșitul perioadei.</p>
+     <table t-else="" class="table table-sm gt-vat-payments">
+      <thead><tr><th>Data</th><th>Document</th><th>Tip</th><th>Sumă decontată document (RON)</th><th>În perioada selectată</th><th/></tr></thead>
+      <tbody><tr t-foreach="selected.payments" t-as="payment" t-key="payment.partial_id">
+       <td t-esc="payment.date"/><td t-esc="payment.document"/><td t-esc="payment.kind"/>
+       <td class="gt-num" t-esc="number(payment.amount)"/><td t-esc="payment.in_period ? 'Da' : 'Anterior perioadei'"/>
+       <td><button class="btn btn-sm btn-outline-primary" t-on-click="() => this.open(payment.move_id)">Deschide</button></td>
+      </tr></tbody>
+     </table>
+    </t>
+    <p class="text-muted">Documentele sunt defalcate pe taxe; o factură poate apărea pe mai multe rânduri.
+     Soldurile sunt calculate la sfârșitul perioadei. Note excluse explicit: <t t-esc="data.excluded_notes"/>.</p>
+   </t>
+  </div>
+ </t>
+</templates>

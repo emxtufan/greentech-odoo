@@ -1,0 +1,8 @@
+<odoo>
+  <record id="batch_company_rule" model="ir.rule"><field name="name">SAGA: acces la firma importului</field><field name="model_id" ref="model_saga_import_batch"/><field name="domain_force">['|', ('owner_company_id','in',company_ids), ('company_id','in',company_ids)]</field></record>
+  <record id="document_company_rule" model="ir.rule"><field name="name">SAGA: documente pe firmă</field><field name="model_id" ref="model_saga_document"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+  <record id="line_company_rule" model="ir.rule"><field name="name">SAGA: linii pe firmă</field><field name="model_id" ref="model_saga_document_line"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+  <record id="asset_company_rule" model="ir.rule"><field name="name">SAGA: imobilizări pe firmă</field><field name="model_id" ref="model_saga_asset_history"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+  <record id="payroll_company_rule" model="ir.rule"><field name="name">SAGA: salarii pe firmă</field><field name="model_id" ref="model_saga_payroll_history"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+  <record id="source_company_rule" model="ir.rule"><field name="name">SAGA: arhivă pe firmă</field><field name="model_id" ref="model_saga_source_row"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+</odoo>

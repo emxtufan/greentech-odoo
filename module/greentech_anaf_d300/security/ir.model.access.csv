@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+declaration_user,D300 contabil,model_gt_anaf_d300,account.group_account_user,1,1,1,1
+mapping_read,D300 incadrari citire,model_gt_d300_mapping,account.group_account_user,1,0,0,0
+mapping_manager,D300 incadrari configurare,model_gt_d300_mapping,account.group_account_manager,1,1,1,1
+adjustment_user,D300 regularizari,model_gt_d300_adjustment,account.group_account_user,1,1,1,1
+info_user,D300 informatii,model_gt_d300_info,account.group_account_user,1,1,1,1

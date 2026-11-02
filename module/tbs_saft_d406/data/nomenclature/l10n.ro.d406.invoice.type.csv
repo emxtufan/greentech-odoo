@@ -1,0 +1,44 @@
+id,code,name,name_en,en16931_type
+d406_invoice_type_130,130,Fișa tehnică de facturare,Invoicing data sheet,Invoice
+d406_invoice_type_202,202,Evaluarea plăților directe,Direct payment valuation,Invoice
+d406_invoice_type_203,203,Evaluarea plăților provizorii,Provisional payment valuation,Invoice
+d406_invoice_type_204,204,Evaluarea plății,Payment valuation,Invoice
+d406_invoice_type_211,211,Cerere intermediară de plată,Interim application for payment,Invoice
+d406_invoice_type_261,261,Notă de credit - Autofacturare,Self billed credit note,Credit Note
+d406_invoice_type_262,262,Notă de credit consolidată – bunuri și servicii,Consolidated credit note - goods and services,Credit Note
+d406_invoice_type_295,295,Factura de variație a prețurilor,Price variation invoice,Invoice
+d406_invoice_type_296,296,Notă de credit pentru variația prețurilor,Credit note for price variation,Credit Note
+d406_invoice_type_308,308,Notă de credit delcredere,Delcredere credit note,Credit Note
+d406_invoice_type_325,325,Factură proformă,Proforma invoice,Invoice
+d406_invoice_type_326,326,Factură parțială,Partial invoice,Invoice
+d406_invoice_type_380,380,Factură,Commercial invoice,Invoice
+d406_invoice_type_381,381,Notă de credit,Credit note,Credit Note
+d406_invoice_type_383,383,Notă de debit,Debit note,Invoice
+d406_invoice_type_384,384,Factura corectată,Corrected invoice,Invoice
+d406_invoice_type_385,385,Factura consolidată,Consolidated invoice,Invoice
+d406_invoice_type_386,386,Factura de plată în avans,Prepayment invoice,Invoice
+d406_invoice_type_387,387,Factura de închiriere,Hire invoice,Invoice
+d406_invoice_type_388,388,Factura fiscală,Tax/ Fiscal invoice,Invoice
+d406_invoice_type_389,389,Autofactură,Self-billed invoice,Invoice
+d406_invoice_type_390,390,Factura delcredere,Delcredere invoice,Invoice
+d406_invoice_type_393,393,Factură ”factored”,Factored invoice,Invoice
+d406_invoice_type_394,394,Factura de leasing,Lease invoice,Invoice
+d406_invoice_type_395,395,Factura de transport,Consignment invoice,Invoice
+d406_invoice_type_396,396,Notă de credit factored,Factored credit note,Credit Note
+d406_invoice_type_420,420,Notă de plată de citire optică a caracterelor (OCR),Optical Character Reading (OCR) payment credit note,Credit Note
+d406_invoice_type_456,456,Consultanță de debitare,Debit advice,Invoice
+d406_invoice_type_457,457,Reversare notă de debit,Reversal of debit,Invoice
+d406_invoice_type_458,458,Reversare notă de credit,Reversal of credit,Credit Note
+d406_invoice_type_527,527,Notă de debit - Autofacturare,Self billed debit note,Invoice
+d406_invoice_type_532,532,Nota de credit a expeditorului,Forwarder's credit note,Credit Note
+d406_invoice_type_575,575,Factura asigurătorului,Insurer's invoice,Invoice
+d406_invoice_type_623,623,Factura expeditorului,Forwarder's invoice,Invoice
+d406_invoice_type_633,633,Documente privind taxele portuare,Port charges documents,Invoice
+d406_invoice_type_751,751,Factură - informații în scopuri contabile,Invoice information for accounting purposes,Invoice
+d406_invoice_type_780,780,Factura de transport de marfă,Freight invoice,Invoice
+d406_invoice_type_80,80,Notă de debit referitoare la bunuri sau servicii,Debit note related to goods or services,Invoice
+d406_invoice_type_81,81,Notă de credit pentru bunuri sau servicii,Credit note related to goods or services,Credit Note
+d406_invoice_type_82,82,Factura pentru servicii contorizate,Metered services invoice,Invoice
+d406_invoice_type_83,83,Notă de credit aferentă ajustărilor financiare,Credit note related to financial adjustments,Credit Note
+d406_invoice_type_84,84,Notă de debit aferentă ajustărilor financiare,Debit note related to financial adjustments,Invoice
+d406_invoice_type_935,935,Factură pentru scopuri vamale,Customs invoice,Invoice

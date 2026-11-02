@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_greentech_equipment_list" model="ir.ui.view">
+        <field name="name">greentech.equipment.list</field>
+        <field name="model">greentech.equipment</field>
+        <field name="arch" type="xml">
+            <list string="Echipamente GreenTech">
+                <field name="name"/>
+                <field name="serial_number"/>
+                <field name="status"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_greentech_equipment_form" model="ir.ui.view">
+        <field name="name">greentech.equipment.form</field>
+        <field name="model">greentech.equipment</field>
+        <field name="arch" type="xml">
+            <form string="Echipament GreenTech">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="serial_number"/>
+                        <field name="status"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_greentech_equipment" model="ir.actions.act_window">
+        <field name="name">Echipamente</field>
+        <field name="res_model">greentech.equipment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_greentech_root" name="GreenTech" sequence="15"/>
+    <menuitem id="menu_greentech_equipment" name="Echipamente"
+              parent="menu_greentech_root" action="action_greentech_equipment" sequence="10"/>
+</odoo>

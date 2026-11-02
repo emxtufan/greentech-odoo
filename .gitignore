@@ -1,0 +1,34 @@
+# secrete si date locale (NU in git)
+motor/config/*.conf
+motor/config/*.before-*
+motor/config/acces-*.json
+motor/deploy/financiar/runtime/
+*.dump
+*.backup
+*.sql
+*.sql.gz
+*.FDB
+*.fdb
+.mcp.json
+# motor local, mare sau generat (NU in git)
+.venv/
+motor/odoo/
+motor/data/
+motor/data-runtime/
+motor/logs/
+motor/tools/
+motor/output/
+motor/tmp/
+motor/custom_addons/
+tmp/
+__pycache__/
+*.pyc
+# boss-worker
+.ai/worker-log.jsonl
+.ai/worker-live.log
+.ai/worker-watch.pid
+.ai/summaries-cache.json
+.ai/CODEMAP.md
+.ai/codemap.json
+.claude
+.codex

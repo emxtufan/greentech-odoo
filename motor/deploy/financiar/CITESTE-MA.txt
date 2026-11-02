@@ -1,0 +1,146 @@
+GreenTech Financiar - transferul demonstratiei existente
+Destinatie: contabilitate.greentechpro.ro, 167.233.202.96
+
+Acest pachet contine exclusiv baza greentech_financiar_test, atasamentele
+referite de ea, sursa Odoo folosita local si cele 91 de module instalate.
+Include facturile, contabilitatea, rapoartele, inchiderile, salariile si diurnele.
+NU contine bazele EMI/greentech_flux_test, modulul construction_erp, mediul
+Windows .venv, sesiunile web sau fisierele locale cu parole in clar.
+Dump-ul contine datele bazei si hash-urile conturilor: pastrati arhiva privata.
+Salariile/diurnele sunt DEMO; D112 ramane centralizator, fara depunere ANAF.
+
+Izolare si limite
+----------------
+- Proiect Docker Compose: greentech-financiar, director /opt/greentech-financiar.
+- PostgreSQL 18 propriu, cu volum propriu; niciun port PostgreSQL publicat.
+- Odoo: 127.0.0.1:8070; nu se publica portul pe IP-ul public.
+- Retea Docker proprie interna, fara acces extern pentru integrari automate.
+- Limite runtime: Odoo 3 GiB / 2 CPU, PostgreSQL 1 GiB / 1 CPU.
+- Copia de pe server este independenta, nu se sincronizeaza cu localhost.
+- Nicio comanda de restart/stop pentru Node, PM2 sau site-urile existente.
+- Nginx primeste DOAR fisierul nou greentech-financiar.conf; activarea se face
+  prin reload, numai dupa nginx -t. Totusi Nginx si resursele serverului sunt
+  comune: verificati cele trei site-uri inainte si dupa activare.
+- Imaginile de baza odoo:19.0 si postgres:18-bookworm sunt preluate la build.
+  Sursa aplicatiei este copia locala, nu sursa Odoo din imagine. Pastrati ID-urile
+  imaginilor construite; nu rulati un pull/build ulterior fara backup/verificare.
+
+PASUL 1 - incarcare si verificare, fara pornirea vreunui serviciu
+-------------------------------------------------------------
+In Bitvise, New SFTP window: incarcati arhiva .tar.gz si fisierul .sha256
+in /root. Nu le puneti in directoarele publice ale site-urilor.
+In terminalul serverului:
+
+  cd /root
+  sha256sum -c greentech-financiar-server.tar.gz.sha256
+  test ! -e /opt/greentech-financiar && tar -xzf greentech-financiar-server.tar.gz -C /opt
+  cd /opt/greentech-financiar
+  chmod 700 /opt/greentech-financiar
+  python3 prepare_server.py
+
+OPRITI la orice eroare. Nu extrageti peste o instalare existenta.
+prepare_server.py verifica SHA256, verifica portul 8070 si genereaza parole NOI
+numai pe server. Refuza sa suprascrie runtime/. Nu instaleaza/porneste nimic.
+
+PASUL 2 - Docker Engine si Compose
+---------------------------------
+Serverul nu avea Docker la verificarea initiala. Instalarea Docker este separata
+de pachet si se face dupa verificarea pachetelor/containerd/firewall existente,
+conform documentatiei oficiale pentru Ubuntu 26.04:
+https://docs.docker.com/engine/install/ubuntu/
+Nu executati apt upgrade, nu dezinstalati servicii sau pachete existente in bloc.
+Verificati disponibilitatea comenzilor docker si docker compose inainte de pasul 3.
+Pachetul nu instaleaza Docker automat si nu modifica firewall-ul.
+
+PASUL 3 - build, restaurare o singura data, pornire privata
+---------------------------------------------------------
+  cd /opt/greentech-financiar
+  docker compose config --quiet
+  docker compose --profile app build odoo
+  docker compose up -d --wait db
+  docker compose --profile setup run --rm restore
+
+Continuati NUMAI daca apare RESTORE_OK si comanda iese cu succes.
+Restaurarea refuza orice baza/rol preexistent in containerul nou: nu sterge si
+nu suprascrie baze. La intrerupere, inspectati eroarea, nu reluati automat.
+Compara modulele, documentele, totalurile contabile, salariile, diurnele,
+angajatii, rapoartele si numarul atasamentelor cu snapshot-ul local.
+Schimba numai in copia restaurata parola admin, UUID-ul si URL-ul de baza.
+Pastreaza dezactivate cron, emailurile si platile externe.
+
+  docker compose --profile app up -d --wait odoo
+  docker compose --profile app ps
+  curl --fail --silent --output /dev/null --write-out '%{http_code}\n' http://127.0.0.1:8070/web/login
+  docker image inspect greentech-financiar:local-snapshot postgres:18-bookworm --format '{{.Id}}' > runtime/image-ids.txt
+
+La esec consultati docker compose --profile app logs --tail=100 odoo.
+Pornirea pe server necesita verificare reala; nu este validata doar prin
+verificarea arhivei pe Windows.
+
+PASUL 4 - DNS si HTTPS (dupa verificarea privata)
+-----------------------------------------------
+Creati in panoul DNS o singura inregistrare:
+  Tip A | Nume contabilitate | Valoare 167.233.202.96
+in zona greentechpro.ro. Nu modificati @, www sau celelalte domenii.
+Nu adaugati AAAA fara verificarea adresei IPv6 si rutarii serverului.
+
+Inainte de activare, verificati DNS-ul si raspunsurile site-urilor existente:
+  getent ahostsv4 contabilitate.greentechpro.ro
+  curl -I https://greentechcharity.ro
+  curl -I https://greentechpro.app
+  curl -I https://greentechpro.ro
+  curl -I https://greentechrealestate.ro
+  nginx -t
+
+Faceti un backup al /etc/nginx intr-un director privat. Pasii de mai jos sunt
+pentru o gazda unde /etc/nginx/sites-enabled/* este inclus in nginx.conf.
+Confirmati includerea cu nginx -T si ca noul nume de fisier/domeniu nu exista.
+
+  install -d -m 755 /var/www/greentech-financiar-acme
+  test ! -e /etc/nginx/sites-available/greentech-financiar.conf && install -m 644 nginx-http.conf /etc/nginx/sites-available/greentech-financiar.conf
+  test ! -e /etc/nginx/sites-enabled/greentech-financiar.conf && ln -s /etc/nginx/sites-available/greentech-financiar.conf /etc/nginx/sites-enabled/greentech-financiar.conf
+  nginx -t && systemctl reload nginx
+
+HTTP este intentionat 404 pentru aplicatie; serveste numai validarea ACME.
+Verificati ca certbot exista; daca nu exista, instalati-l separat dupa analiza
+pachetelor. Cereti certificatul folosind webroot (fara pluginul --nginx care
+ar modifica automat configuratii). Comanda va cere emailul si acordul ACME:
+
+  certbot certonly --webroot -w /var/www/greentech-financiar-acme -d contabilitate.greentechpro.ro
+
+Numai dupa obtinerea certificatului:
+  test -s /etc/letsencrypt/live/contabilitate.greentechpro.ro/fullchain.pem && install -m 644 nginx-https.conf /etc/nginx/sites-available/greentech-financiar.conf
+  nginx -t && systemctl reload nginx
+
+Configurati/verificati timerul Certbot si hook-ul de reload Nginx dupa renew;
+nu suprascrieti setarile existente. Testati reinnoirea pentru noul certificat.
+Repetati verificarile celor patru domenii de mai sus si testati noua adresa:
+  curl -I https://contabilitate.greentechpro.ro/web/login
+
+PASUL 5 - acces si verificare functionala
+---------------------------------------
+Login administrator: admin
+Parola NOUA: fisierul privat /opt/greentech-financiar/runtime/admin-password.
+Parola locala veche nu este parola copiei de pe server.
+Nu trimiteti arhiva sau parola administratorului contabilului. Creati un cont
+propriu pentru contabil dupa stabilirea drepturilor (consultare sau operare).
+Testati autentificare, facturi, cele trei rapoarte DEMO, salarii si diurne,
+exportul Excel si rapoartele HTML/PDF. Verificati logurile pentru erori.
+Nu generati din nou scenariul DEMO: datele sunt deja restaurate.
+
+Oprire/revenire
+--------------
+Opriti numai instanta noua, din /opt/greentech-financiar:
+  docker compose --profile app stop odoo db
+Volumele si datele raman. Nu folositi down -v, prune sau opriri globale.
+Pentru retragerea domeniului nou, eliminati numai legatura greentech-financiar
+creata mai sus, apoi nginx -t si reload. Nu modificati celelalte vhost-uri.
+Planificati backup DB + filestore impreuna inainte de orice operare reala.
+
+Stare la livrare
+---------------
+Pachet pregatit si integritate verificata local. Nu a fost incarcat/instalat
+automat pe server: executia SSH din mediul agentului este restrictionata.
+Docker build, restaurarea in Linux, HTTPS si testarea browserului pe server
+trebuie finalizate si verificate dupa transfer. Demo nu devine salarizare
+fiscala de productie prin simpla publicare.

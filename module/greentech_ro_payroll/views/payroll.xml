@@ -1,0 +1,140 @@
+<odoo>
+    <record id="employee_anaf_form" model="ir.ui.view">
+        <field name="name">hr.employee.anaf.profile</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="ro_d112" string="ANAF / salarizare" groups="greentech_ro_payroll.group_payroll">
+                    <div class="alert alert-info" role="status">CNP-ul și data nașterii se preiau din datele personale. Salariul și norma se preiau din versiunea contractului aferentă lunii. Completați aici încadrarea fiscală pe baza documentelor angajatului.</div>
+                    <group>
+                        <group string="Fișe administrative">
+                            <field name="ro_d112_non_payroll"/>
+                            <field name="ro_d112_exclusion_reason" invisible="not ro_d112_non_payroll" required="ro_d112_non_payroll"/>
+                        </group>
+                        <group string="Identificare în declarație">
+                            <field name="ro_d112_last_name"/>
+                            <field name="ro_d112_first_name"/>
+                            <field name="ro_d112_house"/>
+                            <field name="ro_d112_profile"/>
+                            <field name="ro_d112_role"/>
+                        </group>
+                        <group string="Deduceri și facilitate salariu minim">
+                            <field name="ro_d112_dependents"/>
+                            <field name="ro_d112_children"/>
+                            <field name="ro_d112_minimum"/>
+                        </group>
+                    </group>
+                    <p>Profilul normal acoperă un CIM cu 8 ore/zi, 40 ore/săptămână, luna integral lucrată, fără beneficii, diurne, ore suplimentare, alte deduceri, scutiri sau condiții speciale. Copiii și persoanele în întreținere se declară numai cu documentele justificative necesare.</p>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="payroll_list" model="ir.ui.view">
+        <field name="name">gt.ro.payroll.period.list</field>
+        <field name="model">gt.ro.payroll.period</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/><field name="company_id"/><field name="gross"/>
+                <field name="net"/><field name="due"/><field name="state" widget="badge"/>
+                <field name="currency_id" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+    <record id="payroll_form" model="ir.ui.view">
+        <field name="name">gt.ro.payroll.period.form</field>
+        <field name="model">gt.ro.payroll.period</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_load_employees" string="Preia angajați și contracte" type="object" invisible="state != 'draft'"/>
+                    <button name="action_compute" string="Calculează salariile" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_generate_d112" string="Generează D112" type="object" class="btn-primary" invisible="state == 'draft'"/>
+                    <button name="action_reset" string="Redeschide pentru corecții" type="object" invisible="state == 'draft'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <div class="alert alert-info" role="status">
+                        Generare din datele Odoo: contracte → pontaj confirmat → calcul salarial → D112.
+                        Profil disponibil: 07–10/2026, CIM normal cu normă întreagă și luna integral lucrată.
+                        Declarația generată necesită validarea oficială ANAF; nu se postează note contabile și nu se transmite automat.
+                    </div>
+                    <group readonly="state != 'draft'">
+                        <group string="Firmă și perioadă">
+                            <field name="company_id" options="{'no_create': True}"/>
+                            <field name="year" options="{'enable_formatting': False}"/>
+                            <field name="month"/><field name="caen"/><field name="house"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                        <group string="Semnatar">
+                            <field name="signer_last"/><field name="signer_first"/><field name="signer_position"/>
+                            <field name="scope_confirmed"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Salariați și pontaj">
+                            <p>Introduceți zilele efectiv lucrate și primele din documentele lunii. Deschideți „Fișa ANAF” pentru datele personale și profilul fiscal. Bifa de confirmare nu completează pontajul.</p>
+                            <field name="line_ids" readonly="state != 'draft'">
+                                <list editable="bottom">
+                                    <field name="company_id" column_invisible="1"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="employee_id" domain="[('company_id', '=', parent.company_id)]" options="{'no_create': True}"/>
+                                    <button name="action_employee" type="object" string="Fișa ANAF" icon="fa-user"/>
+                                    <field name="worked_days"/><field name="bonus"/><field name="confirmed"/>
+                                    <field name="gross" sum="Brut"/><field name="exemption" optional="hide"/>
+                                    <field name="cas" sum="CAS"/><field name="cass" sum="CASS"/>
+                                    <field name="deduction" optional="show"/><field name="tax" sum="Impozit"/>
+                                    <field name="net" sum="Net"/>
+                                </list>
+                            </field>
+                            <group string="Total stat">
+                                <group><field name="gross"/><field name="net"/><field name="cost"/></group>
+                                <group><field name="cas"/><field name="cass"/><field name="tax"/><field name="cam"/><field name="due"/></group>
+                            </group>
+                        </page>
+                        <page string="Verificări">
+                            <field name="calculation_log" nolabel="1"/>
+                            <group><field name="calculated_at"/><field name="input_hash"/></group>
+                        </page>
+                        <page string="Declarații generate">
+                            <field name="declaration_ids" readonly="1">
+                                <list create="0" delete="0">
+                                    <field name="name"/><field name="state"/><field name="payroll_stale"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_payroll" model="ir.actions.act_window">
+        <field name="name">State salariale</field>
+        <field name="res_model">gt.ro.payroll.period</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Generează D112 din salariile firmei tale</p>
+            <p>Creează statul lunii, preia contractele din Odoo, completează pontajul și verifică profilurile fiscale. Calculează salariile, apoi generează declarația.</p>
+        </field>
+    </record>
+    <menuitem id="menu_payroll" name="State salariale" parent="greentech_anaf_d112.menu_anaf_root" action="action_payroll" sequence="0" groups="group_payroll"/>
+    <record id="d112_native_form" model="ir.ui.view">
+        <field name="name">gt.anaf.d112.native</field>
+        <field name="model">gt.anaf.d112</field>
+        <field name="inherit_id" ref="greentech_anaf_d112.view_d112_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='revision']" position="after">
+                <field name="payroll_period_id" invisible="not payroll_period_id"/>
+                <field name="payroll_stale" invisible="not payroll_period_id"/>
+            </xpath>
+            <xpath expr="//field[@name='payload']" position="attributes">
+                <attribute name="readonly">payroll_period_id or receipt or filing_index</attribute>
+            </xpath>
+            <xpath expr="//page[@name='files']/group" position="inside">
+                <field name="work_filename" invisible="1"/>
+                <field name="work_xml" filename="work_filename"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

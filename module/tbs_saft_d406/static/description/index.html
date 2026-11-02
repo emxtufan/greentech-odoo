@@ -1,0 +1,246 @@
+<div class="container-fluid px-0 mb-4">
+  <img src="banner.png" class="img-fluid w-100" alt="Romania SAF-T D406 banner">
+<div class="text-center mt-3 mb-4"><span class="badge badge-pill badge-dark" style="padding:8px 14px; margin-right:6px">Odoo 19</span><span class="badge badge-pill badge-secondary" style="padding:8px 14px; margin-right:6px">Community</span><span class="badge badge-pill badge-secondary" style="padding:8px 14px; margin-right:6px">Enterprise</span><span class="badge badge-pill badge-success" style="padding:8px 14px">Free &#8212; LGPL-3</span></div>
+<div class="text-center mb-4">
+  <a href="#tbs-features" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Features</a>
+  <a href="#tbs-scope" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Scope</a>
+  <a href="#tbs-how" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">How it works</a>
+  <a href="#tbs-req" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Requirements</a>
+  <a href="#tbs-faq" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">FAQ</a>
+  <a href="#tbs-support" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Support</a>
+</div>
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1 text-center mb-5">
+      <h1 class="font-weight-bold">Romania SAF-T D406</h1>
+      <p class="lead text-muted">Generates Romania's <strong>D406 SAF-T</strong> declaration straight from your Odoo accounting data &#8212; on <strong>Odoo Community</strong>, with no <em>account_reports</em> and no Enterprise subscription. Every generated file is checked against ANAF's official XSD, and the output is built to pass <strong>DUKIntegrator</strong>, the validator a real submission goes through. Free and LGPL-3.</p>
+    </div>
+  </div>
+
+  <div class="row text-center mb-5">
+    <div class="col-md-4 mb-4 mb-md-0">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">Native on Community</h5>
+        <p class="text-muted mb-0">The ledger aggregation is written directly in SQL against your journal items. It does not borrow the Enterprise General Ledger report, so nothing here depends on Enterprise.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 mb-md-0">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">Checked against the real validator</h5>
+        <p class="text-muted mb-0">Built and verified against the official ANAF DUKIntegrator, not only against the schema &#8212; including four points where the schema and the validator contradict each other.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">Free, and free to build on</h5>
+        <p class="text-muted mb-0">Licensed LGPL-3: you can use it, extend it and depend on it from your own modules, including proprietary ones. No per-declaration fee, no vendor account.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-features">
+    <h2 class="mb-0">What it does</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Periodic declarations</h5>
+          <p class="card-text text-muted">Produces the periodic SAF-T declarations &#8212; <strong>L</strong> and <strong>T</strong>, plus their <strong>NL</strong> / <strong>NT</strong> non-resident variants &#8212; for any period you choose, from an export wizard.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Official ANAF nomenclatures</h5>
+          <p class="card-text text-muted">Six ANAF nomenclatures (4,182 rows) generated from ANAF's own published workbook &#8212; accounts, tax types, tax codes, invoice types, payment methods and units of measure &#8212; including the <strong>21% / 11% VAT rates</strong> in force from 2025-08-01.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Chart mapping with override</h5>
+          <p class="card-text text-muted">Each account resolves to its ANAF statutory code automatically, following the resolution rules the official validator applies. Anything that cannot resolve is surfaced up front, and you can set a code by hand per account.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Romanian trial-balance semantics</h5>
+          <p class="card-text text-muted">Opening and closing balances follow Romanian practice: profit-and-loss accounts restart at the fiscal year, balance-sheet accounts carry forward. Accounts with no balance and no movement are left out instead of padding the file.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Validation before you submit</h5>
+          <p class="card-text text-muted">Every export is validated against the official ANAF XSD shipped with the module, with the offending element named when it fails. If you also run DUKIntegrator locally, the module hands the file to it as well.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Fails loudly, not silently</h5>
+          <p class="card-text text-muted">When a mandatory value is missing, the export stops and names the record and the element, instead of writing a file that comes back from ANAF as an unexplained rejection days later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-scope">
+    <h2 class="mb-0">What it does not do yet</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="alert alert-warning">
+        <p class="mb-2">This module produces the <strong>periodic declarations only: L, T, NL and NT</strong>. Please read this before you buy into it as your complete SAF-T solution &#8212; it is deliberately narrower than the full D406 surface.</p>
+        <p class="mb-2"><strong>Declaration A (annual, fixed assets)</strong> and <strong>declaration C (on demand, stock)</strong> are <strong>not produced yet</strong>. They need fixed-asset and stock-valuation data that Odoo Community does not provide on its own. Rather than emit an incomplete file that ANAF would reject, the generator refuses those declaration types outright and tells you why.</p>
+        <p class="mb-0">Both are planned, and nothing in the module's architecture blocks them &#8212; but today, if you need A or C, this module does not cover you.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-how">
+    <h2 class="mb-0">How it works</h2>
+  </div>
+  <div class="row mb-5 text-center">
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">1</div>
+      <p class="mb-0"><strong>Install</strong><br><span class="text-muted">Needs the Romanian chart of accounts (l10n_ro) loaded on the company.</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">2</div>
+      <p class="mb-0"><strong>Check the mapping</strong><br><span class="text-muted">Review the ANAF code on each account; override the few that cannot resolve on their own.</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">3</div>
+      <p class="mb-0"><strong>Export</strong><br><span class="text-muted">Pick the declaration type and the period in the export wizard.</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">4</div>
+      <p class="mb-0"><strong>Validate and submit</strong><br><span class="text-muted">The XML is checked against the ANAF schema; download it and file it.</span></p>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;">
+    <h2 class="mb-0">Where the schema and the validator disagree</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <p class="text-muted">ANAF's published XSD and ANAF's own DUKIntegrator validator contradict each other in four places. A file that satisfies the schema is rejected by the validator, and the validator is what decides whether your declaration is accepted. The module resolves each case in the validator's favour, then swaps the namespace in memory so it can still run the full schema check on every export &#8212; you get both.</p>
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered">
+          <thead><tr><th>Point</th><th>The XSD says</th><th>DUKIntegrator says</th></tr></thead>
+          <tbody>
+            <tr><td>Root namespace</td><td><code>...d406t:declaratie:v1</code></td><td>Rejects it; requires <code>...d406:...</code> without the <code>t</code></td></tr>
+            <tr><td><code>Owners/Owner</code></td><td>0 to unbounded</td><td>Exactly 0 in a periodic declaration</td></tr>
+            <tr><td><code>Payments/Payment</code></td><td>0 to unbounded</td><td>At least 1 required</td></tr>
+            <tr><td><code>MasterFiles/Assets</code></td><td>Mandatory container</td><td>Must be present, and empty</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;">
+    <h2 class="mb-0">External services</h2>
+  </div>
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="alert alert-info">
+        <h4 class="alert-heading">Nothing leaves your server</h4>
+        <p class="mb-2">This module makes <strong>no outbound network calls</strong>. It reads your accounting data, builds the XML and validates it against the ANAF schema bundled inside the module &#8212; all locally. Your accounting data is never sent to TBS, to ANAF, or to any third party by this module. Filing the declaration stays a step you perform yourself.</p>
+        <p class="mb-0"><strong>DUKIntegrator is optional.</strong> If you install ANAF's own DUKIntegrator tool (a Java program ANAF distributes, not included here) on the same server, the module can additionally hand it the generated file for a full business-rule check. That runs as a <strong>local subprocess</strong> on your machine &#8212; still no network call, still nothing sent anywhere. Without it, you simply lose that extra check; the export itself works fine.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-req">
+    <h2 class="mb-0">Requirements</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <tbody>
+            <tr><th style="width:30%">Odoo</th><td>19.0 &#8212; <strong>Community</strong> or Enterprise</td></tr>
+            <tr><th>Depends on</th><td><code>account</code>, <code>l10n_ro</code> &#8212; both core Odoo. No Enterprise modules, no OCA modules, no extra Python packages.</td></tr>
+            <tr><th>Accounting</th><td>The <strong>Romanian chart of accounts</strong> must be loaded on the company, and your journal entries posted for the period.</td></tr>
+            <tr><th>Optional</th><td>A Java runtime plus ANAF's <strong>DUKIntegrator</strong>, if you want the business-rule check to run locally too.</td></tr>
+            <tr><th>License</th><td>LGPL-3 &#8212; free, and safe to depend on from proprietary modules.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-faq">
+    <h2 class="mb-0">Frequently asked questions</h2>
+  </div>
+  <div class="mb-5">
+    <details class="mb-3">
+      <summary class="font-weight-bold">Does this need Odoo Enterprise?</summary>
+      <p class="text-muted mt-2 mb-0">No. Odoo's own SAF-T support is built on the Enterprise <em>account_reports</em> General Ledger, which Community does not have. This module aggregates the ledger itself, in SQL, and depends only on <code>account</code> and <code>l10n_ro</code>. It installs and runs on Community, and works on Enterprise too.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Can I file the A (annual) or C (on-demand) declaration with it?</summary>
+      <p class="text-muted mt-2 mb-0">Not yet &#8212; see "What it does not do yet" above. Those need fixed-asset and stock data Community does not supply, and the generator refuses them explicitly rather than producing an incomplete file. Only L, T, NL and NT are produced today.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Is the generated file actually accepted?</summary>
+      <p class="text-muted mt-2 mb-0">Files generated from our test data validate against the official ANAF XSD and pass the real DUKIntegrator with zero errors. That said, your chart of accounts and your data are your own: run the export on your period, check the totals against your balance sheet with your accountant, and validate with DUKIntegrator before you file. We make no claim about a submission we have not seen.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Do I need DUKIntegrator for this to work?</summary>
+      <p class="text-muted mt-2 mb-0">No. The module generates and schema-validates on its own. DUKIntegrator is an optional extra check, run locally if you have it installed. ANAF distributes it; it is not bundled with this module.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Is any of my accounting data sent anywhere?</summary>
+      <p class="text-muted mt-2 mb-0">No. The module performs no outbound network calls at all. Everything &#8212; generation, schema validation and the optional DUKIntegrator run &#8212; happens on your own server.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">What if an account will not map to an ANAF code?</summary>
+      <p class="text-muted mt-2 mb-0">You get told before the export, not after ANAF rejects it, and you set the code by hand on the account. This is worth knowing about: Odoo core itself creates two technical accounts with a <code>999</code> prefix (Cash Difference Gain and Loss) and ANAF has no <code>999</code> class, so nearly every Romanian Odoo database has at least those two to override.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">It is free &#8212; what is the catch?</summary>
+      <p class="text-muted mt-2 mb-0">There is none. It is LGPL-3, so you can use, modify and build on it, and we offer paid help only if you want it (installation, custom features). We build Odoo modules for Romanian companies for a living; this one is published free.</p>
+    </details>
+  </div>
+
+</div>
+
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="alert alert-secondary" role="note" id="tbs-support">
+        <h4 class="mb-2">Need help? We install it with you</h4>
+        <p class="mb-2">If installation, configuration or anything in this module does not work as expected on your database, contact us directly &#8212; we help you get it running.</p>
+        <p class="mb-2">We also build <b>custom Odoo features and modules on request</b> &#8212; tell us what your business needs.</p>
+        <p class="mb-1">Email: <a href="mailto:contact@xtbs.ro">contact@xtbs.ro</a></p>
+        <p class="mb-1">WhatsApp / phone: <b>+40750402011</b> (Mon&#8211;Fri, 9:00&#8211;18:00 EET)</p>
+        <p class="mb-0">Scan to chat on WhatsApp:<br><img src="wa-qr.png" alt="WhatsApp QR" width="130" style="margin-top:6px; border:4px solid #ffffff"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="text-muted small mb-4">Part of the Transilvania Business Suite &#8212; business apps for Odoo.</p>
+    </div>
+  </div>
+</div>

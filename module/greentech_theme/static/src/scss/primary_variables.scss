@@ -1,0 +1,50 @@
+// GreenTech theme – primary variables override
+// Doar valori literale: fără referințe la alte variabile Odoo, fără !default.
+
+// Brand / acțiuni
+$o-community-color: #18181b;
+$o-brand-odoo: #18181b;
+$o-brand-primary: #18181b;
+$o-action: #18181b;
+$o-main-link-color: #18181b;
+
+// Culori de stare
+$o-success: #16a34a;
+$o-info: #0284c7;
+$o-warning: #f59e0b;
+$o-danger: #ef4444;
+
+// Scală de gri
+$o-gray-100: #f4f4f5;
+$o-gray-200: #e4e4e7;
+$o-gray-300: #d4d4d8;
+$o-gray-400: #a1a1aa;
+$o-gray-500: #71717a;
+$o-gray-600: #52525b;
+$o-gray-700: #3f3f46;
+$o-gray-800: #27272a;
+$o-gray-900: #18181b;
+
+// Borduri și radius
+$border-color: #e4e4e7;
+$o-border-radius: .375rem;
+$o-border-radius-sm: .25rem;
+$o-border-radius-lg: .5rem;
+
+// Tipografie
+$o-system-fonts: ("Inter Variable", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
+
+// Fundal webclient
+$o-webclient-background-color: #fafafa;
+
+// Navbar
+$o-navbar-height: 48px;
+$o-navbar-background: #ffffff;
+$o-navbar-border-bottom: 1px solid #e4e4e7;
+$o-navbar-entry-color: #3f3f46;
+$o-navbar-entry-color--hover: #09090b;
+$o-navbar-entry-bg--hover: #f4f4f5;
+$o-navbar-brand-color: #09090b;
+
+// Control panel
+$o-control-panel-border-bottom: 1px solid #e4e4e7;

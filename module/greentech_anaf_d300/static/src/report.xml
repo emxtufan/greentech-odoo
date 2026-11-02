@@ -1,0 +1,61 @@
+<templates xml:space="preserve">
+ <t t-name="greentech_anaf_d300.Report">
+  <div class="gt-d300">
+   <div t-if="!data" class="alert alert-secondary">Completați identificarea și perioada, apoi apăsați „Actualizează din contabilitate”.</div>
+   <t t-else="">
+    <div class="gt-d300-cards">
+     <div><small>TVA colectată · rd. 19</small><strong t-esc="amount(total('19'))"/></div>
+     <div><small>TVA dedusă · rd. 35</small><strong t-esc="amount(total('35'))"/></div>
+     <div><small>De plată · rd. 44</small><strong t-esc="amount(total('44'))"/></div>
+     <div><small>Sold negativ · rd. 45</small><strong t-esc="amount(total('45'))"/></div>
+    </div>
+    <div t-if="data.errors.length" class="alert alert-danger">
+     <strong><t t-esc="data.errors.length"/> verificări de rezolvat înainte de export</strong>
+     <details><summary>Vezi documentele și câmpurile de verificat</summary>
+      <ul><li t-foreach="data.errors" t-as="error" t-key="error" t-esc="error"/></ul>
+     </details>
+    </div>
+    <div class="gt-d300-toolbar">
+     <input class="form-control" placeholder="Caută rând sau indicator" t-model="ui.query"/>
+     <label><input type="checkbox" t-model="ui.nonzero"/> Doar rândurile cu sume și totaluri</label>
+     <button type="button" class="btn btn-secondary" t-on-click="() => ui.row = ''">Toate documentele</button>
+    </div>
+    <div class="gt-d300-scroll"><table class="table table-sm table-hover gt-d300-rows">
+     <thead><tr><th>Rând</th><th>Indicator</th><th class="text-end">Bază · lei</th><th class="text-end">TVA · lei</th></tr></thead>
+     <tbody><tr t-foreach="rows" t-as="r" t-key="r.code" t-on-click="() => this.select(r.code)"
+        t-att-class="{'gt-d300-total':r.calculated, 'table-active':ui.row === r.code}">
+      <td t-esc="r.code"/><td t-esc="r.label"/>
+      <td class="text-end" t-esc="r.has_base ? amount(r.base) : '—'"/>
+      <td class="text-end" t-esc="r.has_tax ? amount(r.tax) : '—'"/>
+     </tr></tbody>
+    </table></div>
+    <h4 class="mt-4">Documente sursă <small t-if="ui.row">· rând <t t-esc="ui.row"/></small></h4>
+    <p>Valorile sursă sunt în bani; rândurile declarației sunt rotunjite la lei. Regularizările documentate se adaugă separat.</p>
+    <div class="gt-d300-scroll"><table class="table table-sm gt-d300-sources">
+     <thead><tr><th>Rând</th><th>Document</th><th>Data</th><th>Partener</th><th>Bază</th><th>TVA brută / regularizare</th><th>Dedusă înainte de pro-rata</th><th/></tr></thead>
+     <tbody><tr t-foreach="documents" t-as="c" t-key="c_index">
+      <td t-esc="c.row"/><td t-esc="c.document"/><td t-esc="c.date"/><td t-esc="c.partner"/>
+      <td t-esc="amount(c.base)"/><td t-esc="amount(c.tax)"/><td t-esc="amount(c.eligible)"/>
+      <td><button type="button" class="btn btn-link btn-sm" t-on-click="() => this.open(c.move_id)">Deschide</button></td>
+     </tr></tbody>
+    </table></div>
+    <details class="mt-3"><summary>Regularizări incluse în calcul</summary>
+     <table class="table table-sm"><thead><tr><th>Rând</th><th>Bază</th><th>TVA</th><th>Justificare</th><th>Document</th></tr></thead>
+      <tbody><tr t-foreach="data.adjustments" t-as="a" t-key="a_index"><td t-esc="a.row"/><td t-esc="amount(a.base)"/>
+       <td t-esc="amount(a.tax)"/><td t-esc="a.reason"/><td t-esc="a.evidence"/></tr></tbody></table>
+    </details>
+    <details class="mt-3"><summary>Control conturi TVA · sold inițial, rulaje și sold final</summary>
+     <table class="table table-sm"><thead><tr><th>Cont</th><th>Inițial</th><th>Debit</th><th>Credit</th><th>Final</th></tr></thead>
+      <tbody><tr t-foreach="Object.entries(data.ledger)" t-as="e" t-key="e[0]"><td t-esc="e[0]"/>
+       <td t-esc="amount(e[1].opening)"/><td t-esc="amount(e[1].debit)"/>
+       <td t-esc="amount(e[1].credit)"/><td t-esc="amount(e[1].closing)"/></tr></tbody></table>
+     <p>4426/4424: sold debitor pozitiv. 4427/4423: sold creditor pozitiv. Rulajele includ închiderile contabile.</p>
+    </details>
+    <details class="mt-3"><summary>Indicatori suplimentari calculați</summary>
+     <table class="table table-sm"><tbody><tr t-foreach="Object.entries(data.info)" t-as="e" t-key="e[0]">
+      <td t-esc="e[0]"/><td t-esc="amount(e[1])"/></tr></tbody></table>
+    </details>
+   </t>
+  </div>
+ </t>
+</templates>

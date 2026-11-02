@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="greentech_anaf_d112.Editor">
+        <div class="gt-d112" t-if="schema and payload?.tag">
+            <nav class="gt-d112-tabs" aria-label="Secțiuni D112">
+                <button type="button" t-att-class="ui.tab === 'employer' ? 'active' : ''" t-on-click="() => ui.tab = 'employer'">Plătitor</button>
+                <button type="button" t-att-class="ui.tab === 'people' ? 'active' : ''" t-on-click="() => ui.tab = 'people'">Asigurați</button>
+                <button type="button" t-att-class="ui.tab === 'signer' ? 'active' : ''" t-on-click="() => ui.tab = 'signer'">Perioadă și semnatar</button>
+            </nav>
+            <div class="gt-d112-layout">
+                <aside t-if="ui.tab === 'people'" class="gt-d112-people">
+                    <input class="form-control mb-2" aria-label="Caută asigurat" placeholder="Caută nume sau CNP" t-model="ui.search"/>
+                    <button t-if="!props.readonly" class="btn btn-outline-primary mb-2 w-100" type="button" t-on-click="() => add([], 'asigurat')">Adaugă asigurat</button>
+                    <button t-foreach="people" t-as="person" t-key="person.index" type="button"
+                        t-att-class="'gt-d112-person ' + (selected?.path[0] === person.index ? 'active' : '')"
+                        t-on-click="() => ui.person = person.index">
+                        <strong t-esc="(person.node.attrs.numeAsig || 'Asigurat nou') + ' ' + (person.node.attrs.prenAsig || '')"/>
+                        <small t-esc="person.node.attrs.cnpAsig || 'CNP necompletat'"/>
+                    </button>
+                </aside>
+                <main class="gt-d112-content">
+                    <t t-if="selected">
+                        <div class="gt-d112-person-actions" t-if="ui.tab === 'people' and !props.readonly">
+                            <button type="button" class="btn btn-sm btn-outline-danger" t-on-click="() => remove(selected.path)">Elimină asiguratul din dosar</button>
+                        </div>
+                        <D112Node node="selected.node" path="selected.path" schema="schema" readonly="props.readonly"
+                            change="change" add="add" remove="remove" move="move"/>
+                    </t>
+                    <p t-else="" class="text-muted p-3">Nu există asigurați în dosar. Adăugați un asigurat sau importați un XML într-un dosar nou.</p>
+                </main>
+            </div>
+        </div>
+        <div t-else="" class="gt-d112-empty">Declarația nu conține încă date.</div>
+    </t>
+    <t t-name="greentech_anaf_d112.Node">
+        <section class="gt-d112-node">
+            <div class="gt-d112-node-heading">
+                <h3 t-esc="title(props.node.tag)"/>
+                <input t-if="definition.attributes.length > 15" type="search" class="form-control"
+                    aria-label="Caută câmp" placeholder="Caută câmp sau cod ANAF" t-model="ui.query"/>
+            </div>
+            <div class="gt-d112-fields">
+                <label t-foreach="attributes" t-as="attribute" t-key="attribute.name" class="gt-d112-field">
+                    <span class="gt-d112-label"><t t-esc="attribute.label"/><b t-if="attribute.required" class="text-danger"> *</b></span>
+                    <small t-esc="attribute.name"/>
+                    <select t-if="attribute.enumeration" class="form-select" t-att-value="value(attribute.name)" t-att-disabled="props.readonly"
+                        t-on-change="ev => edit(attribute.name, ev)">
+                        <option value="">Necompletat</option>
+                        <option t-foreach="attribute.enumeration" t-as="option" t-key="option" t-att-value="option" t-esc="option"/>
+                    </select>
+                    <input t-else="" type="text" class="form-control" t-att-value="value(attribute.name)"
+                        t-att-readonly="props.readonly" t-att-maxlength="attribute.maxLength || false"
+                        t-att-aria-label="attribute.label" t-on-input="ev => edit(attribute.name, ev)"/>
+                </label>
+            </div>
+            <details t-foreach="props.node.children" t-as="child" t-key="child_index" class="gt-d112-section">
+                <summary><t t-esc="title(child.tag)"/><small t-esc="' · ' + (child_index + 1)"/></summary>
+                <div class="gt-d112-section-body">
+                    <div t-if="!props.readonly" class="gt-d112-section-tools">
+                        <button type="button" class="btn btn-sm btn-light" title="Mută mai sus" t-on-click="() => props.move(childPath(child_index), -1)">↑</button>
+                        <button type="button" class="btn btn-sm btn-light" title="Mută mai jos" t-on-click="() => props.move(childPath(child_index), 1)">↓</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" t-on-click="() => props.remove(childPath(child_index))">Elimină secțiunea</button>
+                    </div>
+                    <D112Node node="child" path="childPath(child_index)" schema="props.schema" readonly="props.readonly"
+                        change="props.change" add="props.add" remove="props.remove" move="props.move"/>
+                </div>
+            </details>
+            <div class="gt-d112-add" t-if="!props.readonly and additions.length and props.node.tag !== 'declaratieUnica'">
+                <span>Adaugă secțiune:</span>
+                <button type="button" class="btn btn-sm btn-outline-secondary" t-foreach="additions" t-as="part" t-key="part.tag"
+                    t-on-click="() => props.add(props.path, part.tag)" t-esc="title(part.tag)"/>
+            </div>
+        </section>
+    </t>
+</templates>

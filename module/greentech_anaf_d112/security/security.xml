@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_anaf" model="res.groups">
+        <field name="name">ANAF — Declarația 112</field>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+    <record id="d112_company_rule" model="ir.rule">
+        <field name="name">D112 — firme autorizate</field>
+        <field name="model_id" ref="model_gt_anaf_d112"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

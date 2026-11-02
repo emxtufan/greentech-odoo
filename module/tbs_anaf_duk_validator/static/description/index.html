@@ -1,0 +1,160 @@
+<div class="container-fluid px-0 mb-4">
+  <img src="banner.png" class="img-fluid w-100" alt="ANAF DUKIntegrator banner">
+<div class="text-center mt-3 mb-4"><span class="badge badge-pill badge-dark" style="padding:8px 14px; margin-right:6px">Odoo 19</span><span class="badge badge-pill badge-secondary" style="padding:8px 14px; margin-right:6px">Community</span><span class="badge badge-pill badge-secondary" style="padding:8px 14px">Enterprise</span></div>
+<div class="text-center mb-4">
+  <a href="#tbs-features" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Features</a>
+  <a href="#tbs-how" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">How it works</a>
+  <a href="#tbs-faq" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">FAQ</a>
+  <a href="#tbs-support" class="btn btn-dark btn-sm" style="padding:9px 18px; margin:3px; border-radius:999px; font-size:13px">Support</a>
+</div>
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 offset-lg-1 text-center mb-5">
+      <h1 class="font-weight-bold">ANAF DUKIntegrator</h1>
+      <p class="lead text-muted">Validates Romanian ANAF tax declaration XML (D100, D101, D112, D205, D300, D394) with <strong>DUKIntegrator</strong> &#8212; the same official Java validator ANAF itself uses &#8212; running on your own server. Give it an XML string and a declaration code, get back a pass/fail verdict and, on success, the confirmation PDF DUKIntegrator produces. No HTTP relay, no vendor account, no per-validation fee.</p>
+    </div>
+  </div>
+
+  <div class="row text-center mb-5">
+    <div class="col-md-4 mb-4 mb-md-0">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">The official tool, not a lookalike</h5>
+        <p class="text-muted mb-0">Runs ANAF's own DUKIntegrator jar &#8212; the identical check your declaration goes through at SPV, run locally before you upload.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 mb-md-0">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">Self-hosted, no vendor lock-in</h5>
+        <p class="text-muted mb-0">You install DUKIntegrator once, on your own server. No relay service, no API key, no subscription, no per-validation cost.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border-top:3px solid #2c4257;padding-top:1rem;">
+        <span style="color:#2c4257;font-size:1.75rem;">&#9679;</span>
+        <h5 class="font-weight-bold mt-2">One service, any declaration module</h5>
+        <p class="text-muted mb-0">Feed it an XML string and a declaration code &#8212; it does not care how the XML was generated or by which module.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-features">
+    <h2 class="mb-0">What it does</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Validate</h5>
+          <p class="card-text text-muted">Runs DUKIntegrator against your XML and a declaration code (D100, D101, D112, D205, D300, D394); returns a clear pass/fail verdict with the exact error text on failure.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Generate confirmation PDF</h5>
+          <p class="card-text text-muted">On a passing validation, also returns DUKIntegrator's own flat confirmation PDF for the declaration.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm" style="border-top:3px solid #2c4257;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Self-service settings</h5>
+          <p class="card-text text-muted">A Settings page field for the DUKIntegrator installation path, plus a Check Installation button &#8212; confirm your setup without server or log access.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-how">
+    <h2 class="mb-0">How it works</h2>
+  </div>
+  <div class="row mb-5 text-center">
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">1</div>
+      <p class="mb-0"><strong>Install DUKIntegrator</strong><br><span class="text-muted">The .jar files ANAF distributes, on your own server.</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">2</div>
+      <p class="mb-0"><strong>Set the path</strong><br><span class="text-muted">Settings &gt; General Settings &gt; ANAF DUKIntegrator. Defaults to /var/odoo/dukintegrator.</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">3</div>
+      <p class="mb-0"><strong>Call the service</strong><br><span class="text-muted">From any module: env['anaf.duk.validator'].validate(xml, code).</span></p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <div style="color:#2c4257;font-size:2rem;" class="font-weight-bold">4</div>
+      <p class="mb-0"><strong>Get the verdict</strong><br><span class="text-muted">Pass/fail, error text on failure, confirmation PDF on success.</span></p>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;">
+    <h2 class="mb-0">External services</h2>
+  </div>
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="alert alert-info">
+        <h4 class="alert-heading">Runs on your server, talks to nothing else</h4>
+        <p class="mb-2">This module requires a <strong>Java runtime</strong> and the <strong>DUKIntegrator</strong> .jar files on the Odoo server &#8212; ANAF's own validation tool, distributed by ANAF as part of its declaration-software tooling and not included with this module. It runs entirely as a local subprocess call; the XML you pass in never leaves your server.</p>
+        <p class="mb-0">This is different from validators that relay your declaration to a hosted HTTP service over the internet: nothing here talks to any TBS server, or any third party, at any point.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4" style="border-left:4px solid #2c4257;padding-left:1rem;" id="tbs-faq">
+    <h2 class="mb-0">Frequently asked questions</h2>
+  </div>
+  <div class="mb-5">
+    <details class="mb-3">
+      <summary class="font-weight-bold">Does this generate declaration XML?</summary>
+      <p class="text-muted mt-2 mb-0">No. It only validates XML you already have. Pair it with a declaration-generation module &#8212; TBS's own <strong>Romania Tax Declarations</strong> wires directly into it, and any other module can call the same service.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Does it need Odoo Enterprise?</summary>
+      <p class="text-muted mt-2 mb-0">No. It depends only on Odoo's base module and installs on Community or Enterprise.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">What happens if DUKIntegrator is not installed yet?</summary>
+      <p class="text-muted mt-2 mb-0">You get a clear error naming the exact path checked, plus a Check Installation button in Settings so you can confirm your setup works before relying on it in a real declaration.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Where do I get the DUKIntegrator .jar files?</summary>
+      <p class="text-muted mt-2 mb-0">ANAF distributes them as part of its declaration-validation tooling. They are not redistributed with this module &#8212; search ANAF's site for "DUKIntegrator", or ask your accounting-software vendor, as most Romanian tools that submit to SPV already bundle a copy.</p>
+    </details>
+    <details class="mb-3">
+      <summary class="font-weight-bold">Is my declaration data sent anywhere?</summary>
+      <p class="text-muted mt-2 mb-0">No. Validation runs as a local subprocess call to the jar on your own server. Nothing is sent to TBS or to any third party.</p>
+    </details>
+  </div>
+
+</div>
+
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="alert alert-secondary" role="note" id="tbs-support">
+        <h4 class="mb-2">Need help? We install it with you</h4>
+        <p class="mb-2">If installation, configuration or anything in this module does not work as expected on your database, contact us directly &#8212; we help you get it running.</p>
+        <p class="mb-2">We also build <b>custom Odoo features and modules on request</b> &#8212; tell us what your business needs.</p>
+        <p class="mb-1">Email: <a href="mailto:contact@xtbs.ro">contact@xtbs.ro</a></p>
+        <p class="mb-1">WhatsApp / phone: <b>+40750402011</b> (Mon&#8211;Fri, 9:00&#8211;18:00 EET)</p>
+        <p class="mb-0">Scan to chat on WhatsApp:<br><img src="wa-qr.png" alt="WhatsApp QR" width="130" style="margin-top:6px; border:4px solid #ffffff"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="text-muted small mb-4">Part of the Transilvania Business Suite &#8212; business apps for Odoo.</p>
+    </div>
+  </div>
+</div>

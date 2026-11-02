@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="closing_wizard_feedback" model="ir.ui.view">
+        <field name="name">greentech.closing.wizard.feedback</field>
+        <field name="model">l10n.ro.account.period.closing.wizard</field>
+        <field name="inherit_id" ref="l10n_ro_account_period_close.view_account_period_closing_wizard"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='filters']" position="replace">
+                <div class="alert alert-info" role="alert">
+                    Pentru demonstrația GreenTech: 01.10.2026 – 31.10.2026.
+                    Verificați perioada înainte de confirmare.
+                    După închidere se deschide nota contabilă generată.
+                </div>
+                <group name="filters">
+                    <field name="date_from" string="De la data"/>
+                    <field name="date_to" string="Până la data"/>
+                </group>
+            </xpath>
+            <xpath expr="//button[@name='do_close']" position="attributes">
+                <attribute name="class">btn-primary</attribute>
+                <attribute name="string">Generează nota de închidere</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

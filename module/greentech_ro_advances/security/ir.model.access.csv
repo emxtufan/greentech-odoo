@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+create_user,Creare avans contabil,model_gt_advance_create,account.group_account_user,1,1,1,1
+create_line_user,Poziții avans contabil,model_gt_advance_create_line,account.group_account_user,1,1,1,1
+allocate_user,Regularizare contabil,model_gt_advance_allocate,account.group_account_user,1,1,1,1
+report_user,Situație avansuri contabil,model_gt_advance_report,account.group_account_user,1,1,1,1

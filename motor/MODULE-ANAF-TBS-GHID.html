@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ro">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GreenTech | Module ANAF: SAF-T și e-Transport</title>
+<style>
+body{font:16px/1.65 system-ui,sans-serif;background:#f4f6f8;color:#1b2939;margin:0}
+main{max-width:1050px;margin:40px auto;padding:36px 44px;background:white;border-radius:16px}
+h1{font-size:32px;line-height:1.2}h2{font-size:23px;margin-top:34px}h3{font-size:18px}
+a{color:#09666c}table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{padding:13px;border-bottom:1px solid #dce3e8;text-align:left;vertical-align:top}
+th{background:#eff5f5}.note{padding:16px 20px;border-left:4px solid #057a76;background:#edf8f6}
+.limit{background:#fff6e6;border-left-color:#bb7c12}code{font-size:13px;overflow-wrap:anywhere}
+li{margin:8px 0}.muted{color:#586574}img{width:100%;border:1px solid #ddd;border-radius:8px}
+@media(max-width:700px){main{margin:0;padding:24px}table{display:block;overflow:auto}}
+</style>
+<main>
+<p class="muted">GreenTech Financiar • Integrare locală Odoo 19 • 20 octombrie 2026</p>
+<h1>D406 SAF-T, validator ANAF și e-Transport</h1>
+<p><a href="http://127.0.0.1:8070/odoo">Deschide Odoo Financiar</a>. Din selectorul de aplicații, intră în <strong>ANAF</strong>. Noile intrări sunt
+<strong>D406 — SAF-T periodic</strong>, <strong>Încadrări SAF-T taxe</strong> și <strong>e-Transport — Transferuri</strong>.</p>
+<div class="note">Generarea D406 folosește înregistrările contabile validate din firma și perioada selectate. Nu cere import din SAGA.
+Componentele Java ANAF existente local au fost copiate într-un director separat; nu au fost importate date contabile din SAGA.</div>
+
+<h2>Ce s-a integrat din cele patru arhive</h2>
+<table>
+<tr><th>Pachet</th><th>Decizie și modificări</th></tr>
+<tr><td><code>tbs_saft_d406 19.0.1.0.0</code></td><td>Export periodic, nomenclatoare ANAF, verificare structurală XSD, validare Java și PDF. Corectată compatibilitatea planurilor analitice cu Odoo 19. Protecții suplimentare în modulul GreenTech.</td></tr>
+<tr><td><code>tbs_anaf_duk_validator 19.0.1.0.0</code></td><td>Integrat cu Java portabil, validare offline, verificarea rezultatului procesului și a fișierului PDF. Rezultatul „valid” nu se acordă doar pentru existența unui fișier.</td></tr>
+<tr><td><code>l10n_ro_edi_stock_extension 20.0.1.4.0</code></td><td>Adaptat local la <strong>19.0.1.4.1</strong>: dependența Odoo 19 pentru loturi, drepturile de acces, vizualizările și unitățile de măsură. Corectate prețurile cu discount/TVA inclus, conversia monetară, cantitățile pe ambalaje și interpretarea răspunsurilor LIST/INFO.</td></tr>
+<tr><td><code>l10n_ro_edi_patch_tbs 19.0.2.5.5</code></td><td><strong>Neinstalat intenționat.</strong> Redefinește <code>l10n.ro.message.spv</code>, folosit deja de OCA, cu alte definiții pentru atașamente și legături către facturi/parteneri. Introduce și automatizări active. Suprapunerea ar crea riscuri pentru SPV și accesul între firme. Funcționalitatea e-Factura/SPV OCA existentă rămâne soluția activă.</td></tr>
+<tr><td><code>greentech_tbs_integration</code></td><td>Modul local care leagă cele trei pachete de meniul ANAF, izolează datele pe firme, protejează rezultatele și gestionează verificarea actualității exportului.</td></tr>
+</table>
+
+<h2>D406: pașii de utilizare</h2>
+<ol>
+<li><strong>Selectează firma corectă</strong> din dreapta sus. Completează CUI, adresă, telefon și cont bancar în datele firmei.</li>
+<li>În <strong>ANAF → Încadrări SAF-T taxe</strong>, deschide taxele folosite efectiv și completează <em>SAF-T Tax Type</em> și <em>SAF-T Tax Code</em>.
+Codul depinde de natura operațiunii, deductibilitate și exigibilitate; procentul singur nu este suficient.
+De exemplu, nomenclatorul distinge livrarea internă standard la 21% (<code>310344</code>) de TVA la încasare și de regularizări.
+Nu s-au atribuit automat încadrări fiscale documentelor existente.</li>
+<li>Verifică în planul de conturi codurile SAF-T. Conturile tehnice fără corespondent ANAF trebuie analizate; nu se schimbă contul contabil doar pentru a trece validatorul.</li>
+<li>Intră în <strong>ANAF → D406 — SAF-T periodic</strong>. Alege tipul, luna completă sau trimestrul complet și completează persoana de contact.</li>
+<li>Apasă <strong>Verifică datele</strong>. Corectează problemele afișate: taxe neîncadrate, date lipsă ale firmei/partenerilor, conturi nemapate sau situații încă nesuportate.</li>
+<li>Apasă <strong>Generează XML</strong>. Se verifică structura și apare <strong>Descarcă XML pentru verificare</strong>.</li>
+<li>Apasă <strong>Validează cu DUK</strong>. Verifică rezultatul și mesajele concrete. Bifa XSD și bifa DUK sunt verificări diferite.</li>
+<li>Apasă <strong>Generează PDF ANAF</strong>, apoi <strong>Descarcă PDF</strong>. PDF-ul este produs de biblioteca ANAF și include XML-ul. Semnarea/depunerea sunt operații separate.</li>
+</ol>
+<p>Modificarea opțiunilor șterge legătura cu rezultatele vechi. La validare sau descărcare se regenerează XML-ul în memorie și se compară cu fișierul anterior.
+Dacă datele s-au schimbat, aplicația cere o nouă generare și validare.</p>
+<div class="note limit"><strong>Limitele exportului periodic:</strong> pachetul nu implementează D406 Active anual, Stocuri la cerere sau împărțirea în segmente.
+În integrarea actuală sunt blocate explicit facturile în valută, taxele compuse/fixe/negative și agregarea soldurilor unui partener pe mai multe conturi de clienți/furnizori.
+Aceste cazuri necesită extinderea exporterului; nu sunt transformate în date aparent valide. Un exemplu valid nu certifică toate situațiile fiscale ale unei firme.</div>
+<p>Verificarea XSD folosește schema inclusă în arhivă, cu adaptarea namespace-ului numai pe copia verificată. XML-ul exportat păstrează namespace-ul cerut de validatorul D406.
+Biblioteca locală de validare D406 are fișiere datate 16.02.2026. Identitatea binară cu ultima arhivă publicată pe site-ul ANAF nu a fost verificată prin descărcare.
+La schimbarea regulilor ANAF, componentele și nomenclatoarele trebuie actualizate și retestate.</p>
+
+<h2>e-Transport: cum îl folosești</h2>
+<ol>
+<li>Configurează accesul ANAF al firmei în setările existente și mediul de test/producție potrivit.</li>
+<li>Completează pe produse greutatea, unitatea de măsură și <strong>Cod NC / HS e-Transport</strong>. Câmpul local permite completarea codului tarifar și când nu există modulul Intrastat.</li>
+<li>În <strong>ANAF → e-Transport — Transferuri</strong>, deschide transferul și secțiunea e-Transport. Completează operațiunea, scopul, transportatorul, vehiculul și traseul.</li>
+<li>Completează documentele de transport și, când operațiunea o cere, notificările precedente. Alege sursa valorii: cost, comandă de achiziție/vânzare sau preț de listă.</li>
+<li>Verifică datele și valorile înainte de transmitere. Fluxul acceptă și transferuri grupate în loturi, prin modulul oficial Odoo 19 pentru loturi.</li>
+<li>După obținerea UIT, operațiile de confirmare, modificare vehicul sau ștergere se folosesc numai pentru notificarea aferentă transferului.</li>
+</ol>
+<p>Au fost testate local regulile, calculele, formularele și tratarea unor răspunsuri API simulate. Nu s-a transmis un transport către ANAF și nu s-a obținut UIT.
+Acceptarea reală depinde de accesul SPV, datele transportului și răspunsul ANAF. Automatizarea periodică de sincronizare rămâne oprită.</p>
+
+<h2>Verificări și dovezi</h2>
+<ul>
+<li><a href="logs/tbs-modules-20261020/test-install.log">Jurnalul testelor automate</a>: D406, e-Transport, integrare, D300, jurnale TVA și avansuri.</li>
+<li><a href="logs/tbs-modules-20261020/browser-test.json">Verificări în browser pe copia izolată</a>; <a href="logs/tbs-modules-20261020/browser-live.json">verificări după instalarea locală</a>.</li>
+<li><a href="output/pdf/D406_DEMO_2026_09.pdf">Exemplu PDF ANAF D406</a> și <a href="output/pdf/D406_DEMO_2026_09.xml">XML demonstrativ</a>, pentru firma fictivă din copia de test.</li>
+<li><a href="logs/tbs-modules-20261020/pdf-check.json">Verificarea PDF</a>: câmpuri, perioadă și XML atașat; <a href="logs/tbs-modules-20261020/negative-validation.txt">respingerea CUI-ului greșit</a>.</li>
+<li><a href="logs/tbs-modules-20261020/archive-lock.json">Identificarea arhivelor originale prin SHA-256</a>; <a href="logs/tbs-modules-20261020/implementation-lock.json">proveniența și modificările locale</a>.</li>
+<li><a href="logs/tbs-modules-20261020/live-verified.json">Comparația datelor după instalare</a>. Backupul anterior instalării: <a href="logs/backups/greentech-financiar-test-20261020-145042.zip">arhiva de siguranță</a>.</li>
+</ul>
+<p>Runtime D406 separat: <code>tools/anaf/d406</code>. Lansatorul local apelează metoda bibliotecii ANAF
+<code>Validator.parseDocument(xml, erori, an, lună, tip)</code>, apoi generatorul PDF ANAF, fără modificarea regulilor din JAR.
+Componentele D112 și D300 existente au rămas separate.</p>
+<h2>Surse oficiale consultate</h2>
+<p><a href="https://static.anaf.ro/static/10/Anaf/Informatii_R/saf_t.htm">ANAF: SAF-T, validator și documentație</a> ·
+<a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/406.html">ANAF: D406</a> ·
+<a href="https://static.anaf.ro/static/10/Anaf/Informatii_R/SAFT_intrebari_frecv_raspunsuri_v1_1_071021.pdf">ANAF: identificarea partenerilor și operațiunilor proprii</a>.</p>
+</main>
+</html>

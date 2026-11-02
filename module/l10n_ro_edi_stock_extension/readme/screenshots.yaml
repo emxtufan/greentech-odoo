@@ -1,0 +1,59 @@
+scenarios:
+  - name: action_action_l10n_ro_edi_stock_document
+    description: "Action: eTransport Documents (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_document
+      - wait: .o_form_view, .o_list_view, .o_kanban_view, .o_pivot_view, .o_graph_view
+      - sleep: 600
+      - screenshot:
+          filename: action_action_l10n_ro_edi_stock_document.png
+  - name: wizard_action_l10n_ro_edi_stock_transporter_info_wizard
+    description: "Wizard: eTransport transporter info (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_transporter_info_wizard
+      - wait: .modal-dialog
+      - sleep: 400
+      - screenshot:
+          selector: .modal-dialog
+          filename: wizard_action_l10n_ro_edi_stock_transporter_info_wizard.png
+  - name: wizard_action_l10n_ro_edi_stock_action_wizard_delete
+    description: "Wizard: Delete eTransport notification (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_action_wizard_delete
+      - wait: .modal-dialog
+      - sleep: 400
+      - screenshot:
+          selector: .modal-dialog
+          filename: wizard_action_l10n_ro_edi_stock_action_wizard_delete.png
+  - name: wizard_action_l10n_ro_edi_stock_action_wizard_confirm
+    description: "Wizard: Confirm eTransport transport (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_action_wizard_confirm
+      - wait: .modal-dialog
+      - sleep: 400
+      - screenshot:
+          selector: .modal-dialog
+          filename: wizard_action_l10n_ro_edi_stock_action_wizard_confirm.png
+  - name: wizard_action_l10n_ro_edi_stock_action_wizard_modify_vehicle
+    description: "Wizard: Modify eTransport vehicle (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_action_wizard_modify_vehicle
+      - wait: .modal-dialog
+      - sleep: 400
+      - screenshot:
+          selector: .modal-dialog
+          filename: wizard_action_l10n_ro_edi_stock_action_wizard_modify_vehicle.png
+  - name: wizard_action_l10n_ro_edi_stock_list_wizard
+    description: "Wizard: eTransport notifications list (auto-discovered)"
+    steps:
+      - goto: /odoo/action-l10n_ro_edi_stock_extension.action_l10n_ro_edi_stock_list_wizard
+      - wait: .modal-dialog
+      - sleep: 400
+      - screenshot:
+          selector: .modal-dialog
+          filename: wizard_action_l10n_ro_edi_stock_list_wizard.png
+setup:
+  viewport:
+    width: 1440
+    height: 900
+  pause_ms_default: 500

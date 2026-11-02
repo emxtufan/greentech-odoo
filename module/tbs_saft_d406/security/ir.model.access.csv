@@ -1,0 +1,14 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_d406_tax_type_user,d406.tax.type.user,model_l10n_ro_d406_tax_type,account.group_account_readonly,1,0,0,0
+access_d406_tax_type_manager,d406.tax.type.manager,model_l10n_ro_d406_tax_type,account.group_account_manager,1,1,1,1
+access_d406_tax_code_user,d406.tax.code.user,model_l10n_ro_d406_tax_code,account.group_account_readonly,1,0,0,0
+access_d406_tax_code_manager,d406.tax.code.manager,model_l10n_ro_d406_tax_code,account.group_account_manager,1,1,1,1
+access_d406_account_user,d406.account.user,model_l10n_ro_d406_account,account.group_account_readonly,1,0,0,0
+access_d406_account_manager,d406.account.manager,model_l10n_ro_d406_account,account.group_account_manager,1,1,1,1
+access_d406_uom_code_user,d406.uom.code.user,model_l10n_ro_d406_uom_code,account.group_account_readonly,1,0,0,0
+access_d406_uom_code_manager,d406.uom.code.manager,model_l10n_ro_d406_uom_code,account.group_account_manager,1,1,1,1
+access_d406_invoice_type_user,d406.invoice.type.user,model_l10n_ro_d406_invoice_type,account.group_account_readonly,1,0,0,0
+access_d406_invoice_type_manager,d406.invoice.type.manager,model_l10n_ro_d406_invoice_type,account.group_account_manager,1,1,1,1
+access_d406_payment_method_user,d406.payment.method.user,model_l10n_ro_d406_payment_method,account.group_account_readonly,1,0,0,0
+access_d406_payment_method_manager,d406.payment.method.manager,model_l10n_ro_d406_payment_method,account.group_account_manager,1,1,1,1
+access_d406_export_wizard,d406.export.wizard,model_l10n_ro_d406_export_wizard,account.group_account_manager,1,1,1,1

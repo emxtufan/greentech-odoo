@@ -1,0 +1,19 @@
+.gt_vat_form {
+    .o_form_sheet { max-width: none !important; min-width: 0 !important; }
+    .o_field_widget[name="data"] { display: block; width: 100%; max-width: 100%; min-width: 0; }
+}
+.gt-vat-journal {
+    width: 100%; min-width: 0; max-width: 100%;
+    h4 { margin: 1.8rem 0 1rem; font-size: 1.1rem; }
+    h4 small { font-size: .85rem; color: #657581; margin-left: .7rem; }
+    .gt-vat-scroll { overflow-x: auto; max-width: 100%; border: 1px solid #dee2e6; border-radius: 5px; }
+    table { margin-bottom: 0; font-size: 12px; }
+    th { background: #f1f3f6; min-width: 100px; vertical-align: middle; }
+    td { vertical-align: middle; padding: 9px 8px; }
+    td:first-child { min-width: 120px; }
+    .gt-vat-summary td:first-child { min-width: 240px; }
+    .gt-vat-documents td:nth-child(2) { min-width: 240px; }
+    .gt-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .gt-total { font-weight: 700; background: #eaf1f5; }
+    .gt-vat-summary tr, .gt-vat-documents tr { cursor: pointer; }
+}

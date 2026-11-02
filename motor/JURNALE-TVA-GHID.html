@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ro"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jurnal cumpărări și Jurnal vânzări — utilizare</title>
+<style>
+body{margin:0;background:#f3f6f8;color:#173447;font:16px/1.65 system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:32px 24px}h1{line-height:1.2}section{background:white;border:1px solid #dae4ea;border-radius:10px;padding:24px;margin:20px 0}
+a{color:#125879}.button{display:inline-block;background:#125879;color:white;border-radius:6px;padding:10px 18px;text-decoration:none;margin:6px 10px 6px 0}
+table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #dbe4e9;text-align:left}
+.notice{border-left:5px solid #d09c26}code{overflow-wrap:anywhere;font-size:12px}img{max-width:100%}
+</style>
+<main>
+<small>Odoo 19 local · Verificat la 20 octombrie 2026</small>
+<h1>Jurnal cumpărări și Jurnal vânzări</h1>
+<p>Ambele sunt disponibile în <strong>ANAF</strong> și în <strong>Financiar → Raportare</strong>.</p>
+<a class="button" href="http://127.0.0.1:8070/odoo/action-731">Jurnal cumpărări</a>
+<a class="button" href="http://127.0.0.1:8070/odoo/action-732">Jurnal vânzări</a>
+<section><h2>Cum le folosești</h2>
+<ol><li>Selectează firma, intervalul și, opțional, furnizorul/clientul. La cumpărări poți filtra TVA nedeductibilă 50% sau integral.</li>
+<li>Apasă <strong>Actualizează jurnalul</strong>. Modificarea filtrelor șterge rezultatul anterior și cere actualizare.</li>
+<li>În primul tabel vezi totalurile pe taxe și regimuri. Apasă o categorie pentru documentele aferente.</li>
+<li>Apasă un document pentru plățile/încasările și compensările asociate TVA la plată/încasare.
+Butonul <strong>Deschide</strong> duce la înregistrarea contabilă sursă.</li>
+<li>Apasă <strong>Descarcă PDF</strong> sau <strong>Export Excel (CSV)</strong>.
+CSV este UTF-8, cu separator „;” și zecimale cu virgulă. Se deschide în Excel; nu este un fișier XLSX.</li></ol>
+<p>Exporturile includ întregul interval și filtrele din antet. Selectarea unei categorii în tabel schimbă doar detaliile ecranului.
+Pentru coloanele din dreapta, deplasează orizontal tabelul.</p></section>
+<section><h2>Din ce se formează</h2>
+<table><tr><th>Raport</th><th>Surse Odoo</th></tr>
+<tr><td>Cumpărări</td><td>Facturi și stornări furnizori, documente de cumpărare contabilizate, linii fiscale de pe 4426.</td></tr>
+<tr><td>Vânzări</td><td>Facturi și stornări clienți, documente de vânzare contabilizate, linii fiscale de pe 4427, inclusiv partea colectată la taxare inversă.</td></tr>
+<tr><td>TVA la plată/încasare</td><td>Reconcilierile documentelor și notele Odoo de exigibilitate. Sunt urmărite și facturile anterioare încă neachitate la final sau decontate în perioada aleasă.</td></tr>
+</table>
+<p>Selecția folosește <strong>data contabilă</strong>. Sunt incluse numai documente contabilizate.
+Sumele sunt în RON; stornările apar cu semn negativ. Cotele provin din documente, nu dintr-o cotă fixată în raport.</p>
+<p>Coloanele „Achitat”, „Neachitat” și „Neexigibil” sunt completate <strong>doar pentru regimul TVA la plată/încasare</strong>.
+La TVA normală, exigibilitatea nu depinde de plată. Soldul istoric exclude decontările cu data după sfârșitul intervalului.</p>
+<p>La valută, baza achitată și soldul sunt exprimate la cursul facturii; TVA exigibilă provine din notele contabile la plată.
+La taxare inversă, totalul fiscal bază + TVA poate diferi de suma datorată furnizorului.</p></section>
+<section class="notice"><h2>Observațiile care trebuie rezolvate în sursă</h2>
+<p>În firma reală au fost identificate <strong>32 de facturi de cumpărare și 56 de vânzare</strong> importate fără taxe configurate pe linii.
+Ele sunt incluse și marcate pentru verificarea încadrării fiscale; nu sunt reclasificate automat ca scutite.</p>
+<p>Pentru note manuale cu TVA, dacă baza nu este stocată de Odoo, completează
+<strong>Bază TVA notă manuală</strong> în liniile notei. Coloana se activează din selectorul coloanelor.
+Notele de închidere/reclasificare care nu reprezintă achiziții sau vânzări se marchează explicit
+<strong>Exclude din jurnalele TVA</strong>. Facturile nu sunt excluse prin această bifă.</p>
+<p>Lipsa notelor de exigibilitate sau diferențele dintre deductibilitate și contabilizare sunt semnalate.
+Raportul nu modifică sumele contabile pentru a elimina observațiile.
+Reconstrucția istorică folosește reconcilierile existente; reconcilierile șterse ulterior nu pot fi recuperate din raport.</p></section>
+<section><h2>Verificări efectuate</h2>
+<p>15 teste Odoo trecute: cumpărări/vânzări, stornări, cote multiple, taxare inversă, valută,
+TVA nedeductibilă 50%/100%, deductibilitate mixtă în aceeași factură, plăți parțiale, sold istoric,
+note manuale, filtre, acces între firme și exporturi.</p>
+<p>Interfața, deschiderea documentelor și descărcările au fost verificate în browser pe copia de test și pe instanța activă.
+PDF-urile au fost inspectate vizual. Amprentele celor <strong>532 documente contabile, 1.646 linii și 10 plăți</strong> au rămas neschimbate.</p>
+<p><a href="logs/vat-journals-20261020/browser-live.json">Verificarea interfeței</a> ·
+<a href="logs/vat-journals-20261020/live-verified.json">Verificarea integrității</a> ·
+<a href="logs/backups/greentech-financiar-test-20261020-125207.zip">Backup înaintea instalării</a></p></section>
+<section><h2>Referința SAGA și limite</h2>
+<p>Organizarea în categorii → documente → decontări și separarea TVA la plată/încasare au fost documentate din
+<a href="https://manual.sagasoft.ro/sagac/topic-54-jurnale-tva.html">manualul oficial SAGA — Jurnale TVA</a>.
+Implementarea folosește datele și mecanismele contabile Odoo/OCA; nu necesită import din SAGA.</p>
+<p>Jurnalele sunt rapoarte contabile. Acest modul nu generează D300/D394 și nu semnează sau transmite documente la ANAF.
+Prorata și alte ajustări fiscale trebuie reflectate în documentele contabile sursă; raportul nu le aplică automat.</p>
+<p>Modul: <code>greentech_ro_vat_journals</code>. PDF generat local, cu fonturi incluse, fără servicii externe.</p>
+</section></main></html>

@@ -1,0 +1,2164 @@
+id,code,name,name_en
+d406_uom_10,10,grup,group
+d406_uom_11,11,articole de îmbrăcăminte,outfit
+d406_uom_13,13,rație,ration
+d406_uom_14,14,explozie,shot
+d406_uom_15,15,"bară, militar","stick, military"
+d406_uom_1i,1I,rată fixă,fixed rate
+d406_uom_20,20,container de 20 de picioare,twenty foot container
+d406_uom_21,21,container de 40 de picioare,forty foot container
+d406_uom_22,22,decilitru per gram,decilitre per gram
+d406_uom_23,23,gram per centimetru cub,gram per cubic centimetre
+d406_uom_24,24,livră teoretică,theoretical pound
+d406_uom_25,25,gram per centimetru cub,gram per square centimetre
+d406_uom_27,27,tonă teoretică,theoretical ton
+d406_uom_28,28,kilogram per metru pătrat,kilogram per square metre
+d406_uom_2a,2A,radian per secundă,radian per second
+d406_uom_2b,2B,radian per secundă la pătrat,radian per second squared
+d406_uom_2c,2C,raze roentgen,roentgen
+d406_uom_2g,2G,Volți AC,volt AC
+d406_uom_2h,2H,Volți DC,volt DC
+d406_uom_2i,2I,Unitate termică britanică (masă internațională) pe oră,British thermal unit (international table) per hour
+d406_uom_2j,2J,centimetru cub per secundă,cubic centimetre per second
+d406_uom_2k,2K,picior cub per oră,cubic foot per hour
+d406_uom_2l,2L,picior cub per minut,cubic foot per minute
+d406_uom_2m,2M,centimetru per secundă,centimetre per second
+d406_uom_2n,2N,decibel,decibel
+d406_uom_2p,2P,kilobyte,kilobyte
+d406_uom_2q,2Q,kilobecquerel,kilobecquerel
+d406_uom_2r,2R,kilocurie,kilocurie
+d406_uom_2u,2U,megagram,megagram
+d406_uom_2x,2X,metru per minut,metre per minute
+d406_uom_2y,2Y,milliroentgen,milliroentgen
+d406_uom_2z,2Z,milivolt,millivolt
+d406_uom_33,33,kilopascal în metru pătrat pe gram,kilopascal square metre per gram
+d406_uom_34,34,kilopascal pe milimetru,kilopascal per millimetre
+d406_uom_35,35,mililitru pe centimetru pătrat secundă,millilitre per square centimetre second
+d406_uom_37,37,uncie pe metru pătrat,ounce per square foot
+d406_uom_38,38,"uncie pe picior pătrat pe 0,01 inch","ounce per square foot per 0,01inch"
+d406_uom_3b,3B,megajoule,megajoule
+d406_uom_3c,3C,om-lună,manmonth
+d406_uom_40,40,mililitru pe secundă,millilitre per second
+d406_uom_41,41,mililitru pe minut,millilitre per minute
+d406_uom_4c,4C,centistokes,centistokes
+d406_uom_4g,4G,microlitru,microlitre
+d406_uom_4h,4H,micrometru (micron),micrometre (micron)
+d406_uom_4k,4K,miliamper,milliampere
+d406_uom_4l,4L,megabyte,megabyte
+d406_uom_4m,4M,miligram per oră,milligram per hour
+d406_uom_4n,4N,megabecquerel,megabecquerel
+d406_uom_4o,4O,microfarad,microfarad
+d406_uom_4p,4P,newton per metru,newton per metre
+d406_uom_4q,4Q,uncie inch,ounce inch
+d406_uom_4r,4R,uncie picior,ounce foot
+d406_uom_4t,4T,picofarad,picofarad
+d406_uom_4u,4U,livră per oră,pound per hour
+d406_uom_4w,4W,tonă (SUA) per oră,ton (US) per hour
+d406_uom_4x,4X,kilolitru per oră,kilolitre per hour
+d406_uom_56,56,sitas - unitate de măsură pentru suprafață,sitas
+d406_uom_57,57,celulă,mesh
+d406_uom_58,58,kilogram net,net kilogram
+d406_uom_59,59,parte per milion,part per million
+d406_uom_5a,5A,baril (SUA) per minut,barrel (US) per minute
+d406_uom_5b,5B,lot,batch
+d406_uom_5e,5E,MMSCF/zi,MMSCF/day
+d406_uom_5j,5J,cai-putere în sistemele hidraulice,hydraulic horse power
+d406_uom_60,60,procente greutate,percent weight
+d406_uom_61,61,parte pe miliard (SUA),part per billion (US)
+d406_uom_74,74,milipascal,millipascal
+d406_uom_77,77,mili-inci,milli-inch
+d406_uom_80,80,livră per inci pătrat absolut,pound per square inch absolute
+d406_uom_81,81,Henry (inductanță),henry
+d406_uom_85,85,Picior-Livră-Forță,foot pound-force
+d406_uom_87,87,livră per picior cub,pound per cubic foot
+d406_uom_89,89,poise (unitate de măsură pentru vâscozitate),poise
+d406_uom_91,91,vâscozitate cinematică,stokes
+d406_uom_a10,A10,amper metru pătrat per joule secundă,ampere square metre per joule second
+d406_uom_a11,A11,angstrom,angstrom
+d406_uom_a12,A12,unitate astronomică,astronomical unit
+d406_uom_a13,A13,attojoule,attojoule
+d406_uom_a14,A14,hambar,barn
+d406_uom_a15,A15,hambar per electronvolt,barn per electronvolt
+d406_uom_a16,A16,hambar per electronvolt sterradian,barn per steradian electronvolt
+d406_uom_a17,A17,hambar per steradian,barn per steradian
+d406_uom_a18,A18,becquerel per kilogram,becquerel per kilogram
+d406_uom_a19,A19,becquerel per metru cub,becquerel per cubic metre
+d406_uom_a2,A2,amperi pe centimetru,ampere per centimetre
+d406_uom_a20,A20,Unitate termică britanică (tabel internațional) per secundă de picior la pătrat grad Rankine,British thermal unit (international table) per second square foot degree Rankine
+d406_uom_a21,A21,Unitate termică britanică (tabel internațional) per livră grad Rankine,British thermal unit (international table) per pound degree Rankine
+d406_uom_a22,A22,Unitate termică britanică (tabel internațional) per gradul secund de picior Rankine,British thermal unit (international table) per second foot degree Rankine
+d406_uom_a23,A23,Unitate termică britanică (tabel internațional) per oră grad Rankine de picior pătrat,British thermal unit (international table) per hour square foot degree Rankine
+d406_uom_a24,A24,candela per metru pătrat,candela per square metre
+d406_uom_a26,A26,metru coulomb,coulomb metre
+d406_uom_a27,A27,metru coulomb pătrat pe volt,coulomb metre squared per volt
+d406_uom_a28,A28,coulomb per centimetru cub,coulomb per cubic centimetre
+d406_uom_a29,A29,coulomb per metru cub,coulomb per cubic metre
+d406_uom_a3,A3,amperi pe milimetru,ampere per millimetre
+d406_uom_a30,A30,coulomb per milimetru cub,coulomb per cubic millimetre
+d406_uom_a31,A31,coulomb per kilogram secundă,coulomb per kilogram second
+d406_uom_a32,A32,coulomb per mol,coulomb per mole
+d406_uom_a33,A33,coulomb per centimetru pătrat,coulomb per square centimetre
+d406_uom_a34,A34,coulomb per metru pătrat,coulomb per square metre
+d406_uom_a35,A35,coulomb per milimetru pătrat,coulomb per square millimetre
+d406_uom_a36,A36,centimetru cub per mol,cubic centimetre per mole
+d406_uom_a37,A37,decimetru cub per mol,cubic decimetre per mole
+d406_uom_a38,A38,metru cub per coulomb,cubic metre per coulomb
+d406_uom_a39,A39,metru cub per kilogram,cubic metre per kilogram
+d406_uom_a4,A4,amperi per centimetru pătrat,ampere per square centimetre
+d406_uom_a40,A40,metru cub per mol,cubic metre per mole
+d406_uom_a41,A41,amperi pe metru pătrat,ampere per square metre
+d406_uom_a42,A42,curie per kilogram,curie per kilogram
+d406_uom_a43,A43,tonaj greu,deadweight tonnage
+d406_uom_a44,A44,decalitru,decalitre
+d406_uom_a45,A45,decametru,decametre
+d406_uom_a47,A47,decitex,decitex
+d406_uom_a48,A48,gradul Rankine,degree Rankine
+d406_uom_a49,A49,negator,denier
+d406_uom_a5,A5,amper metru pătrat,ampere square metre
+d406_uom_a53,A53,electronvolt,electronvolt
+d406_uom_a54,A54,electronvolt per metru,electronvolt per metre
+d406_uom_a55,A55,electronvolt-metru pătrat,electronvolt square metre
+d406_uom_a56,A56,electronvolt-metru pătrat pe kilogram,electronvolt square metre per kilogram
+d406_uom_a59,A59,nor (8-part cloud cover),8-part cloud cover
+d406_uom_a6,A6,amperi per metru pătrat kelvin pătrat,ampere per square metre kelvin squared
+d406_uom_a68,A68,exajoule,exajoule
+d406_uom_a69,A69,farad per metru,farad per metre
+d406_uom_a7,A7,amperi per milimetru pătrat,ampere per square millimetre
+d406_uom_a70,A70,femtojoule,femtojoule
+d406_uom_a71,A71,femtometru,femtometre
+d406_uom_a73,A73,picior per secundă pătrat,foot per second squared
+d406_uom_a74,A74,picior livră-forță pe secundă,foot pound-force per second
+d406_uom_a75,A75,tonă de marfă,freight ton
+d406_uom_a76,A76,gal,gal
+d406_uom_a8,A8,amper secundă,ampere second
+d406_uom_a84,A84,gigacoulomb pe metru cub,gigacoulomb per cubic metre
+d406_uom_a85,A85,gigaelectronvolt,gigaelectronvolt
+d406_uom_a86,A86,gigahertz,gigahertz
+d406_uom_a87,A87,gigaohm,gigaohm
+d406_uom_a88,A88,gigaohmmetru,gigaohm metre
+d406_uom_a89,A89,gigapascal,gigapascal
+d406_uom_a9,A9,coeficient/rată,rate
+d406_uom_a90,A90,gigawatt,gigawatt
+d406_uom_a91,A91,gon,gon
+d406_uom_a93,A93,gram per metru cub,gram per cubic metre
+d406_uom_a94,A94,gram per mol,gram per mole
+d406_uom_a95,A95,gray (doza de radiații ionizante),gray
+d406_uom_a96,A96,gray per secundă,gray per second
+d406_uom_a97,A97,hectopascal,hectopascal
+d406_uom_a98,A98,henry per metru,henry per metre
+d406_uom_a99,A99,bit,bit
+d406_uom_aa,AA,hectopascal,ball
+d406_uom_ab,AB,ambalaj vrac,bulk pack
+d406_uom_acr,ACR,acru,acre
+d406_uom_act,ACT,activitate,activity
+d406_uom_ad,AD,octet,byte
+d406_uom_ae,AE,amper per metru,ampere per metre
+d406_uom_ah,AH,minut suplimentar,additional minute
+d406_uom_ai,AI,minut mediu per apel,average minute per call
+d406_uom_ak,AK,fathom,fathom
+d406_uom_al,AL,linie de acces,access line
+d406_uom_amh,AMH,amperi oră,ampere hour
+d406_uom_amp,AMP,amper,ampere
+d406_uom_ann,ANN,an,year
+d406_uom_apz,APZ,uncie troy sau uncie de farmacie,troy ounce or apothecary ounce
+d406_uom_aq,AQ,unitate factor anti-hemofil (AHF).,anti-hemophilic factor (AHF) unit
+d406_uom_as,AS,sortiment,assortment
+d406_uom_asm,ASM,tărie alcoolică în masă,alcoholic strength by mass
+d406_uom_asu,ASU,tărie alcoolică în volum,alcoholic strength by volume
+d406_uom_atm,ATM,atmosferă standard,standard atmosphere
+d406_uom_awg,AWG,sistem de măsurare AWG,american wire gauge
+d406_uom_ay,AY,ansamblu,assembly
+d406_uom_az,AZ,Unitate termică britanică (masă internațională) per livră,British thermal unit (international table) per pound
+d406_uom_b1,B1,baril (SUA) pe zi,barrel (US) per day
+d406_uom_b10,B10,bit per secundă,bit per second
+d406_uom_b11,B11,joule per kilogram kelvin,joule per kilogram kelvin
+d406_uom_b12,B12,joule per metru,joule per metre
+d406_uom_b13,B13,joule per metru pătrat,joule per square metre
+d406_uom_b14,B14,joule per metru la puterea patru,joule per metre to the fourth power
+d406_uom_b15,B15,joule per mol,joule per mole
+d406_uom_b16,B16,joule per mol kelvin,joule per mole kelvin
+d406_uom_b17,B17,credit,credit
+d406_uom_b18,B18,joule secundă,joule second
+d406_uom_b19,B19,cifră,digit
+d406_uom_b20,B20,joule metru pătrat pe kilogram,joule square metre per kilogram
+d406_uom_b21,B21,kelvin per watt,kelvin per watt
+d406_uom_b22,B22,kiloamperi,kiloampere
+d406_uom_b23,B23,kiloamperi per metru pătrat,kiloampere per square metre
+d406_uom_b24,B24,kiloamperi per metru,kiloampere per metre
+d406_uom_b25,B25,kilobecquerel per kilogram,kilobecquerel per kilogram
+d406_uom_b26,B26,kilocoulomb,kilocoulomb
+d406_uom_b27,B27,kilocoulomb per metru cub,kilocoulomb per cubic metre
+d406_uom_b28,B28,kilocoulomb pe metru pătrat,kilocoulomb per square metre
+d406_uom_b29,B29,kiloelectronvolt,kiloelectronvolt
+d406_uom_b3,B3,batting livră,batting pound
+d406_uom_b30,B30,gibit,gibit
+d406_uom_b31,B31,kilogram metru pe secundă,kilogram metre per second
+d406_uom_b32,B32,kilogram metru pătrat,kilogram metre squared
+d406_uom_b33,B33,kilogram metru pătrat per secundă,kilogram metre squared per second
+d406_uom_b34,B34,kilogram per decimetru cub,kilogram per cubic decimetre
+d406_uom_b35,B35,kilogram per litru,kilogram per litre
+d406_uom_b4,B4,"unitate de capacitate, imperial","barrel, imperial"
+d406_uom_b41,B41,kilojoul per kelvin,kilojoule per kelvin
+d406_uom_b42,B42,kilojoule per kilogram,kilojoule per kilogram
+d406_uom_b43,B43,kilojoule per kilogram kelvin,kilojoule per kilogram kelvin
+d406_uom_b44,B44,kilojoul per mol,kilojoule per mole
+d406_uom_b45,B45,kilomol,kilomole
+d406_uom_b46,B46,kilomol per metru cub,kilomole per cubic metre
+d406_uom_b47,B47,kilonewton,kilonewton
+d406_uom_b48,B48,kilonewton metru,kilonewton metre
+d406_uom_b49,B49,kiloohm,kiloohm
+d406_uom_b50,B50,kiloohmmetru,kiloohm metre
+d406_uom_b52,B52,kilosecundă,kilosecond
+d406_uom_b53,B53,kilosiemens,kilosiemens
+d406_uom_b54,B54,kilosiemens per metru,kilosiemens per metre
+d406_uom_b55,B55,kilovolt per metru,kilovolt per metre
+d406_uom_b56,B56,kiloweber per metru,kiloweber per metre
+d406_uom_b57,B57,an lumină,light year
+d406_uom_b58,B58,litru per mol,litre per mole
+d406_uom_b59,B59,oră lumen,lumen hour
+d406_uom_b60,B60,lumen per metru pătrat,lumen per square metre
+d406_uom_b61,B61,lumen per watt,lumen per watt
+d406_uom_b62,B62,lumen secundă,lumen second
+d406_uom_b63,B63,oră lux,lux hour
+d406_uom_b64,B64,secundă lux,lux second
+d406_uom_b66,B66,megaamperi per metru pătrat,megaampere per square metre
+d406_uom_b67,B67,megabecquerel per kilogram,megabecquerel per kilogram
+d406_uom_b68,B68,gigabit,gigabit
+d406_uom_b69,B69,megacoulomb per metru cub,megacoulomb per cubic metre
+d406_uom_b7,B7,ciclu,cycle
+d406_uom_b70,B70,megacoulomb per metru pătrat,megacoulomb per square metre
+d406_uom_b71,B71,megaelectronvolt,megaelectronvolt
+d406_uom_b72,B72,megagram per metru cub,megagram per cubic metre
+d406_uom_b73,B73,meganewton,meganewton
+d406_uom_b74,B74,metru meganewton,meganewton metre
+d406_uom_b75,B75,megaohm,megaohm
+d406_uom_b76,B76,megaohmmetru,megaohm metre
+d406_uom_b77,B77,megaohmmetru,megasiemens per metre
+d406_uom_b78,B78,megavolt,megavolt
+d406_uom_b79,B79,megavolt per metru,megavolt per metre
+d406_uom_b8,B8,joule pe metru cub,joule per cubic metre
+d406_uom_b80,B80,gigabit per secundă,gigabit per second
+d406_uom_b81,B81,metru reciproc pătrat secundă reciprocă,reciprocal metre squared reciprocal second
+d406_uom_b82,B82,inch per picior liniar,inch per linear foot
+d406_uom_b83,B83,metru la puterea a patra,metre to the fourth power
+d406_uom_b84,B84,microamper,microampere
+d406_uom_b85,B85,microbar,microbar
+d406_uom_b86,B86,microcoulomb,microcoulomb
+d406_uom_b87,B87,microcoulomb per metru cub,microcoulomb per cubic metre
+d406_uom_b88,B88,microcoulomb per metru pătrat,microcoulomb per square metre
+d406_uom_b89,B89,microfarad pe metru,microfarad per metre
+d406_uom_b90,B90,microhenry,microhenry
+d406_uom_b91,B91,microhenry per metru,microhenry per metre
+d406_uom_b92,B92,micronewton,micronewton
+d406_uom_b93,B93,micronewton metru,micronewton metre
+d406_uom_b94,B94,microohm,microohm
+d406_uom_b95,B95,microohm metru,microohm metre
+d406_uom_b96,B96,micropascal,micropascal
+d406_uom_b97,B97,microradian,microradian
+d406_uom_b98,B98,microsecundă,microsecond
+d406_uom_b99,B99,microsiemens,microsiemens
+d406_uom_bar,BAR,bar [unitate de presiune],bar [unit of pressure]
+d406_uom_bb,BB,cutie de bază,base box
+d406_uom_bft,BFT,picior de bord,board foot
+d406_uom_bhp,BHP,cai-putere,brake horse power
+d406_uom_bil,BIL,miliarde (EUR),billion (EUR)
+d406_uom_bld,BLD,dry barrel (US),dry barrel (US)
+d406_uom_bll,BLL,baril (SUA),barrel (US)
+d406_uom_bp,BP,hundred board foot (măsură standard pentru materii lemnoase),hundred board foot
+d406_uom_bpm,BPM,bătăi per minut,beats per minute
+d406_uom_bql,BQL,becquerel,becquerel
+d406_uom_btu,BTU,Unitate termică britanică (tabel internațional),British thermal unit (international table)
+d406_uom_bua,BUA,bushel (SUA),bushel (US)
+d406_uom_bui,BUI,bushel (UK),bushel (UK)
+d406_uom_c0,C0,call,call
+d406_uom_c10,C10,milifarad,millifarad
+d406_uom_c11,C11,milligal,milligal
+d406_uom_c12,C12,miligram per metru,milligram per metre
+d406_uom_c13,C13,miligray,milligray
+d406_uom_c14,C14,millhenry,millihenry
+d406_uom_c15,C15,milijoule,millijoule
+d406_uom_c16,C16,milimetru per secundă,millimetre per second
+d406_uom_c17,C17,milimetru pătrat per secundă,millimetre squared per second
+d406_uom_c18,C18,milimol,millimole
+d406_uom_c19,C19,mol per kilogram,mole per kilogram
+d406_uom_c20,C20,milinewton,millinewton
+d406_uom_c21,C21,kibibit,kibibit
+d406_uom_c22,C22,milinewton pe metru,millinewton per metre
+d406_uom_c23,C23,miliohm metru,milliohm metre
+d406_uom_c24,C24,milipascal secundă,millipascal second
+d406_uom_c25,C25,miliradian,milliradian
+d406_uom_c26,C26,milisecundă,millisecond
+d406_uom_c27,C27,millisiemens,millisiemens
+d406_uom_c28,C28,milisievert,millisievert
+d406_uom_c29,C29,millitesla,millitesla
+d406_uom_c3,C3,microvolt per metru,microvolt per metre
+d406_uom_c30,C30,milivolt per metru,millivolt per metre
+d406_uom_c31,C31,milliwatt,milliwatt
+d406_uom_c32,C32,miliwatt per metru pătrat,milliwatt per square metre
+d406_uom_c33,C33,milliweber,milliweber
+d406_uom_c34,C34,mol,mole
+d406_uom_c35,C35,mol per decimetru cub,mole per cubic decimetre
+d406_uom_c36,C36,mol per metru cub,mole per cubic metre
+d406_uom_c37,C37,kilobit,kilobit
+d406_uom_c38,C38,mol per litru,mole per litre
+d406_uom_c39,C39,nanoamperi,nanoampere
+d406_uom_c40,C40,nanocoulomb,nanocoulomb
+d406_uom_c41,C41,nanofarad,nanofarad
+d406_uom_c42,C42,nanofarad per metru,nanofarad per metre
+d406_uom_c43,C43,nanohenry,nanohenry
+d406_uom_c44,C44,nanohenry per metru,nanohenry per metre
+d406_uom_c45,C45,nanometru,nanometre
+d406_uom_c46,C46,nanoohm metru,nanoohm metre
+d406_uom_c47,C47,nanosecundă,nanosecond
+d406_uom_c48,C48,nanotesla,nanotesla
+d406_uom_c49,C49,nanowatt,nanowatt
+d406_uom_c50,C50,neper,neper
+d406_uom_c51,C51,neper per secundă,neper per second
+d406_uom_c52,C52,picometru,picometre
+d406_uom_c53,C53,newton metru secundă,newton metre second
+d406_uom_c54,C54,newton metru pătrat pe kilogram pătrat,newton metre squared per kilogram squared
+d406_uom_c55,C55,newton per metru pătrat,newton per square metre
+d406_uom_c56,C56,newton per milimetru pătrat,newton per square millimetre
+d406_uom_c57,C57,newton secundă,newton second
+d406_uom_c58,C58,newton secundă per metru,newton second per metre
+d406_uom_c59,C59,octavă,octave
+d406_uom_c60,C60,ohm centimetru,ohm centimetre
+d406_uom_c61,C61,ohm-metru,ohm metre
+d406_uom_c62,C62,one,one
+d406_uom_c63,C63,parsec,parsec
+d406_uom_c64,C64,pascal per kelvin,pascal per kelvin
+d406_uom_c65,C65,pascal secundă,pascal second
+d406_uom_c66,C66,pascal secundă per metru cub,pascal second per cubic metre
+d406_uom_c67,C67,pascal secundă per metru,pascal second per metre
+d406_uom_c68,C68,petajoule,petajoule
+d406_uom_c69,C69,fon,phon
+d406_uom_c7,C7,centipoise,centipoise
+d406_uom_c70,C70,picoamperi,picoampere
+d406_uom_c71,C71,picocoulomb,picocoulomb
+d406_uom_c72,C72,picofarad per metru,picofarad per metre
+d406_uom_c73,C73,picohenry,picohenry
+d406_uom_c74,C74,kilobit per secundă,kilobit per second
+d406_uom_c75,C75,picowatt,picowatt
+d406_uom_c76,C76,picowatt pe metru pătrat,picowatt per square metre
+d406_uom_c78,C78,livră-forță,pound-force
+d406_uom_c79,C79,kilovolt amperi oră,kilovolt ampere hour
+d406_uom_c8,C8,millicoulomb per kilogram,millicoulomb per kilogram
+d406_uom_c80,C80,rad,rad
+d406_uom_c81,C81,radian,radian
+d406_uom_c82,C82,radian metru pătrat per mol,radian square metre per mole
+d406_uom_c83,C83,radian metru pătrat per kilogram,radian square metre per kilogram
+d406_uom_c84,C84,radian per metru,radian per metre
+d406_uom_c85,C85,angstrom reciproc,reciprocal angstrom
+d406_uom_c86,C86,metru cub reciproc,reciprocal cubic metre
+d406_uom_c87,C87,metru cub reciproc per secundă,reciprocal cubic metre per second
+d406_uom_c88,C88,electronvolt reciproc per metru cub,reciprocal electron volt per cubic metre
+d406_uom_c89,C89,henry reciproc,reciprocal henry
+d406_uom_c9,C9,grup bobină,coil group
+d406_uom_c90,C90,Joule reciproc per metru cub,reciprocal joule per cubic metre
+d406_uom_c91,C91,kelvin reciproc sau kelvin la puterea minus unu,reciprocal kelvin or kelvin to the power minus one
+d406_uom_c92,C92,metru reciproc,reciprocal metre
+d406_uom_c93,C93,metru pătrat reciproc,reciprocal square metre
+d406_uom_c94,C94,minut reciproc,reciprocal minute
+d406_uom_c95,C95,mol reciproc,reciprocal mole
+d406_uom_c96,C96,pascal sau pascal reciproc la puterea minus unu,reciprocal pascal or pascal to the power minus one
+d406_uom_c97,C97,secundă reciprocă,reciprocal second
+d406_uom_c99,C99,secundă reciprocă pe metru pătrat,reciprocal second per metre squared
+d406_uom_cct,CCT,capacitatea de transport în tone metrice,carrying capacity in metric ton
+d406_uom_cdl,CDL,candela,candela
+d406_uom_cel,CEL,grade Celsius,degree Celsius
+d406_uom_cen,CEN,sută,hundred
+d406_uom_cg,CG,card,card
+d406_uom_cgm,CGM,centigram,centigram
+d406_uom_ckg,CKG,coulomb per kilogram,coulomb per kilogram
+d406_uom_clf,CLF,hundred leave,hundred leave
+d406_uom_clt,CLT,centilitru,centilitre
+d406_uom_cmk,CMK,centimetru pătrat,square centimetre
+d406_uom_cmq,CMQ,centimetru cub,cubic centimetre
+d406_uom_cmt,CMT,centimetru,centimetre
+d406_uom_cnp,CNP,o sută unități (hundred pack),hundred pack
+d406_uom_cnt,CNT,cental (Marea Britanie) (unitate centrală),cental (UK)
+d406_uom_cou,COU,coulomb,coulomb
+d406_uom_ctg,CTG,gram de continut,content gram
+d406_uom_ctm,CTM,carate metrice,metric carat
+d406_uom_ctn,CTN,conținut tonă (metric),content ton (metric)
+d406_uom_cur,CUR,curie,curie
+d406_uom_cwa,CWA,unitate atomică de masă (cwt) /,hundred pound (cwt) / hundred weight (US)
+d406_uom_cwi,CWI,chintal (Marea Britanie),hundred weight (UK)
+d406_uom_d03,D03,kilowați oră per oră,kilowatt hour per hour
+d406_uom_d04,D04,lot [unitate de greutate],lot [unit of weight]
+d406_uom_d1,D1,secundă reciprocă pe steradian,reciprocal second per steradian
+d406_uom_d10,D10,siemens per metru,siemens per metre
+d406_uom_d11,D11,mebibit,mebibit
+d406_uom_d12,D12,siemens metru pătrat pe mol,siemens square metre per mole
+d406_uom_d13,D13,sievert,sievert
+d406_uom_d15,D15,sone (unitate zgomot),sone
+d406_uom_d16,D16,centimetru pătrat per erg,square centimetre per erg
+d406_uom_d17,D17,centimetru pătrat per erg steradian,square centimetre per steradian erg
+d406_uom_d18,D18,metru kelvin,metre kelvin
+d406_uom_d19,D19,metru pătrat kelvin per watt,square metre kelvin per watt
+d406_uom_d2,D2,secundă reciprocă per metru steradian pătrat,reciprocal second per steradian metre squared
+d406_uom_d20,D20,metru pătrat per joule,square metre per joule
+d406_uom_d21,D21,metru pătrat per kilogram,square metre per kilogram
+d406_uom_d22,D22,metru pătrat per mol,square metre per mole
+d406_uom_d23,D23,pen gram (proteine),pen gram (protein)
+d406_uom_d24,D24,metru pătrat per steradian,square metre per steradian
+d406_uom_d25,D25,metru pătrat per joule steradian,square metre per steradian joule
+d406_uom_d26,D26,metru pătrat per volt secundă,square metre per volt second
+d406_uom_d27,D27,steradian,steradian
+d406_uom_d29,D29,teraherți,terahertz
+d406_uom_d30,D30,terajoule,terajoule
+d406_uom_d31,D31,terawatt,terawatt
+d406_uom_d32,D32,terawatt oră,terawatt hour
+d406_uom_d33,D33,tesla,tesla
+d406_uom_d34,D34,tex,tex
+d406_uom_d36,D36,megabit,megabit
+d406_uom_d41,D41,tonă per metru cub,tonne per cubic metre
+d406_uom_d42,D42,an tropical,tropical year
+d406_uom_d43,D43,unitate de masă atomică unificată,unified atomic mass unit
+d406_uom_d44,D44,var,var
+d406_uom_d45,D45,volt pătrat per kelvin pătrat,volt squared per kelvin squared
+d406_uom_d46,D46,volt - amper,volt - ampere
+d406_uom_d47,D47,volt per centimetru,volt per centimetre
+d406_uom_d48,D48,volt per kelvin,volt per kelvin
+d406_uom_d49,D49,milivolt per kelvin,millivolt per kelvin
+d406_uom_d5,D5,kilogram per centimetru pătrat,kilogram per square centimetre
+d406_uom_d50,D50,volt per metru,volt per metre
+d406_uom_d51,D51,volt per milimetru,volt per millimetre
+d406_uom_d52,D52,watt per kelvin,watt per kelvin
+d406_uom_d53,D53,watt pe metru kelvin,watt per metre kelvin
+d406_uom_d54,D54,watt pe metru pătrat,watt per square metre
+d406_uom_d55,D55,watt per metru pătrat kelvin,watt per square metre kelvin
+d406_uom_d56,D56,watt per metru pătrat kelvin la a patra putere,watt per square metre kelvin to the fourth power
+d406_uom_d57,D57,watt per steradian,watt per steradian
+d406_uom_d58,D58,watt per metru pătrat steradian,watt per steradian square metre
+d406_uom_d59,D59,weber per metru,weber per metre
+d406_uom_d6,D6,roentgen per secundă,roentgen per second
+d406_uom_d60,D60,weber per milimetru,weber per millimetre
+d406_uom_d61,D61,minut [unitate de unghi],minute [unit of angle]
+d406_uom_d62,D62,secundă [unitate de unghi],second [unit of angle]
+d406_uom_d63,D63,cantitate,book
+d406_uom_d65,D65,rundă,round
+d406_uom_d68,D68,număr de cuvinte,number of words
+d406_uom_d69,D69,inch la a patra putere,inch to the fourth power
+d406_uom_d73,D73,joule metru pătrat,joule square metre
+d406_uom_d74,D74,kilogram per mol,kilogram per mole
+d406_uom_d77,D77,megacoulomb,megacoulomb
+d406_uom_d78,D78,megajoule per second,megajoule per second
+d406_uom_d80,D80,microwat,microwatt
+d406_uom_d81,D81,microtesla,microtesla
+d406_uom_d82,D82,microvolt,microvolt
+d406_uom_d83,D83,milinewton metru,millinewton metre
+d406_uom_d85,D85,microwatt per metru pătrat,microwatt per square metre
+d406_uom_d86,D86,millicoulomb,millicoulomb
+d406_uom_d87,D87,milimol per kilogram,millimole per kilogram
+d406_uom_d88,D88,milicoulomb per metru cub,millicoulomb per cubic metre
+d406_uom_d89,D89,milicoulomb per metru pătrat,millicoulomb per square metre
+d406_uom_d91,D91,rem,rem
+d406_uom_d93,D93,secundă per metru cub,second per cubic metre
+d406_uom_d94,D94,secundă per metru cub radian,second per cubic metre radian
+d406_uom_d95,D95,joule per gram,joule per gram
+d406_uom_daa,DAA,decare,decare
+d406_uom_dad,DAD,zece zile,ten day
+d406_uom_day,DAY,zi,day
+d406_uom_db,DB,livră mediu uscat,dry pound
+d406_uom_dbm,DBM,Decibel-miliwați,Decibel-milliwatts
+d406_uom_dbw,DBW,Decibel Watt,Decibel watt
+d406_uom_dd,DD,grad [unitate de unghi],degree [unit of angle]
+d406_uom_dec,DEC,deceniu,decade
+d406_uom_dg,DG,decigram,decigram
+d406_uom_dj,DJ,decagram,decagram
+d406_uom_dlt,DLT,decilitru,decilitre
+d406_uom_dma,DMA,decametru cub,cubic decametre
+d406_uom_dmk,DMK,decimetru pătrat,square decimetre
+d406_uom_dmo,DMO,kilolitru standard,standard kilolitre
+d406_uom_dmq,DMQ,decimetru cub,cubic decimetre
+d406_uom_dmt,DMT,decimetru,decimetre
+d406_uom_dn,DN,decinewton metru,decinewton metre
+d406_uom_dpc,DPC,doisprezece buc.,dozen piece
+d406_uom_dpr,DPR,pereche de doisprezece,dozen pair
+d406_uom_dpt,DPT,tonaj de deplasare,displacement tonnage
+d406_uom_dra,DRA,dram (SUA),dram (US)
+d406_uom_dri,DRI,dram (Marea Britanie),dram (UK)
+d406_uom_drl,DRL,doisprezece roll.,dozen roll
+d406_uom_dt,DT,tonă mediu uscat,dry ton
+d406_uom_dtn,DTN,decitonă,decitonne
+d406_uom_dwt,DWT,pennyweight,pennyweight
+d406_uom_dzn,DZN,doisprezece,dozen
+d406_uom_dzp,DZP,pachet doisprezece,dozen pack
+d406_uom_e01,E01,newton pe centimetru pătrat,newton per square centimetre
+d406_uom_e07,E07,megawați oră per oră,megawatt hour per hour
+d406_uom_e08,E08,megawatt pe hertz,megawatt per hertz
+d406_uom_e09,E09,miliamperi oră,milliampere hour
+d406_uom_e10,E10,zi grade,degree day
+d406_uom_e12,E12,mille,mille
+d406_uom_e14,E14,kilocalorie (tabel internațional),kilocalorie (international table)
+d406_uom_e15,E15,kilocalorii (termochimice) per oră,kilocalorie (thermochemical) per hour
+d406_uom_e16,E16,milioane Btu(IT) pe oră,million Btu(IT) per hour
+d406_uom_e17,E17,picior cub pe secundă,cubic foot per second
+d406_uom_e18,E18,tonă pe oră,tonne per hour
+d406_uom_e19,E19,ping,ping
+d406_uom_e20,E20,megabit per secundă,megabit per second
+d406_uom_e21,E21,cote,shares
+d406_uom_e22,E22,TEU,TEU
+d406_uom_e23,E23,anvelopă,tyre
+d406_uom_e25,E25,unitate activă,active unit
+d406_uom_e27,E27,doză,dose
+d406_uom_e28,E28,tonă mediu uscat la aer,air dry ton
+d406_uom_e30,E30,toron,strand
+d406_uom_e31,E31,metru pătrat per litru,square metre per litre
+d406_uom_e32,E32,litru per oră,litre per hour
+d406_uom_e33,E33,picior la mie,foot per thousand
+d406_uom_e34,E34,gigabyte,gigabyte
+d406_uom_e35,E35,terabyte,terabyte
+d406_uom_e36,E36,petabyte,petabyte
+d406_uom_e37,E37,pixel,pixel
+d406_uom_e38,E38,megapixel,megapixel
+d406_uom_e39,E39,puncte per inci,dots per inch
+d406_uom_e4,E4,kilogramul brut,gross kilogram
+d406_uom_e40,E40,parte la suta de mii,part per hundred thousand
+d406_uom_e41,E41,kilogram-forță per milimetru pătrat,kilogram-force per square millimetre
+d406_uom_e42,E42,kilogram-forță per centimetru pătrat,kilogram-force per square centimetre
+d406_uom_e43,E43,joule pe centimetru pătrat,joule per square centimetre
+d406_uom_e44,E44,kilogram-forță metru pe centimetru pătrat,kilogram-force metre per square centimetre
+d406_uom_e45,E45,miliohmi,milliohm
+d406_uom_e46,E46,kilowatt oră per metru cub,kilowatt hour per cubic metre
+d406_uom_e47,E47,kilowatt-oră per kelvin,kilowatt hour per kelvin
+d406_uom_e48,E48,unitate de service,service unit
+d406_uom_e49,E49,zi lucrătoare,working day
+d406_uom_e50,E50,unitate de contabilitate,accounting unit
+d406_uom_e51,E51,job,job
+d406_uom_e52,E52,rata curentă,run foot
+d406_uom_e53,E53,test,test
+d406_uom_e54,E54,călătorie,trip
+d406_uom_e55,E55,utilizare,use
+d406_uom_e56,E56,godeu,well
+d406_uom_e57,E57,zonă,zone
+d406_uom_e58,E58,exabit pe secundă,exabit per second
+d406_uom_e59,E59,exbibyte,exbibyte
+d406_uom_e60,E60,pebibyte,pebibyte
+d406_uom_e61,E61,tebibyte,tebibyte
+d406_uom_e62,E62,gibibyte,gibibyte
+d406_uom_e63,E63,mebibyte,mebibyte
+d406_uom_e64,E64,kibibyte,kibibyte
+d406_uom_e65,E65,exbibit pe metru,exbibit per metre
+d406_uom_e66,E66,exbibit pe metru pătrat,exbibit per square metre
+d406_uom_e67,E67,exbibit pe metru cub,exbibit per cubic metre
+d406_uom_e68,E68,gigabyte pe secundă,gigabyte per second
+d406_uom_e69,E69,gibibit pe metru,gibibit per metre
+d406_uom_e70,E70,gibibit pe metru pătrat,gibibit per square metre
+d406_uom_e71,E71,gibibit pe metru cub,gibibit per cubic metre
+d406_uom_e72,E72,kibibit pe metru,kibibit per metre
+d406_uom_e73,E73,kibibit pe metru pătrat,kibibit per square metre
+d406_uom_e74,E74,kibibit pe metru cub,kibibit per cubic metre
+d406_uom_e75,E75,mebibit pe metru,mebibit per metre
+d406_uom_e76,E76,mebibit pe metru pătrat,mebibit per square metre
+d406_uom_e77,E77,mebibit pe metru cub,mebibit per cubic metre
+d406_uom_e78,E78,petabit,petabit
+d406_uom_e79,E79,petabit pe secundă,petabit per second
+d406_uom_e80,E80,pebibit pe metru,pebibit per metre
+d406_uom_e81,E81,pebibit pe metru pătrat,pebibit per square metre
+d406_uom_e82,E82,pebibit pe metru cub,pebibit per cubic metre
+d406_uom_e83,E83,terabit,terabit
+d406_uom_e84,E84,terabit pe secundă,terabit per second
+d406_uom_e85,E85,tebibit pe metru,tebibit per metre
+d406_uom_e86,E86,tebibit pe metru cub,tebibit per cubic metre
+d406_uom_e87,E87,tebibit pe metru pătrat,tebibit per square metre
+d406_uom_e88,E88,bit pe metru,bit per metre
+d406_uom_e89,E89,bit pe metru pătrat,bit per square metre
+d406_uom_e90,E90,centimetru reciproc,reciprocal centimetre
+d406_uom_e91,E91,zi reciprocă,reciprocal day
+d406_uom_e92,E92,decimetru cub pe oră,cubic decimetre per hour
+d406_uom_e93,E93,kilogram pe oră,kilogram per hour
+d406_uom_e94,E94,kilomol pe secundă,kilomole per second
+d406_uom_e95,E95,mol pe secundă,mole per second
+d406_uom_e96,E96,grad pe secundă,degree per second
+d406_uom_e97,E97,milimetru pe grad Celcius metru,millimetre per degree Celcius metre
+d406_uom_e98,E98,grade Celsius pe kelvin,degree Celsius per kelvin
+d406_uom_e99,E99,hectopascal pe bar,hectopascal per bar
+d406_uom_ea,EA,fiecare,each
+d406_uom_eb,EB,cutie de poștă electronică,electronic mail box
+d406_uom_eq,EQ,galon echivalent,equivalent gallon
+d406_uom_f01,F01,bit pe metru cub,bit per cubic metre
+d406_uom_f02,F02,kelvin pe kelvin,kelvin per kelvin
+d406_uom_f03,F03,kilopascal pe bar,kilopascal per bar
+d406_uom_f04,F04,milibar pe bar,millibar per bar
+d406_uom_f05,F05,megapascal pe bar,megapascal per bar
+d406_uom_f06,F06,poise pe bar,poise per bar
+d406_uom_f07,F07,pascal pe bar,pascal per bar
+d406_uom_f08,F08,miliamperi pe inch,milliampere per inch
+d406_uom_f10,F10,kelvin pe oră,kelvin per hour
+d406_uom_f11,F11,kelvin pe minut,kelvin per minute
+d406_uom_f12,F12,kelvin pe secundă,kelvin per second
+d406_uom_f13,F13,slug (unitate tehnică),slug
+d406_uom_f14,F14,gram pe kelvin,gram per kelvin
+d406_uom_f15,F15,kilogram pe kelvin,kilogram per kelvin
+d406_uom_f16,F16,miligram pe kelvin,milligram per kelvin
+d406_uom_f17,F17,livră-forță pe picior,pound-force per foot
+d406_uom_f18,F18,kilogram centimetru pătrat,kilogram square centimetre
+d406_uom_f19,F19,kilogram milimetru pătrat,kilogram square millimetre
+d406_uom_f20,F20,livră per inch pătrat,pound inch squared
+d406_uom_f21,F21,livră-forță inch,pound-force inch
+d406_uom_f22,F22,livră-forță picior pe amper,pound-force foot per ampere
+d406_uom_f23,F23,gram per decimetru cub,gram per cubic decimetre
+d406_uom_f24,F24,kilogram pe kilomol,kilogram per kilomol
+d406_uom_f25,F25,gram pe hertz,gram per hertz
+d406_uom_f26,F26,gram pe zi,gram per day
+d406_uom_f27,F27,gram pe oră,gram per hour
+d406_uom_f28,F28,gram pe minut,gram per minute
+d406_uom_f29,F29,gram pe secundă,gram per second
+d406_uom_f30,F30,kilogram pe zi,kilogram per day
+d406_uom_f31,F31,kilogram pe minut,kilogram per minute
+d406_uom_f32,F32,miligram pe zi,milligram per day
+d406_uom_f33,F33,miligram pe minut,milligram per minute
+d406_uom_f34,F34,miligram pe secundă,milligram per second
+d406_uom_f35,F35,gram pe zi kelvin,gram per day kelvin
+d406_uom_f36,F36,gram pe oră kelvin,gram per hour kelvin
+d406_uom_f37,F37,gram pe minut kelvin,gram per minute kelvin
+d406_uom_f38,F38,gram pe secundă kelvin,gram per second kelvin
+d406_uom_f39,F39,kilogram pe zi kelvin,kilogram per day kelvin
+d406_uom_f40,F40,kilogram pe oră kelvin,kilogram per hour kelvin
+d406_uom_f41,F41,kilogram pe minut kelvin,kilogram per minute kelvin
+d406_uom_f42,F42,kilogram pe secundă kelvin,kilogram per second kelvin
+d406_uom_f43,F43,miligram pe zi kelvin,milligram per day kelvin
+d406_uom_f44,F44,miligram pe oră kelvin,milligram per hour kelvin
+d406_uom_f45,F45,miligram pe minut kelvin,milligram per minute kelvin
+d406_uom_f46,F46,miligram pe secundă kelvin,milligram per second kelvin
+d406_uom_f47,F47,newton pe milimetru,newton per millimetre
+d406_uom_f48,F48,livră-forță pe inch,pound-force per inch
+d406_uom_f49,F49,rod [unitate de distanță],rod [unit of distance]
+d406_uom_f50,F50,micrometru pe kelvin,micrometre per kelvin
+d406_uom_f51,F51,centimetru pe kelvin,centimetre per kelvin
+d406_uom_f52,F52,metru pe kelvin,metre per kelvin
+d406_uom_f53,F53,milimetru pe kelvin,millimetre per kelvin
+d406_uom_f54,F54,miliohmi pe metru,milliohm per metre
+d406_uom_f55,F55,ohm pe milă (mila statutară),ohm per mile (statute mile)
+d406_uom_f56,F56,ohm pe kilometru,ohm per kilometre
+d406_uom_f57,F57,miliamperi pe livră-forță pe inch pătrat,milliampere per pound-force per square inch
+d406_uom_f58,F58,bar reciproc,reciprocal bar
+d406_uom_f59,F59,miliamperi pe bar,milliampere per bar
+d406_uom_f60,F60,grade Celsius pe bar,degree Celsius per bar
+d406_uom_f61,F61,kelvin pe bar,kelvin per bar
+d406_uom_f62,F62,gram pe bar zi,gram per day bar
+d406_uom_f63,F63,gram pe bar oră,gram per hour bar
+d406_uom_f64,F64,gram pe bar minut,gram per minute bar
+d406_uom_f65,F65,gram pe bar secundă,gram per second bar
+d406_uom_f66,F66,kilogram pe bar zi,kilogram per day bar
+d406_uom_f67,F67,kilogram pe bar oră,kilogram per hour bar
+d406_uom_f68,F68,kilogram pe bar minut,kilogram per minute bar
+d406_uom_f69,F69,kilogram pe bar secundă,kilogram per second bar
+d406_uom_f70,F70,miligram pe bar zi,milligram per day bar
+d406_uom_f71,F71,miligram pe bar oră,milligram per hour bar
+d406_uom_f72,F72,miligram pe bar minut,milligram per minute bar
+d406_uom_f73,F73,miligram pe bar secundă,milligram per second bar
+d406_uom_f74,F74,gram pe bar,gram per bar
+d406_uom_f75,F75,miligram pe bar,milligram per bar
+d406_uom_f76,F76,miliamperi pe milimetru,milliampere per millimetre
+d406_uom_f77,F77,pascal secundă pe kelvin,pascal second per kelvin
+d406_uom_f78,F78,inch de apă,inch of water
+d406_uom_f79,F79,inch de mercur,inch of mercury
+d406_uom_f80,F80,cai-putere apă,water horse power
+d406_uom_f81,F81,bar pe kelvin,bar per kelvin
+d406_uom_f82,F82,hectopascal pe kelvin,hectopascal per kelvin
+d406_uom_f83,F83,kilopascal pe kelvin,kilopascal per kelvin
+d406_uom_f84,F84,milibar pe kelvin,millibar per kelvin
+d406_uom_f85,F85,megapascal pe kelvin,megapascal per kelvin
+d406_uom_f86,F86,poise pe kelvin,poise per kelvin
+d406_uom_f87,F87,volt pe litru minut,volt per litre minute
+d406_uom_f88,F88,centimetru newton,newton centimetre
+d406_uom_f89,F89,newton metru pe grad,newton metre per degree
+d406_uom_f90,F90,newton metru pe amper,newton metre per ampere
+d406_uom_f91,F91,bar litru pe secundă,bar litre per second
+d406_uom_f92,F92,bar metru cub pe secundă,bar cubic metre per second
+d406_uom_f93,F93,hectopascal litru pe secundă,hectopascal litre per second
+d406_uom_f94,F94,hectopascal metru cub pe secundă,hectopascal cubic metre per second
+d406_uom_f95,F95,milibar litru pe secundă,millibar litre per second
+d406_uom_f96,F96,milibari metru cub pe secundă,millibar cubic metre per second
+d406_uom_f97,F97,megapascal litru pe secundă,megapascal litre per second
+d406_uom_f98,F98,megapascal metru cub pe secundă,megapascal cubic metre per second
+d406_uom_f99,F99,pascal litru pe secundă,pascal litre per second
+d406_uom_fah,FAH,grad Fahrenheit,degree Fahrenheit
+d406_uom_far,FAR,farad,farad
+d406_uom_fbm,FBM,contor de fibre,fibre metre
+d406_uom_fc,FC,mii de picioare cubi,thousand cubic foot
+d406_uom_ff,FF,suta de metri cubi,hundred cubic metre
+d406_uom_fh,FH,micromol,micromole
+d406_uom_fit,FIT,rata de defecțiune,failures in time
+d406_uom_fl,FL,tonă fulgi,flake ton
+d406_uom_fnu,FNU,Unitate nefelometrică de formazină,Formazin nephelometric unit
+d406_uom_fot,FOT,picior,foot
+d406_uom_fp,FP,livră pe picior pătrat,pound per square foot
+d406_uom_fr,FR,picior pe minut,foot per minute
+d406_uom_fs,FS,picior pe secundă,foot per second
+d406_uom_ftk,FTK,metru pătrat,square foot
+d406_uom_ftq,FTQ,metru cub,cubic foot
+d406_uom_g01,G01,pascal metru cub pe secundă,pascal cubic metre per second
+d406_uom_g04,G04,centimetru pe bar,centimetre per bar
+d406_uom_g05,G05,metru pe bar,metre per bar
+d406_uom_g06,G06,milimetru pe bar,millimetre per bar
+d406_uom_g08,G08,inch pătrat pe secundă,square inch per second
+d406_uom_g09,G09,metru pătrat pe secundă kelvin,square metre per second kelvin
+d406_uom_g10,G10,stokes pe kelvin,stokes per kelvin
+d406_uom_g11,G11,gram pe bar centimetru cub,gram per cubic centimetre bar
+d406_uom_g12,G12,gram pe bar decimetru cub,gram per cubic decimetre bar
+d406_uom_g13,G13,gram pe bar litru,gram per litre bar
+d406_uom_g14,G14,gram pe bar metru cub,gram per cubic metre bar
+d406_uom_g15,G15,gram pe bar mililitru,gram per millilitre bar
+d406_uom_g16,G16,kilogram pe bar centimetru cub,kilogram per cubic centimetre bar
+d406_uom_g17,G17,kilogram pe bar litru,kilogram per litre bar
+d406_uom_g18,G18,kilogram pe bar metru cub,kilogram per cubic metre bar
+d406_uom_g19,G19,newton metru pe kilogram,newton metre per kilogram
+d406_uom_g2,G2,galon american pe minut,US gallon per minute
+d406_uom_g20,G20,livră-forță picior pe kilogram,pound-force foot per pound
+d406_uom_g21,G21,cupă [unitate de volum],cup [unit of volume]
+d406_uom_g23,G23,peck (unitate de capacitate),peck
+d406_uom_g24,G24,lingură (SUA),tablespoon (US)
+d406_uom_g25,G25,linguriță (SUA),teaspoon (US)
+d406_uom_g26,G26,ster,stere
+d406_uom_g27,G27,centimetru cub pe kelvin,cubic centimetre per kelvin
+d406_uom_g28,G28,litru pe kelvin,litre per kelvin
+d406_uom_g29,G29,metru cub pe kelvin,cubic metre per kelvin
+d406_uom_g3,G3,galon imperial pe minut,Imperial gallon per minute
+d406_uom_g30,G30,mililitru pe kelvin,millilitre per kelvin
+d406_uom_g31,G31,kilogram pe centimetru cub,kilogram per cubic centimetre
+d406_uom_g32,G32,uncie (avoirdupois) pe yard cub,ounce (avoirdupois) per cubic yard
+d406_uom_g33,G33,gram pe centimetru cub kelvin,gram per cubic centimetre kelvin
+d406_uom_g34,G34,gram pe decimetru cub kelvin,gram per cubic decimetre kelvin
+d406_uom_g35,G35,gram pe litru kelvin,gram per litre kelvin
+d406_uom_g36,G36,gram pe metru cub kelvin,gram per cubic metre kelvin
+d406_uom_g37,G37,gram pe mililitru kelvin,gram per millilitre kelvin
+d406_uom_g38,G38,kilogram pe centimetru cub kelvin,kilogram per cubic centimetre kelvin
+d406_uom_g39,G39,kilogram pe litru kelvin,kilogram per litre kelvin
+d406_uom_g40,G40,kilogram pe metru cub kelvin,kilogram per cubic metre kelvin
+d406_uom_g41,G41,metru pătrat pe bar secundă,square metre per second bar
+d406_uom_g42,G42,microsiemens pe centimetru,microsiemens per centimetre
+d406_uom_g43,G43,microsiemens pe metru,microsiemens per metre
+d406_uom_g44,G44,nanosiemens pe centimetru,nanosiemens per centimetre
+d406_uom_g45,G45,nanosiemens pe metru,nanosiemens per metre
+d406_uom_g46,G46,stokes pe bar,stokes per bar
+d406_uom_g47,G47,centimetru cub pe zi,cubic centimetre per day
+d406_uom_g48,G48,centimetru cub pe oră,cubic centimetre per hour
+d406_uom_g49,G49,centimetru cub pe minut,cubic centimetre per minute
+d406_uom_g50,G50,galon (SUA) pe oră,gallon (US) per hour
+d406_uom_g51,G51,litru pe secundă,litre per second
+d406_uom_g52,G52,cubic metre per day,cubic metre per day
+d406_uom_g53,G53,metru cub pe minut,cubic metre per minute
+d406_uom_g54,G54,mililitru pe zi,millilitre per day
+d406_uom_g55,G55,mililitru pe oră,millilitre per hour
+d406_uom_g56,G56,inch cubi pe oră,cubic inch per hour
+d406_uom_g57,G57,inch cubi pe minut,cubic inch per minute
+d406_uom_g58,G58,inch cubi pe secundă,cubic inch per second
+d406_uom_g59,G59,miliamperi pe litru minut,milliampere per litre minute
+d406_uom_g60,G60,volt pe bar,volt per bar
+d406_uom_g61,G61,centimetru cub pe zi kelvin,cubic centimetre per day kelvin
+d406_uom_g62,G62,centimetru cub pe oră kelvin,cubic centimetre per hour kelvin
+d406_uom_g63,G63,centimetru cub pe minut kelvin,cubic centimetre per minute kelvin
+d406_uom_g64,G64,centimetru cub pe secundă kelvin,cubic centimetre per second kelvin
+d406_uom_g65,G65,litru pe zi kelvin,litre per day kelvin
+d406_uom_g66,G66,litru pe oră kelvin,litre per hour kelvin
+d406_uom_g67,G67,litru pe minut kelvin,litre per minute kelvin
+d406_uom_g68,G68,litru pe secundă kelvin,litre per second kelvin
+d406_uom_g69,G69,metru cub pe zi kelvin,cubic metre per day kelvin
+d406_uom_g70,G70,metru cub pe oră kelvin,cubic metre per hour kelvin
+d406_uom_g71,G71,metru cub pe minut kelvin,cubic metre per minute kelvin
+d406_uom_g72,G72,metru cub pe secundă kelvin,cubic metre per second kelvin
+d406_uom_g73,G73,mililitru pe zi kelvin,millilitre per day kelvin
+d406_uom_g74,G74,mililitru pe oră kelvin,millilitre per hour kelvin
+d406_uom_g75,G75,mililitru pe minut kelvin,millilitre per minute kelvin
+d406_uom_g76,G76,mililitru pe secundă kelvin,millilitre per second kelvin
+d406_uom_g77,G77,milimetru la a patra putere,millimetre to the fourth power
+d406_uom_g78,G78,centimetru cub pe zi bar,cubic centimetre per day bar
+d406_uom_g79,G79,centimetru cub pe oră bar,cubic centimetre per hour bar
+d406_uom_g80,G80,centimetru cub pe minut bar,cubic centimetre per minute bar
+d406_uom_g81,G81,centimetru cub pe secundă bar,cubic centimetre per second bar
+d406_uom_g82,G82,litru pe zi bar,litre per day bar
+d406_uom_g83,G83,litru pe oră bar,litre per hour bar
+d406_uom_g84,G84,litru pe minut bar,litre per minute bar
+d406_uom_g85,G85,litru pe secundă bar,litre per second bar
+d406_uom_g86,G86,metru cub pe zi bar,cubic metre per day bar
+d406_uom_g87,G87,metru cub pe oră bar,cubic metre per hour bar
+d406_uom_g88,G88,metru cub pe minut bar,cubic metre per minute bar
+d406_uom_g89,G89,metru cub pe secundă bar,cubic metre per second bar
+d406_uom_g90,G90,mililitru pe zi bar,millilitre per day bar
+d406_uom_g91,G91,mililitru pe oră bar,millilitre per hour bar
+d406_uom_g92,G92,mililitru pe minut bar,millilitre per minute bar
+d406_uom_g93,G93,mililitru pe secundă bar,millilitre per second bar
+d406_uom_g94,G94,centimetru cub pe secundă bar,cubic centimetre per bar
+d406_uom_g95,G95,litru pe bar,litre per bar
+d406_uom_g96,G96,metru cub pe bar,cubic metre per bar
+d406_uom_g97,G97,mililitru pe bar,millilitre per bar
+d406_uom_g98,G98,microhenry per kiloohm,microhenry per kiloohm
+d406_uom_g99,G99,microhenry per ohm,microhenry per ohm
+d406_uom_gb,GB,galon (SUA) pe zi,gallon (US) per day
+d406_uom_gbq,GBQ,gigabecquerel,gigabecquerel
+d406_uom_gdw,GDW,"gram, greutate uscată","gram, dry weight"
+d406_uom_ge,GE,liră pe galon (SUA),pound per gallon (US)
+d406_uom_gf,GF,gram pe metru (gram pe 100 de centimetri),gram per metre (gram per 100 centimetres)
+d406_uom_gfi,GFI,gram de izotop fisionabil,gram of fissile isotope
+d406_uom_ggr,GGR,great gross (duzină brută),great gross
+d406_uom_gia,GIA,gill (unitate de timp),gill (US)
+d406_uom_gic,GIC,"gram, inclusiv container","gram, including container"
+d406_uom_gii,GII,gill (Marea Britanie),gill (UK)
+d406_uom_gip,GIP,"gram, inclusiv ambalajul interior","gram, including inner packaging"
+d406_uom_gj,GJ,gram pe mililitru,gram per millilitre
+d406_uom_gl,GL,gram pe litru,gram per litre
+d406_uom_gld,GLD,galon material uscat (SUA),dry gallon (US)
+d406_uom_gli,GLI,galon (Marea Britanie),gallon (UK)
+d406_uom_gll,GLL,galon (SUA),gallon (US)
+d406_uom_gm,GM,gram pe metru pătrat,gram per square metre
+d406_uom_go,GO,miligram pe metru pătrat,milligram per square metre
+d406_uom_gp,GP,miligram pe metru cub,milligram per cubic metre
+d406_uom_gq,GQ,microgram pe metru cub,microgram per cubic metre
+d406_uom_grm,GRM,gram,gram
+d406_uom_grn,GRN,dram,grain
+d406_uom_gro,GRO,total,gross
+d406_uom_gv,GV,gigajoule,gigajoule
+d406_uom_gwh,GWH,gigawatt oră,gigawatt hour
+d406_uom_h03,H03,Henry pe kiloohm,henry per kiloohm
+d406_uom_h04,H04,Henry pe ohm,henry per ohm
+d406_uom_h05,H05,milihenry pe kiloohm,millihenry per kiloohm
+d406_uom_h06,H06,milihenry per ohm,millihenry per ohm
+d406_uom_h07,H07,pascal secundă pe bar,pascal second per bar
+d406_uom_h08,H08,microbecquerel,microbecquerel
+d406_uom_h09,H09,an reciproc,reciprocal year
+d406_uom_h10,H10,oră reciprocă,reciprocal hour
+d406_uom_h11,H11,lună reciprocă,reciprocal month
+d406_uom_h12,H12,grade Celsius pe oră,degree Celsius per hour
+d406_uom_h13,H13,grade Celsius pe minut,degree Celsius per minute
+d406_uom_h14,H14,grade Celsius pe secundă,degree Celsius per second
+d406_uom_h15,H15,centimetru pătrat pe gram,square centimetre per gram
+d406_uom_h16,H16,decametru pătrat,square decametre
+d406_uom_h18,H18,hectometru pătrat,square hectometre
+d406_uom_h19,H19,hectometru cub,cubic hectometre
+d406_uom_h20,H20,kilometru cub,cubic kilometre
+d406_uom_h21,H21,gol,blank
+d406_uom_h22,H22,volt inch pătrat pe livră-forță,volt square inch per pound-force
+d406_uom_h23,H23,volt pe inch,volt per inch
+d406_uom_h24,H24,volt pe microsecundă,volt per microsecond
+d406_uom_h25,H25,procente pe kelvin,percent per kelvin
+d406_uom_h26,H26,ohm pe metru,ohm per metre
+d406_uom_h27,H27,grad pe metru,degree per metre
+d406_uom_h28,H28,microfarad pe kilometru,microfarad per kilometre
+d406_uom_h29,H29,microgram pe litru,microgram per litre
+d406_uom_h30,H30,micrometru pătrat (micron pătrat),square micrometre (square micron)
+d406_uom_h31,H31,amperi pe kilogram,ampere per kilogram
+d406_uom_h32,H32,amper pătrat secundă,ampere squared second
+d406_uom_h33,H33,farad pe kilometru,farad per kilometre
+d406_uom_h34,H34,contorul de hertzi,hertz metre
+d406_uom_h35,H35,metru kelvin pe watt,kelvin metre per watt
+d406_uom_h36,H36,megaohm pe kilometru,megaohm per kilometre
+d406_uom_h37,H37,megaohm pe metru,megaohm per metre
+d406_uom_h38,H38,megaamperi,megaampere
+d406_uom_h39,H39,kilometru megahertz,megahertz kilometre
+d406_uom_h40,H40,newton pe amper,newton per ampere
+d406_uom_h41,H41,"newton metru watt la putere minus 0,5","newton metre watt to the power minus 0,5"
+d406_uom_h42,H42,pascal pe metru,pascal per metre
+d406_uom_h43,H43,siemens pe centimetru,siemens per centimetre
+d406_uom_h44,H44,teraohm,teraohm
+d406_uom_h45,H45,volt secundă pe metru,volt second per metre
+d406_uom_h46,H46,volți pe secundă,volt per second
+d406_uom_h47,H47,watt pe metru cub,watt per cubic metre
+d406_uom_h48,H48,attofarad,attofarad
+d406_uom_h49,H49,centimetru pe oră,centimetre per hour
+d406_uom_h50,H50,centimetru cub reciproc,reciprocal cubic centimetre
+d406_uom_h51,H51,decibel pe kilometru,decibel per kilometre
+d406_uom_h52,H52,decibel pe metru,decibel per metre
+d406_uom_h53,H53,kilogram pe bar,kilogram per bar
+d406_uom_h54,H54,kilogram pe decimetru cub kelvin,kilogram per cubic decimetre kelvin
+d406_uom_h55,H55,kilogram pe bar de decimetru cub,kilogram per cubic decimetre bar
+d406_uom_h56,H56,kilogram pe metru pătrat secundă,kilogram per square metre second
+d406_uom_h57,H57,inch pe doi pi radiant,inch per two pi radiant
+d406_uom_h58,H58,metru pe volt secundă,metre per volt second
+d406_uom_h59,H59,metru pătrat pe newton,square metre per newton
+d406_uom_h60,H60,metru cub pe metru cub,cubic metre per cubic metre
+d406_uom_h61,H61,milisiemens pe centimetru,millisiemens per centimetre
+d406_uom_h62,H62,milivolt pe minut,millivolt per minute
+d406_uom_h63,H63,miligram pe centimetru pătrat,milligram per square centimetre
+d406_uom_h64,H64,miligram pe gram,milligram per gram
+d406_uom_h65,H65,mililitru pe metru cub,millilitre per cubic metre
+d406_uom_h66,H66,milimetru pe an,millimetre per year
+d406_uom_h67,H67,milimetru pe oră,millimetre per hour
+d406_uom_h68,H68,milimol pe gram,millimole per gram
+d406_uom_h69,H69,picopascal pe kilometru,picopascal per kilometre
+d406_uom_h70,H70,picosecundă,picosecond
+d406_uom_h71,H71,procent pe lună,percent per month
+d406_uom_h72,H72,procent pe hectobar,percent per hectobar
+d406_uom_h73,H73,procent pe decakelvin,percent per decakelvin
+d406_uom_h74,H74,watt pe metru,watt per metre
+d406_uom_h75,H75,decapascal,decapascal
+d406_uom_h76,H76,gram pe milimetru,gram per millimetre
+d406_uom_h77,H77,lățime modul,module width
+d406_uom_h79,H79,ecartament metric,French gauge
+d406_uom_h80,H80,unitate rack,rack unit
+d406_uom_h81,H81,milimetru pe minut,millimetre per minute
+d406_uom_h82,H82,big point,big point
+d406_uom_h83,H83,litru pe kilogram,litre per kilogram
+d406_uom_h84,H84,gram milimetru,gram millimetre
+d406_uom_h85,H85,săptămână reciprocă,reciprocal week
+d406_uom_h87,H87,bucată,piece
+d406_uom_h88,H88,megaohm kilometru,megaohm kilometre
+d406_uom_h89,H89,procent pe ohm,percent per ohm
+d406_uom_h90,H90,procent pe grad,percent per degree
+d406_uom_h91,H91,procent la zece mii,percent per ten thousand
+d406_uom_h92,H92,procent la o sută de mii,percent per one hundred thousand
+d406_uom_h93,H93,procent la sută,percent per hundred
+d406_uom_h94,H94,procent la mie,percent per thousand
+d406_uom_h95,H95,procent pe volt,percent per volt
+d406_uom_h96,H96,procent pe bar,percent per bar
+d406_uom_h98,H98,procent pe inch,percent per inch
+d406_uom_h99,H99,procent pe metru,percent per metre
+d406_uom_ha,HA,hank,hank
+d406_uom_had,HAD,Bucată zi,Piece Day
+d406_uom_hba,HBA,hectobar,hectobar
+d406_uom_hbx,HBX,o sută de cutii,hundred boxes
+d406_uom_hc,HC,numărătoare până la o sută,hundred count
+d406_uom_hdw,HDW,"o sută de kilograme, greutate uscată","hundred kilogram, dry weight"
+d406_uom_hea,HEA,cap,head
+d406_uom_hgm,HGM,hectogram,hectogram
+d406_uom_hh,HH,picior sută cub,hundred cubic foot
+d406_uom_hiu,HIU,unitate internațională pentru sută,hundred international unit
+d406_uom_hkm,HKM,"o sută de kilograme, masă netă","hundred kilogram, net mass"
+d406_uom_hlt,HLT,hectolitru,hectolitre
+d406_uom_hm,HM,milă pe oră (milă statutară),mile per hour (statute mile)
+d406_uom_hmo,HMO,Bucată lună,Piece Month
+d406_uom_hmq,HMQ,milioane de metri cubi,million cubic metre
+d406_uom_hmt,HMT,hectometru,hectometre
+d406_uom_hpa,HPA,hectolitru de alcool pur,hectolitre of pure alcohol
+d406_uom_htz,HTZ,hertz,hertz
+d406_uom_hur,HUR,oră,hour
+d406_uom_hwe,HWE,Bucată săptămână,Piece Week
+d406_uom_ia,IA,inch pound (liră inch),inch pound (pound inch)
+d406_uom_ie,IE,persoană,person
+d406_uom_inh,INH,inch,inch
+d406_uom_ink,INK,inch pătrat,square inch
+d406_uom_inq,INQ,inch cub,cubic inch
+d406_uom_isd,ISD,scala internațională de zahăr,international sugar degree
+d406_uom_iu,IU,inch pe secundă,inch per second
+d406_uom_iug,IUG,unitate internațională pe gram,international unit per gram
+d406_uom_iv,IV,inch pe secundă pătrat,inch per second squared
+d406_uom_j10,J10,procente pe milimetru,percent per millimetre
+d406_uom_j12,J12,pe mil pe psi,per mille per psi
+d406_uom_j13,J13,gradul API,degree API
+d406_uom_j14,J14,gradul Baume (scala de origine),degree Baume (origin scale)
+d406_uom_j15,J15,grad Baume (grea din SUA),degree Baume (US heavy)
+d406_uom_j16,J16,grad Baume (lumină SUA),degree Baume (US light)
+d406_uom_j17,J17,grad Balling,degree Balling
+d406_uom_j18,J18,grad Brix,degree Brix
+d406_uom_j19,J19,grade Fahrenheit oră picior pătrat per unitate termică britanică (termochimică),degree Fahrenheit hour square foot per British thermal unit (thermochemical)
+d406_uom_j2,J2,joule pe kilogram,joule per kilogram
+d406_uom_j20,J20,grad Fahrenheit pe kelvin,degree Fahrenheit per kelvin
+d406_uom_j21,J21,grade Fahrenheit pe bar,degree Fahrenheit per bar
+d406_uom_j22,J22,grade Fahrenheit oră picior pătrat per unitate termică britanică (tabel internațional),degree Fahrenheit hour square foot per British thermal unit (international table)
+d406_uom_j23,J23,grade Fahrenheit pe oră,degree Fahrenheit per hour
+d406_uom_j24,J24,grade Fahrenheit pe minut,degree Fahrenheit per minute
+d406_uom_j25,J25,grade Fahrenheit pe secundă,degree Fahrenheit per second
+d406_uom_j26,J26,grad reciproc Fahrenheit,reciprocal degree Fahrenheit
+d406_uom_j27,J27,grad Oechsle,degree Oechsle
+d406_uom_j28,J28,grad Rankine pe oră,degree Rankine per hour
+d406_uom_j29,J29,grad Rankine pe minut,degree Rankine per minute
+d406_uom_j30,J30,grad Rankine pe secundă,degree Rankine per second
+d406_uom_j31,J31,grad Twaddell,degree Twaddell
+d406_uom_j32,J32,micropoise,micropoise
+d406_uom_j33,J33,microgram pe kilogram,microgram per kilogram
+d406_uom_j34,J34,microgram pe metru cub kelvin,microgram per cubic metre kelvin
+d406_uom_j35,J35,microgram pe bar metru cub,microgram per cubic metre bar
+d406_uom_j36,J36,microlitru pe litru,microlitre per litre
+d406_uom_j38,J38,baud,baud
+d406_uom_j39,J39,unitate termică britanică (medie),British thermal unit (mean)
+d406_uom_j40,J40,Unitate termică britanică (masă internațională) picior pe oră grad Fahrenheit de picior pătrat,British thermal unit (international table) foot per hour square foot degree Fahrenheit
+d406_uom_j41,J41,Unitate termică britanică (masă internațională) inchi pe oră grade Fahrenheit de picior pătrat,British thermal unit (international table) inch per hour square foot degree Fahrenheit
+d406_uom_j42,J42,Unitate termică britanică (masă internațională) inchi pe secundă grade Fahrenheit de picior pătrat,British thermal unit (international table) inch per second square foot degree Fahrenheit
+d406_uom_j43,J43,Unitate termică britanică (tabel internațional) per liră grad Fahrenheit,British thermal unit (international table) per pound degree Fahrenheit
+d406_uom_j44,J44,Unitate termică britanică (masă internațională) pe minut,British thermal unit (international table) per minute
+d406_uom_j45,J45,Unitate termică britanică (tabel internațional) pe secundă,British thermal unit (international table) per second
+d406_uom_j46,J46,Unitate termică britanică (termochimică) picior pe oră grade Fahrenheit de picior pătrat,British thermal unit (thermochemical) foot per hour square foot degree Fahrenheit
+d406_uom_j47,J47,Unitate termică britanică (termochimică) pe oră,British thermal unit (thermochemical) per hour
+d406_uom_j48,J48,Unitate termică britanică (termochimică) inchi pe oră grade Fahrenheit de picior pătrat,British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit
+d406_uom_j49,J49,Unitate termică britanică (termochimică) inchi pe secundă grade Fahrenheit picior pătrat,British thermal unit (thermochemical) inch per second square foot degree Fahrenheit
+d406_uom_j50,J50,Unitate termică britanică (termochimică) pe liră grad Fahrenheit,British thermal unit (thermochemical) per pound degree Fahrenheit
+d406_uom_j51,J51,Unitate termică britanică (termochimică) pe minut,British thermal unit (thermochemical) per minute
+d406_uom_j52,J52,Unitate termică britanică (termochimică) pe minut,British thermal unit (thermochemical) per second
+d406_uom_j53,J53,coulomb metru pătrat pe kilogram,coulomb square metre per kilogram
+d406_uom_j54,J54,megabaud,megabaud
+d406_uom_j55,J55,watt secundă,watt second
+d406_uom_j56,J56,bar pe bar,bar per bar
+d406_uom_j57,J57,baril (petrol din Marea Britanie),barrel (UK petroleum)
+d406_uom_j58,J58,baril (petrol din Marea Britanie) pe minut,barrel (UK petroleum) per minute
+d406_uom_j59,J59,baril (petrol din Marea Britanie) pe zi,barrel (UK petroleum) per day
+d406_uom_j60,J60,baril (petrol din Marea Britanie) pe oră,barrel (UK petroleum) per hour
+d406_uom_j61,J61,baril (petrol din Marea Britanie) pe secundă,barrel (UK petroleum) per second
+d406_uom_j62,J62,baril (petrol american) pe oră,barrel (US petroleum) per hour
+d406_uom_j63,J63,baril (petrol american) pe secundă,barrel (US petroleum) per second
+d406_uom_j64,J64,bushel (Marea Britanie) pe zi,bushel (UK) per day
+d406_uom_j65,J65,bushel (Marea Britanie) pe oră,bushel (UK) per hour
+d406_uom_j66,J66,bushel (Marea Britanie) pe minut,bushel (UK) per minute
+d406_uom_j67,J67,bushel (Marea Britanie) pe secundă,bushel (UK) per second
+d406_uom_j68,J68,bushel (material uscat SUA) pe zi,bushel (US dry) per day
+d406_uom_j69,J69,bushel (material uscat SUA) pe oră,bushel (US dry) per hour
+d406_uom_j70,J70,bushel (material uscat SUA) pe minut,bushel (US dry) per minute
+d406_uom_j71,J71,bushel (material uscat SUA) pe secundă,bushel (US dry) per second
+d406_uom_j72,J72,centinewton metru,centinewton metre
+d406_uom_j73,J73,centipoise pe kelvin,centipoise per kelvin
+d406_uom_j74,J74,centipoise pe bar,centipoise per bar
+d406_uom_j75,J75,calorie (medie),calorie (mean)
+d406_uom_j76,J76,calorii (tabel internațional) pe gram grad Celsius,calorie (international table) per gram degree Celsius
+d406_uom_j78,J78,calorii (termochimic) pe centimetru gradul II Celsius,calorie (thermochemical) per centimetre second degree Celsius
+d406_uom_j79,J79,calorii (termochimic) pe gram grad Celsius,calorie (thermochemical) per gram degree Celsius
+d406_uom_j81,J81,calorii (termochimic) pe minut,calorie (thermochemical) per minute
+d406_uom_j82,J82,calorii (termochimic) pe secundă,calorie (thermochemical) per second
+d406_uom_j83,J83,clo,clo
+d406_uom_j84,J84,centimetru pe secundă kelvin,centimetre per second kelvin
+d406_uom_j85,J85,bar centimetru pe secundă,centimetre per second bar
+d406_uom_j87,J87,centimetru cub pe metru cub,cubic centimetre per cubic metre
+d406_uom_j90,J90,decimetru cub pe zi,cubic decimetre per day
+d406_uom_j91,J91,decimetru cub pe metru cub,cubic decimetre per cubic metre
+d406_uom_j92,J92,decimetru cub pe minut,cubic decimetre per minute
+d406_uom_j93,J93,decimetru cub pe secundă,cubic decimetre per second
+d406_uom_j95,J95,uncie (lichid Marea Britanie) pe zi,ounce (UK fluid) per day
+d406_uom_j96,J96,uncie (lichid Marea Britanie) pe oră,ounce (UK fluid) per hour
+d406_uom_j97,J97,uncie (lichid Marea Britanie) pe minut,ounce (UK fluid) per minute
+d406_uom_j98,J98,uncie (lichid Marea Britanie) pe secundă,ounce (UK fluid) per second
+d406_uom_j99,J99,uncie (lichid american) pe zi,ounce (US fluid) per day
+d406_uom_je,JE,joule pe kelvin,joule per kelvin
+d406_uom_jk,JK,megajoule pe kilogram,megajoule per kilogram
+d406_uom_jm,JM,megajoule pe metru cub,megajoule per cubic metre
+d406_uom_jnt,JNT,conductă de date comună,pipeline joint
+d406_uom_jou,JOU,joule,joule
+d406_uom_jps,JPS,sută de metri,hundred metre
+d406_uom_jwl,JWL,număr rubine,number of jewels
+d406_uom_k1,K1,cerere de kilowați,kilowatt demand
+d406_uom_k10,K10,uncie (lichid american) pe oră,ounce (US fluid) per hour
+d406_uom_k11,K11,uncie (lichid SUA) pe minut,ounce (US fluid) per minute
+d406_uom_k12,K12,uncie (lichid SUA) pe secundă,ounce (US fluid) per second
+d406_uom_k13,K13,picior pe grad Fahrenheit,foot per degree Fahrenheit
+d406_uom_k14,K14,picior pe oră,foot per hour
+d406_uom_k15,K15,picior livră-forță pe oră,foot pound-force per hour
+d406_uom_k16,K16,picior livră-forță pe minut,foot pound-force per minute
+d406_uom_k17,K17,picior per psi,foot per psi
+d406_uom_k18,K18,picior pe gradul secund Fahrenheit,foot per second degree Fahrenheit
+d406_uom_k19,K19,picior pe secundă psi,foot per second psi
+d406_uom_k2,K2,cerere reactivă kilovolt amperi,kilovolt ampere reactive demand
+d406_uom_k20,K20,picior cub reciproc,reciprocal cubic foot
+d406_uom_k21,K21,picior cub pe grad Fahrenheit,cubic foot per degree Fahrenheit
+d406_uom_k22,K22,picior cub pe zi,cubic foot per day
+d406_uom_k23,K23,picior cub per psi,cubic foot per psi
+d406_uom_k26,K26,galon (Marea Britanie) pe zi,gallon (UK) per day
+d406_uom_k27,K27,gallon (UK) pe oră,gallon (UK) per hour
+d406_uom_k28,K28,galon (Marea Britanie) pe secundă,gallon (UK) per second
+d406_uom_k3,K3,kilovolt amperi reactiv oră,kilovolt ampere reactive hour
+d406_uom_k30,K30,galon (lichid SUA) pe secundă,gallon (US liquid) per second
+d406_uom_k31,K31,gram-forță pe centimetru pătrat,gram-force per square centimetre
+d406_uom_k32,K32,gil (Marea Britanie) pe zi,gill (UK) per day
+d406_uom_k33,K33,gil (Marea Britanie) pe oră,gill (UK) per hour
+d406_uom_k34,K34,gil (Marea Britanie) pe minut,gill (UK) per minute
+d406_uom_k35,K35,gil (Marea Britanie) pe secundă,gill (UK) per second
+d406_uom_k36,K36,gil (Marea Britanie) pe zi,gill (US) per day
+d406_uom_k37,K37,gil (Marea Britanie) pe oră,gill (US) per hour
+d406_uom_k38,K38,gil (Marea Britanie) pe minut,gill (US) per minute
+d406_uom_k39,K39,gil (Marea Britanie) pe secundă,gill (US) per second
+d406_uom_k40,K40,accelerația standard a căderii libere,standard acceleration of free fall
+d406_uom_k41,K41,cereale per galon (SUA),grain per gallon (US)
+d406_uom_k42,K42,cai putere (cazan),horsepower (boiler)
+d406_uom_k43,K43,cai putere (electric),horsepower (electric)
+d406_uom_k45,K45,inch pe grad Fahrenheit,inch per degree Fahrenheit
+d406_uom_k46,K46,inch per psi,inch per psi
+d406_uom_k47,K47,inci pe două grade Fahrenheit,inch per second degree Fahrenheit
+d406_uom_k48,K48,inch pe secundă psi,inch per second psi
+d406_uom_k49,K49,inch cubi reciproc,reciprocal cubic inch
+d406_uom_k50,K50,kilobaud,kilobaud
+d406_uom_k51,K51,kilocalorie (medie),kilocalorie (mean)
+d406_uom_k52,K52,kilocalorie (tabel internațional) pe oră metru grad Celsius,kilocalorie (international table) per hour metre degree Celsius
+d406_uom_k53,K53,kilocalorie (termochimic),kilocalorie (thermochemical)
+d406_uom_k54,K54,kilocalorii (termochimic) pe minut,kilocalorie (thermochemical) per minute
+d406_uom_k55,K55,kilocalorii (termochimice) pe secundă,kilocalorie (thermochemical) per second
+d406_uom_k58,K58,kilomol pe oră,kilomole per hour
+d406_uom_k59,K59,kilomol pe metru cub kelvin,kilomole per cubic metre kelvin
+d406_uom_k6,K6,kilolitru,kilolitre
+d406_uom_k60,K60,kilomol pe bar metru cub,kilomole per cubic metre bar
+d406_uom_k61,K61,kilomol pe minut,kilomole per minute
+d406_uom_k62,K62,litru pe litru,litre per litre
+d406_uom_k63,K63,litru reciproc,reciprocal litre
+d406_uom_k64,K64,liră (avoirdupois) pe grad Fahrenheit,pound (avoirdupois) per degree Fahrenheit
+d406_uom_k65,K65,liră (avoirdupois) picior pătrat,pound (avoirdupois) square foot
+d406_uom_k66,K66,liră (avoirdupois) pe zi,pound (avoirdupois) per day
+d406_uom_k67,K67,liră pe picior oră,pound per foot hour
+d406_uom_k68,K68,liră pe picior secundă,pound per foot second
+d406_uom_k69,K69,liră (avoirdupois) pe picior cub grad Fahrenheit,pound (avoirdupois) per cubic foot degree Fahrenheit
+d406_uom_k70,K70,liră (avoirdupois) per picior cub psi,pound (avoirdupois) per cubic foot psi
+d406_uom_k71,K71,liră (avoirdupois) per galon (Marea Britanie),pound (avoirdupois) per gallon (UK)
+d406_uom_k73,K73,liră (avoirdupois) pe oră grad Fahrenheit,pound (avoirdupois) per hour degree Fahrenheit
+d406_uom_k74,K74,liră (avoirdupois) pe oră psi,pound (avoirdupois) per hour psi
+d406_uom_k75,K75,liră (avoirdupois) pe inch cubic grad Fahrenheit,pound (avoirdupois) per cubic inch degree Fahrenheit
+d406_uom_k76,K76,liră (avoirdupois) per inch cubic psi,pound (avoirdupois) per cubic inch psi
+d406_uom_k77,K77,liră (avoirdupois) per psi,pound (avoirdupois) per psi
+d406_uom_k78,K78,liră (avoirdupois) pe minut,pound (avoirdupois) per minute
+d406_uom_k79,K79,liră (avoirdupois) pe minut grad Fahrenheit,pound (avoirdupois) per minute degree Fahrenheit
+d406_uom_k80,K80,liră (avoirdupois) pe minut psi,pound (avoirdupois) per minute psi
+d406_uom_k81,K81,liră (avoirdupois) pe secundă,pound (avoirdupois) per second
+d406_uom_k82,K82,liră (avoirdupois) pe gradul secund Fahrenheit,pound (avoirdupois) per second degree Fahrenheit
+d406_uom_k83,K83,liră (avoirdupois) pe secundă psi,pound (avoirdupois) per second psi
+d406_uom_k84,K84,liră pe yard cub,pound per cubic yard
+d406_uom_k85,K85,liră-forță pe metru pătrat,pound-force per square foot
+d406_uom_k86,K86,liră-forță pe inch pătrat grad Fahrenheit,pound-force per square inch degree Fahrenheit
+d406_uom_k87,K87,psi inch cubi pe secundă,psi cubic inch per second
+d406_uom_k88,K88,psi litru pe secundă,psi litre per second
+d406_uom_k89,K89,psi metru cub pe secundă,psi cubic metre per second
+d406_uom_k90,K90,psi yard cubi pe secundă,psi cubic yard per second
+d406_uom_k91,K91,liră-forță secundă pe metru pătrat,pound-force second per square foot
+d406_uom_k92,K92,liră-forță secundă pe inch pătrat,pound-force second per square inch
+d406_uom_k93,K93,psi reciprocă,reciprocal psi
+d406_uom_k94,K94,quart (lichid Marea Britanie) pe zi,quart (UK liquid) per day
+d406_uom_k95,K95,quart (lichid Marea Britanie) pe oră,quart (UK liquid) per hour
+d406_uom_k96,K96,quart (lichid Marea Britanie) pe minut,quart (UK liquid) per minute
+d406_uom_k97,K97,quart (lichid Marea Britanie) pe secundă,quart (UK liquid) per second
+d406_uom_k98,K98,quart (lichid SUA) pe zi,quart (US liquid) per day
+d406_uom_k99,K99,quart (lichid SUA) pe oră,quart (US liquid) per hour
+d406_uom_ka,KA,cake (unitate de măsură volumică),cake
+d406_uom_kat,KAT,katal,katal
+d406_uom_kb,KB,kilocaracter,kilocharacter
+d406_uom_kba,KBA,kilobar,kilobar
+d406_uom_kcc,KCC,kilogram de clorură de colină,kilogram of choline chloride
+d406_uom_kdw,KDW,kilogram greutate netă scursă,kilogram drained net weight
+d406_uom_kel,KEL,kelvin,kelvin
+d406_uom_kgm,KGM,kilogram,kilogram
+d406_uom_kgs,KGS,kilogram pe secundă,kilogram per second
+d406_uom_khy,KHY,kilogram de peroxid de hidrogen,kilogram of hydrogen peroxide
+d406_uom_khz,KHZ,kilohertz,kilohertz
+d406_uom_ki,KI,kilogram pe milimetru lățime,kilogram per millimetre width
+d406_uom_kic,KIC,"kilogram, inclusiv container","kilogram, including container"
+d406_uom_kip,KIP,"kilogram, inclusiv ambalajul interior","kilogram, including inner packaging"
+d406_uom_kj,KJ,kilosegment,kilosegment
+d406_uom_kjo,KJO,kilojoule,kilojoule
+d406_uom_kl,KL,kilogram pe metru,kilogram per metre
+d406_uom_klk,KLK,procent de material uscat lactic,lactic dry material percentage
+d406_uom_klx,KLX,kilolux,kilolux
+d406_uom_kma,KMA,kilogram de metilamină,kilogram of methylamine
+d406_uom_kmh,KMH,kilometru pe oră,kilometre per hour
+d406_uom_kmk,KMK,kilometru pătrat,square kilometre
+d406_uom_kmq,KMQ,kilogram pe metru cub,kilogram per cubic metre
+d406_uom_kmt,KMT,kilometru,kilometre
+d406_uom_kni,KNI,kilogram de azot,kilogram of nitrogen
+d406_uom_knm,KNM,kilonewton pe metru pătrat,kilonewton per square metre
+d406_uom_kns,KNS,substanță numită kilogram,kilogram named substance
+d406_uom_knt,KNT,nod,knot
+d406_uom_ko,KO,potasiu caustic miliechivalență per gram de produs,milliequivalence caustic potash per gram of product
+d406_uom_kpa,KPA,kilopascal,kilopascal
+d406_uom_kph,KPH,kilogram de hidroxid de potasiu (potasiu caustic),kilogram of potassium hydroxide (caustic potash)
+d406_uom_kpo,KPO,kilogram de oxid de potasiu,kilogram of potassium oxide
+d406_uom_kpp,KPP,kilogram de pentoxid de fosfor (anhidridă fosforică),kilogram of phosphorus pentoxide (phosphoric anhydride)
+d406_uom_kr,KR,kiloroentgen,kiloroentgen
+d406_uom_ksd,KSD,kilogram de substanță 90 % uscată,kilogram of substance 90 % dry
+d406_uom_ksh,KSH,kilogram de hidroxid de sodiu (sodă caustică),kilogram of sodium hydroxide (caustic soda)
+d406_uom_kt,KT,kit,kit
+d406_uom_ktn,KTN,kilotone,kilotonne
+d406_uom_kur,KUR,kilogram de uraniu,kilogram of uranium
+d406_uom_kva,KVA,kilovolt - amper,kilovolt - ampere
+d406_uom_kvr,KVR,kilovar,kilovar
+d406_uom_kvt,KVT,kilovolt,kilovolt
+d406_uom_kw,KW,kilogram pe milimetru,kilogram per millimetre
+d406_uom_kwh,KWH,kilowatt oră,kilowatt hour
+d406_uom_kwn,KWN,Kilowatt-oră pe metru cub normalizat,Kilowatt hour per normalized cubic metre
+d406_uom_kwo,KWO,kilogram de trioxid de wolfram,kilogram of tungsten trioxide
+d406_uom_kws,KWS,Kilowatt-oră pe metru cub standard,Kilowatt hour per standard cubic metre
+d406_uom_kwt,KWT,kilowatt,kilowatt
+d406_uom_kwy,KWY,kilowați an,kilowatt year
+d406_uom_kx,KX,mililitru pe kilogram,millilitre per kilogram
+d406_uom_l10,L10,quart (lichid SUA) pe minut,quart (US liquid) per minute
+d406_uom_l11,L11,quart (lichid din SUA) pe secundă,quart (US liquid) per second
+d406_uom_l12,L12,metru pe secundă kelvin,metre per second kelvin
+d406_uom_l13,L13,metru pe secundă bar,metre per second bar
+d406_uom_l14,L14,metru pătrat oră grad Celsius pe kilocalorie (tabel internațional),square metre hour degree Celsius per kilocalorie (international table)
+d406_uom_l15,L15,milipascal secundă pe kelvin,millipascal second per kelvin
+d406_uom_l16,L16,milipascal secundă pe bar,millipascal second per bar
+d406_uom_l17,L17,miligram pe metru cub kelvin,milligram per cubic metre kelvin
+d406_uom_l18,L18,miligram pe bar metru cub,milligram per cubic metre bar
+d406_uom_l19,L19,mililitru pe litru,millilitre per litre
+d406_uom_l2,L2,litru pe minut,litre per minute
+d406_uom_l20,L20,milimetru cub reciproc,reciprocal cubic millimetre
+d406_uom_l21,L21,milimetru cub pe metru cub,cubic millimetre per cubic metre
+d406_uom_l23,L23,mol pe oră,mole per hour
+d406_uom_l24,L24,mol pe kilogram kelvin,mole per kilogram kelvin
+d406_uom_l25,L25,mol pe kilogram bar,mole per kilogram bar
+d406_uom_l26,L26,mol pe litru kelvin,mole per litre kelvin
+d406_uom_l27,L27,mol pe litru bar,mole per litre bar
+d406_uom_l28,L28,mol pe metru cub kelvin,mole per cubic metre kelvin
+d406_uom_l29,L29,mol pe metru cub bar,mole per cubic metre bar
+d406_uom_l30,L30,mol pe minut,mole per minute
+d406_uom_l31,L31,milliroentgen echivalent in roentgen,milliroentgen aequivalent men
+d406_uom_l32,L32,nanogram pe kilogram,nanogram per kilogram
+d406_uom_l33,L33,uncie (avoirdupois) pe zi,ounce (avoirdupois) per day
+d406_uom_l34,L34,uncie (avoirdupois) pe oră,ounce (avoirdupois) per hour
+d406_uom_l35,L35,uncie (avoirdupois) pe minut,ounce (avoirdupois) per minute
+d406_uom_l36,L36,uncie (avoirdupois) pe secundă,ounce (avoirdupois) per second
+d406_uom_l37,L37,uncie (avoirdupois) pe galon (Marea Britanie),ounce (avoirdupois) per gallon (UK)
+d406_uom_l38,L38,uncie (avoirdupois) pe galon (SUA),ounce (avoirdupois) per gallon (US)
+d406_uom_l39,L39,uncie (avoirdupois) pe inch cubic,ounce (avoirdupois) per cubic inch
+d406_uom_l40,L40,uncie (avoirdupois)-forță,ounce (avoirdupois)-force
+d406_uom_l41,L41,uncie (avoirdupois)-forță inch,ounce (avoirdupois)-force inch
+d406_uom_l42,L42,picosiemens pe metru,picosiemens per metre
+d406_uom_l43,L43,peck (Marea Britanie) (unitate de capacitate),peck (UK)
+d406_uom_l44,L44,peck (Marea Britanie) pe zi,peck (UK) per day
+d406_uom_l45,L45,peck (Marea Britanie) pe oră,peck (UK) per hour
+d406_uom_l46,L46,peck (Marea Britanie) pe minut,peck (UK) per minute
+d406_uom_l47,L47,peck (Marea Britanie) pe secundă,peck (UK) per second
+d406_uom_l48,L48,peck (material uscat Marea Britanie) pe zi,peck (US dry) per day
+d406_uom_l49,L49,peck (material uscat Marea Britanie) pe oră,peck (US dry) per hour
+d406_uom_l50,L50,peck (material uscat Marea Britanie) pe minut,peck (US dry) per minute
+d406_uom_l51,L51,peck (material uscat Marea Britanie) pe secundă,peck (US dry) per second
+d406_uom_l52,L52,psi pe psi,psi per psi
+d406_uom_l53,L53,pint (Marea Britanie) pe zi,pint (UK) per day
+d406_uom_l54,L54,pint (Marea Britanie) pe oră,pint (UK) per hour
+d406_uom_l55,L55,pint (Marea Britanie) pe minut,pint (UK) per minute
+d406_uom_l56,L56,pint (Marea Britanie) pe secundă,pint (UK) per second
+d406_uom_l57,L57,pint (lichid Marea Britanie) pe zi,pint (US liquid) per day
+d406_uom_l58,L58,pint (lichid Marea Britanie) pe oră,pint (US liquid) per hour
+d406_uom_l59,L59,pint (lichid Marea Britanie) pe minut,pint (US liquid) per minute
+d406_uom_l60,L60,pint (lichid Marea Britanie) pe secundă,pint (US liquid) per second
+d406_uom_l63,L63,slug pe zi,slug per day
+d406_uom_l64,L64,slug pe picior secundă,slug per foot second
+d406_uom_l65,L65,slug pe picior cub,slug per cubic foot
+d406_uom_l66,L66,slug pe oră,slug per hour
+d406_uom_l67,L67,slug pe minut,slug per minute
+d406_uom_l68,L68,slug pe secundă,slug per second
+d406_uom_l69,L69,tonă pe kelvin,tonne per kelvin
+d406_uom_l70,L70,tonă pe bar,tonne per bar
+d406_uom_l71,L71,tonă pe zi,tonne per day
+d406_uom_l72,L72,tonă pe zi kelvin,tonne per day kelvin
+d406_uom_l73,L73,tonă pe zi bar,tonne per day bar
+d406_uom_l74,L74,tonă pe oră kelvin,tonne per hour kelvin
+d406_uom_l75,L75,tonă pe oră bar,tonne per hour bar
+d406_uom_l76,L76,tonă pe metru cub kelvin,tonne per cubic metre kelvin
+d406_uom_l77,L77,tonă pe metru cub bar,tonne per cubic metre bar
+d406_uom_l78,L78,tonă pe minut,tonne per minute
+d406_uom_l79,L79,tonă pe minut kelvin,tonne per minute kelvin
+d406_uom_l80,L80,tonă pe minut bar,tonne per minute bar
+d406_uom_l81,L81,tonă pe secundă,tonne per second
+d406_uom_l82,L82,tonă pe secundă kelvin,tonne per second kelvin
+d406_uom_l83,L83,tonă pe secundă bar,tonne per second bar
+d406_uom_l84,L84,tonă (livrare în Marea Britanie),ton (UK shipping)
+d406_uom_l85,L85,tonă lungă pe zi,ton long per day
+d406_uom_l86,L86,tonă (livrare în SUA),ton (US shipping)
+d406_uom_l87,L87,tonă scurtă pe grad Fahrenheit,ton short per degree Fahrenheit
+d406_uom_l88,L88,tonă scurtă pe zi,ton short per day
+d406_uom_l89,L89,tonă scurtă pe oră grade Fahrenheit,ton short per hour degree Fahrenheit
+d406_uom_l90,L90,tonă scurtă pe oră psi,ton short per hour psi
+d406_uom_l91,L91,tonă scurtă per psi,ton short per psi
+d406_uom_l92,L92,tonă (lungime în Marea Britanie) pe yard cub,ton (UK long) per cubic yard
+d406_uom_l93,L93,tonă (scurt din SUA) pe yard cub,ton (US short) per cubic yard
+d406_uom_l94,L94,tonă-forță (scurt în SUA),ton-force (US short)
+d406_uom_l95,L95,an comun,common year
+d406_uom_l96,L96,an sideral,sidereal year
+d406_uom_l98,L98,iard pe grad Fahrenheit,yard per degree Fahrenheit
+d406_uom_l99,L99,iard pe psi,yard per psi
+d406_uom_la,LA,liră pe inch cub,pound per cubic inch
+d406_uom_lac,LAC,procentul de exces de lactoză,lactose excess percentage
+d406_uom_lbr,LBR,liră,pound
+d406_uom_lbt,LBT,lira troy (SUA),troy pound (US)
+d406_uom_ld,LD,litru pe zi,litre per day
+d406_uom_lef,LEF,cadru,leaf
+d406_uom_lf,LF,picior liniar,linear foot
+d406_uom_lh,LH,oră de muncă,labour hour
+d406_uom_lk,LK,legătură,link
+d406_uom_lm,LM,metru liniar,linear metre
+d406_uom_ln,LN,lungime,length
+d406_uom_lo,LO,lot [unitate de achiziție],lot [unit of procurement]
+d406_uom_lp,LP,liră lichidă,liquid pound
+d406_uom_lpa,LPA,litru de alcool pur,litre of pure alcohol
+d406_uom_lr,LR,nivel,layer
+d406_uom_ls,LS,sumă forfetară,lump sum
+d406_uom_ltn,LTN,tonă (Marea Britanie) sau tonă lungă (SUA),ton (UK) or long ton (US)
+d406_uom_ltr,LTR,litru,litre
+d406_uom_lub,LUB,"tonă metrică, ulei lubrifiant","metric ton, lubricating oil"
+d406_uom_lum,LUM,lumen,lumen
+d406_uom_lux,LUX,lux,lux
+d406_uom_ly,LY,iard liniar,linear yard
+d406_uom_m1,M1,miligram pe litru,milligram per litre
+d406_uom_m10,M10,iard cubic reciproc,reciprocal cubic yard
+d406_uom_m11,M11,iard cubic pe grad Fahrenheit,cubic yard per degree Fahrenheit
+d406_uom_m12,M12,iard cubic pe zi,cubic yard per day
+d406_uom_m13,M13,iard cubic pe oră,cubic yard per hour
+d406_uom_m14,M14,iard cubic pe psi,cubic yard per psi
+d406_uom_m15,M15,iard cubic pe minut,cubic yard per minute
+d406_uom_m16,M16,iard cubic pe secundă,cubic yard per second
+d406_uom_m17,M17,metru kilohertzi,kilohertz metre
+d406_uom_m18,M18,metru gigahertzi,gigahertz metre
+d406_uom_m19,M19,Beaufort,Beaufort
+d406_uom_m20,M20,megakelvin reciproc sau megakelvin la puterea minus unu,reciprocal megakelvin or megakelvin to the power minus one
+d406_uom_m21,M21,kilovolt reciproc - amperi oră reciprocă,reciprocal kilovolt - ampere reciprocal hour
+d406_uom_m22,M22,mililitru pe centimetru pătrat minut,millilitre per square centimetre minute
+d406_uom_m23,M23,newton pe centimetru,newton per centimetre
+d406_uom_m24,M24,ohm kilometru,ohm kilometre
+d406_uom_m25,M25,procente pe grad Celsius,percent per degree Celsius
+d406_uom_m26,M26,gigaohm pe metru,gigaohm per metre
+d406_uom_m27,M27,metru megahertzi,megahertz metre
+d406_uom_m29,M29,kilogram pe kilogram,kilogram per kilogram
+d406_uom_m30,M30,volt reciproc - amper secundă reciprocă,reciprocal volt - ampere reciprocal second
+d406_uom_m31,M31,kilogram pe kilometru,kilogram per kilometre
+d406_uom_m32,M32,pascal secundă pe litru,pascal second per litre
+d406_uom_m33,M33,milimol pe litru,millimole per litre
+d406_uom_m34,M34,metru newton pe metru pătrat,newton metre per square metre
+d406_uom_m35,M35,milivolt - amper,millivolt - ampere
+d406_uom_m36,M36,luna de 30 de zile,30-day month
+d406_uom_m37,M37,actual/360,actual/360
+d406_uom_m38,M38,kilometru pe secundă pătrat,kilometre per second squared
+d406_uom_m39,M39,centimetru pe secundă pătrat,centimetre per second squared
+d406_uom_m4,M4,valoare monetară,monetary value
+d406_uom_m40,M40,iard pe secundă pătrat,yard per second squared
+d406_uom_m41,M41,milimetru pe secundă pătrat,millimetre per second squared
+d406_uom_m42,M42,milă (milă statutară) pe secundă pătrat,mile (statute mile) per second squared
+d406_uom_m43,M43,mil,mil
+d406_uom_m44,M44,revoluție,revolution
+d406_uom_m45,M45,grad [unitate de unghi] pe secundă pătrat,degree [unit of angle] per second squared
+d406_uom_m46,M46,revoluție pe minut,revolution per minute
+d406_uom_m47,M47,mil circular,circular mil
+d406_uom_m48,M48,milă pătrată (pe baza piciorului de sondaj din SUA),square mile (based on U.S. survey foot)
+d406_uom_m49,M49,lanț (bazat pe piciorul sondajului din SUA),chain (based on U.S. survey foot)
+d406_uom_m5,M5,microcurie,microcurie
+d406_uom_m50,M50,furlong,furlong
+d406_uom_m51,M51,picior (sondaj din SUA),foot (U.S. survey)
+d406_uom_m52,M52,milă (pe baza piciorului de sondaj din SUA),mile (based on U.S. survey foot)
+d406_uom_m53,M53,metru pe pascal,metre per pascal
+d406_uom_m55,M55,metru pe radiant,metre per radiant
+d406_uom_m56,M56,shake,shake
+d406_uom_m57,M57,milă pe minut,mile per minute
+d406_uom_m58,M58,milă pe secundă,mile per second
+d406_uom_m59,M59,metru pe secundă pascal,metre per second pascal
+d406_uom_m60,M60,metru pe oră,metre per hour
+d406_uom_m61,M61,inch pe an,inch per year
+d406_uom_m62,M62,kilometru pe secundă,kilometre per second
+d406_uom_m63,M63,inch pe minut,inch per minute
+d406_uom_m64,M64,iard pe secundă,yard per second
+d406_uom_m65,M65,iard pe minut,yard per minute
+d406_uom_m66,M66,iard pe oră,yard per hour
+d406_uom_m67,M67,acre-foot (bazat pe piciorul sondajului din SUA),acre-foot (based on U.S. survey foot)
+d406_uom_m68,M68,cord (128 ft3) (volum material uscat),cord (128 ft3)
+d406_uom_m69,M69,mile cubice (statutul Regatului Unit),cubic mile (UK statute)
+d406_uom_m7,M7,micro-inch,micro-inch
+d406_uom_m70,M70,"tonaj, registru","ton, register"
+d406_uom_m71,M71,metru cub pe pascal,cubic metre per pascal
+d406_uom_m72,M72,bel,bel
+d406_uom_m73,M73,kilogram pe metru cub pascal,kilogram per cubic metre pascal
+d406_uom_m74,M74,kilogram pe pascal,kilogram per pascal
+d406_uom_m75,M75,kilopound-forță,kilopound-force
+d406_uom_m76,M76,poundal,poundal
+d406_uom_m77,M77,kilogram metru pe secundă pătrat,kilogram metre per second squared
+d406_uom_m78,M78,bazin,pond
+d406_uom_m79,M79,picior pătrat pe oră,square foot per hour
+d406_uom_m80,M80,stokes per pascal,stokes per pascal
+d406_uom_m81,M81,centimetru pătrat pe secundă,square centimetre per second
+d406_uom_m82,M82,metru pătrat pe secundă pascal,square metre per second pascal
+d406_uom_m83,M83,denier,denier
+d406_uom_m84,M84,lira pe iard,pound per yard
+d406_uom_m85,M85,"tonă, masă","ton, assay"
+d406_uom_m86,M86,pfund,pfund
+d406_uom_m87,M87,kilogram pe secundă pascal,kilogram per second pascal
+d406_uom_m88,M88,tonă pe lună,tonne per month
+d406_uom_m89,M89,tonă pe an,tonne per year
+d406_uom_m9,M9,milioane Btu la 1000 de picioare cub,million Btu per 1000 cubic foot
+d406_uom_m90,M90,kilopound pe oră,kilopound per hour
+d406_uom_m91,M91,liră pe liră,pound per pound
+d406_uom_m92,M92,picior de liră-forță,pound-force foot
+d406_uom_m93,M93,newton metru pe radian,newton metre per radian
+d406_uom_m94,M94,kilogram metru,kilogram metre
+d406_uom_m95,M95,picior poundal,poundal foot
+d406_uom_m96,M96,inch poundal,poundal inch
+d406_uom_m97,M97,metru dină,dyne metre
+d406_uom_m98,M98,kilogram centimetru pe secundă,kilogram centimetre per second
+d406_uom_m99,M99,gram centimetru pe secundă,gram centimetre per second
+d406_uom_mah,MAH,megavolt amperi oră reactivă,megavolt ampere reactive hour
+d406_uom_mal,MAL,megalitru,megalitre
+d406_uom_mam,MAM,megametru,megametre
+d406_uom_mar,MAR,megavar,megavar
+d406_uom_maw,MAW,megawatt,megawatt
+d406_uom_mbe,MBE,mii echivalent caramida standard,thousand standard brick equivalent
+d406_uom_mbf,MBF,mii de picior de scândură,thousand board foot
+d406_uom_mbr,MBR,milibar,millibar
+d406_uom_mc,MC,microgram,microgram
+d406_uom_mcu,MCU,milicurie,millicurie
+d406_uom_md,MD,tonă metrică uscată la aer,air dry metric ton
+d406_uom_mgm,MGM,miligram,milligram
+d406_uom_mhz,MHZ,megahertz,megahertz
+d406_uom_mik,MIK,milă pătrată (milă statutară),square mile (statute mile)
+d406_uom_mil,MIL,milă pătrată (milă statutară) mii,thousand
+d406_uom_min,MIN,minut [unitate de timp],minute [unit of time]
+d406_uom_mio,MIO,milion,million
+d406_uom_miu,MIU,milioane de unități internaționale,million international unit
+d406_uom_mkd,MKD,Zi metru pătrat,Square Metre Day
+d406_uom_mkm,MKM,Lună metru pătrat,Square Metre Month
+d406_uom_mkw,MKW,Săptămâna metru pătrat,Square Metre Week
+d406_uom_mld,MLD,miliard,milliard
+d406_uom_mlt,MLT,mililitru,millilitre
+d406_uom_mmk,MMK,milimetru pătrat,square millimetre
+d406_uom_mmq,MMQ,milimetru cub,cubic millimetre
+d406_uom_mmt,MMT,milimetru,millimetre
+d406_uom_mnd,MND,"kilogram, greutate uscată","kilogram, dry weight"
+d406_uom_mnj,MNJ,Mega Joule pe metru cub normalizat,Mega Joule per Normalised cubic Metre
+d406_uom_mon,MON,lună,month
+d406_uom_mpa,MPA,megapascal,megapascal
+d406_uom_mqd,MQD,Zi metru cub,Cubic Metre Day
+d406_uom_mqh,MQH,metru cub pe oră,cubic metre per hour
+d406_uom_mqm,MQM,Luna metru cub,Cubic Metre Month
+d406_uom_mqs,MQS,metru cub pe secundă,cubic metre per second
+d406_uom_mqw,MQW,Săptămâna metru cub,Cubic Metre Week
+d406_uom_mrd,MRD,Zi metru,Metre Day
+d406_uom_mrm,MRM,Lună metru,Metre Month
+d406_uom_mrw,MRW,Săptămână metru,Metre Week
+d406_uom_msk,MSK,metru pe secundă pătrat,metre per second squared
+d406_uom_mtk,MTK,metru pătrat,square metre
+d406_uom_mtq,MTQ,metru cub,cubic metre
+d406_uom_mtr,MTR,metru,metre
+d406_uom_mts,MTS,metru pe secundă,metre per second
+d406_uom_mtz,MTZ,milihertz,milihertz
+d406_uom_mva,MVA,megavolt - amper,megavolt - ampere
+d406_uom_mwh,MWH,megawați oră (1000 kW.h),megawatt hour (1000 kW.h)
+d406_uom_n1,N1,calorie pen,pen calorie
+d406_uom_n10,N10,liră picior pe secundă,pound foot per second
+d406_uom_n11,N11,liră inch pe secundă,pound inch per second
+d406_uom_n12,N12,cai putere,Pferdestaerke
+d406_uom_n13,N13,centimetru de mercur (0°C),centimetre of mercury (0 ºC)
+d406_uom_n14,N14,centimetru de apă (4 ºC),centimetre of water (4 ºC)
+d406_uom_n15,N15,"picior de apă (39,2 ºF)",foot of water (39.2 ºF)
+d406_uom_n16,N16,inch de mercur (32 °F),inch of mercury (32 ºF)
+d406_uom_n17,N17,inch de mercur (60 °F),inch of mercury (60 ºF)
+d406_uom_n18,N18,"inch de apă (39,2 °F)",inch of water (39.2 ºF)
+d406_uom_n19,N19,inch de apă (60 °F),inch of water (60 ºF)
+d406_uom_n20,N20,kip pe inch pătrat,kip per square inch
+d406_uom_n21,N21,lire pe picior pătrat,poundal per square foot
+d406_uom_n22,N22,uncie (avoirdupois) pe inch pătrat,ounce (avoirdupois) per square inch
+d406_uom_n23,N23,metru convențional de apă,conventional metre of water
+d406_uom_n24,N24,gram pe milimetru pătrat,gram per square millimetre
+d406_uom_n25,N25,liră pe iard pătrat,pound per square yard
+d406_uom_n26,N26,poundal pe inch pătrat,poundal per square inch
+d406_uom_n27,N27,piciorul la puterea a patra,foot to the fourth power
+d406_uom_n28,N28,decimetru cubic pe kilogram,cubic decimetre per kilogram
+d406_uom_n29,N29,picior cubic pe kilogram,cubic foot per pound
+d406_uom_n3,N3,punct imprimare,print point
+d406_uom_n30,N30,inch cub pe kilogram,cubic inch per pound
+d406_uom_n31,N31,kilonewton pe metru,kilonewton per metre
+d406_uom_n32,N32,lire pe inch,poundal per inch
+d406_uom_n33,N33,liră-forță pe yard,pound-force per yard
+d406_uom_n34,N34,liră secundă pe picior pătrat,poundal second per square foot
+d406_uom_n35,N35,poise pe pascal,poise per pascal
+d406_uom_n36,N36,newton secundă pe metru pătrat,newton second per square metre
+d406_uom_n37,N37,kilogram pe metru secundă,kilogram per metre second
+d406_uom_n38,N38,kilogram pe metru minut,kilogram per metre minute
+d406_uom_n39,N39,kilogram pe metru zi,kilogram per metre day
+d406_uom_n40,N40,kilogram pe metru oră,kilogram per metre hour
+d406_uom_n41,N41,gram pe secundă centimetru,gram per centimetre second
+d406_uom_n42,N42,liră secundă pe inch pătrat,poundal second per square inch
+d406_uom_n43,N43,liră pe picior minut,pound per foot minute
+d406_uom_n44,N44,liră pe picior pe zi,pound per foot day
+d406_uom_n45,N45,metru cub pe secundă pascal,cubic metre per second pascal
+d406_uom_n46,N46,picior poundal,foot poundal
+d406_uom_n47,N47,inch poundal,inch poundal
+d406_uom_n48,N48,wați pe centimetru pătrat,watt per square centimetre
+d406_uom_n49,N49,watt pe inch pătrat,watt per square inch
+d406_uom_n50,N50,Unitate termică britanică (masă internațională) pe picior pătrat oră,British thermal unit (international table) per square foot hour
+d406_uom_n51,N51,Unitate termică britanică (termochimică) pe metru pătrat oră,British thermal unit (thermochemical) per square foot hour
+d406_uom_n52,N52,Unitate termică britanică (termochimică) pe minut de metru pătrat,British thermal unit (thermochemical) per square foot minute
+d406_uom_n53,N53,Unitate termică britanică (tabel internațional) pe metru pătrat secundă,British thermal unit (international table) per square foot second
+d406_uom_n54,N54,Unitate termică britanică (termochimică) pe metru pătrat secundă,British thermal unit (thermochemical) per square foot second
+d406_uom_n55,N55,Unitate termică britanică (tabel internațional) pe secundă inch pătrat,British thermal unit (international table) per square inch second
+d406_uom_n56,N56,calorie (thermochemical) pe centimetru cub minut,calorie (thermochemical) per square centimetre minute
+d406_uom_n57,N57,calorii (termochimice) pe centimetru pătrat secundă,calorie (thermochemical) per square centimetre second
+d406_uom_n58,N58,Unitate termică britanică (tabel internațional) pe picior cub,British thermal unit (international table) per cubic foot
+d406_uom_n59,N59,Unitate termică britanică (termochimică) pe picior cub,British thermal unit (thermochemical) per cubic foot
+d406_uom_n60,N60,Unitate termică britanică (tabel internațional) pe grad Fahrenheit,British thermal unit (international table) per degree Fahrenheit
+d406_uom_n61,N61,Unitate termică britanică (termochimică) pe grad Fahrenheit,British thermal unit (thermochemical) per degree Fahrenheit
+d406_uom_n62,N62,Unitate termică britanică (tabel internațional) pe grad Rankine,British thermal unit (international table) per degree Rankine
+d406_uom_n63,N63,Unitate termică britanică (termochimică) pe grad Rankine,British thermal unit (thermochemical) per degree Rankine
+d406_uom_n64,N64,Unitate termică britanică (termochimică) pe liră grad Rankine,British thermal unit (thermochemical) per pound degree Rankine
+d406_uom_n65,N65,kilocalorie (tabel internațional) per gram kelvin,kilocalorie (international table) per gram kelvin
+d406_uom_n66,N66,Unitate termică britanică (39 °F),British thermal unit (39 ºF)
+d406_uom_n67,N67,Unitate termică britanică (59 °F),British thermal unit (59 ºF)
+d406_uom_n68,N68,Unitate termică britanică (60 °F),British thermal unit (60 ºF)
+d406_uom_n69,N69,calorii (20 ºC),calorie (20 ºC)
+d406_uom_n70,N70,quad (1015 BtuIT),quad (1015 BtuIT)
+d406_uom_n71,N71,therm (EC),therm (EC)
+d406_uom_n72,N72,therm (U.S.),therm (U.S.)
+d406_uom_n73,N73,Unitate termică britanică (termochimică) pe kilogram,British thermal unit (thermochemical) per pound
+d406_uom_n74,N74,Unitate termică britanică (tabel internațional) pe oră picior pătrat grad Fahrenheit,British thermal unit (international table) per hour square foot degree Fahrenheit
+d406_uom_n75,N75,Unitate termică britanică (termochimică) pe oră grade Fahrenheit de picior pătrat,British thermal unit (thermochemical) per hour square foot degree Fahrenheit
+d406_uom_n76,N76,Unitate termică britanică (tabel internațional) pe secundă picior pătrat grad Fahrenheit,British thermal unit (international table) per second square foot degree Fahrenheit
+d406_uom_n77,N77,Unitate termică britanică (termochimică) pe secundă picior pătrat grad Fahrenheit,British thermal unit (thermochemical) per second square foot degree Fahrenheit
+d406_uom_n78,N78,kilowatt pe metru pătrat kelvin,kilowatt per square metre kelvin
+d406_uom_n79,N79,kelvin pe pascal,kelvin per pascal
+d406_uom_n80,N80,watt pe metru grad Celsius,watt per metre degree Celsius
+d406_uom_n81,N81,kilowatt pe metru kelvin,kilowatt per metre kelvin
+d406_uom_n82,N82,kilowatt pe metru grad Celsius,kilowatt per metre degree Celsius
+d406_uom_n83,N83,metru pe grad Celcius metru,metre per degree Celcius metre
+d406_uom_n84,N84,grade Fahrenheit oră per unitate termică britanică (tabel internațional),degree Fahrenheit hour per British thermal unit (international table)
+d406_uom_n85,N85,grade Fahrenheit oră per unitate termică britanică (termochimică),degree Fahrenheit hour per British thermal unit (thermochemical)
+d406_uom_n86,N86,grad Fahrenheit secundă per unitate termică britanică (tabel internațional),degree Fahrenheit second per British thermal unit (international table)
+d406_uom_n87,N87,grad Fahrenheit secundă per unitate termică britanică (termochimică),degree Fahrenheit second per British thermal unit (thermochemical)
+d406_uom_n88,N88,grade Fahrenheit oră picior pătrat per unitate termică britanică (masă internațională) inch,degree Fahrenheit hour square foot per British thermal unit (international table) inch
+d406_uom_n89,N89,grade Fahrenheit oră picior pătrat per unitate termică britanică (termochimică) inch,degree Fahrenheit hour square foot per British thermal unit (thermochemical) inch
+d406_uom_n90,N90,kilofarad,kilofarad
+d406_uom_n91,N91,joule reciproc,reciprocal joule
+d406_uom_n92,N92,picosiemens,picosiemens
+d406_uom_n93,N93,amperi pe pascal,ampere per pascal
+d406_uom_n94,N94,franklin,franklin
+d406_uom_n95,N95,amper minut,ampere minute
+d406_uom_n96,N96,biot,biot
+d406_uom_n97,N97,gilbert,gilbert
+d406_uom_n98,N98,volt pe pascal,volt per pascal
+d406_uom_n99,N99,picovolt,picovolt
+d406_uom_na,NA,miligram pe kilogram,milligram per kilogram
+d406_uom_nar,NAR,număr de articole,number of articles
+d406_uom_ncl,NCL,număr de celule,number of cells
+d406_uom_new,NEW,newton,newton
+d406_uom_nf,NF,mesaj,message
+d406_uom_nil,NIL,nil,nil
+d406_uom_niu,NIU,numărul de unități internaționale,number of international units
+d406_uom_nl,NL,sarcină,load
+d406_uom_nm3,NM3,metru cub normalizat,Normalised cubic metre
+d406_uom_nmi,NMI,milă nautică,nautical mile
+d406_uom_nmp,NMP,număr de pachete,number of packs
+d406_uom_npt,NPT,numarul de piese,number of parts
+d406_uom_nt,NT,tonă netă,net ton
+d406_uom_ntu,NTU,Unitatea de turbiditate nefelometrică,Nephelometric turbidity unit
+d406_uom_nu,NU,newton metru,newton metre
+d406_uom_nx,NX,parte la mie,part per thousand
+d406_uom_oa,OA,panou,panel
+d406_uom_ode,ODE,echivalent de epuizare a stratului de ozon,ozone depletion equivalent
+d406_uom_odg,ODG,ODS Grame,ODS Grams
+d406_uom_odk,ODK,ODS Kilograme,ODS Kilograms
+d406_uom_odm,ODM,ODS Miligrame,ODS Milligrams
+d406_uom_ohm,OHM,ohm,ohm
+d406_uom_on,ON,uncie pe iard pătrat,ounce per square yard
+d406_uom_onz,ONZ,uncie (avoirdupois),ounce (avoirdupois)
+d406_uom_opm,OPM,oscilații pe minut,oscillations per minute
+d406_uom_ot,OT,oră suplimentară,overtime hour
+d406_uom_oza,OZA,uncie de lichid (SUA),fluid ounce (US)
+d406_uom_ozi,OZI,uncie de lichid (Marea Britanie),fluid ounce (UK)
+d406_uom_p1,P1,procent,percent
+d406_uom_p10,P10,coulomb pe metru,coulomb per metre
+d406_uom_p11,P11,kiloweber,kiloweber
+d406_uom_p12,P12,gamma,gamma
+d406_uom_p13,P13,kilotesla,kilotesla
+d406_uom_p14,P14,joule pe secundă,joule per second
+d406_uom_p15,P15,joule pe minut,joule per minute
+d406_uom_p16,P16,joule pe oră,joule per hour
+d406_uom_p17,P17,joule pe zi,joule per day
+d406_uom_p18,P18,kilojoule pe secundă,kilojoule per second
+d406_uom_p19,P19,kilojoul pe minut,kilojoule per minute
+d406_uom_p2,P2,lira pe picior,pound per foot
+d406_uom_p20,P20,kilojoul pe oră,kilojoule per hour
+d406_uom_p21,P21,kilojoul pe zi,kilojoule per day
+d406_uom_p22,P22,nanoohm,nanoohm
+d406_uom_p23,P23,ohm circular-mil per picior,ohm circular-mil per foot
+d406_uom_p24,P24,kilohenry,kilohenry
+d406_uom_p25,P25,lumen pe metru pătrat,lumen per square foot
+d406_uom_p26,P26,phot,phot
+d406_uom_p27,P27,lumânare-picior,footcandle
+d406_uom_p28,P28,candela pe inch pătrat,candela per square inch
+d406_uom_p29,P29,footlambert (unitate de luminanță),footlambert
+d406_uom_p30,P30,lambert,lambert
+d406_uom_p31,P31,stilb,stilb
+d406_uom_p32,P32,candela pe metru pătrat,candela per square foot
+d406_uom_p33,P33,kilocandela,kilocandela
+d406_uom_p34,P34,milicandela,millicandela
+d406_uom_p35,P35,Hefner-Kerze,Hefner-Kerze
+d406_uom_p36,P36,lumânare internațională,international candle
+d406_uom_p37,P37,Unitate termică britanică (tabel internațional) pe metru pătrat,British thermal unit (international table) per square foot
+d406_uom_p38,P38,Unitate termică britanică (termochimică) pe metru pătrat,British thermal unit (thermochemical) per square foot
+d406_uom_p39,P39,calorii (termochimice) pe centimetru pătrat,calorie (thermochemical) per square centimetre
+d406_uom_p40,P40,langley (unitate de transmisie a căldurii),langley
+d406_uom_p41,P41,deceniu (logaritmic),decade (logarithmic)
+d406_uom_p42,P42,pascal pătrat secundă,pascal squared second
+d406_uom_p43,P43,bel pe metru,bel per metre
+d406_uom_p44,P44,mol liră,pound mole
+d406_uom_p45,P45,liră mol pe secundă,pound mole per second
+d406_uom_p46,P46,liră mol pe minut,pound mole per minute
+d406_uom_p47,P47,kilomol pe kilogram,kilomole per kilogram
+d406_uom_p48,P48,liră mol pe liră,pound mole per pound
+d406_uom_p49,P49,Newton metru pătrat pe amper,newton square metre per ampere
+d406_uom_p5,P5,pachet de cinci,five pack
+d406_uom_p50,P50,contor weber,weber metre
+d406_uom_p51,P51,mol pe kilogram pascal,mol per kilogram pascal
+d406_uom_p52,P52,mol pe metru cub pascal,mol per cubic metre pascal
+d406_uom_p53,P53,unitate pol,unit pole
+d406_uom_p54,P54,miligray pe secundă,milligray per second
+d406_uom_p55,P55,microgray pe secundă,microgray per second
+d406_uom_p56,P56,nanogray pe secundă,nanogray per second
+d406_uom_p57,P57,gray pe minut,gray per minute
+d406_uom_p58,P58,miligray pe minut,milligray per minute
+d406_uom_p59,P59,microgray pe minut,microgray per minute
+d406_uom_p60,P60,nanogray pe minut,nanogray per minute
+d406_uom_p61,P61,gray pe oră,gray per hour
+d406_uom_p62,P62,milligray pe oră,milligray per hour
+d406_uom_p63,P63,microgray pe oră,microgray per hour
+d406_uom_p64,P64,nanogray pe oră,nanogray per hour
+d406_uom_p65,P65,sievert pe secundă,sievert per second
+d406_uom_p66,P66,milisievert pe secundă,millisievert per second
+d406_uom_p67,P67,microsievert pe secundă,microsievert per second
+d406_uom_p68,P68,nanosievert pe secundă,nanosievert per second
+d406_uom_p69,P69,rem pe secundă,rem per second
+d406_uom_p70,P70,sievert pe oră,sievert per hour
+d406_uom_p71,P71,millisievert pe oră,millisievert per hour
+d406_uom_p72,P72,microsievert pe oră,microsievert per hour
+d406_uom_p73,P73,nanosievert pe oră,nanosievert per hour
+d406_uom_p74,P74,sievert pe minut,sievert per minute
+d406_uom_p75,P75,millisievert pe minut,millisievert per minute
+d406_uom_p76,P76,microsievert pe minut,microsievert per minute
+d406_uom_p77,P77,nanosievert pe minut,nanosievert per minute
+d406_uom_p78,P78,inch pătrat reciproc,reciprocal square inch
+d406_uom_p79,P79,pascal metru pătrat pe kilogram,pascal square metre per kilogram
+d406_uom_p80,P80,milipascal pe metru,millipascal per metre
+d406_uom_p81,P81,kilopascal pe metru,kilopascal per metre
+d406_uom_p82,P82,hectopascal pe metru,hectopascal per metre
+d406_uom_p83,P83,atmosferă standard pe metru,standard atmosphere per metre
+d406_uom_p84,P84,atmosferă tehnică pe metru,technical atmosphere per metre
+d406_uom_p85,P85,torr pe metru,torr per metre
+d406_uom_p86,P86,psi pe inch,psi per inch
+d406_uom_p87,P87,metru cub pe secundă metru pătrat,cubic metre per second square metre
+d406_uom_p88,P88,rhe,rhe
+d406_uom_p89,P89,picior liră-forță pe inch,pound-force foot per inch
+d406_uom_p90,P90,inch liră-forță pe inch,pound-force inch per inch
+d406_uom_p91,P91,perm (0 ºC),perm (0 ºC)
+d406_uom_p92,P92,perm (0 ºC),perm (23 ºC)
+d406_uom_p93,P93,octet pe secundă,byte per second
+d406_uom_p94,P94,kilobyte pe secundă,kilobyte per second
+d406_uom_p95,P95,megabyte pe secundă,megabyte per second
+d406_uom_p96,P96,volt reciproc,reciprocal volt
+d406_uom_p97,P97,radian reciproc,reciprocal radian
+d406_uom_p98,P98,pascal la suma puterilor numerelor stoichiometrice,pascal to the power sum of stoichiometric numbers
+d406_uom_p99,P99,mol pe metru cub la suma puterii numerelor stoichiometrice,mole per cubiv metre to the power sum of stoichiometric numbers
+d406_uom_pal,PAL,pascal,pascal
+d406_uom_pd,PD,pad,pad
+d406_uom_pfl,PFL,dovadă-litru,proof litre
+d406_uom_pgl,PGL,dovadă-galon,proof gallon
+d406_uom_pi,PI,pitch,pitch
+d406_uom_pla,PLA,grad Platon,degree Plato
+d406_uom_po,PO,liră pe inch de lungime,pound per inch of length
+d406_uom_pq,PQ,pagină pe inch,page per inch
+d406_uom_pr,PR,pereche,pair
+d406_uom_ps,PS,liră-forță pe inch pătrat,pound-force per square inch
+d406_uom_ptd,PTD,pint material uscat (SUA),dry pint (US)
+d406_uom_pti,PTI,pint (Marea Britanie),pint (UK)
+d406_uom_ptl,PTL,pint lichid (SUA),liquid pint (US)
+d406_uom_ptn,PTN,porție,portion
+d406_uom_q10,Q10,joule pe tesla,joule per tesla
+d406_uom_q11,Q11,erlang,erlang
+d406_uom_q12,Q12,octet,octet
+d406_uom_q13,Q13,octet pe secundă,octet per second
+d406_uom_q14,Q14,shannon,shannon
+d406_uom_q15,Q15,hartley,hartley
+d406_uom_q16,Q16,unitate naturală de informaţie,natural unit of information
+d406_uom_q17,Q17,shannon pe secundă,shannon per second
+d406_uom_q18,Q18,hartley pe secundă,hartley per second
+d406_uom_q19,Q19,unitate naturală de informație pe secundă,natural unit of information per second
+d406_uom_q20,Q20,secundă pe kilogram,second per kilogramm
+d406_uom_q21,Q21,watt metru pătrat,watt square metre
+d406_uom_q22,Q22,secundă pe radian metru cub,second per radian cubic metre
+d406_uom_q23,Q23,weber la puterea minus unu,weber to the power minus one
+d406_uom_q24,Q24,inch reciproc,reciprocal inch
+d406_uom_q25,Q25,dioptrie,dioptre
+d406_uom_q26,Q26,unul pe unul,one per one
+d406_uom_q27,Q27,newton metru pe metru,newton metre per metre
+d406_uom_q28,Q28,kilogram pe metru pătrat pascal secundă,kilogram per square metre pascal second
+d406_uom_q29,Q29,microgram pe hectogram,microgram per hectogram
+d406_uom_q3,Q3,masă,meal
+d406_uom_q30,Q30,pH (potențial de hidrogen),pH (potential of Hydrogen)
+d406_uom_q31,Q31,kilojoule pe gram,kilojoule per gram
+d406_uom_q32,Q32,femtolitru,femtolitre
+d406_uom_q33,Q33,picolitru,picolitre
+d406_uom_q34,Q34,nanolitru,nanolitre
+d406_uom_q35,Q35,megawați pe minut,megawatts per minute
+d406_uom_q36,Q36,metru pătrat pe metru cub,square metre per cubic metre
+d406_uom_q37,Q37,metru cub standard pe zi,Standard cubic metre per day
+d406_uom_q38,Q38,metru cub standard pe oră,Standard cubic metre per hour
+d406_uom_q39,Q39,metru cub normalizat pe zi,Normalized cubic metre per day
+d406_uom_q40,Q40,metru cub normalizat pe oră,Normalized cubic metre per hour
+d406_uom_q41,Q41,Joule pe metru cub normalizat,Joule per normalised cubic metre
+d406_uom_q42,Q42,Joule pe metru cub standard,Joule per standard cubic metre
+d406_uom_qa,QA,pagina - facsimil,page - facsimile
+d406_uom_qan,QAN,trimestru (de an),quarter (of a year)
+d406_uom_qb,QB,pagină - hârtie,page - hardcopy
+d406_uom_qr,QR,quire,quire
+d406_uom_qtd,QTD,quart material uscat (SUA),dry quart (US)
+d406_uom_qti,QTI,quart (Marea Britanie),quart (UK)
+d406_uom_qtl,QTL,quart lichid (SUA),liquid quart (US)
+d406_uom_qtr,QTR,trimestru (Marea Britanie),quarter (UK)
+d406_uom_r1,R1,pica,pica
+d406_uom_r9,R9,mii de metri cubi,thousand cubic metre
+d406_uom_rh,RH,oră de funcționare sau de acționare,running or operating hour
+d406_uom_rm,RM,top,ream
+d406_uom_rom,ROM,cameră,room
+d406_uom_rp,RP,coli de hârtie,pound per ream
+d406_uom_rpm,RPM,rotaţii pe minut,revolutions per minute
+d406_uom_rps,RPS,rotații pe secundă,revolutions per second
+d406_uom_rt,RT,venit tonă milă,revenue ton mile
+d406_uom_s3,S3,picior pătrat pe secundă,square foot per second
+d406_uom_s4,S4,metru pătrat pe secundă,square metre per second
+d406_uom_san,SAN,jumătate de an (6 luni),half year (6 months)
+d406_uom_sco,SCO,Scor,score
+d406_uom_scr,SCR,scrupul,scruple
+d406_uom_sec,SEC,secundă [unitate de timp],second [unit of time]
+d406_uom_set,SET,set,set
+d406_uom_sg,SG,segment,segment
+d406_uom_sie,SIE,siemens,siemens
+d406_uom_sm3,SM3,metru cub standard,Standard cubic metre
+d406_uom_smi,SMI,milă (milă statutară),mile (statute mile)
+d406_uom_sq,SQ,pătrat,square
+d406_uom_sqr,SQR,"pătrat, acoperiș","square, roofing"
+d406_uom_sr,SR,bandă,strip
+d406_uom_stc,STC,stick,stick
+d406_uom_sti,STI,piatră (Marea Britanie),stone (UK)
+d406_uom_stk,STK,"baton, țigară","stick, cigarette"
+d406_uom_stl,STL,litru standard,standard litre
+d406_uom_stn,STN,tonă (SUA) sau tonă scurtă (UK/SUA),ton (US) or short ton (UK/US)
+d406_uom_stw,STW,paie,straw
+d406_uom_sw,SW,skein,skein
+d406_uom_sx,SX,expediere,shipment
+d406_uom_syr,SYR,seringă,syringe
+d406_uom_t0,T0,linie de telecomunicații în serviciu,telecommunication line in service
+d406_uom_t3,T3,o mie de bucăți,thousand piece
+d406_uom_tah,TAH,kiloamperi oră (mii de amperi oră),kiloampere hour (thousand ampere hour)
+d406_uom_tan,TAN,număr acid total,total acid number
+d406_uom_ti,TI,mii de inci pătrați,thousand square inch
+d406_uom_tic,TIC,"tonă metrică, inclusiv container","metric ton, including container"
+d406_uom_tip,TIP,"tonă metrică, inclusiv ambalajul interior","metric ton, including inner packaging"
+d406_uom_tkm,TKM,tonă kilometru,tonne kilometre
+d406_uom_tms,TMS,"kilogram de carne de import, mai puține organe","kilogram of imported meat, less offal"
+d406_uom_tne,TNE,tonă (tonă metrică),tonne (metric ton)
+d406_uom_tp,TP,zece pachete,ten pack
+d406_uom_tpi,TPI,dinți pe inch,teeth per inch
+d406_uom_tpr,TPR,zece perechi,ten pair
+d406_uom_tqd,TQD,mii de metri cubi pe zi,thousand cubic metre per day
+d406_uom_trl,TRL,trilioane (EUR),trillion (EUR)
+d406_uom_tst,TST,ten set,ten set
+d406_uom_tts,TTS,zece mii de bețe,ten thousand sticks
+d406_uom_u1,U1,tratament,treatment
+d406_uom_u2,U2,comprimat,tablet
+d406_uom_ub,UB,linie de telecomunicații în medie de serviciu,telecommunication line in service average
+d406_uom_uc,UC,portul de telecomunicații,telecommunication port
+d406_uom_va,VA,volt - amperi pe kilogram,volt - ampere per kilogram
+d406_uom_vlt,VLT,volt,volt
+d406_uom_vp,VP,volum procentual,percent volume
+d406_uom_w2,W2,kilogram material umed,wet kilo
+d406_uom_wa,WA,watt pe kilogram,watt per kilogram
+d406_uom_wb,WB,liră materail umed,wet pound
+d406_uom_wcd,WCD,cordon,cord
+d406_uom_we,WE,tonă material umed,wet ton
+d406_uom_web,WEB,weber,weber
+d406_uom_wee,WEE,săptămână,week
+d406_uom_wg,WG,galon de vin,wine gallon
+d406_uom_whr,WHR,watt oră,watt hour
+d406_uom_wm,WM,lună de lucru,working month
+d406_uom_wsd,WSD,standard,standard
+d406_uom_wtt,WTT,watt,watt
+d406_uom_x1,X1,Lanțul lui Gunter,Gunter's chain
+d406_uom_x1a,X1A,"Tambur, oțel","Drum, steel"
+d406_uom_x1b,X1B,"Tambur, aluminiu","Drum, aluminium"
+d406_uom_x1d,X1D,"Tambur, placaj","Drum, plywood"
+d406_uom_x1f,X1F,"Container, flexibil","Container, flexible"
+d406_uom_x1g,X1G,"Tambur, fibră","Drum, fibre"
+d406_uom_x1w,X1W,"Tambur, lemn","Drum, wooden"
+d406_uom_x2c,X2C,"Butoi, lemn","Barrel, wooden"
+d406_uom_x3a,X3A,"Jerican, oțel","Jerrican, steel"
+d406_uom_x3h,X3H,"Jerrican, plastic","Jerrican, plastic"
+d406_uom_x43,X43,"Cutie, super vrac","Bag, super bulk"
+d406_uom_x44,X44,"Cutie, pungă de polietilenă","Bag, polybag"
+d406_uom_x4a,X4A,"Cutie, oțel","Box, steel"
+d406_uom_x4b,X4B,"Cutie, aluminiu","Box, aluminium"
+d406_uom_x4c,X4C,"Cutie, lemn natural","Box, natural wood"
+d406_uom_x4d,X4D,"Cutie, placaj","Box, plywood"
+d406_uom_x4f,X4F,"Cutie, lemn reconstituit","Box, reconstituted wood"
+d406_uom_x4g,X4G,"Cutie, placă de fibre","Box, fibreboard"
+d406_uom_x4h,X4H,"Cutie, plastic","Box, plastic"
+d406_uom_x5h,X5H,"Geantă, plastic țesut","Bag, woven plastic"
+d406_uom_x5l,X5L,"Cutie, textil","Bag, textile"
+d406_uom_x5m,X5M,"Cutie, hârtie","Bag, paper"
+d406_uom_x6h,X6H,"Ambalaj compozit, recipient din plastic","Composite packaging, plastic receptacle"
+d406_uom_x6p,X6P,"Ambalaj compozit, recipient din sticlă","Composite packaging, glass receptacle"
+d406_uom_x7a,X7A,"Carcasă, mașină","Case, car"
+d406_uom_x7b,X7B,"Carcasă, lemn","Case, wooden"
+d406_uom_x8a,X8A,"Palet, lemn","Pallet, wooden"
+d406_uom_x8b,X8B,"Ladă, lemn","Crate, wooden"
+d406_uom_x8c,X8C,"Pachet, din lemn","Bundle, wooden"
+d406_uom_xaa,XAA,"Container intermediar pentru vrac, plastic rigid","Intermediate bulk container, rigid plastic"
+d406_uom_xab,XAB,"Recipient, fibră","Receptacle, fibre"
+d406_uom_xac,XAC,"Recipient, hârtie","Receptacle, paper"
+d406_uom_xad,XAD,"Recipient, din lemn","Receptacle, wooden"
+d406_uom_xae,XAE,Aerosol,Aerosol
+d406_uom_xaf,XAF,"Palet, modular, gulere 80cms * 60cms","Pallet, modular, collars 80cms * 60cms"
+d406_uom_xag,XAG,"Palet, ambalat","Pallet, shrinkwrapped"
+d406_uom_xah,XAH,"Palet, 100 cm * 110 cm","Pallet, 100cms * 110cms"
+d406_uom_xai,XAI,Clapetă,Clamshell
+d406_uom_xaj,XAJ,Con,Cone
+d406_uom_xal,XAL,Ball,Ball
+d406_uom_xam,XAM,"Fiolă, neprotejată","Ampoule, non-protected"
+d406_uom_xap,XAP,"Fiolă, protejată","Ampoule, protected"
+d406_uom_xat,XAT,Pulverizator,Atomizer
+d406_uom_xav,XAV,Capsulă,Capsule
+d406_uom_xb4,XB4,Centura,Belt
+d406_uom_xba,XBA,Butoi,Barrel
+d406_uom_xbb,XBB,Bobină,Bobbin
+d406_uom_xbc,XBC,Ladă pentru sticle / suport pentru sticle,Bottlecrate / bottlerack
+d406_uom_xbd,XBD,Bord,Board
+d406_uom_xbe,XBE,Pachet,Bundle
+d406_uom_xbf,XBF,"Balon, neprotejat","Balloon, non-protected"
+d406_uom_xbg,XBG,Geanta,Bag
+d406_uom_xbh,XBH,Buchet,Bunch
+d406_uom_xbi,XBI,Coș,Bin
+d406_uom_xbj,XBJ,Găleată,Bucket
+d406_uom_xbk,XBK,Coș,Basket
+d406_uom_xbl,XBL,"Bale, comprimat","Bale, compressed"
+d406_uom_xbm,XBM,Bazin,Basin
+d406_uom_xbn,XBN,"Bale, necomprimate","Bale, non-compressed"
+d406_uom_xbo,XBO,"Flacon, neprotejat, cilindric","Bottle, non-protected, cylindrical"
+d406_uom_xbp,XBP,"Balon, protejat","Balloon, protected"
+d406_uom_xbq,XBQ,"Flacon, cilindric protejat","Bottle, protected cylindrical"
+d406_uom_xbr,XBR,Bar,Bar
+d406_uom_xbs,XBS,"Flacon, neprotejat, bulbos","Bottle, non-protected, bulbous"
+d406_uom_xbt,XBT,Bolt,Bolt
+d406_uom_xbu,XBU,Butoi,Butt
+d406_uom_xbv,XBV,"Sticlă, bulboasă protejată","Bottle, protected bulbous"
+d406_uom_xbw,XBW,"Cutie, pentru lichide","Box, for liquids"
+d406_uom_xbx,XBX,Cutie,Box
+d406_uom_xby,XBY,"Scândură, în legătură/mănunchi/îngrijit","Board, in bundle/bunch/truss"
+d406_uom_xbz,XBZ,"Bare, în legătură/mănunchi/îngrijit","Bars, in bundle/bunch/truss"
+d406_uom_xca,XCA,"Cutie, dreptunghiulară","Can, rectangular"
+d406_uom_xcb,XCB,"Ladă, bere","Crate, beer"
+d406_uom_xcc,XCC,Putinei,Churn
+d406_uom_xcd,XCD,"Bidon, cu mâner și gura de scurgere","Can, with handle and spout"
+d406_uom_xce,XCE,Creel,Creel
+d406_uom_xcf,XCF,Ladă,Coffer
+d406_uom_xcg,XCG,Cuşcă,Cage
+d406_uom_xch,XCH,Cufăr,Chest
+d406_uom_xci,XCI,Canistră,Canister
+d406_uom_xcj,XCJ,sicriu,Coffin
+d406_uom_xck,XCK,Butoi,Cask
+d406_uom_xcl,XCL,Bobină,Coil
+d406_uom_xcm,XCM,Card,Card
+d406_uom_xcn,XCN,"Container, nespecificat altfel ca echipament de transport","Container, not otherwise specified as transport equipment"
+d406_uom_xco,XCO,"Bombă, neprotejată","Carboy, non-protected"
+d406_uom_xcp,XCP,"Bombă, protejată","Carboy, protected"
+d406_uom_xcq,XCQ,Cartuş,Cartridge
+d406_uom_xcr,XCR,Ladă,Crate
+d406_uom_xcs,XCS,Caz,Case
+d406_uom_xct,XCT,Cutie de carton,Carton
+d406_uom_xcu,XCU,Ceașcă,Cup
+d406_uom_xcv,XCV,Capac,Cover
+d406_uom_xcw,XCW,"Cușcă, rolă","Cage, roll"
+d406_uom_xcx,XCX,"Bidon, cilindric","Can, cylindrical"
+d406_uom_xcy,XCY,Cilindru,Cylinder
+d406_uom_xcz,XCZ,Pânză,Canvas
+d406_uom_xda,XDA,"Ladă, mai multe straturi, plastic","Crate, multiple layer, plastic"
+d406_uom_xdb,XDB,"Ladă, mai multe straturi, din lemn","Crate, multiple layer, wooden"
+d406_uom_xdc,XDC,"Ladă, mai multe straturi, carton","Crate, multiple layer, cardboard"
+d406_uom_xdg,XDG,"Cage, Commonwealth Handling Equipment Pool (CHEP)","Cage, Commonwealth Handling Equipment Pool (CHEP)"
+d406_uom_xdh,XDH,"Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox","Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox"
+d406_uom_xdi,XDI,"Tambur, fier de călcat","Drum, iron"
+d406_uom_xdj,XDJ,"Bomiana, neprotejat","Demijohn, non-protected"
+d406_uom_xdk,XDK,"Ladă, vrac, carton","Crate, bulk, cardboard"
+d406_uom_xdl,XDL,"Ladă, vrac, plastic","Crate, bulk, plastic"
+d406_uom_xdm,XDM,"Ladă, vrac, lemn","Crate, bulk, wooden"
+d406_uom_xdn,XDN,Dozator,Dispenser
+d406_uom_xdp,XDP,"Damijohn, protejat","Demijohn, protected"
+d406_uom_xdr,XDR,Tambur,Drum
+d406_uom_xds,XDS,"Tavă, un strat fără capac, plastic","Tray, one layer no cover, plastic"
+d406_uom_xdt,XDT,"Tavă, un strat fără capac, din lemn","Tray, one layer no cover, wooden"
+d406_uom_xdu,XDU,"Tavă, un strat fără capac, polistiren","Tray, one layer no cover, polystyrene"
+d406_uom_xdv,XDV,"Tavă, un strat fără capac, carton","Tray, one layer no cover, cardboard"
+d406_uom_xdw,XDW,"Tavă, două straturi fără capac, tavă din plastic","Tray, two layers no cover, plastic tray"
+d406_uom_xdx,XDX,"Tavă, două straturi fără capac, din lemn","Tray, two layers no cover, wooden"
+d406_uom_xdy,XDY,"Tavă, două straturi fără capac, carton","Tray, two layers no cover, cardboard"
+d406_uom_xec,XEC,"Geantă, plastic","Bag, plastic"
+d406_uom_xed,XED,"Carcasă, cu bază de paleți","Case, with pallet base"
+d406_uom_xee,XEE,"Carcasa, cu bază de palet, din lemn","Case, with pallet base, wooden"
+d406_uom_xef,XEF,"Carcasă, cu baza de palet, carton","Case, with pallet base, cardboard"
+d406_uom_xeg,XEG,"Carcasă, cu bază de palet, plastic","Case, with pallet base, plastic"
+d406_uom_xeh,XEH,"Carcasă, cu bază de palet, metal","Case, with pallet base, metal"
+d406_uom_xei,XEI,"Carcasă, izotermă","Case, isothermic"
+d406_uom_xen,XEN,Plic,Envelope
+d406_uom_xfb,XFB,Flexibag,Flexibag
+d406_uom_xfc,XFC,"Ladă, fructe","Crate, fruit"
+d406_uom_xfd,XFD,"Ladă, înrămată","Crate, framed"
+d406_uom_xfe,XFE,Flexitank,Flexitank
+d406_uom_xfi,XFI,Firkin (unitate de masă),Firkin
+d406_uom_xfl,XFL,Flask,Flask
+d406_uom_xfo,XFO,Footlocker,Footlocker
+d406_uom_xfp,XFP,Filmpack,Filmpack
+d406_uom_xfr,XFR,Cadru,Frame
+d406_uom_xft,XFT,Foodtainer,Foodtainer
+d406_uom_xfw,XFW,"Cărucior, plat","Cart, flatbed"
+d406_uom_xfx,XFX,"Geantă, recipient flexibil","Bag, flexible container"
+d406_uom_xgb,XGB,"Sticlă, gaz","Bottle, gas"
+d406_uom_xgi,XGI,Grindă,Girder
+d406_uom_xgl,XGL,"Recipient, galon","Container, gallon"
+d406_uom_xgr,XGR,"Recipient, sticlă","Receptacle, glass"
+d406_uom_xgu,XGU,"Tavă, care conține articole plate stivuite orizontal","Tray, containing horizontally stacked flat items"
+d406_uom_xgy,XGY,"Geantă, gunny","Bag, gunny"
+d406_uom_xgz,XGZ,"Grinzi, în mănunchi/legătură/îngrijit","Girders, in bundle/bunch/truss"
+d406_uom_xha,XHA,"Coș, cu mâner, plastic","Basket, with handle, plastic"
+d406_uom_xhb,XHB,"Coș, cu mâner, din lemn","Basket, with handle, wooden"
+d406_uom_xhc,XHC,"Coș, cu mâner, carton","Basket, with handle, cardboard"
+d406_uom_xhg,XHG,Butoi mare,Hogshead
+d406_uom_xhn,XHN,Cuier,Hanger
+d406_uom_xhr,XHR,Coş,Hamper
+d406_uom_xia,XIA,"Pachet, ecran, din lemn","Package, display, wooden"
+d406_uom_xib,XIB,"Pachet, ecran, carton","Package, display, cardboard"
+d406_uom_xic,XIC,"Pachet, ecran, plastic","Package, display, plastic"
+d406_uom_xid,XID,"Pachet, ecran, metal","Package, display, metal"
+d406_uom_xie,XIE,"Pachet, spectacol","Package, show"
+d406_uom_xif,XIF,"Pachet, curgere","Package, flow"
+d406_uom_xig,XIG,"Pachet, ambalat în hârtie","Package, paper wrapped"
+d406_uom_xih,XIH,"Tambur, plastic","Drum, plastic"
+d406_uom_xik,XIK,"Pachet, carton, cu orificii pentru prindere sticle","Package, cardboard, with bottle grip-holes"
+d406_uom_xil,XIL,"Tavă, rigidă, stivuită cu capac (CEN TS 14482:2002)","Tray, rigid, lidded stackable (CEN TS 14482:2002)"
+d406_uom_xin,XIN,Lingou,Ingot
+d406_uom_xiz,XIZ,"Lingouri, în legătură/mănunchi/îngrijit","Ingots, in bundle/bunch/truss"
+d406_uom_xjb,XJB,"Geantă, jumbo","Bag, jumbo"
+d406_uom_xjc,XJC,"Jerican, dreptunghiular","Jerrican, rectangular"
+d406_uom_xjg,XJG,Ulcior,Jug
+d406_uom_xjr,XJR,Borcan,Jar
+d406_uom_xjt,XJT,Pungă de iută,Jutebag
+d406_uom_xjy,XJY,"Jerican, cilindric","Jerrican, cylindrical"
+d406_uom_xkg,XKG,Butoi,Keg
+d406_uom_xki,XKI,Kit,Kit
+d406_uom_xle,XLE,Bagaj,Luggage
+d406_uom_xlg,XLG,Buștean,Log
+d406_uom_xlt,XLT,Lot,Lot
+d406_uom_xltr,XLTR,"Vrac, litru de produse petroliere lichide (la 1031 mbar și 15°C)","Bulk, litre of liquid petroleum products (at 1031 mbar and 15°C)"
+d406_uom_xlu,XLU,Lug,Lug
+d406_uom_xlv,XLV,Liftvan,Liftvan
+d406_uom_xlz,XLZ,"Bușteni, în legături/mănunchi/îngrijit","Logs, in bundle/bunch/truss"
+d406_uom_xma,XMA,"Ladă, metal","Crate, metal"
+d406_uom_xmb,XMB,"Pungă, multiplicare","Bag, multiply"
+d406_uom_xmc,XMC,"Ladă, lapte","Crate, milk"
+d406_uom_xme,XME,"Container, metal","Container, metal"
+d406_uom_xmr,XMR,"Recipient, metalic","Receptacle, metal"
+d406_uom_xms,XMS,"Sac, multi-pereți","Sack, multi-wall"
+d406_uom_xmt,XMT,Mat,Mat
+d406_uom_xmw,XMW,"Recipient, ambalat din plastic","Receptacle, plastic wrapped"
+d406_uom_xmx,XMX,Matchbox,Matchbox
+d406_uom_xna,XNA,Nu e disponibil,Not available
+d406_uom_xne,XNE,Despachetat sau neambalat,Unpacked or unpackaged
+d406_uom_xnf,XNF,"Despachetat sau neambalat, o singură unitate","Unpacked or unpackaged, single unit"
+d406_uom_xng,XNG,"Despachetate sau neambalat, unități multiple","Unpacked or unpackaged, multiple units"
+d406_uom_xns,XNS,Cuib,Nest
+d406_uom_xnt,XNT,Net,Net
+d406_uom_xnu,XNU,"Plasa, tub, plastic","Net, tube, plastic"
+d406_uom_xnv,XNV,"Plasa, tub, textil","Net, tube, textile"
+d406_uom_xo1,XO1,Cușcă pe două fețe pe roți cu curea de fixare,Two sided cage on wheels with fixing strap
+d406_uom_xo2,XO2,Cărucior,Trolley
+d406_uom_xo3,XO3,Palet unic ISO 0 - 1/2 EURO Palet,Oneway pallet ISO 0 - 1/2 EURO Pallet
+d406_uom_xo4,XO4,Palet unic ISO 1 - 1/1 EURO Palet,Oneway pallet ISO 1 - 1/1 EURO Pallet
+d406_uom_xo5,XO5,Palet unic ISO 2 - 2/1 EURO Palet,Oneway pallet ISO 2 - 2/1 EURO Pallet
+d406_uom_xo6,XO6,Palet cu dimensiuni exceptionale,Pallet with exceptional dimensions
+d406_uom_xo7,XO7,Palet din lemn 40 cm x 80 cm,Wooden pallet 40 cm x 80 cm
+d406_uom_xo8,XO8,Palet plastic SRS 60 cm x 80 cm,Plastic pallet SRS 60 cm x 80 cm
+d406_uom_xo9,XO9,Palet plastic SRS 80 cm x 120 cm,Plastic pallet SRS 80 cm x 120 cm
+d406_uom_xoa,XOA,"Palet, CHEP 40 cm x 60 cm","Pallet, CHEP 40 cm x 60 cm"
+d406_uom_xob,XOB,"Palet, CHEP 80 cm x 120 cm","Pallet, CHEP 80 cm x 120 cm"
+d406_uom_xoc,XOC,"Palet, CHEP 100 cm x 120 cm","Pallet, CHEP 100 cm x 120 cm"
+d406_uom_xod,XOD,"Palet, AS 4068-1993","Pallet, AS 4068-1993"
+d406_uom_xoe,XOE,"Palet, ISO T11","Pallet, ISO T11"
+d406_uom_xof,XOF,"Platformă, greutate sau dimensiune nespecificată","Platform, unspecified weight or dimension"
+d406_uom_xog,XOG,Palet ISO 0 - 1/2 EURO Palet,Pallet ISO 0 - 1/2 EURO Pallet
+d406_uom_xoh,XOH,Palet ISO 1 - 1/1 EURO Palet,Pallet ISO 1 - 1/1 EURO Pallet
+d406_uom_xoi,XOI,Palet ISO 2 – 2/1 EURO Palet,Pallet ISO 2 – 2/1 EURO Pallet
+d406_uom_xoj,XOJ,Palet 1/4 EURO,1/4 EURO Pallet
+d406_uom_xok,XOK,bloc,Block
+d406_uom_xol,XOL,Palet 1/8 EURO,1/8 EURO Pallet
+d406_uom_xom,XOM,Palet sintetic ISO 1,Synthetic pallet ISO 1
+d406_uom_xon,XON,Palet sintetic ISO 2,Synthetic pallet ISO 2
+d406_uom_xop,XOP,Palet angro,Wholesaler pallet
+d406_uom_xoq,XOQ,Palet 80 X 100 cm,Pallet 80 X 100 cm
+d406_uom_xor,XOR,Palet 60 X 100 cm,Pallet 60 X 100 cm
+d406_uom_xos,XOS,Palet unic,Oneway pallet
+d406_uom_xot,XOT,Octabin,Octabin
+d406_uom_xou,XOU,"Container, exterior","Container, outer"
+d406_uom_xov,XOV,Palet returnabil,Returnable pallet
+d406_uom_xow,XOW,"Geanta mare, dimensiunea paletului","Large bag, pallet sized"
+d406_uom_xox,XOX,Un palet pe roți cu margine ridicată (81 x 67 x 135),A wheeled pallet with raised rim (81 x 67 x 135)
+d406_uom_xoy,XOY,Palet pe roți cu margine ridicată (81 x 72 x 135),A Wheeled pallet with raised rim (81 x 72 x 135)
+d406_uom_xoz,XOZ,Palet cu roți cu jantă ridicată ( 81 x 60 x 16),Wheeled pallet with raised rim ( 81 x 60 x 16)
+d406_uom_xp1,XP1,Palet CHEP 60 cm x 80 cm,CHEP pallet 60 cm x 80 cm
+d406_uom_xp2,XP2,Tigaie,Pan
+d406_uom_xp3,XP3,Palet LPR 60 cm x 80 cm,LPR pallet 60 cm x 80 cm
+d406_uom_xp4,XP4,Palet LPR 80 cm x 120 cm,LPR pallet 80 cm x 120 cm
+d406_uom_xpa,XPA,Pachet,Packet
+d406_uom_xpb,XPB,"Palet, cutie Combinat cutie deschisă și palet","Pallet, box Combined open-ended box and pallet"
+d406_uom_xpc,XPC,Colet,Parcel
+d406_uom_xpd,XPD,"Palet, modular, gulere 80cms * 100cms","Pallet, modular, collars 80cms * 100cms"
+d406_uom_xpe,XPE,"Palet, modular, gulere 80cms * 120cms","Pallet, modular, collars 80cms * 120cms"
+d406_uom_xpf,XPF,Pix,Pen
+d406_uom_xpg,XPG,Farfurie,Plate
+d406_uom_xph,XPH,Ulcior,Pitcher
+d406_uom_xpi,XPI,Țeavă,Pipe
+d406_uom_xpj,XPJ,Coşuleţ pentru fructe,Punnet
+d406_uom_xpk,XPK,Pachet,Package
+d406_uom_xpl,XPL,Găleată,Pail
+d406_uom_xpn,XPN,Scândură,Plank
+d406_uom_xpo,XPO,Pungă,Pouch
+d406_uom_xpp,XPP,Bucată,Piece
+d406_uom_xpr,XPR,"Recipient, plastic","Receptacle, plastic"
+d406_uom_xpt,XPT,Oală,Pot
+d406_uom_xpu,XPU,Tavă,Tray
+d406_uom_xpv,XPV,"Țevi, în legătură/mănunchi/îngrijit","Pipes, in bundle/bunch/truss"
+d406_uom_xpx,XPX,Palet,Pallet
+d406_uom_xpy,XPY,"Plăci, în legătură/mănunchi/ciorchine","Plates, in bundle/bunch/truss"
+d406_uom_xpz,XPZ,"Scânduri, în legătură/mănunchi/ciorchine","Planks, in bundle/bunch/truss"
+d406_uom_xqa,XQA,"Tambur, oțel, cap nedemontabil","Drum, steel, non-removable head"
+d406_uom_xqb,XQB,"Tambur, oțel, cap detașabil","Drum, steel, removable head"
+d406_uom_xqc,XQC,"Tambur, aluminiu, cap nedemontabil","Drum, aluminium, non-removable head"
+d406_uom_xqd,XQD,"Tambur, aluminiu, cap detasabil","Drum, aluminium, removable head"
+d406_uom_xqf,XQF,"Tambur, plastic, cap nedemontabil","Drum, plastic, non-removable head"
+d406_uom_xqg,XQG,"Tambur, plastic, cap detasabil","Drum, plastic, removable head"
+d406_uom_xqh,XQH,"Butoi, lemn, tip bung","Barrel, wooden, bung type"
+d406_uom_xqj,XQJ,"Butoi, din lemn, cap detașabil","Barrel, wooden, removable head"
+d406_uom_xqk,XQK,"Jerican, oțel, cap nedemontabil","Jerrican, steel, non-removable head"
+d406_uom_xql,XQL,"Jerican, oțel, cap detașabil","Jerrican, steel, removable head"
+d406_uom_xqm,XQM,"Bican, plastic, cap nedemontabil","Jerrican, plastic, non-removable head"
+d406_uom_xqn,XQN,"Jerican, plastic, cap detașabil","Jerrican, plastic, removable head"
+d406_uom_xqp,XQP,"Cutie, lemn, lemn natural, obisnuit","Box, wooden, natural wood, ordinary"
+d406_uom_xqq,XQQ,"Cutie, lemn, lemn natural, cu pereti rezistenti la cernere","Box, wooden, natural wood, with sift proof walls"
+d406_uom_xqr,XQR,"Cutie, plastic, expandata","Box, plastic, expanded"
+d406_uom_xqs,XQS,"Cutie, plastic, solidă","Box, plastic, solid"
+d406_uom_xrd,XRD,Tijă,Rod
+d406_uom_xrg,XRG,Inel,Ring
+d406_uom_xrj,XRJ,"Raft, cuier pentru haine","Rack, clothing hanger"
+d406_uom_xrk,XRK,Raft,Rack
+d406_uom_xrl,XRL,Tambur,Reel
+d406_uom_xro,XRO,Rolă,Roll
+d406_uom_xrt,XRT,Rednet,Rednet
+d406_uom_xrz,XRZ,"Tije, în legătură/mănunchi/ciorchine","Rods, in bundle/bunch/truss"
+d406_uom_xsa,XSA,Sac,Sack
+d406_uom_xsb,XSB,Dală,Slab
+d406_uom_xsc,XSC,"Ladă, puțin adâncă","Crate, shallow"
+d406_uom_xsd,XSD,Ax,Spindle
+d406_uom_xse,XSE,Cufăr de mare,Sea-chest
+d406_uom_xsh,XSH,plic,Sachet
+d406_uom_xsi,XSI,Derapaj,Skid
+d406_uom_xsk,XSK,"Carcasă, schelet","Case, skeleton"
+d406_uom_xsl,XSL,Slipsheet,Slipsheet
+d406_uom_xsm,XSM,Tablă,Sheetmetal
+d406_uom_xso,XSO,Bobină,Spool
+d406_uom_xsp,XSP,"Foaie, ambalaj din plastic","Sheet, plastic wrapping"
+d406_uom_xss,XSS,"Carcasă, oțel","Case, steel"
+d406_uom_xst,XST,Foaie,Sheet
+d406_uom_xsu,XSU,Valiză,Suitcase
+d406_uom_xsv,XSV,"Plic, oțel","Envelope, steel"
+d406_uom_xsw,XSW,Invelite în folie,Shrinkwrapped
+d406_uom_xsx,XSX,Set,Set
+d406_uom_xsy,XSY,Mânecă,Sleeve
+d406_uom_xsz,XSZ,"Foi, în legătură/bunchi/ciorchine","Sheets, in bundle/bunch/truss"
+d406_uom_xt1,XT1,Tabletă,Tablet
+d406_uom_xtb,XTB,Cadă,Tub
+d406_uom_xtc,XTC,Cutie de ceaiuri,Tea-chest
+d406_uom_xtd,XTD,"Tub, pliabil","Tube, collapsible"
+d406_uom_xte,XTE,Anvelopă,Tyre
+d406_uom_xtg,XTG,"Container cisternă, generic","Tank container, generic"
+d406_uom_xti,XTI,Tierce,Tierce
+d406_uom_xtk,XTK,"Rezervor, dreptunghiular","Tank, rectangular"
+d406_uom_xtl,XTL,"Cadă, cu capac","Tub, with lid"
+d406_uom_xtn,XTN,Bidon,Tin
+d406_uom_xto,XTO,Butoi mare,Tun
+d406_uom_xtr,XTR,Cufăr,Trunk
+d406_uom_xts,XTS,Legătură,Truss
+d406_uom_xtt,XTT,"Cutie, geantă","Bag, tote"
+d406_uom_xtu,XTU,Tub,Tube
+d406_uom_xtv,XTV,"Tub, cu duza","Tube, with nozzle"
+d406_uom_xtw,XTW,"Palet, triwall","Pallet, triwall"
+d406_uom_xty,XTY,"Rezervor, cilindric","Tank, cylindrical"
+d406_uom_xtz,XTZ,"Tuburi, în legătură/mănunchi/ciorchine","Tubes, in bundle/bunch/truss"
+d406_uom_xuc,XUC,Neînchis,Uncaged
+d406_uom_xun,XUN,Unitate,Unit
+d406_uom_xva,XVA,TVA,Vat
+d406_uom_xvg,XVG,"Vrac, gaz (la 1031 mbar și 15°C)","Bulk, gas (at 1031 mbar and 15°C)"
+d406_uom_xvi,XVI,Flacon,Vial
+d406_uom_xvk,XVK,Vanpack,Vanpack
+d406_uom_xvl,XVL,"Vrac, lichid","Bulk, liquid"
+d406_uom_xvn,XVN,Vehicul,Vehicle
+d406_uom_xvo,XVO,"Particule în vrac, solide, mari („noduli”)","Bulk, solid, large particles (“nodules”)"
+d406_uom_xvp,XVP,Ambalat în vid,Vacuum-packed
+d406_uom_xvq,XVQ,Gaz lichefiat în vrac (la temperatură/presiune anormală),"Bulk, liquefied gas (at abnormal temperature/pressure)"
+d406_uom_xvr,XVR,"Particule granulare în vrac, solide („granule”)","Bulk, solid, granular particles (“grains”)"
+d406_uom_xvs,XVS,"Vrac, fier vechi","Bulk, scrap metal"
+d406_uom_xvy,XVY,"Particule fine, solide, în vrac („pulberi”)","Bulk, solid, fine particles (“powders”)"
+d406_uom_xwa,XWA,Container intermediar pentru vrac,Intermediate bulk container
+d406_uom_xwb,XWB,Sticlă de răchită,Wickerbottle
+d406_uom_xwc,XWC,"Container intermediar pentru vrac, oțel","Intermediate bulk container, steel"
+d406_uom_xwd,XWD,"Container intermediar pentru vrac, aluminiu","Intermediate bulk container, aluminium"
+d406_uom_xwf,XWF,"Container intermediar pentru vrac, metalic","Intermediate bulk container, metal"
+d406_uom_xwg,XWG,"Container intermediar pentru vrac, oțel, presurizat > 10 kpa","Intermediate bulk container, steel, pressurised > 10 kpa"
+d406_uom_xwh,XWH,"Container intermediar pentru vrac, aluminiu, presurizat > 10 kpa","Intermediate bulk container, aluminium, pressurised > 10 kpa"
+d406_uom_xwj,XWJ,"Container intermediar pentru vrac, metal, presiune 10 kpa","Intermediate bulk container, metal, pressure 10 kpa"
+d406_uom_xwk,XWK,"Container intermediar pentru vrac, oțel, lichid","Intermediate bulk container, steel, liquid"
+d406_uom_xwl,XWL,"Container intermediar pentru vrac, aluminiu, lichid","Intermediate bulk container, aluminium, liquid"
+d406_uom_xwm,XWM,"Container intermediar pentru vrac, metal, lichid","Intermediate bulk container, metal, liquid"
+d406_uom_xwn,XWN,"Recipient intermediar pentru vrac, plastic țesut, fără strat/ căptușeală","Intermediate bulk container, woven plastic, without coat/liner"
+d406_uom_xwp,XWP,"Container intermediar pentru vrac, plastic țesut, acoperit","Intermediate bulk container, woven plastic, coated"
+d406_uom_xwq,XWQ,"Container intermediar pentru vrac, plastic țesut, cu căptușeală","Intermediate bulk container, woven plastic, with liner"
+d406_uom_xwr,XWR,"Container intermediar pentru vrac, plastic țesut, acoperit și căptușeală","Intermediate bulk container, woven plastic, coated and liner"
+d406_uom_xws,XWS,"Recipient intermediar pentru vrac, folie de plastic","Intermediate bulk container, plastic film"
+d406_uom_xwt,XWT,"Container intermediar pentru vrac, textil cu strat/ căptușeală","Intermediate bulk container, textile with out coat/liner"
+d406_uom_xwu,XWU,"Recipient intermediar pentru vrac, lemn natural, cu căptușeală interioară","Intermediate bulk container, natural wood, with inner liner"
+d406_uom_xwv,XWV,"Container intermediar pentru vrac, textil, acoperit","Intermediate bulk container, textile, coated"
+d406_uom_xww,XWW,"Container intermediar pentru vrac, textil, cu căptușeală","Intermediate bulk container, textile, with liner"
+d406_uom_xwx,XWX,"Container intermediar pentru vrac, textil, acoperit și căptușeală","Intermediate bulk container, textile, coated and liner"
+d406_uom_xwy,XWY,"Container intermediar pentru vrac, placaj, cu căptușeală interioară","Intermediate bulk container, plywood, with inner liner"
+d406_uom_xwz,XWZ,"Container intermediar pentru vrac, lemn reconstituit, cu căptușeală interioară","Intermediate bulk container, reconstituted wood, with inner liner"
+d406_uom_xxa,XXA,"Geantă, plastic țesut, fără strat/ căptușeală interioară","Bag, woven plastic, without inner coat/liner"
+d406_uom_xxb,XXB,"Geantă, plastic țesut, rezistentă la cernere","Bag, woven plastic, sift proof"
+d406_uom_xxc,XXC,"Geanta, țesut din plastic, rezistentă la apă","Bag, woven plastic, water resistant"
+d406_uom_xxd,XXD,"Geanta, folie de plastic","Bag, plastics film"
+d406_uom_xxf,XXF,"Geantă, textil, fără strat/ căptușeală interioară","Bag, textile, without inner coat/liner"
+d406_uom_xxg,XXG,"Geanta, material textil, rezistent la cernere","Bag, textile, sift proof"
+d406_uom_xxh,XXH,"Geanta, textil, rezistenta la apa","Bag, textile, water resistant"
+d406_uom_xxj,XXJ,"Geantă, hârtie, multi-pereți","Bag, paper, multi-wall"
+d406_uom_xxk,XXK,"Geanta, hartie, multi-perete, rezistenta la apa","Bag, paper, multi-wall, water resistant"
+d406_uom_xya,XYA,"Ambalaj compozit, recipient din plastic în tambur de oțel","Composite packaging, plastic receptacle in steel drum"
+d406_uom_xyb,XYB,"Ambalaj compozit, recipient din plastic în cutie de oțel","Composite packaging, plastic receptacle in steel crate box"
+d406_uom_xyc,XYC,"Ambalaj compozit, recipient din plastic în tambur de aluminiu","Composite packaging, plastic receptacle in aluminium drum"
+d406_uom_xyd,XYD,"Ambalaj compozit, recipient din plastic în ladă de aluminiu","Composite packaging, plastic receptacle in aluminium crate"
+d406_uom_xyf,XYF,"Ambalaj compozit, recipient din plastic în cutie de lemn","Composite packaging, plastic receptacle in wooden box"
+d406_uom_xyg,XYG,"Ambalaj compozit, recipient din plastic în tambur de placaj","Composite packaging, plastic receptacle in plywood drum"
+d406_uom_xyh,XYH,"Ambalaj compozit, recipient din plastic în cutie de placaj","Composite packaging, plastic receptacle in plywood box"
+d406_uom_xyj,XYJ,"Ambalaj compozit, recipient din plastic în tambur din fibre","Composite packaging, plastic receptacle in fibre drum"
+d406_uom_xyk,XYK,"Ambalaj compozit, recipient din plastic în cutie din carton","Composite packaging, plastic receptacle in fibreboard box"
+d406_uom_xyl,XYL,"Ambalaj compozit, recipient din plastic în tambur de plastic","Composite packaging, plastic receptacle in plastic drum"
+d406_uom_xym,XYM,"Ambalaj compozit, recipient din plastic în cutie solidă din plastic","Composite packaging, plastic receptacle in solid plastic box"
+d406_uom_xyn,XYN,"Ambalaj compozit, recipient din sticlă în tambur de oțel","Composite packaging, glass receptacle in steel drum"
+d406_uom_xyp,XYP,"Ambalaj compozit, recipient de sticlă în cutie de oțel","Composite packaging, glass receptacle in steel crate box"
+d406_uom_xyq,XYQ,"Ambalaj compozit, recipient din sticlă în tambur de aluminiu","Composite packaging, glass receptacle in aluminium drum"
+d406_uom_xyr,XYR,"Ambalaj compozit, recipient din sticlă în ladă de aluminiu","Composite packaging, glass receptacle in aluminium crate"
+d406_uom_xys,XYS,"Ambalaj compozit, recipient de sticlă în cutie de lemn","Composite packaging, glass receptacle in wooden box"
+d406_uom_xyt,XYT,"Ambalaj compozit, recipient de sticlă în tambur de placaj","Composite packaging, glass receptacle in plywood drum"
+d406_uom_xyv,XYV,"Ambalaj compozit, recipient din sticlă în coș din răchită","Composite packaging, glass receptacle in wickerwork hamper"
+d406_uom_xyw,XYW,"Ambalaj compozit, recipient din sticlă în tambur din fibre","Composite packaging, glass receptacle in fibre drum"
+d406_uom_xyx,XYX,"Ambalaj compozit, recipient de sticlă în cutie din carton","Composite packaging, glass receptacle in fibreboard box"
+d406_uom_xyy,XYY,"Ambalaj compozit, recipient din sticlă în ambalaj din plastic extensibil","Composite packaging, glass receptacle in expandable plastic pack"
+d406_uom_xyz,XYZ,"Ambalaj compozit, recipient din sticlă în ambalaj solid din plastic","Composite packaging, glass receptacle in solid plastic pack"
+d406_uom_xza,XZA,"Container intermediar pentru vrac, hârtie, multi-pereți","Intermediate bulk container, paper, multi-wall"
+d406_uom_xzb,XZB,"Geanta, mare","Bag, large"
+d406_uom_xzc,XZC,"Container intermediar pentru vrac, hârtie, multi-pereți, rezistent la apă","Intermediate bulk container, paper, multi-wall, water resistant"
+d406_uom_xzd,XZD,"Container intermediar pentru vrac, plastic rigid, cu echipament structural, solide","Intermediate bulk container, rigid plastic, with structural equipment, solids"
+d406_uom_xzf,XZF,"Container intermediar pentru vrac, plastic rigid, autoportant, solide","Intermediate bulk container, rigid plastic, freestanding, solids"
+d406_uom_xzg,XZG,"Container intermediar pentru vrac, plastic rigid, cu echipament structural, presurizat","Intermediate bulk container, rigid plastic, with structural equipment, pressurised"
+d406_uom_xzh,XZH,"Container intermediar pentru vrac, plastic rigid, de sine stătător, sub presiune","Intermediate bulk container, rigid plastic, freestanding, pressurised"
+d406_uom_xzj,XZJ,"Container intermediar pentru vrac, plastic rigid, cu echipament structural, lichide","Intermediate bulk container, rigid plastic, with structural equipment, liquids"
+d406_uom_xzk,XZK,"Container intermediar pentru vrac, plastic rigid, de sine statator, lichide","Intermediate bulk container, rigid plastic, freestanding, liquids"
+d406_uom_xzl,XZL,"Container intermediar pentru vrac, compozit, plastic rigid, solide","Intermediate bulk container, composite, rigid plastic, solids"
+d406_uom_xzm,XZM,"Container intermediar pentru vrac, compozit, plastic flexibil, solide","Intermediate bulk container, composite, flexible plastic, solids"
+d406_uom_xzn,XZN,"Container intermediar pentru vrac, compozit, plastic rigid, sub presiune","Intermediate bulk container, composite, rigid plastic, pressurised"
+d406_uom_xzp,XZP,"Container intermediar pentru vrac, compozit, plastic flexibil, sub presiune","Intermediate bulk container, composite, flexible plastic, pressurised"
+d406_uom_xzq,XZQ,"Container intermediar pentru vrac, compozit, plastic rigid, lichide","Intermediate bulk container, composite, rigid plastic, liquids"
+d406_uom_xzr,XZR,"Container intermediar pentru vrac, compozit, plastic flexibil, lichide","Intermediate bulk container, composite, flexible plastic, liquids"
+d406_uom_xzs,XZS,"Container intermediar pentru vrac, compozit","Intermediate bulk container, composite"
+d406_uom_xzt,XZT,"Container intermediar pentru vrac, plăci de fibre","Intermediate bulk container, fibreboard"
+d406_uom_xzu,XZU,"Container intermediar pentru vrac, flexibil","Intermediate bulk container, flexible"
+d406_uom_xzv,XZV,"Container intermediar pentru vrac, din metal, altul decât oțel","Intermediate bulk container, metal, other than steel"
+d406_uom_xzw,XZW,"Container intermediar pentru vrac, lemn natural","Intermediate bulk container, natural wood"
+d406_uom_xzx,XZX,"Container intermediar pentru vrac, placaj","Intermediate bulk container, plywood"
+d406_uom_xzy,XZY,"Container intermediar pentru vrac, lemn reconstituit","Intermediate bulk container, reconstituted wood"
+d406_uom_xzz,XZZ,Definite reciproc,Mutually defined
+d406_uom_ydk,YDK,yard pătrat,square yard
+d406_uom_ydq,YDQ,yard cubic,cubic yard
+d406_uom_yrd,YRD,yard,yard
+d406_uom_z11,Z11,container suspendat,hanging container
+d406_uom_z9,Z9,nanomol,nanomole
+d406_uom_zp,ZP,pagină,page
+d406_uom_zz,ZZ,definite reciproc,mutually defined

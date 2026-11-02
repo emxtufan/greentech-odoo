@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_menu_visibility_list" model="ir.ui.view">
+        <field name="name">greentech.focus.financiar.menu.visibility.list</field>
+        <field name="model">ir.ui.menu</field>
+        <field name="arch" type="xml">
+            <list editable="bottom" create="0" delete="0">
+                <field name="sequence" widget="handle"/>
+                <field name="name" readonly="1"/>
+                <field name="active" string="Vizibil" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_menu_visibility" model="ir.actions.act_window">
+        <field name="name">Aplicații în meniu</field>
+        <field name="res_model">ir.ui.menu</field>
+        <field name="view_mode">list</field>
+        <field name="view_id" ref="view_menu_visibility_list"/>
+        <field name="domain">[('parent_id', '=', False)]</field>
+        <field name="context">{'active_test': False}</field>
+    </record>
+
+    <menuitem id="menu_visibility_settings"
+              name="Aplicații în meniu"
+              parent="base.menu_administration"
+              action="action_menu_visibility"
+              sequence="90"
+              groups="base.group_system"/>
+
+    <menuitem id="menu_visibility_finance"
+              name="Aplicații în meniu"
+              parent="account.menu_finance_configuration"
+              action="action_menu_visibility"
+              sequence="999"
+              groups="base.group_system"/>
+</odoo>

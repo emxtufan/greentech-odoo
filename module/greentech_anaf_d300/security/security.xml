@@ -1,0 +1,18 @@
+<odoo>
+ <record id="declaration_company" model="ir.rule">
+  <field name="name">D300: firme autorizate</field><field name="model_id" ref="model_gt_anaf_d300"/>
+  <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+ </record>
+ <record id="mapping_company" model="ir.rule">
+  <field name="name">D300 încadrări: firme autorizate</field><field name="model_id" ref="model_gt_d300_mapping"/>
+  <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+ </record>
+ <record id="adjustment_company" model="ir.rule">
+  <field name="name">D300 regularizări: firme autorizate</field><field name="model_id" ref="model_gt_d300_adjustment"/>
+  <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+ </record>
+ <record id="info_company" model="ir.rule">
+  <field name="name">D300 informații: firme autorizate</field><field name="model_id" ref="model_gt_d300_info"/>
+  <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+ </record>
+</odoo>

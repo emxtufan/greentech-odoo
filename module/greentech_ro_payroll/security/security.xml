@@ -1,0 +1,16 @@
+<odoo>
+    <record id="group_payroll" model="res.groups">
+        <field name="name">ANAF — Salarizare România</field>
+        <field name="implied_ids" eval="[(4, ref('hr.group_hr_manager')), (4, ref('hr_holidays.group_hr_holidays_manager')), (4, ref('greentech_anaf_d112.group_anaf'))]"/>
+    </record>
+    <record id="period_company_rule" model="ir.rule">
+        <field name="name">State salariale — firme autorizate</field>
+        <field name="model_id" ref="model_gt_ro_payroll_period"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="line_company_rule" model="ir.rule">
+        <field name="name">Rânduri salariale — firme autorizate</field>
+        <field name="model_id" ref="model_gt_ro_payroll_line"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

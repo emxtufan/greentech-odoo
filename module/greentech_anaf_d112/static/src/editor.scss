@@ -1,0 +1,35 @@
+.gt-d112 {
+    --anaf-blue: #135779;
+    width: 100%;
+    .gt-d112-tabs { display: flex; gap: 8px; border-bottom: 1px solid #d6e0e7; padding-bottom: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    .gt-d112-tabs button { border: 0; border-radius: 6px; background: #eef3f6; color: #354858; padding: 10px 20px; font-weight: 600; }
+    .gt-d112-tabs .active { background: var(--anaf-blue); color: white; }
+    .gt-d112-layout { display: flex; gap: 24px; align-items: flex-start; }
+    .gt-d112-people { width: 230px; flex-shrink: 0; max-height: 650px; overflow: auto; }
+    .gt-d112-person { display: block; width: 100%; text-align: left; background: #fff; padding: 12px; border: 1px solid #e1e8ed; border-radius: 6px; margin-bottom: 6px; }
+    .gt-d112-person small { display: block; color: #5c6c76; }
+    .gt-d112-person.active { background: #eaf3f9; border-color: var(--anaf-blue); }
+    .gt-d112-content { flex: 1; min-width: 0; }
+    .gt-d112-person-actions { text-align: right; margin-bottom: 12px; }
+    .gt-d112-node-heading { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 16px; }
+    .gt-d112-node-heading h3 { font-size: 17px; font-weight: 600; margin: 0; color: var(--anaf-blue); }
+    .gt-d112-node-heading input { max-width: 260px; }
+    .gt-d112-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px 20px; margin-bottom: 24px; }
+    .gt-d112-field { min-width: 0; display: flex; flex-direction: column; margin: 0; }
+    .gt-d112-label { font-weight: 600; line-height: 1.4; }
+    .gt-d112-field small { color: #74838f; font-size: 11px; margin: 3px 0 5px; }
+    .gt-d112-field input, .gt-d112-field select { margin-top: auto; min-height: 36px; }
+    .gt-d112-section { border: 1px solid #dae3e9; border-radius: 7px; margin-bottom: 10px; }
+    .gt-d112-section summary { padding: 13px 16px; font-weight: 600; background: #f5f8fa; cursor: pointer; }
+    .gt-d112-section summary small { font-weight: 400; color: #657581; }
+    .gt-d112-section-body { padding: 16px; }
+    .gt-d112-section-tools { display: flex; gap: 6px; justify-content: flex-end; margin-bottom: 14px; }
+    .gt-d112-add { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 18px; }
+    @media(max-width: 768px) {
+        .gt-d112-layout { flex-direction: column; }
+        .gt-d112-people { width: 100%; max-height: 250px; }
+        .gt-d112-content { width: 100%; }
+        .gt-d112-node-heading { flex-direction: column; align-items: flex-start; }
+    }
+}
+.gt-d112-empty { padding: 35px; text-align: center; color: #647583; background: #f5f8fa; border-radius: 7px; }

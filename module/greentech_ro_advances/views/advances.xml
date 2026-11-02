@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="create_rule" model="ir.rule">
+    <field name="name">Avansuri: firme autorizate</field>
+    <field name="model_id" ref="model_gt_advance_create"/>
+    <field name="domain_force">[('company_id','in',company_ids)]</field>
+  </record>
+  <record id="line_rule" model="ir.rule">
+    <field name="name">Poziții avans: firme autorizate</field>
+    <field name="model_id" ref="model_gt_advance_create_line"/>
+    <field name="domain_force">[('company_id','in',company_ids)]</field>
+  </record>
+  <record id="allocate_rule" model="ir.rule">
+    <field name="name">Regularizări: firme autorizate</field>
+    <field name="model_id" ref="model_gt_advance_allocate"/>
+    <field name="domain_force">[('company_id','in',company_ids)]</field>
+  </record>
+  <record id="report_rule" model="ir.rule">
+    <field name="name">Situație avansuri: firme autorizate</field>
+    <field name="model_id" ref="model_gt_advance_report"/>
+    <field name="domain_force">[('company_id','in',company_ids)]</field>
+  </record>
+  <record id="create_form" model="ir.ui.view">
+    <field name="name">gt.advance.create.form</field>
+    <field name="model">gt.advance.create</field>
+    <field name="arch" type="xml">
+      <form string="Factură de avans">
+        <div class="alert alert-info">Se creează o factură în ciornă, în RON. Verificați taxele și confirmați factura; apoi înregistrați încasarea sau plata din factură.</div>
+        <group>
+          <group>
+            <field name="company_id"/>
+            <field name="kind"/>
+            <field name="partner_id"/>
+          </group>
+          <group>
+            <field name="date"/>
+            <field name="ref"/>
+            <field name="currency_id"/>
+          </group>
+        </group>
+        <field name="line_ids">
+          <list editable="bottom">
+            <field name="company_id" column_invisible="True"/>
+            <field name="currency_id" column_invisible="True"/>
+            <field name="name"/>
+            <field name="account_id" domain="[('company_ids','in',[company_id]),('code','=like',('419%' if parent.kind == 'sale' else '409%'))]" options="{'no_create':True}"/>
+            <field name="amount"/>
+            <field name="tax_ids" widget="many2many_tags" domain="[('company_id','=',company_id),('type_tax_use','=',parent.kind)]" options="{'no_create':True}"/>
+          </list>
+        </field>
+        <p>Prețul include TVA numai dacă taxa selectată este configurată cu TVA inclus în preț.</p>
+        <footer>
+          <button name="action_create" type="object" string="Creează factura de avans" class="btn-primary"/>
+          <button string="Renunță" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="allocate_form" model="ir.ui.view">
+    <field name="name">gt.advance.allocate.form</field>
+    <field name="model">gt.advance.allocate</field>
+    <field name="arch" type="xml">
+      <form string="Regularizare avans">
+        <div class="alert alert-info">Adaugă stornarea avansului pe factura finală, cu contul și taxele facturii sursă. Puteți regulariza parțial și puteți adăuga mai multe avansuri.</div>
+        <group>
+          <field name="move_id" readonly="1"/>
+          <field name="company_id" invisible="1"/>
+          <field name="currency_id" invisible="1"/>
+          <field name="candidate_ids" invisible="1"/>
+          <field name="source_id" domain="[('id','in',candidate_ids)]" options="{'no_create':True}"/>
+          <field name="available"/>
+          <field name="amount"/>
+        </group>
+        <footer>
+          <button name="action_apply" type="object" string="Adaugă regularizarea" class="btn-primary"/>
+          <button string="Renunță" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="move_form" model="ir.ui.view">
+    <field name="name">account.move.form.advances.ro</field>
+    <field name="model">account.move</field>
+    <field name="inherit_id" ref="account.view_move_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button name="action_gt_regularize" type="object" string="Regularizează avans" groups="account.group_account_user" invisible="state != 'draft' or move_type not in ('in_invoice','out_invoice') or not partner_id"/>
+        <button name="action_gt_history" type="object" string="Istoric avans" invisible="not gt_advance_kind" groups="account.group_account_user"/>
+      </xpath>
+      <xpath expr="//notebook" position="inside">
+        <page string="Avansuri" invisible="not gt_advance_kind">
+          <field name="gt_advance_kind" invisible="1"/>
+          <field name="gt_advance_managed" invisible="1"/>
+          <div class="alert alert-info">Valorile de mai jos sunt fără TVA, în moneda facturii. Disponibilul scade și cu rezervările din ciorne. Plata facturii și regularizarea avansului sunt operațiuni distincte.</div>
+          <group>
+            <field name="gt_advance_base"/>
+            <field name="gt_advance_used"/>
+            <field name="gt_advance_reserved"/>
+            <field name="gt_advance_remaining"/>
+          </group>
+          <field name="gt_advance_sources" readonly="1">
+            <list create="false" delete="false">
+              <field name="name"/>
+              <field name="account_id"/>
+              <field name="currency_id" column_invisible="True"/>
+              <field name="price_subtotal" string="Avans fără TVA"/>
+              <field name="gt_advance_used"/>
+              <field name="gt_advance_reserved"/>
+              <field name="gt_advance_available"/>
+            </list>
+          </field>
+        </page>
+      </xpath>
+      <xpath expr="//field[@name='invoice_line_ids']/list/field[@name='name']" position="after">
+        <field name="gt_advance_origin_id" optional="hide" readonly="1"/>
+      </xpath>
+    </field>
+  </record>
+  <record id="advance_list" model="ir.ui.view">
+    <field name="name">account.move.advance.list</field>
+    <field name="model">account.move</field>
+    <field name="priority">90</field>
+    <field name="arch" type="xml">
+      <list create="false" decoration-muted="state == 'cancel'">
+        <field name="company_id" groups="base.group_multi_company"/>
+        <field name="invoice_date"/>
+        <field name="name"/>
+        <field name="ref"/>
+        <field name="partner_id"/>
+        <field name="move_type" optional="hide"/>
+        <field name="currency_id"/>
+        <field name="amount_total"/>
+        <field name="amount_residual"/>
+        <field name="gt_advance_base"/>
+        <field name="gt_advance_used"/>
+        <field name="gt_advance_reserved"/>
+        <field name="gt_advance_remaining"/>
+        <field name="payment_state" widget="badge"/>
+        <field name="state" widget="badge"/>
+      </list>
+    </field>
+  </record>
+  <record id="sale_action" model="ir.actions.act_window">
+    <field name="name">Avansuri clienți</field>
+    <field name="res_model">account.move</field>
+    <field name="view_mode">list,form</field>
+    <field name="view_id" ref="advance_list"/>
+    <field name="domain">[('gt_advance_kind','=','sale'),('company_id','in',allowed_company_ids)]</field>
+    <field name="context">{'default_move_type':'out_invoice'}</field>
+  </record>
+  <record id="purchase_action" model="ir.actions.act_window">
+    <field name="name">Avansuri furnizori</field>
+    <field name="res_model">account.move</field>
+    <field name="view_mode">list,form</field>
+    <field name="view_id" ref="advance_list"/>
+    <field name="domain">[('gt_advance_kind','=','purchase'),('company_id','in',allowed_company_ids)]</field>
+    <field name="context">{'default_move_type':'in_invoice'}</field>
+  </record>
+  <record id="create_sale_action" model="ir.actions.act_window">
+    <field name="name">Factură avans client</field>
+    <field name="res_model">gt.advance.create</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+    <field name="context">{'default_kind':'sale'}</field>
+  </record>
+  <record id="create_purchase_action" model="ir.actions.act_window">
+    <field name="name">Factură avans furnizor</field>
+    <field name="res_model">gt.advance.create</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+    <field name="context">{'default_kind':'purchase'}</field>
+  </record>
+  <record id="report_form" model="ir.ui.view">
+    <field name="name">gt.advance.report.form</field>
+    <field name="model">gt.advance.report</field>
+    <field name="arch" type="xml">
+      <form string="Situația avansurilor" duplicate="false">
+        <header>
+          <button name="action_refresh" type="object" string="Actualizează situația" class="oe_highlight"/>
+          <button name="action_pdf" type="object" string="Descarcă PDF"/>
+          <button name="action_csv" type="object" string="Export Excel (CSV)"/>
+          <button name="action_documents" type="object" string="Deschide mișcările"/>
+        </header>
+        <sheet>
+          <group>
+            <group>
+              <field name="company_id"/>
+              <field name="kind"/>
+              <field name="partner_id"/>
+            </group>
+            <group>
+              <field name="date_from"/>
+              <field name="date_to"/>
+              <field name="hide_zero"/>
+            </group>
+          </group>
+          <div class="alert alert-info">Solduri istorice din toate înregistrările contabile pe 409/419, inclusiv note manuale și importuri. Valorile sunt cele înregistrate pe aceste conturi; încasările și plățile se verifică în facturi. Exporturile se recalculează la descărcare.</div>
+          <field name="display_html" nolabel="1"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="report_action" model="ir.actions.act_window">
+    <field name="name">Situația avansurilor</field>
+    <field name="res_model">gt.advance.report</field>
+    <field name="view_mode">form</field>
+  </record>
+  <menuitem id="root_menu" name="Avansuri" parent="account.menu_finance" sequence="26" groups="account.group_account_user"/>
+  <menuitem id="sale_menu" name="Avansuri clienți" parent="root_menu" action="sale_action" sequence="10"/>
+  <menuitem id="purchase_menu" name="Avansuri furnizori" parent="root_menu" action="purchase_action" sequence="20"/>
+  <menuitem id="create_sale_menu" name="Factură avans client" parent="root_menu" action="create_sale_action" sequence="30"/>
+  <menuitem id="create_purchase_menu" name="Factură avans furnizor" parent="root_menu" action="create_purchase_action" sequence="40"/>
+  <menuitem id="report_menu" name="Situația avansurilor" parent="root_menu" action="report_action" sequence="50"/>
+</odoo>

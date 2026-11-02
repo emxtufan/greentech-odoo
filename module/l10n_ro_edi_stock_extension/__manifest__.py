@@ -1,0 +1,35 @@
+# Copyright 2026 NextERP Romania SRL
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0)
+{
+    "name": "Romania - eTransport Extension",
+    "summary": "Fixes and extensions for l10n_ro_edi_stock per ANAF eTransport "
+    "v2.0.2, on transfers and batch transfers",
+    "version": "19.0.1.4.1",
+    "category": "Accounting/Localizations/EDI",
+    "author": "NextERP Romania",
+    "website": "https://www.nexterp.ro",
+    "license": "LGPL-3",
+    "images": ["static/description/apps_icon.png"],
+    "depends": [
+        "l10n_ro_edi_stock",
+        "l10n_ro_edi_stock_batch",
+        "purchase_stock",
+        "sale_stock",
+    ],
+    "data": [
+        "security/ir.model.access.csv",
+        "data/etransport_templates.xml",
+        "data/ir_cron.xml",
+        "wizards/l10n_ro_edi_stock_action_wizard_views.xml",
+        "views/l10n_ro_edi_stock_document_views.xml",
+        "wizards/l10n_ro_edi_stock_list_wizard_views.xml",
+        "wizards/l10n_ro_edi_stock_transporter_info_wizard_views.xml",
+        "views/res_config_settings_views.xml",
+        "views/stock_picking_views.xml",
+        "views/stock_picking_batch_views.xml",
+        "views/l10n_ro_edi_stock_previous_notification_views.xml",
+    ],
+    "auto_install": False,
+    "installable": True,
+    "application": False,
+}

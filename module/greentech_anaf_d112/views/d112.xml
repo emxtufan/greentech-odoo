@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_d112_list" model="ir.ui.view">
+        <field name="name">gt.anaf.d112.list</field>
+        <field name="model">gt.anaf.d112</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state == 'invalid'" decoration-success="state in ('valid', 'pdf')">
+                <field name="name"/>
+                <field name="company_id"/>
+                <field name="year" options="{'enable_formatting': False}"/>
+                <field name="month"/>
+                <field name="insured_count"/>
+                <field name="state" widget="badge"/>
+                <field name="validated_at" optional="show"/>
+                <field name="filing_index" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_d112_search" model="ir.ui.view">
+        <field name="name">gt.anaf.d112.search</field>
+        <field name="model">gt.anaf.d112</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="company_id"/>
+                <filter name="draft" string="În lucru" domain="[('state', '=', 'draft')]"/>
+                <filter name="errors" string="Erori / atenționări" domain="[('state', 'in', ('invalid', 'warnings'))]"/>
+                <filter name="valid" string="Validate DUK" domain="[('state', 'in', ('valid', 'pdf'))]"/>
+                <separator/>
+                <filter name="by_company" string="Firmă" context="{'group_by': 'company_id'}"/>
+                <filter name="by_year" string="An" context="{'group_by': 'year'}"/>
+            </search>
+        </field>
+    </record>
+    <record id="view_d112_form" model="ir.ui.view">
+        <field name="name">gt.anaf.d112.form</field>
+        <field name="model">gt.anaf.d112</field>
+        <field name="arch" type="xml">
+            <form string="Declarația 112">
+                <header>
+                    <button name="action_prepare" string="Preia date firmă" type="object" class="btn-primary" invisible="payload"/>
+                    <button name="action_validate_schema" string="Verifică structură" type="object" invisible="not payload"/>
+                    <button name="action_validate_anaf" string="Validează ANAF" type="object" class="btn-primary" invisible="not payload"/>
+                    <button name="action_generate_pdf" string="Generează PDF ANAF" type="object" invisible="state not in ('valid', 'pdf')"/>
+                    <button name="action_revision" string="Revizie nouă" type="object" invisible="not payload"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,xsd,valid,pdf"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" readonly="1"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="company_id" options="{'no_create': True}" readonly="receipt or filing_index"/>
+                            <field name="year" options="{'enable_formatting': False}" readonly="receipt or filing_index"/>
+                            <field name="month" readonly="receipt or filing_index"/>
+                        </group>
+                        <group>
+                            <field name="revision" readonly="1"/>
+                            <field name="insured_count"/>
+                            <field name="total_payment"/>
+                        </group>
+                    </group>
+                    <div class="alert alert-info" role="status">
+                        Profil instalat: 07–10/2026. Pentru generare din datele firmei, folosiți ANAF → State salariale.
+                        Verificarea XSD confirmă structura; validarea DUK verifică regulile ANAF.
+                        Semnarea și depunerea nu se execută automat.
+                    </div>
+                    <notebook>
+                        <page string="Declarație" name="declaration">
+                            <field name="payload" widget="gt_d112_editor" nolabel="1" readonly="receipt or filing_index"/>
+                        </page>
+                        <page string="Import XML existent (opțional)" name="import" invisible="payload">
+                            <p>Importul servește arhivării sau preluării unui XML existent. Generarea din salariile firmei se face în meniul State salariale.</p>
+                            <group>
+                                <field name="upload_filename" invisible="1"/>
+                                <field name="upload" filename="upload_filename"/>
+                                <button name="action_import" type="object" string="Importă XML" invisible="not upload"/>
+                            </group>
+                        </page>
+                        <page string="Validări" name="validation">
+                            <group>
+                                <field name="runtime_status"/>
+                                <field name="schema_version"/>
+                                <field name="schema_url" widget="url" string="Documentație ANAF"/>
+                                <field name="validated_at"/>
+                                <field name="validated_hash"/>
+                            </group>
+                            <group string="Structura XML"><field name="schema_log" nolabel="1"/></group>
+                            <group string="Rezultatul DUKIntegrator"><field name="duk_log" nolabel="1"/></group>
+                        </page>
+                        <page string="Fișiere" name="files">
+                            <group>
+                                <field name="xml_filename" invisible="1"/>
+                                <field name="xml_output" filename="xml_filename"/>
+                                <field name="pdf_filename" invisible="1"/>
+                                <field name="pdf_output" filename="pdf_filename"/>
+                                <field name="source_filename" invisible="1"/>
+                                <field name="source_xml" filename="source_filename"/>
+                                <field name="source_hash"/>
+                            </group>
+                            <button name="action_compare_source" type="object" string="Compară cu XML-ul importat" invisible="not source_xml"/>
+                            <p class="text-muted mt-3">XML-ul disponibil poate avea doar structura verificată. Consultați starea declarației înainte de utilizare.</p>
+                        </page>
+                        <page string="Depunere și recipisă" name="filing">
+                            <p>După validare, semnați și depuneți prin fluxul ANAF autorizat. Arhivați aici indexul și recipisa primite. Atașarea unei recipise nu confirmă automat acceptarea declarației.</p>
+                            <group>
+                                <field name="filing_index"/>
+                                <field name="receipt_filename" invisible="1"/>
+                                <field name="receipt" filename="receipt_filename"/>
+                                <field name="filing_note"/>
+                            </group>
+                        </page>
+                        <page string="Istoric" name="history">
+                            <field name="audit_log" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_d112" model="ir.actions.act_window">
+        <field name="name">Declarația 112</field>
+        <field name="res_model">gt.anaf.d112</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Pregătește un dosar D112</p>
+            <p>Pentru generare din datele firmei: ANAF → State salariale → Calculează salariile → Generează D112. Aici verifici declarațiile și arhivezi rezultatele validării ANAF.</p>
+        </field>
+    </record>
+    <menuitem id="menu_anaf_root" name="ANAF" sequence="12" groups="group_anaf" web_icon="greentech_anaf_d112,static/description/icon.svg"/>
+    <menuitem id="menu_d112" name="Declarația 112" parent="menu_anaf_root" action="action_d112" sequence="1" groups="group_anaf"/>
+</odoo>

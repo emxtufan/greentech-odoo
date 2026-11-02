@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_d406_export_wizard_form" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.export.wizard.form</field>
+        <field name="model">l10n.ro.d406.export.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Export D406 SAF-T">
+                <group>
+                    <group>
+                        <field name="company_id"
+                               groups="base.group_multi_company"/>
+                        <field name="declaration_type"/>
+                    </group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                </group>
+                <group string="Segmentation" col="4">
+                    <field name="segment_index"/>
+                    <field name="total_segments"/>
+                </group>
+                <group invisible="not validation_log">
+                    <field name="xsd_valid" invisible="state != 'done'"/>
+                    <field name="validation_log" nolabel="1" readonly="1"/>
+                </group>
+                <field name="state" invisible="1"/>
+                <field name="duk_available" invisible="1"/>
+                <field name="attachment_id" invisible="1"/>
+                <footer>
+                    <button name="action_check" type="object"
+                            string="Check Configuration" class="btn-secondary"/>
+                    <button name="action_generate" type="object"
+                            string="Generate" class="btn-primary"/>
+                    <button name="action_validate_duk" type="object"
+                            string="Validate with DUKIntegrator"
+                            class="btn-secondary"
+                            invisible="state != 'done' or not duk_available"/>
+                    <button name="action_download" type="object"
+                            string="Download" class="btn-primary"
+                            invisible="state != 'done'"/>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_d406_export_wizard" model="ir.actions.act_window">
+        <field name="name">Export D406 SAF-T</field>
+        <field name="res_model">l10n.ro.d406.export.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

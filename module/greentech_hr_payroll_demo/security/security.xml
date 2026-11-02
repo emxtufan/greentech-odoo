@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_payroll_manager" model="res.groups">
+        <field name="name">GreenTech - Salarizare DEMO</field>
+        <field name="implied_ids" eval="[(4, ref('hr.group_hr_manager')), (4, ref('account.group_account_user')), (4, ref('hr_holidays.group_hr_holidays_manager')), (4, ref('hr_attendance.group_hr_attendance_manager')), (4, ref('hr_expense.group_hr_expense_manager'))]"/>
+    </record>
+    <record id="policy_company" model="ir.rule"><field name="name">Parametri - companie</field><field name="model_id" ref="model_gt_payroll_policy"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+    <record id="period_company" model="ir.rule"><field name="name">State - companie</field><field name="model_id" ref="model_gt_payroll_period"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+    <record id="slip_company" model="ir.rule"><field name="name">Fluturași - companie</field><field name="model_id" ref="model_gt_payroll_slip"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+    <record id="trip_company" model="ir.rule"><field name="name">Delegații - companie</field><field name="model_id" ref="model_gt_payroll_trip"/><field name="domain_force">[('company_id','in',company_ids)]</field></record>
+</odoo>

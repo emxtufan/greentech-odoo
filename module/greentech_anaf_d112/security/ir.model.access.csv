@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_d112,ANAF D112,model_gt_anaf_d112,greentech_anaf_d112.group_anaf,1,1,1,1

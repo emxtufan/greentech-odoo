@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="employee_demo_fields" model="ir.ui.view">
+    <field name="name">hr.employee.payroll.demo</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//notebook" position="inside">
+        <page string="Salarizare DEMO" groups="greentech_hr_payroll_demo.group_payroll_manager">
+          <group>
+            <field name="gt_payroll_demo"/>
+            <field name="gt_payroll_partner_id"/>
+          </group>
+        </page>
+      </xpath>
+    </field>
+  </record>
+  <record id="policy_list" model="ir.ui.view">
+    <field name="name">gt.payroll.policy.list</field>
+    <field name="model">gt.payroll.policy</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="name"/>
+        <field name="date_from"/>
+        <field name="date_to"/>
+        <field name="cas_rate"/>
+        <field name="cass_rate"/>
+        <field name="tax_rate"/>
+        <field name="cam_rate"/>
+      </list>
+    </field>
+  </record>
+  <record id="policy_form" model="ir.ui.view">
+    <field name="name">gt.payroll.policy.form</field>
+    <field name="model">gt.payroll.policy</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <div class="alert alert-warning">Parametri pentru demonstrație. Nu acoperă toate situațiile de salarizare din România.</div>
+          <h1>
+            <field name="name"/>
+          </h1>
+          <group>
+            <group>
+              <field name="company_id"/>
+              <field name="date_from"/>
+              <field name="date_to"/>
+              <field name="minimum_supported_gross"/>
+              <field name="currency_id" invisible="1"/>
+            </group>
+            <group>
+              <field name="cas_rate"/>
+              <field name="cass_rate"/>
+              <field name="tax_rate"/>
+              <field name="cam_rate"/>
+            </group>
+          </group>
+          <group string="Jurnale">
+            <field name="payroll_journal_id"/>
+            <field name="travel_journal_id"/>
+            <field name="bank_journal_id"/>
+          </group>
+          <group string="Conturi">
+            <group>
+              <field name="salary_expense_id"/>
+              <field name="salary_payable_id"/>
+              <field name="cas_account_id"/>
+              <field name="cass_account_id"/>
+              <field name="tax_account_id"/>
+            </group>
+            <group>
+              <field name="cam_account_id"/>
+              <field name="cam_expense_id"/>
+              <field name="travel_expense_id"/>
+              <field name="advance_account_id"/>
+              <field name="travel_payable_id"/>
+            </group>
+          </group>
+          <field name="notes"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="trip_list" model="ir.ui.view">
+    <field name="name">gt.payroll.trip.list</field>
+    <field name="model">gt.payroll.trip</field>
+    <field name="arch" type="xml">
+      <list decoration-success="state == 'settled'">
+        <field name="name"/>
+        <field name="employee_id"/>
+        <field name="destination"/>
+        <field name="departure"/>
+        <field name="arrival"/>
+        <field name="days"/>
+        <field name="allowance" sum="Diurne"/>
+        <field name="exempt_amount" sum="Neimpozabil"/>
+        <field name="taxable_amount" sum="Impozabil"/>
+        <field name="remaining_amount"/>
+        <field name="state"/>
+        <field name="currency_id" column_invisible="True"/>
+      </list>
+    </field>
+  </record>
+  <record id="trip_form" model="ir.ui.view">
+    <field name="name">gt.payroll.trip.form</field>
+    <field name="model">gt.payroll.trip</field>
+    <field name="arch" type="xml">
+      <form>
+        <header>
+          <button name="action_advance" type="object" string="Înregistrează avans DEMO" invisible="state != 'draft' or advance_move_id or advance_amount &lt;= 0"/>
+          <button name="action_approve" type="object" string="Aprobă și contabilizează" class="btn-primary" invisible="state != 'draft'"/>
+          <button name="action_settle" type="object" string="Înregistrează decontarea DEMO" class="btn-primary" invisible="state != 'approved'"/>
+          <button name="action_print" type="object" string="Ordin și decont"/>
+          <field name="state" widget="statusbar"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info">Delegație fictivă. Documentați cursul și luna fiscală. Transportul și cazarea se decontează separat de diurnă; acest exemplu nu deduce TVA din decont.</div>
+          <h1>
+            <field name="name" readonly="state != 'draft' or advance_move_id"/>
+          </h1>
+          <group>
+            <group>
+              <field name="employee_id" readonly="state != 'draft' or advance_move_id"/>
+              <field name="company_id" readonly="state != 'draft' or advance_move_id"/>
+              <field name="policy_id" readonly="state != 'draft' or advance_move_id"/>
+              <field name="kind" readonly="state != 'draft' or advance_move_id"/>
+              <field name="country_id" readonly="state != 'draft' or advance_move_id"/>
+              <field name="destination" readonly="state != 'draft' or advance_move_id"/>
+              <field name="purpose" readonly="state != 'draft' or advance_move_id"/>
+            </group>
+            <group>
+              <field name="departure" readonly="state != 'draft' or advance_move_id"/>
+              <field name="arrival" readonly="state != 'draft' or advance_move_id"/>
+              <field name="hours"/>
+              <field name="days"/>
+              <field name="payroll_date" readonly="state != 'draft' or advance_move_id"/>
+              <field name="settlement_date" readonly="state != 'draft' or advance_move_id"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Calcul și documente">
+              <group>
+                <group>
+                  <field name="allowance_currency_id" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="rate" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="reference_rate" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="fx_rate" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="exchange_date" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="exchange_source" readonly="state != 'draft' or advance_move_id"/>
+                </group>
+                <group>
+                  <field name="basic_wage" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="working_days" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="allowance"/>
+                  <field name="exempt_amount"/>
+                  <field name="taxable_amount"/>
+                </group>
+              </group>
+              <field name="receipt_note" readonly="state != 'draft' or advance_move_id"/>
+              <field name="reviewed" readonly="state != 'draft' or advance_move_id"/>
+            </page>
+            <page string="Avans și decont">
+              <group>
+                <group>
+                  <field name="advance_date" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="advance_amount" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="transport_amount" readonly="state != 'draft' or advance_move_id"/>
+                  <field name="lodging_amount" readonly="state != 'draft' or advance_move_id"/>
+                </group>
+                <group>
+                  <field name="total_amount"/>
+                  <field name="remaining_amount"/>
+                  <field name="advance_move_id"/>
+                  <field name="expense_move_id"/>
+                  <field name="settlement_move_id"/>
+                </group>
+              </group>
+            </page>
+          </notebook>
+          <field name="currency_id" invisible="1"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="slip_list" model="ir.ui.view">
+    <field name="name">gt.payroll.slip.list</field>
+    <field name="model">gt.payroll.slip</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="period_id"/>
+        <field name="employee_id"/>
+        <field name="cash_gross" sum="Brut"/>
+        <field name="trip_taxable" sum="Diurne impozabile"/>
+        <field name="cas" sum="CAS"/>
+        <field name="cass" sum="CASS"/>
+        <field name="income_tax" sum="Impozit"/>
+        <field name="net_pay" sum="Net"/>
+        <field name="cam" sum="CAM"/>
+        <field name="state"/>
+        <field name="currency_id" column_invisible="True"/>
+      </list>
+    </field>
+  </record>
+  <record id="time_list" model="ir.ui.view">
+    <field name="name">gt.payroll.slip.time.list</field>
+    <field name="model">gt.payroll.slip</field>
+    <field name="priority">30</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="period_id"/>
+        <field name="employee_id"/>
+        <field name="worked_days"/>
+        <field name="paid_leave_days"/>
+        <field name="unpaid_days"/>
+        <field name="medical_days"/>
+        <field name="overtime_hours"/>
+        <field name="reviewed"/>
+        <field name="state"/>
+      </list>
+    </field>
+  </record>
+  <record id="slip_form" model="ir.ui.view">
+    <field name="name">gt.payroll.slip.form</field>
+    <field name="model">gt.payroll.slip</field>
+    <field name="arch" type="xml">
+      <form>
+        <header>
+          <button name="action_sync_leave" type="object" string="Preia concediile aprobate" invisible="state in ['posted','paid']"/>
+          <button name="action_compute" type="object" string="Calculează" class="btn-primary" invisible="state in ['posted','paid']"/>
+          <button name="action_post" type="object" string="Contabilizează" invisible="state in ['posted','paid']"/>
+          <button name="action_pay" type="object" string="Plată DEMO" invisible="state != 'posted'"/>
+          <button name="action_print" type="object" string="Fluturaș"/>
+          <field name="state" widget="statusbar"/>
+        </header>
+        <sheet>
+          <div class="alert alert-warning">Scenariu DEMO: normă întreagă, condiții normale, fără tichete, facilități sau concedii medicale. Pontajul lunar este verificat separat de prezențele înregistrate. Indemnizația CO și deducerile se introduc după verificare.</div>
+          <group>
+            <group>
+              <field name="period_id" readonly="state in ['posted','paid']"/>
+              <field name="employee_id" readonly="state in ['posted','paid']"/>
+              <field name="version_id" readonly="state in ['posted','paid']"/>
+              <field name="basic_wage" readonly="state in ['posted','paid']"/>
+            </group>
+            <group>
+              <field name="net_pay"/>
+              <field name="employer_cost"/>
+              <field name="move_id"/>
+              <field name="payment_move_id"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Pontaj și venituri">
+              <group>
+                <group>
+                  <field name="worked_days" readonly="state in ['posted','paid']"/>
+                  <field name="paid_leave_days" readonly="state in ['posted','paid']"/>
+                  <field name="unpaid_days" readonly="state in ['posted','paid']"/>
+                  <field name="medical_days" readonly="state in ['posted','paid']"/>
+                  <field name="leave_daily_rate" readonly="state in ['posted','paid']"/>
+                </group>
+                <group>
+                  <field name="overtime_hours" readonly="state in ['posted','paid']"/>
+                  <field name="overtime_percent" readonly="state in ['posted','paid']"/>
+                  <field name="bonus" readonly="state in ['posted','paid']"/>
+                  <field name="personal_deduction" readonly="state in ['posted','paid']"/>
+                  <field name="other_deduction" readonly="state in ['posted','paid']"/>
+                </group>
+              </group>
+              <field name="notes" readonly="state in ['posted','paid']"/>
+              <field name="reviewed" readonly="state in ['posted','paid']"/>
+            </page>
+            <page string="Calcul și diurne">
+              <group>
+                <group>
+                  <field name="cash_gross"/>
+                  <field name="trip_taxable"/>
+                  <field name="trip_exempt"/>
+                  <field name="taxable_gross"/>
+                  <field name="cas"/>
+                  <field name="cass"/>
+                </group>
+                <group>
+                  <field name="tax_base"/>
+                  <field name="income_tax"/>
+                  <field name="cam"/>
+                  <field name="net_pay"/>
+                  <field name="employer_cost"/>
+                </group>
+              </group>
+              <field name="trip_ids"/>
+              <field name="calculation_note"/>
+            </page>
+          </notebook>
+          <field name="company_id" invisible="1"/>
+          <field name="currency_id" invisible="1"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="period_list" model="ir.ui.view">
+    <field name="name">gt.payroll.period.list</field>
+    <field name="model">gt.payroll.period</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="name"/>
+        <field name="date_from"/>
+        <field name="date_to"/>
+        <field name="total_gross" sum="Brut"/>
+        <field name="total_net" sum="Net"/>
+        <field name="total_tax" sum="Obligații"/>
+        <field name="state"/>
+        <field name="currency_id" column_invisible="True"/>
+      </list>
+    </field>
+  </record>
+  <record id="period_form" model="ir.ui.view">
+    <field name="name">gt.payroll.period.form</field>
+    <field name="model">gt.payroll.period</field>
+    <field name="arch" type="xml">
+      <form>
+        <header>
+          <button name="action_generate" type="object" string="Adaugă salariații DEMO" invisible="state in ['posted','paid']"/>
+          <button name="action_compute" type="object" string="Calculează statul" class="btn-primary" invisible="state in ['posted','paid']"/>
+          <button name="action_post" type="object" string="Contabilizează statul" invisible="state in ['posted','paid']"/>
+          <button name="action_pay" type="object" string="Înregistrează plățile DEMO" invisible="state != 'posted'"/>
+          <button name="action_print" type="object" string="Stat imprimabil"/>
+          <button name="action_xlsx" type="object" string="Export Excel"/>
+          <button name="action_check_d112" type="object" string="Verifică pregătirea D112"/>
+          <field name="state" widget="statusbar"/>
+        </header>
+        <sheet>
+          <div class="alert alert-info">Date fictive. Plățile creează numai note în banca simulată; nu transmit ordine către bancă. Documentele imprimabile se deschid în browser.</div>
+          <h1>
+            <field name="name" readonly="state in ['posted','paid']"/>
+          </h1>
+          <group>
+            <group>
+              <field name="company_id" readonly="state in ['posted','paid']"/>
+              <field name="date_from" readonly="state in ['posted','paid']"/>
+              <field name="date_to"/>
+              <field name="scheduled_days" readonly="state in ['posted','paid']"/>
+              <field name="policy_id" readonly="state in ['posted','paid']"/>
+              <field name="payment_date" readonly="state in ['posted','paid']"/>
+            </group>
+            <group>
+              <field name="total_gross"/>
+              <field name="total_net"/>
+              <field name="total_tax"/>
+              <field name="total_cost"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Salariați">
+              <field name="slip_ids" readonly="state in ['posted','paid']">
+                <list>
+                  <field name="employee_id"/>
+                  <field name="worked_days"/>
+                  <field name="paid_leave_days"/>
+                  <field name="cash_gross"/>
+                  <field name="trip_taxable"/>
+                  <field name="cas"/>
+                  <field name="cass"/>
+                  <field name="income_tax"/>
+                  <field name="net_pay"/>
+                  <field name="state"/>
+                </list>
+              </field>
+            </page>
+            <page string="Pregătire D112">
+              <div class="alert alert-warning">Centralizator de pregătire, fără XML D112 validat și fără depunere ANAF. Datele fictive nu se transmit.</div>
+              <field name="d112_status"/>
+              <field name="d112_check"/>
+            </page>
+            <page string="Observații">
+              <field name="notes"/>
+            </page>
+          </notebook>
+          <field name="currency_id" invisible="1"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="action_policy" model="ir.actions.act_window">
+    <field name="name">Parametri salarizare DEMO</field>
+    <field name="res_model">gt.payroll.policy</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <record id="action_trips" model="ir.actions.act_window">
+    <field name="name">Diurne și delegații</field>
+    <field name="res_model">gt.payroll.trip</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <record id="action_periods" model="ir.actions.act_window">
+    <field name="name">State de salarii</field>
+    <field name="res_model">gt.payroll.period</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <record id="action_slips" model="ir.actions.act_window">
+    <field name="name">Fluturași</field>
+    <field name="res_model">gt.payroll.slip</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <record id="action_timesheets" model="ir.actions.act_window">
+    <field name="name">Pontaje lunare</field>
+    <field name="res_model">gt.payroll.slip</field>
+    <field name="view_mode">list,form</field>
+    <field name="view_id" ref="time_list"/>
+  </record>
+  <record id="action_d112" model="ir.actions.act_window">
+    <field name="name">Pregătire D112 — DEMO</field>
+    <field name="res_model">gt.payroll.period</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <record id="action_employees" model="ir.actions.act_window">
+    <field name="name">Angajați și contracte DEMO</field>
+    <field name="res_model">hr.employee</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('gt_payroll_demo','=',True)]</field>
+    <field name="context">{'default_gt_payroll_demo':True}</field>
+  </record>
+  <record id="action_leave" model="ir.actions.act_window">
+    <field name="name">Concedii DEMO</field>
+    <field name="res_model">hr.leave</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('employee_id.gt_payroll_demo','=',True)]</field>
+  </record>
+  <record id="action_attendance" model="ir.actions.act_window">
+    <field name="name">Prezențe DEMO</field>
+    <field name="res_model">hr.attendance</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('employee_id.gt_payroll_demo','=',True)]</field>
+  </record>
+  <record id="action_expenses" model="ir.actions.act_window">
+    <field name="name">Cheltuieli salariați</field>
+    <field name="res_model">hr.expense</field>
+    <field name="view_mode">list,form</field>
+  </record>
+  <menuitem id="menu_payroll" name="Salarii și diurne" parent="account.menu_finance" sequence="26" groups="greentech_hr_payroll_demo.group_payroll_manager"/>
+  <menuitem id="menu_employees" name="Angajați și contracte" parent="menu_payroll" action="action_employees" sequence="1"/>
+  <menuitem id="menu_trips" name="Diurne și delegații" parent="menu_payroll" action="action_trips" sequence="2"/>
+  <menuitem id="menu_timesheets" name="Pontaje lunare" parent="menu_payroll" action="action_timesheets" sequence="3"/>
+  <menuitem id="menu_leave" name="Concedii" parent="menu_payroll" action="action_leave" sequence="4"/>
+  <menuitem id="menu_attendance" name="Prezențe" parent="menu_payroll" action="action_attendance" sequence="5"/>
+  <menuitem id="menu_periods" name="State de salarii" parent="menu_payroll" action="action_periods" sequence="6"/>
+  <menuitem id="menu_slips" name="Fluturași" parent="menu_payroll" action="action_slips" sequence="7"/>
+  <menuitem id="menu_d112" name="Pregătire D112" parent="menu_payroll" action="action_d112" sequence="8"/>
+  <menuitem id="menu_expenses" name="Cheltuieli salariați" parent="menu_payroll" action="action_expenses" sequence="9"/>
+  <menuitem id="menu_policy" name="Parametri DEMO" parent="menu_payroll" action="action_policy" sequence="10"/>
+</odoo>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ro"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D300 - Generare din contabilitate</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;background:#f3f7f8;color:#173642;margin:0}
+main{max-width:1050px;margin:40px auto;padding:36px;background:white;border-radius:14px}
+h1,h2{line-height:1.2}h2{margin-top:32px}a{color:#096f87}
+.status{padding:18px;background:#fff4d9;border-left:5px solid #bd7f00}
+.cards{display:flex;gap:14px}.cards div{flex:1;background:#edf6f7;padding:18px}
+strong.number{display:block;font-size:28px}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #dce6e9}
+code{background:#eff3f4;padding:2px 5px}li{margin-bottom:8px}
+</style><main>
+<p>GreenTech Financiar · 20 octombrie 2026</p>
+<h1>D300 - Decont de TVA</h1>
+<p><a href="http://127.0.0.1:8070/odoo/action-733/1">Deschide declarația DEMO pentru octombrie 2026</a>
+ · <a href="http://127.0.0.1:8070/odoo/action-733">Lista declarațiilor D300</a></p>
+<div class="status"><strong>Calculul, validarea oficială și PDF-ul ANAF funcționează pentru declarația DEMO verificată.</strong>
+DUK a returnat „ok”. PDF-ul oficial D300_J12.0.1 are 4 pagini și include XML-ul validat.
+Declarația nu a fost semnată sau depusă.</div>
+<div class="cards">
+<div>TVA colectată<strong class="number">4.568 lei</strong></div>
+<div>TVA dedusă<strong class="number">3.429 lei</strong></div>
+<div>TVA de plată<strong class="number">1.139 lei</strong></div>
+</div>
+<p>Exemplu pe firma „GreenTech Financiar DEMO - date fictive”, octombrie 2026:
+19 poziții sursă, din 11 documente de vânzare și 8 documente de cumpărare.
+Sumele sunt rotunjite la lei după agregare. Declarația DEMO are identificare fictivă și nu este destinată depunerii.</p>
+<h2>Cum se utilizează</h2>
+<ol>
+<li>Deschide <strong>ANAF → D300 - Decont TVA → Nou</strong>. Există și în Financiar → Raportare.</li>
+<li>Alege firma, anul 2026, tipul perioadei fiscale și luna de final. Pentru trimestrul III: tip Trimestrial, luna 9.</li>
+<li>Completează fila Identificare: declarant, funcție, CAEN, bancă și cont. Denumirea, CUI-ul și domiciliul fiscal vin din firma Odoo.</li>
+<li>În <strong>ANAF → Încadrări D300</strong>, verifică asocierea taxelor cu rândurile declarației. Butonul „Configurează taxele standard RO” adaugă numai taxele standard 21%/11% recunoscute din planul RO. Operațiunile speciale necesită încadrare explicită.</li>
+<li>Completează regularizările și soldurile cu semn, justificare și document. Rândurile „din care” se adună automat în rândul părinte.</li>
+<li>Verifică cele trei confirmări: înregistrarea TVA în perioadă, soldurile și plățile, situațiile speciale.</li>
+<li>Apasă <strong>Actualizează din contabilitate</strong>. Un clic pe rând arată documentele sursă. „Deschide” duce la factura sau nota contabilă.</li>
+<li>Rezolvă blocajele. Descarcă XML, rulează Validează ANAF, apoi Descarcă PDF ANAF după validare reușită.</li>
+</ol>
+<h2>Resurse ANAF instalate</h2>
+<p>Pachetul D300Validator_11022026_2.zip furnizat de utilizator este instalat separat de D112. Java și validatorul funcționează offline. Schema XSD separată nu este inclusă în arhivă; validarea oficială DUK a fost executată și a returnat „ok”.</p>
+<details><summary>Reinstalare și schema XSD opțională</summary>
+<p>Descărcarea automată este blocată de mediul de execuție. Salvează
+<a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/D300Validator_11022026_2.zip">arhiva oficială D300Validator_11022026_2.zip</a>
+în <code>C:\Users\GPRO\Downloads</code>, apoi rulează <code>13-INSTALEAZA-D300-ANAF.cmd</code> din proiect.
+Acesta instalează separat validatorul D300, verifică declarația DEMO și cere PDF-ul oficial.
+Dacă pachetul nu include schema, descarcă și
+<a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/d300_v12_11022026.xml">schema XSD ANAF v12</a>
+în Downloads, păstrând denumirea, apoi rulează din nou comanda.</p>
+<p>Java 8 este deja instalat. Pachetul D112 rămâne separat. Nici instalatorul, nici butoanele D300 nu semnează sau transmit documente.</p>
+</details>
+<h2>Ce calculează modulul</h2>
+<table><tr><th>Zonă</th><th>Comportament</th></tr>
+<tr><td>Formular 2026</td><td>45 de rânduri principale și 10 subrânduri; corespondență cu codurile istorice XML v12.</td></tr>
+<tr><td>TVA colectată și deductibilă</td><td>Sume din documente validate contabil; stornări cu semn; monedă contabilă RON; facturile ciornă sunt excluse.</td></tr>
+<tr><td>Taxare inversă</td><td>Încadrări distincte colectată/deductibilă; verificarea perechilor 5/20, 6/21, 7/22, 8/23, 12/26 și a subrândurilor.</td></tr>
+<tr><td>TVA la încasare</td><td>Exigibilitate din notele contabile ale plăților din perioadă. Soldurile neexigibile A/B și A1/B1 sunt reconstruite la data finală.</td></tr>
+<tr><td>Deduceri</td><td>TVA brută separat de TVA efectiv dedusă. Limitări 50/100% din contabilitate. Pro-rata numai pentru taxele marcate ca utilizare mixtă.</td></tr>
+<tr><td>Regularizări și reportări</td><td>Intrări documentate pe rândurile admise. Soldul precedent se verifică din decontul precedent și plățile până la depunere, nu se presupune din 4423/4424.</td></tr>
+<tr><td>Control contabil</td><td>Rulaje și solduri 4426/4427/4423/4424. Concordanță între TVA preluată și rulajele eligibile 4426/4427.</td></tr>
+<tr><td>Trasabilitate</td><td>Surse, regularizări, amprenta datelor, momentul calculului, jurnalul validatorului și revizii distincte.</td></tr>
+<tr><td>Exporturi</td><td>XML v12, situație CSV cu documente. PDF-ul ANAF se oferă numai dacă validatorul reușește și XML-ul atașat corespunde.</td></tr></table>
+<h2>Ce necesită verificare înaintea unei depuneri reale</h2>
+<ul>
+<li>Documentele fără taxe configurate nu sunt considerate automat scutite; exportul este blocat. Importurile istorice ale firmei reale necesită rezolvarea încadrărilor fiscale.</li>
+<li>Taxele speciale, cotele istorice, scutirile, exporturile, operațiunile UE și notele manuale trebuie încadrate conform documentelor și instrucțiunilor. Nu se deduce natura fiscală doar din procentul TVA.</li>
+<li>Facturile după inspecție/reînregistrare și totalurile anuale art. 278¹ se completează în Informații suplimentare; confirmarea nu înlocuiește documentele justificative.</li>
+<li>TVA la încasare în valută combinată cu limitarea deducerii este blocată pentru verificare distinctă. Consolidarea grupurilor fiscale nu este implementată.</li>
+<li>Profilul este pentru 2026. O schimbare a formularului ANAF necesită actualizare și reverificare.</li>
+<li>Validarea tehnică ANAF nu echivalează cu depunerea sau cu o recipisă de acceptare. Semnarea și depunerea se efectuează separat.</li>
+</ul>
+<h2>Verificări efectuate</h2>
+<p>35 teste Odoo trecute: jurnale, rotunjire, TVA la încasare, deduceri, pro-rata, taxare inversă efectivă,
+solduri, rânduri XML, blocaje la date lipsă, surse modificate și acces între firme.
+Fluxurile browser au trecut pe copie și pe instanța locală: calcul, filtrare documente, XML, CSV,
+afișarea lipsei validatorului și deschiderea documentului sursă. Fără erori JavaScript.</p>
+<p>Backup: <code>logs/backups/greentech-financiar-test-20261020-133404.zip</code>.
+Datele contabile existente au aceleași amprente înainte și după instalare.
+Dovezi și capturi: <code>logs/d300-20261020</code>.
+Validarea DUK a trecut. Controlul negativ a respins o sumă de control modificată (regula R26).
+Cele 4 pagini au fost verificate vizual; câmpurile PDF și XML-ul atașat corespund declarației.
+Butoanele XML/PDF au fost verificate în browser. Dovezi: anaf-verified.json și browser-anaf.json.</p>
+<h2>Surse</h2>
+<p><a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/300.html">ANAF: resurse D300</a> ·
+<a href="https://static.anaf.ro/static/10/Anaf/formulare/D300_OPANAF_174_2026.pdf">Formular și instrucțiuni OPANAF 174/2026</a> ·
+<a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/structura_D300_v12.0.0_10022026.pdf">Structură XML și validări v12</a> ·
+<a href="https://manual.sagasoft.ro/sagac/topic-54-jurnale-tva.html">Manual SAGA: organizarea fluxului D300</a></p>
+</main></html>

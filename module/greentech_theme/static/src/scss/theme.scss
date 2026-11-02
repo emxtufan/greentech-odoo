@@ -1,0 +1,121 @@
+/* GreenTech – temă backend clean (stil shadcn / Apple) */
+
+.o_web_client {
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "cv11", "ss01";
+    letter-spacing: -0.006em;
+}
+
+.o_main_navbar {
+    background: rgba(255, 255, 255, .82);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: none;
+}
+
+.btn {
+    font-weight: 500;
+    border-radius: .375rem;
+    transition: background-color .15s, border-color .15s, box-shadow .15s;
+}
+
+.btn-primary {
+    background-color: #18181b;
+    border-color: #18181b;
+    color: #fafafa;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #27272a;
+    border-color: #27272a;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border: 1px solid #e4e4e7;
+    color: #18181b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.btn-secondary:hover {
+    background-color: #f4f4f5;
+}
+
+.o_form_view .o_form_sheet_bg > .o_form_sheet {
+    border: 1px solid #e4e4e7;
+    border-radius: .75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .04);
+}
+
+.o_list_renderer .o_list_table thead th {
+    background-color: #fafafa;
+    color: #71717a;
+    font-weight: 500;
+    font-size: .8125rem;
+}
+
+.o_list_renderer .o_list_table tbody tr.o_data_row:hover > td {
+    background-color: #f4f4f5;
+}
+
+.o_list_renderer .o_list_table td,
+.o_list_renderer .o_list_table th {
+    border-color: #f4f4f5;
+}
+
+.dropdown-menu,
+.o-dropdown--menu {
+    border: 1px solid #e4e4e7;
+    border-radius: .5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .08), 0 4px 6px -4px rgba(0, 0, 0, .05);
+    padding: .25rem;
+}
+
+.dropdown-item {
+    border-radius: .25rem;
+}
+
+.modal-content {
+    border: 0;
+    border-radius: .75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+}
+
+.o_kanban_record {
+    border-radius: .5rem;
+    border-color: #e4e4e7;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.o_input:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: #a1a1aa;
+    box-shadow: 0 0 0 3px rgba(24, 24, 27, .08);
+}
+
+.badge {
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 500;
+}
+
+.o_web_client a:not(.btn):not(.dropdown-item):not(.nav-link):not(.o_menu_brand):hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.o_kanban_record[class*="o_kanban_color_"]::after {
+    display: none !important;
+}
+
+.o_web_client img[src$="bill.svg"],
+img[src$="quotation.svg"],
+img[src$="folder.svg"],
+img[src$="bank.svg"],
+img[src$="rfq.svg"] {
+    filter: grayscale(1);
+    opacity: .7;
+}

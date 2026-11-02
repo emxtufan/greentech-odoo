@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_form_d406" model="ir.ui.view">
+        <field name="name">account.account.form.d406</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_form"/>
+        <field name="priority">200</field>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <group string="SAF-T D406"
+                       invisible="company_fiscal_country_code != 'RO'">
+                    <field name="l10n_ro_d406_account_code"/>
+                    <field name="l10n_ro_d406_mapping_status"/>
+                    <field name="l10n_ro_d406_mapping_message"
+                           invisible="not l10n_ro_d406_mapping_message"/>
+                    <field name="l10n_ro_d406_account_code_manual"/>
+                    <field name="l10n_ro_d406_account_type"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_account_list_d406" model="ir.ui.view">
+        <field name="name">account.account.list.d406</field>
+        <field name="model">account.account</field>
+        <field name="inherit_id" ref="account.view_account_list"/>
+        <field name="priority">200</field>
+        <field name="arch" type="xml">
+            <field name="account_type" position="after">
+                <field name="l10n_ro_d406_account_code" optional="hide"
+                       string="SAF-T Code"/>
+                <field name="l10n_ro_d406_mapping_status" optional="hide"
+                       string="SAF-T Mapping"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

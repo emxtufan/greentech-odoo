@@ -1,0 +1,60 @@
+<odoo>
+  <record id="batch_list" model="ir.ui.view"><field name="name">saga.import.batch.list</field><field name="model">saga.import.batch</field><field name="arch" type="xml">
+    <list><field name="name"/><field name="expected_cui"/><field name="company_id"/><field name="state" widget="badge"/><field name="imported_at"/></list></field></record>
+  <record id="batch_form" model="ir.ui.view"><field name="name">saga.import.batch.form</field><field name="model">saga.import.batch</field><field name="arch" type="xml">
+    <form string="Import SAGA">
+      <header><button name="action_analyze" type="object" string="1. Analizează backupul" class="btn-primary" invisible="state == 'done'"/><button name="action_import" type="object" string="2. Importă firma" class="btn-primary" invisible="state != 'ready'" confirm="Se creează o firmă separată și se importă istoricul verificat. Datele firmelor existente nu vor fi înlocuite. Continui?"/><field name="state" widget="statusbar" statusbar_visible="draft,ready,done"/></header>
+      <sheet>
+        <field name="existing_batch_id" invisible="1"/>
+        <div class="alert alert-success" role="alert" invisible="not existing_batch_id">
+          Firma este deja populată. Alege un ecran de lucru; firma se selectează automat. Nu mai importa același backup.
+        </div>
+        <group string="Lucrează în firma importată" invisible="not existing_batch_id">
+          <button name="action_open_work" type="object" string="Clienți" context="{'saga_screen':'customers'}" class="btn-primary"/>
+          <button name="action_open_work" type="object" string="Furnizori" context="{'saga_screen':'vendors'}" class="btn-primary"/>
+          <button name="action_open_work" type="object" string="Facturi clienți" context="{'saga_screen':'sales'}"/>
+          <button name="action_open_work" type="object" string="Facturi furnizori" context="{'saga_screen':'purchases'}"/>
+          <button name="action_open_work" type="object" string="Casă și bănci" context="{'saga_screen':'banks'}"/>
+          <button name="action_open_work" type="object" string="Extrase bancare" context="{'saga_screen':'statements'}"/>
+          <button name="action_open_work" type="object" string="Registru casă/bancă" context="{'saga_screen':'ledger'}"/>
+          <button name="action_open_work" type="object" string="Fișe parteneri" context="{'saga_screen':'partners'}"/>
+          <button name="action_open_work" type="object" string="Angajați" context="{'saga_screen':'employees'}"/>
+        </group>
+        <div class="alert alert-info" role="alert" invisible="state == 'done'">Încarcă backupul SAGA .fdb și completează firma. Analiza nu creează documente contabile. Importul este inițial, într-o firmă nouă; actualizarea repetată a unei firme existente este blocată pentru a preveni dublurile.</div>
+        <group><group><field name="name" readonly="state == 'done'"/><field name="expected_cui" readonly="state == 'done'"/><field name="registry_number" readonly="state == 'done'"/><field name="euid" readonly="state == 'done'"/><field name="street" readonly="state == 'done'"/><field name="city" readonly="state == 'done'"/></group><group><field name="filename" invisible="1"/><field name="source_file" filename="filename" readonly="state == 'done'"/><field name="source_confirmed" readonly="state == 'done'"/><field name="company_id"/><field name="source_hash"/><field name="imported_at"/></group></group>
+        <notebook><page string="Analiză și rezultat"><field name="report" widget="html"/></page><page string="Documente importate" invisible="state != 'done'"><field name="document_ids" readonly="1"><list create="0" edit="0" delete="0"><field name="kind"/><field name="name"/><field name="date"/><field name="partner_id"/><field name="amount_total"/><field name="source_residual"/><field name="handling"/></list></field></page></notebook>
+      </sheet>
+    </form>
+  </field></record>
+  <record id="document_list" model="ir.ui.view"><field name="name">saga.document.list</field><field name="model">saga.document</field><field name="arch" type="xml">
+    <list create="0" edit="0" delete="0"><field name="company_id"/><field name="kind"/><field name="name"/><field name="date"/><field name="partner_id"/><field name="amount_total" sum="Total"/><field name="source_residual" sum="Sold SAGA"/><field name="handling"/><field name="move_id"/></list></field></record>
+  <record id="document_form" model="ir.ui.view"><field name="name">saga.document.form</field><field name="model">saga.document</field><field name="arch" type="xml">
+    <form create="0" edit="0" delete="0"><sheet><group><field name="company_id"/><field name="kind"/><field name="name"/><field name="date"/><field name="due_date"/><field name="partner_id"/><field name="amount_total"/><field name="source_residual"/><field name="source_counterpart"/><field name="handling"/><field name="move_id"/><field name="source_id"/></group><div class="alert alert-info" role="alert">Soldul SAGA reprezintă situația din backup. Pentru situația curentă, deschide înregistrarea Odoo. Supraplățile rămân pe plata partenerului. Documentele istorice nu generează din nou venituri sau cheltuieli.</div><field name="line_ids"><list create="0" edit="0" delete="0"><field name="name"/><field name="quantity"/><field name="price_unit"/><field name="amount_total"/><field name="source_account"/></list></field></sheet></form></field></record>
+  <record id="asset_list" model="ir.ui.view"><field name="name">saga.asset.history.list</field><field name="model">saga.asset.history</field><field name="arch" type="xml">
+    <list create="0" edit="0" delete="0"><field name="company_id"/><field name="inventory_number"/><field name="name"/><field name="acquisition_date"/><field name="purchase_value"/><field name="remaining_value"/><field name="monthly_depreciation"/><field name="account_code"/></list></field></record>
+  <record id="asset_form" model="ir.ui.view"><field name="name">saga.asset.history.form</field><field name="model">saga.asset.history</field><field name="arch" type="xml">
+    <form create="0" edit="0" delete="0"><sheet><div class="alert alert-info" role="alert">Registru istoric din backup. Amortizarea contabilizată este deja în registrul importat. Acest ecran nu generează amortizare viitoare.</div><group><field name="company_id"/><field name="name"/><field name="inventory_number"/><field name="acquisition_date"/><field name="purchase_value"/><field name="remaining_value"/><field name="monthly_depreciation"/><field name="account_code"/><field name="depreciation_account"/></group></sheet></form></field></record>
+  <record id="payroll_list" model="ir.ui.view"><field name="name">saga.payroll.history.list</field><field name="model">saga.payroll.history</field><field name="arch" type="xml">
+    <list create="0" edit="0" delete="0"><field name="company_id"/><field name="name"/><field name="payment_date"/><field name="gross_total"/><field name="income_tax"/><field name="cas"/><field name="cass"/><field name="details_available"/></list></field></record>
+  <record id="payroll_form" model="ir.ui.view"><field name="name">saga.payroll.history.form</field><field name="model">saga.payroll.history</field><field name="arch" type="xml">
+    <form create="0" edit="0" delete="0"><sheet><div class="alert alert-info" role="alert">Sunt valorile istorice din antetul statului SAGA. Data plății nu dovedește un transfer bancar. Nu se recalculează salarii și nu se generează D112 din aceste antete.</div><group><field name="company_id"/><field name="name"/><field name="year"/><field name="month"/><field name="payment_date"/><field name="gross_total"/><field name="income_tax"/><field name="cas"/><field name="cass"/><field name="details_available"/></group></sheet></form></field></record>
+  <record id="source_list" model="ir.ui.view"><field name="name">saga.source.row.list</field><field name="model">saga.source.row</field><field name="arch" type="xml">
+    <list create="0" edit="0" delete="0"><field name="company_id"/><field name="table_name"/><field name="source_row"/></list></field></record>
+  <record id="source_form" model="ir.ui.view"><field name="name">saga.source.row.form</field><field name="model">saga.source.row</field><field name="arch" type="xml">
+    <form create="0" edit="0" delete="0"><sheet><group><field name="company_id"/><field name="table_name"/><field name="source_row"/></group><field name="payload"/></sheet></form></field></record>
+  <record id="action_batches" model="ir.actions.act_window"><field name="name">Import backup SAGA</field><field name="res_model">saga.import.batch</field><field name="view_mode">list,form</field></record>
+  <record id="action_documents" model="ir.actions.act_window"><field name="name">Documente SAGA</field><field name="res_model">saga.document</field><field name="view_mode">list,form</field></record>
+  <record id="action_assets" model="ir.actions.act_window"><field name="name">Imobilizări SAGA - istoric</field><field name="res_model">saga.asset.history</field><field name="view_mode">list,form</field></record>
+  <record id="action_payroll" model="ir.actions.act_window"><field name="name">State SAGA - istoric</field><field name="res_model">saga.payroll.history</field><field name="view_mode">list,form</field></record>
+  <record id="action_source" model="ir.actions.act_window"><field name="name">Arhivă sursă SAGA</field><field name="res_model">saga.source.row</field><field name="view_mode">list,form</field></record>
+  <record id="action_moves" model="ir.actions.act_window"><field name="name">Registru contabil importat SAGA</field><field name="res_model">account.move</field><field name="view_mode">list,form</field><field name="domain">[('saga_batch_id','!=',False)]</field></record>
+  <record id="action_cash_bank" model="ir.actions.act_window"><field name="name">Casă și bancă SAGA - istoric</field><field name="res_model">account.move</field><field name="view_mode">list,form</field><field name="domain">[('saga_batch_id','!=',False),('line_ids.account_id.account_type','=','asset_cash')]</field></record>
+  <menuitem id="menu_saga" name="Import SAGA" parent="account.menu_finance" sequence="27"/>
+  <menuitem id="menu_batches" name="Importă backup .fdb" parent="menu_saga" action="action_batches" sequence="1" groups="base.group_system"/>
+  <menuitem id="menu_documents" name="Documente SAGA" parent="menu_saga" action="action_documents" sequence="2" groups="account.group_account_user"/>
+  <menuitem id="menu_moves" name="Registru contabil SAGA" parent="menu_saga" action="action_moves" sequence="3" groups="account.group_account_user"/>
+  <menuitem id="menu_cash_bank" name="Casă și bancă - istoric" parent="menu_saga" action="action_cash_bank" sequence="4" groups="account.group_account_user"/>
+  <menuitem id="menu_assets" name="Imobilizări - istoric" parent="menu_saga" action="action_assets" sequence="4" groups="account.group_account_user"/>
+  <menuitem id="menu_payroll" name="State salariale - istoric" parent="menu_saga" action="action_payroll" sequence="5" groups="hr.group_hr_manager"/>
+  <menuitem id="menu_source" name="Arhivă sursă (administrator)" parent="menu_saga" action="action_source" sequence="6" groups="base.group_system"/>
+</odoo>

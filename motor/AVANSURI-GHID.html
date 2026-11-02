@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ro"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avansuri clienți și furnizori — ghid de lucru</title>
+<style>
+body{margin:0;background:#f4f7f9;color:#193441;font:16px/1.65 "Segoe UI",sans-serif}
+main{max-width:1050px;margin:40px auto;padding:0 24px 50px}header,section{background:white;padding:30px;border-radius:14px;margin-bottom:20px;border:1px solid #dce5ea}
+h1{font-size:34px;line-height:1.2;margin:12px 0}h2{font-size:23px;margin-top:0}
+.tag{color:#126550;font-weight:700;font-size:13px;letter-spacing:.05em}a{color:#116a84}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.buttons a{background:#125f75;color:white;padding:10px 17px;border-radius:7px;text-decoration:none}
+table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid #e1e8ed;text-align:left;vertical-align:top}th{background:#edf3f6}
+li{margin:10px 0}.note{border-left:4px solid #d4a443;padding:12px 18px;background:#fff8e8}
+small{color:#56707d}code{background:#edf3f6;padding:2px 5px;border-radius:4px}
+@media print{body{background:white}main{margin:0;max-width:none}section,header{break-inside:avoid}.buttons{display:none}}
+</style><main>
+<header><div class="tag">INSTALAT ȘI VERIFICAT · 20 OCTOMBRIE 2026</div>
+<h1>Avansuri clienți și furnizori</h1>
+<p>Facturi de avans, plăți, regularizări parțiale sau integrale și situație pe partener.
+Circuitul automat verificat este pentru facturi în <strong>RON</strong>, într-o firmă cu moneda contabilă RON.</p>
+<div class="buttons">
+<a href="http://127.0.0.1:8070/odoo/action-737">Factură avans client</a>
+<a href="http://127.0.0.1:8070/odoo/action-738">Factură avans furnizor</a>
+<a href="http://127.0.0.1:8070/odoo/action-739">Situația avansurilor</a></div>
+<p><small>În Odoo: Financiar → Avansuri. Dacă meniul nu apare într-un tab deja deschis, reîncărcați pagina.</small></p></header>
+<section><h2>1. Factura de avans</h2>
+<ol><li>Deschideți <strong>Factură avans client</strong> sau <strong>Factură avans furnizor</strong>.</li>
+<li>Alegeți firma, partenerul, data și referința. Pentru furnizori, completați numărul documentului primit.</li>
+<li>Adăugați una sau mai multe poziții: descriere, cont de avans, preț și taxa corespunzătoare operațiunii.
+Pentru taxe excluse din preț, suma introdusă este fără TVA. Pentru taxe incluse, suma introdusă include TVA.</li>
+<li>Apăsați <strong>Creează factura de avans</strong>. Verificați ciorna și apăsați <strong>Confirmă</strong>.</li>
+<li>Înregistrați încasarea sau plata din factura nativă Odoo, cu jurnalul bancar/de casă și data documentului.</li></ol>
+<table><tr><th>Operațiune</th><th>Conturi disponibile în planul instalat</th></tr>
+<tr><td>Avans facturat clientului</td><td>419000 și analiticele 419</td></tr>
+<tr><td>Avans furnizor pentru bunuri</td><td>409100</td></tr>
+<tr><td>Avans furnizor pentru servicii</td><td>409200</td></tr>
+<tr><td>Avans pentru imobilizări</td><td>409300 / 409400, potrivit naturii operațiunii</td></tr></table>
+<p>Asistentul cere un tratament TVA explicit, inclusiv pentru operațiunile cu taxă 0%.
+Taxele sunt cele configurate în firma selectată. Nu se ghicește tratamentul fiscal din cota numerică.</p></section>
+<section><h2>2. Regularizarea pe factura finală</h2>
+<ol><li>Creați factura finală din facturile obișnuite de client/furnizor. Introduceți întreaga valoare a bunurilor sau serviciilor.</li>
+<li>În ciornă, apăsați <strong>Regularizează avans</strong>.</li>
+<li>Selectați poziția facturii de avans și suma <strong>fără TVA</strong>. Valoarea propusă este disponibilul integral.</li>
+<li>Apăsați <strong>Adaugă regularizarea</strong>. Se introduce o linie negativă care păstrează contul, taxele, discountul și deductibilitatea avansului.
+Descrierea identifică factura de avans și data ei.</li>
+<li>Pentru mai multe avansuri sau cote de TVA, repetați operațiunea pentru fiecare poziție.</li>
+<li>Verificați factura și confirmați-o. Înregistrați plata/încasarea diferenței din factura finală.</li></ol>
+<div class="note">Încasarea/plata și regularizarea sunt distincte. Un avans plătit integral poate rămâne integral disponibil pentru regularizare.
+O regularizare nu înregistrează o nouă mișcare bancară.</div>
+<p>O ciornă cu regularizare rezervă deja suma, pentru a nu o folosi pe două facturi.
+Anularea sau ștergerea ciornei eliberează rezervarea. Stornarea contabilizată a facturii finale restabilește avansul aferent;
+o stornare în ciornă încă nu îl restabilește.</p></section>
+<section><h2>3. Unde vedeți soldurile</h2>
+<p><a href="http://127.0.0.1:8070/odoo/action-735">Avansuri clienți</a> și
+<a href="http://127.0.0.1:8070/odoo/action-736">Avansuri furnizori</a> includ documentele care folosesc conturile de avans,
+inclusiv facturile finale cu regularizări. Coloanele de disponibil urmăresc pozițiile de avans inițial;
+detaliile regularizării sunt în liniile facturii finale.</p>
+<p>În factura de avans, pagina <strong>Avansuri</strong> arată baza inițială, regularizat, rezervat în ciorne și disponibil.
+Butonul <strong>Istoric avans</strong> deschide facturile legate.</p>
+<p><strong>Situația avansurilor</strong> se formează din toate înregistrările contabilizate pe 409/419:
+facturi, stornări, note manuale și date importate. Alegeți firma, perioada și, opțional, partenerul.
+Soldul inițial include perioadele anterioare; documentele ulterioare perioadei nu modifică soldul final istoric.</p>
+<p>Sold pozitiv: avans rămas. Pentru clienți, soldul urmărește creditul net; pentru furnizori, debitul net.
+În contabilitatea cu storno roșu, regularizările pot apărea ca debit/credit negativ, exact ca în registru.</p>
+<p>Folosiți <strong>Descarcă PDF</strong>, <strong>Export Excel (CSV)</strong> sau <strong>Deschide mișcările</strong>.
+Exporturile se recalculează din contabilitate la fiecare descărcare.
+CSV: UTF-8, separator <code>;</code>, separator zecimal <code>.</code>; la importul în Excel selectați aceste opțiuni dacă nu sunt recunoscute automat.</p></section>
+<section><h2>4. TVA, D300 și comenzile de vânzare</h2>
+<p>Avansurile și regularizările sunt facturi Odoo obișnuite. Jurnalele TVA și D300 folosesc liniile lor contabile;
+nu se creează o a doua raportare fiscală separată pentru avansuri.
+Regularizarea păstrează taxele facturii sursă, inclusiv când factura finală are alte taxe pentru bunurile/serviciile livrate.</p>
+<p>Avansurile create din comenzile de vânzare folosesc contul 419 configurat al firmei sau 419000 dacă setarea lipsește.
+Factura finală generată din comandă este legată automat de avans atunci când sursa este unică.
+Sursele ambigue se regularizează explicit prin asistent.</p>
+<p>Au fost testate TVA normală, TVA la încasare între luni, taxe incluse în preț și discounturi.
+D300 necesită în continuare configurarea taxelor, verificarea soldurilor și validarea propriei declarații.
+Transmiterea e-Factura/SPV nu este efectuată de aceste butoane.</p></section>
+<section><h2>5. Verificări efectuate și limite</h2>
+<ul><li><strong>50 de teste automate, fără eșecuri sau erori</strong>: avansuri, regularizări, stornări, separarea firmelor,
+jurnale TVA și D300.</li>
+<li>Test în browser pentru ambele direcții: creare avans, înregistrare plată/încasare nativă, regularizare de 400 lei dintr-un avans de 1.000 lei,
+sold de 600 lei și descărcări PDF/CSV. Pagini verificate și în instanța principală.</li>
+<li>Două cereri simultane de câte 400 lei pentru un disponibil de 600 lei: una acceptată, cealaltă blocată.</li>
+<li>D300 pentru copia de test: validatorul oficial ANAF a returnat <strong>ok</strong>.
+Exemplul adaugă TVA de 651 lei pe fiecare direcție; decontul include și 2.520 lei TVA deductibilă existentă anterior în copia firmei.</li>
+<li>PDF-urile exemplului au fost randate și verificate vizual.</li>
+<li>Instalarea a păstrat cele 532 de înregistrări contabile, 1.646 de linii și 10 plăți existente, cu aceleași amprente SHA-256.
+155 de module instalate. Nicio înregistrare contabilizată dezechilibrată.</li></ul>
+<div class="note"><strong>Limita explicită:</strong> asistentul automat este pentru RON.
+Regularizarea în valută este blocată, până la implementarea și verificarea ajustărilor de curs și a bazelor fiscale.
+Notele manuale pe 409/419 apar în raport, dar nu devin automat facturi de avans selectabile.
+Taxele și documentele specifice fiecărei operațiuni trebuie completate corect.</div>
+<p>Exemplele au fost contabilizate numai în copia izolată de test. Lista din firma principală poate fi goală înainte de prima factură de avans;
+nu au fost introduse tranzacții fictive noi în contabilitatea ei.</p>
+<p>Exemple PDF:
+<a href="output/pdf/Avansuri_clienti_DEMO.pdf">Avansuri clienți</a> ·
+<a href="output/pdf/Avansuri_furnizori_DEMO.pdf">Avansuri furnizori</a>.</p></section>
+<section><h2>Surse și dovezi</h2>
+<p><a href="https://manual.sagasoft.ro/sagac/topic-60-situatii-clienti---furnizori.html">Manual SAGA: situații clienți/furnizori, pagina Avansuri</a> ·
+<a href="https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/down_payment.html">Odoo 19: facturi de avans</a> ·
+<a href="https://static.anaf.ro/static/10/Anaf/legislatie/HG_1_2016.pdf">Norme ANAF: regularizarea facturilor de avans</a>.</p>
+<p>Modul: <code>custom_addons/greentech_ro_advances</code>. Dovezi: <code>logs/advances-20261020</code>.
+Backup anterior instalării: <code>logs/backups/greentech-financiar-test-20261020-143032.zip</code>.</p>
+<p><small>Nu au fost semnate sau transmise declarații ori facturi către ANAF.</small></p></section>
+</main></html>

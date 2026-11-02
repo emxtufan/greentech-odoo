@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="settings_anaf" model="ir.ui.view">
+        <field name="name">res.config.settings.anaf</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app name="greentech_anaf_d112" string="ANAF" groups="base.group_system" logo="/greentech_anaf_d112/static/description/icon.svg">
+                    <block title="Declarația 112 — validator local">
+                        <setting string="DUKIntegrator" help="Directorul care conține DUKIntegrator.jar, lib și runtime-lock.json. Manifestul identifică fișierele verificate; o actualizare necesită verificarea versiunii ANAF.">
+                            <field name="gt_anaf_duk_dir" placeholder="C:\...\tools\anaf\duk" class="w-100"/>
+                        </setting>
+                        <setting string="Java" help="Calea completă către java.exe dintr-un runtime compatibil cu distribuția ANAF. Lăsați gol numai dacă Java este disponibil în PATH.">
+                            <field name="gt_anaf_java_path" placeholder="C:\...\bin\java.exe" class="w-100"/>
+                            <button type="object" name="action_check_anaf_runtime" string="Verifică disponibilitatea" class="btn-link"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+    <record id="action_settings_anaf" model="ir.actions.act_window">
+        <field name="name">Configurare ANAF</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="context">{'module': 'greentech_anaf_d112', 'bin_size': False}</field>
+    </record>
+    <menuitem id="menu_anaf_settings" name="Configurare" parent="menu_anaf_root" action="action_settings_anaf" sequence="90" groups="base.group_system"/>
+</odoo>

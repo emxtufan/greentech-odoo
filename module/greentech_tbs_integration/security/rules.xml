@@ -1,0 +1,17 @@
+<odoo>
+    <record id="document_company" model="ir.rule">
+        <field name="name">e-Transport: documente ale firmelor active</field>
+        <field name="model_id" ref="l10n_ro_edi_stock_extension.model_l10n_ro_edi_stock_document_line"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="notification_company" model="ir.rule">
+        <field name="name">e-Transport: notificări ale firmelor active</field>
+        <field name="model_id" ref="l10n_ro_edi_stock_extension.model_l10n_ro_edi_stock_previous_notification"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="d406_company" model="ir.rule">
+        <field name="name">D406: firma activă</field>
+        <field name="model_id" ref="tbs_saft_d406.model_l10n_ro_d406_export_wizard"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

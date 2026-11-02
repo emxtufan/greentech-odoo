@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_tbs_anaf_duk" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.tbs.anaf.duk</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="ANAF DUKIntegrator" string="ANAF DUKIntegrator"
+                     name="tbs_anaf_duk_validator" groups="base.group_system">
+                    <block title="DUKIntegrator">
+                        <setting string="Installation Path"
+                                 help="Server folder with the DUKIntegrator .jar files">
+                            <field name="tbs_anaf_duk_path"
+                                   placeholder="/var/odoo/dukintegrator"
+                                   class="o_light_label"/>
+                            <div class="mt8">
+                                <button name="action_tbs_anaf_duk_check_installation"
+                                        type="object"
+                                        string="Check Installation"
+                                        class="btn-secondary"/>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

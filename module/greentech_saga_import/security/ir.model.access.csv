@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+batch_admin,SAGA import administrator,model_saga_import_batch,base.group_system,1,1,1,1
+doc_admin,SAGA document administrator,model_saga_document,base.group_system,1,1,1,0
+doc_account,SAGA document contabil,model_saga_document,account.group_account_user,1,0,0,0
+line_admin,SAGA line administrator,model_saga_document_line,base.group_system,1,1,1,0
+line_account,SAGA line contabil,model_saga_document_line,account.group_account_user,1,0,0,0
+asset_admin,SAGA asset administrator,model_saga_asset_history,base.group_system,1,1,1,0
+asset_account,SAGA asset contabil,model_saga_asset_history,account.group_account_user,1,0,0,0
+payroll_admin,SAGA payroll administrator,model_saga_payroll_history,base.group_system,1,1,1,0
+payroll_hr,SAGA payroll HR,model_saga_payroll_history,hr.group_hr_manager,1,0,0,0
+source_admin,SAGA source administrator,model_saga_source_row,base.group_system,1,1,1,0

@@ -1,0 +1,111 @@
+<odoo>
+ <record id="declaration_list" model="ir.ui.view">
+  <field name="name">gt.anaf.d300.list</field><field name="model">gt.anaf.d300</field>
+  <field name="arch" type="xml">
+   <list decoration-danger="state in ('blocked','invalid')" decoration-success="state in ('valid','pdf')">
+    <field name="name"/><field name="company_id"/><field name="date_from"/><field name="date_to"/>
+    <field name="state" widget="badge"/><field name="generated_at"/><field name="validated_at" optional="show"/>
+   </list>
+  </field>
+ </record>
+ <record id="declaration_form" model="ir.ui.view">
+  <field name="name">gt.anaf.d300.form</field><field name="model">gt.anaf.d300</field>
+  <field name="arch" type="xml">
+   <form class="gt-d300-form">
+    <header>
+     <button name="action_calculate" type="object" string="Actualizează din contabilitate" class="btn-primary"/>
+     <button name="action_xml" type="object" string="Descarcă XML" invisible="not data or state == 'blocked'"/>
+     <button name="action_validate" type="object" string="Validează ANAF" invisible="not data or state == 'blocked'"/>
+     <button name="action_pdf" type="object" string="Descarcă PDF ANAF" invisible="state not in ('valid','pdf')"/>
+     <button name="action_csv" type="object" string="Export situație CSV" invisible="not data"/>
+     <button name="action_revision" type="object" string="Revizie nouă" invisible="not data"/>
+     <field name="state" widget="statusbar" statusbar_visible="draft,calculated,xml,valid,pdf"/>
+    </header>
+    <sheet>
+     <div class="oe_title"><h1><field name="name"/></h1></div>
+     <group>
+      <group>
+       <field name="company_id" options="{'no_create':True}"/>
+       <field name="year" options="{'enable_formatting':False}"/><field name="month"/>
+       <field name="period_type"/><field name="date_from"/><field name="date_to"/>
+      </group>
+      <group>
+       <field name="prorata"/><field name="refund"/><field name="simplified"/>
+       <field name="vat_registered"/><field name="balances_reviewed"/><field name="special_reviewed"/>
+      </group>
+     </group>
+     <div class="alert alert-info">
+      Formular OPANAF 174/2026. Selectați luna de final a perioadei fiscale.
+      Pro-rata se aplică numai taxelor marcate în Încadrări D300.
+      Recalcularea păstrează regularizările introduse. Declarația se generează din firma selectată.
+     </div>
+     <notebook>
+      <page string="Decont și documente"><field name="data" widget="gt_d300_report" nolabel="1"/></page>
+      <page string="Identificare">
+       <button name="action_prepare_identity" string="Preia contul bancar al firmei" type="object"/>
+       <group><group><field name="signer_last"/><field name="signer_first"/><field name="signer_role"/>
+        <field name="caen"/></group><group><field name="bank_name"/><field name="bank_account"/>
+        <field name="legal_basis"/><field name="successor_cui"/><field name="consolidated"/></group></group>
+       <group string="Livrări pentru care se aplică taxare inversă">
+        <field name="cereals"/><field name="mobiles"/><field name="chips"/><field name="consoles"/>
+       </group>
+      </page>
+      <page string="Regularizări și solduri">
+       <p>Introduceți diferențe față de sumele preluate, cu semn și document justificativ.
+        Rândurile 38 și 41 se stabilesc din decontul precedent și plățile până la depunere.
+        Pentru rândurile 20–28 completați separat TVA efectiv dedusă, după limitări/pro-rata.</p>
+       <field name="adjustment_ids">
+        <list editable="bottom"><field name="row_code"/><field name="base"/><field name="tax"/>
+         <field name="eligible"/><field name="reason"/><field name="evidence"/></list>
+       </field>
+      </page>
+      <page string="Informații suplimentare">
+       <p>Soldurile TVA la încasare se preiau automat. Aceste valori sunt ajustări ale indicatorilor.
+        Facturile după inspecție și după reînregistrarea TVA se completează distinct, pe baza documentelor.</p>
+       <field name="info_ids"><list editable="bottom">
+        <field name="code"/><field name="value"/><field name="reason"/>
+       </list></field>
+      </page>
+      <page string="Validări și fișiere">
+       <group><field name="runtime_status"/><field name="generated_at"/><field name="validated_at"/>
+        <field name="source_hash"/><field name="validated_hash"/><field name="previous_id"/></group>
+       <group string="Verificări locale"><field name="checks" nolabel="1"/></group>
+       <group string="Schema XSD"><field name="xsd_log" nolabel="1"/></group>
+       <group string="Validator ANAF"><field name="duk_log" nolabel="1"/></group>
+       <p>Fișierele de mai jos sunt arhiva calculului salvat. Pentru export pe sursele curente utilizați butoanele din antet.</p>
+       <group><field name="xml_name" invisible="1"/><field name="xml_file" filename="xml_name"/>
+        <field name="pdf_name" invisible="1"/><field name="pdf_file" filename="pdf_name"/></group>
+      </page>
+      <page string="Configurare și ajutor">
+       <button name="action_standard_mappings" type="object" string="Configurează taxele standard RO" groups="account.group_account_manager"/>
+       <p>ANAF → Încadrări D300: asociați fiecare taxă cu rândul fiscal și latura colectată/deductibilă.
+        Taxarea inversă necesită ambele laturi. Pentru rândurile „din care”, suma se include automat și în rândul părinte.
+        Taxele fără încadrare și documentele fără taxe configurate blochează exportul.</p>
+       <p>Rândurile de total sunt calculate. Regularizările la cote istorice se încadrează conform instrucțiunilor perioadei.
+        Pentru note de închidere TVA utilizați excluderea explicită din jurnale.
+        Soldurile 4423/4424 sunt prezentate pentru verificare; nu se transferă automat în soldurile declarate.</p>
+       <a href="https://static.anaf.ro/static/10/Anaf/Declaratii_R/300.html" target="_blank">Resurse oficiale ANAF D300</a>
+      </page>
+     </notebook>
+    </sheet>
+   </form>
+  </field>
+ </record>
+ <record id="mapping_list" model="ir.ui.view">
+  <field name="name">gt.d300.mapping.list</field><field name="model">gt.d300.mapping</field>
+  <field name="arch" type="xml">
+   <list editable="bottom">
+   <field name="company_id"/><field name="tax_id" domain="[('company_id','=',company_id)]"/>
+   <field name="kind"/><field name="row_code"/><field name="prorata"/><field name="note"/>
+  </list></field>
+ </record>
+ <record id="declaration_action" model="ir.actions.act_window">
+  <field name="name">D300 — Decont TVA</field><field name="res_model">gt.anaf.d300</field><field name="view_mode">list,form</field>
+ </record>
+ <record id="mapping_action" model="ir.actions.act_window">
+  <field name="name">Încadrări D300</field><field name="res_model">gt.d300.mapping</field><field name="view_mode">list</field>
+ </record>
+ <menuitem id="declaration_menu" name="D300 — Decont TVA" parent="greentech_anaf_d112.menu_anaf_root" action="declaration_action" sequence="35" groups="account.group_account_user"/>
+ <menuitem id="mapping_menu" name="Încadrări D300" parent="greentech_anaf_d112.menu_anaf_root" action="mapping_action" sequence="36" groups="account.group_account_user"/>
+ <menuitem id="declaration_finance" name="D300 — Decont TVA" parent="account.menu_finance_reports" action="declaration_action" sequence="42" groups="account.group_account_user"/>
+</odoo>

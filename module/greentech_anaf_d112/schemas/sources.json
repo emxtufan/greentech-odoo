@@ -1,0 +1,9 @@
+{
+  "schema_url": "https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/d112_0726_140826.xsd",
+  "schema_sha256": "9603d3aa1b0bd7b56f91584e41ecdc3a09dda3abf724631f42f27c24b9b45788",
+  "labels_source": "C:\\SAGA C.3.0\\FreeTab\\D112.pdf",
+  "labels_pdf_sha256": "8e6337759133e50bf10608434eb10c293515859a07ecff3aa4e8bb0fb50462a4",
+  "labels_pdf_modified": "D:20260907161545+03'00'",
+  "schema_local_source": "C:\\Users\\GPRO\\Downloads\\d112_0726_140826 (1).xsd",
+  "schema_semantically_equal_to_previous": true
+}

@@ -1,0 +1,2 @@
+# Additional dependency for PDF/XML consistency checks; lxml is supplied by Odoo.
+pypdf==6.10.0

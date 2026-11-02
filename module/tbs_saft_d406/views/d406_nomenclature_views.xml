@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_d406_tax_type_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.tax.type.list</field>
+        <field name="model">l10n.ro.d406.tax.type</field>
+        <field name="arch" type="xml">
+            <list string="ANAF Tax Types" create="0">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="name_en" optional="hide"/>
+                <field name="budget_category" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_d406_tax_type" model="ir.actions.act_window">
+        <field name="name">ANAF Tax Types</field>
+        <field name="res_model">l10n.ro.d406.tax.type</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="view_d406_tax_code_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.tax.code.list</field>
+        <field name="model">l10n.ro.d406.tax.code</field>
+        <field name="arch" type="xml">
+            <list string="ANAF Tax Codes" create="0">
+                <field name="code"/>
+                <field name="short_code"/>
+                <field name="name"/>
+                <field name="vat_rate"/>
+                <field name="section"/>
+                <field name="date_start"/>
+                <field name="is_active"/>
+                <field name="note" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_d406_tax_code_search" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.tax.code.search</field>
+        <field name="model">l10n.ro.d406.tax.code</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="short_code"/>
+                <filter name="active_codes" string="Active"
+                        domain="[('is_active', '=', True)]"/>
+                <filter name="current_vat" string="Current VAT (21% / 11%)"
+                        domain="[('vat_rate', 'in', [21.0, 11.0])]"/>
+                <separator/>
+                <filter name="group_section" string="Section"
+                        context="{'group_by': 'section'}"/>
+                <filter name="group_rate" string="VAT Rate"
+                        context="{'group_by': 'vat_rate'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_d406_tax_code" model="ir.actions.act_window">
+        <field name="name">ANAF Tax Codes</field>
+        <field name="res_model">l10n.ro.d406.tax.code</field>
+        <field name="view_mode">list</field>
+        <field name="context">{'search_default_active_codes': 1}</field>
+    </record>
+
+    <record id="view_d406_account_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.account.list</field>
+        <field name="model">l10n.ro.d406.account</field>
+        <field name="arch" type="xml">
+            <list string="ANAF Chart of Accounts" create="0">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="name_en" optional="hide"/>
+                <field name="chart" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_d406_account" model="ir.actions.act_window">
+        <field name="name">ANAF Chart of Accounts</field>
+        <field name="res_model">l10n.ro.d406.account</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="view_d406_uom_code_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.uom.code.list</field>
+        <field name="model">l10n.ro.d406.uom.code</field>
+        <field name="arch" type="xml">
+            <list string="UN/ECE Units" create="0">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="name_en" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_d406_uom_code" model="ir.actions.act_window">
+        <field name="name">UN/ECE Units</field>
+        <field name="res_model">l10n.ro.d406.uom.code</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="view_d406_payment_method_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.payment.method.list</field>
+        <field name="model">l10n.ro.d406.payment.method</field>
+        <field name="arch" type="xml">
+            <list string="ANAF Payment Methods" create="0">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="name_en" optional="hide"/>
+                <field name="mechanism_code" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_d406_payment_method" model="ir.actions.act_window">
+        <field name="name">ANAF Payment Methods</field>
+        <field name="res_model">l10n.ro.d406.payment.method</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="view_d406_invoice_type_list" model="ir.ui.view">
+        <field name="name">l10n.ro.d406.invoice.type.list</field>
+        <field name="model">l10n.ro.d406.invoice.type</field>
+        <field name="arch" type="xml">
+            <list string="ANAF Invoice Types" create="0">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="en16931_type" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_d406_invoice_type" model="ir.actions.act_window">
+        <field name="name">ANAF Invoice Types</field>
+        <field name="res_model">l10n.ro.d406.invoice.type</field>
+        <field name="view_mode">list</field>
+    </record>
+
+</odoo>

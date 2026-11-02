@@ -1,0 +1,15 @@
+.gt-d300-form .o_field_gt_d300_report { width: 100%; min-width: 0; }
+.gt-d300 {
+    width: 100%; min-width: 0;
+    .gt-d300-cards { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-bottom:20px;
+        >div {padding:16px; border:1px solid #dce5e8; background:#f3f8f9; border-radius:8px;}
+        small {display:block; color:#4b6871;} strong {display:block;font-size:23px;color:#123d4b;margin-top:8px;}
+    }
+    .gt-d300-toolbar {display:flex;align-items:center;gap:14px;margin:16px 0;flex-wrap:wrap;
+        input.form-control {max-width:300px;} label {display:flex;gap:8px;align-items:center;}}
+    .gt-d300-scroll {overflow-x:auto;max-width:100%;}
+    table {font-variant-numeric:tabular-nums;} th {white-space:nowrap;}
+    .gt-d300-rows tbody tr {cursor:pointer;} .gt-d300-total {font-weight:700;background:#f3f7f8;}
+    details summary {cursor:pointer;font-weight:600;padding:8px 0;}
+    @media(max-width:850px) {.gt-d300-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+}

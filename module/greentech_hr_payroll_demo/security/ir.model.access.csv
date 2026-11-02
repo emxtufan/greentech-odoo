@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+policy_manager,Policy manager,model_gt_payroll_policy,group_payroll_manager,1,1,1,0
+period_manager,Period manager,model_gt_payroll_period,group_payroll_manager,1,1,1,0
+slip_manager,Slip manager,model_gt_payroll_slip,group_payroll_manager,1,1,1,1
+trip_manager,Trip manager,model_gt_payroll_trip,group_payroll_manager,1,1,1,1

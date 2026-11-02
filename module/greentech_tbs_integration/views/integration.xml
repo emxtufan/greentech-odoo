@@ -1,0 +1,56 @@
+<odoo>
+    <record id="product_nc" model="ir.ui.view">
+        <field name="name">product.template.eTransport.NC</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="default_code" position="after"><field name="gt_etransport_nc"/></field>
+        </field>
+    </record>
+    <record id="wizard_ro" model="ir.ui.view">
+        <field name="name">D406 integrare GreenTech</field>
+        <field name="model">l10n.ro.d406.export.wizard</field>
+        <field name="inherit_id" ref="tbs_saft_d406.view_d406_export_wizard_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="attributes"><attribute name="string">D406 — SAF-T periodic</attribute></xpath>
+            <xpath expr="//group[1]" position="before">
+                <div class="alert alert-info">Export periodic lunar/trimestrial. Completați codurile SAF-T ale taxelor înainte de generare. Declarațiile Active, Stocuri la cerere și exportul segmentat nu sunt incluse.</div>
+            </xpath>
+            <field name="company_id" position="attributes"><attribute name="string">Firmă</attribute></field>
+            <field name="declaration_type" position="attributes"><attribute name="string">Tip declarație</attribute></field>
+            <field name="date_from" position="attributes"><attribute name="string">De la</attribute></field>
+            <field name="date_to" position="attributes"><attribute name="string">Până la</attribute></field>
+            <field name="declaration_type" position="after">
+                <field name="gt_contact_first"/><field name="gt_contact_last"/>
+            </field>
+            <field name="segment_index" position="attributes"><attribute name="readonly">1</attribute></field>
+            <field name="total_segments" position="attributes"><attribute name="readonly">1</attribute></field>
+            <xpath expr="//group[field[@name='segment_index']]" position="attributes"><attribute name="invisible">1</attribute></xpath>
+            <field name="validation_log" position="attributes"><attribute name="colspan">2</attribute></field>
+            <field name="xsd_valid" position="attributes"><attribute name="string">Structură XSD verificată</attribute></field>
+            <field name="xsd_valid" position="after">
+                <field name="gt_duk_valid"/><field name="gt_pdf_id" invisible="1"/>
+            </field>
+            <xpath expr="//button[@name='action_check']" position="attributes"><attribute name="string">Verifică datele</attribute></xpath>
+            <xpath expr="//button[@name='action_generate']" position="attributes"><attribute name="string">Generează XML</attribute></xpath>
+            <xpath expr="//button[@name='action_validate_duk']" position="attributes"><attribute name="string">Validează cu DUK</attribute></xpath>
+            <xpath expr="//button[@name='action_download']" position="attributes"><attribute name="string">Descarcă XML pentru verificare</attribute></xpath>
+            <xpath expr="//button[@name='action_download']" position="after">
+                <button name="action_generate_pdf" type="object" string="Generează PDF ANAF" invisible="state != 'done'" class="btn-secondary"/>
+                <button name="action_download_pdf" type="object" string="Descarcă PDF" invisible="not gt_pdf_id" class="btn-primary"/>
+            </xpath>
+            <xpath expr="//button[@special='cancel']" position="attributes"><attribute name="string">Închide</attribute></xpath>
+        </field>
+    </record>
+    <menuitem id="d406_anaf" name="D406 — SAF-T periodic" parent="greentech_anaf_d112.menu_anaf_root"
+              action="tbs_saft_d406.action_d406_export_wizard" groups="account.group_account_manager" sequence="45"/>
+    <record id="action_tax_mapping" model="ir.actions.act_window">
+        <field name="name">Încadrări SAF-T ale taxelor</field>
+        <field name="res_model">account.tax</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="d406_taxes" name="Încadrări SAF-T taxe" parent="greentech_anaf_d112.menu_anaf_root"
+              action="action_tax_mapping" groups="account.group_account_manager" sequence="46"/>
+    <menuitem id="etransport_anaf" name="e-Transport — Transferuri" parent="greentech_anaf_d112.menu_anaf_root"
+              action="stock.action_picking_tree_all" groups="stock.group_stock_user" sequence="55"/>
+</odoo>

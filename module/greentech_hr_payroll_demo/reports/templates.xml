@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="report_payroll" model="ir.actions.report">
+    <field name="name">Stat salarii DEMO</field>
+    <field name="model">gt.payroll.period</field>
+    <field name="report_type">qweb-html</field>
+    <field name="report_name">greentech_hr_payroll_demo.payroll_document</field>
+    <field name="binding_model_id" ref="model_gt_payroll_period"/>
+    <field name="binding_type">report</field>
+  </record>
+  <record id="report_slip" model="ir.actions.report">
+    <field name="name">Fluturaș DEMO</field>
+    <field name="model">gt.payroll.slip</field>
+    <field name="report_type">qweb-html</field>
+    <field name="report_name">greentech_hr_payroll_demo.slip_document</field>
+    <field name="binding_model_id" ref="model_gt_payroll_slip"/>
+    <field name="binding_type">report</field>
+  </record>
+  <record id="report_trip" model="ir.actions.report">
+    <field name="name">Ordin deplasare și decont DEMO</field>
+    <field name="model">gt.payroll.trip</field>
+    <field name="report_type">qweb-html</field>
+    <field name="report_name">greentech_hr_payroll_demo.trip_document</field>
+    <field name="binding_model_id" ref="model_gt_payroll_trip"/>
+    <field name="binding_type">report</field>
+  </record>
+  <record id="report_payroll_xlsx" model="ir.actions.report">
+    <field name="name">Centralizator salarii și pregătire D112 DEMO</field>
+    <field name="model">gt.payroll.period</field>
+    <field name="report_type">xlsx</field>
+    <field name="report_name">greentech_hr_payroll_demo.payroll_xlsx</field>
+    <field name="report_file">Salarii-DEMO</field>
+    <field name="binding_model_id" ref="model_gt_payroll_period"/>
+    <field name="binding_type">report</field>
+  </record>
+  <template id="payroll_document">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+          <div class="page">
+            <h2 t-field="o.name"/>
+            <p>DEMONSTRAȚIE — DATE FICTIVE — FĂRĂ VALOARE FISCALĂ</p>
+            <p>Perioada: <span t-field="o.date_from"/> – <span t-field="o.date_to"/></p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Angajat</th>
+                  <th>Brut salarial</th>
+                  <th>Diurnă impozabilă</th>
+                  <th>CAS</th>
+                  <th>CASS</th>
+                  <th>Impozit</th>
+                  <th>CAM</th>
+                  <th>Net salariu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr t-foreach="o.slip_ids" t-as="s">
+                  <td>
+                    <span t-field="s.employee_id.name"/>
+                  </td>
+                  <td>
+                    <span t-field="s.cash_gross"/>
+                  </td>
+                  <td>
+                    <span t-field="s.trip_taxable"/>
+                  </td>
+                  <td>
+                    <span t-field="s.cas"/>
+                  </td>
+                  <td>
+                    <span t-field="s.cass"/>
+                  </td>
+                  <td>
+                    <span t-field="s.income_tax"/>
+                  </td>
+                  <td>
+                    <span t-field="s.cam"/>
+                  </td>
+                  <td>
+                    <span t-field="s.net_pay"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Total net: <strong t-field="o.total_net"/>. Cost salarial fără deconturi: <strong t-field="o.total_cost"/>.</p>
+            <p>Diurnele au fost decontate separat; partea impozabilă intră în baza contribuțiilor, fără a fi plătită încă o dată.</p>
+            <p t-field="o.d112_status"/>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+  <template id="slip_document">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+          <div class="page">
+            <h2>Fluturaș salariu DEMO</h2>
+            <h3 t-field="o.employee_id.name"/>
+            <p t-field="o.period_id.name"/>
+            <p>DATE FICTIVE — REGIM STANDARD SIMPLIFICAT</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Brut salarial</td>
+                  <td>
+                    <span t-field="o.cash_gross"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diurnă impozabilă deja decontată</td>
+                  <td>
+                    <span t-field="o.trip_taxable"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Brut fiscal</td>
+                  <td>
+                    <span t-field="o.taxable_gross"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CAS</td>
+                  <td>
+                    <span t-field="o.cas"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CASS</td>
+                  <td>
+                    <span t-field="o.cass"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Deducere personală verificată</td>
+                  <td>
+                    <span t-field="o.personal_deduction"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Impozit</td>
+                  <td>
+                    <span t-field="o.income_tax"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Net salariu de plată</strong>
+                  </td>
+                  <td>
+                    <span t-field="o.net_pay"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CAM suportată de angajator</td>
+                  <td>
+                    <span t-field="o.cam"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Diurnă neimpozabilă decontată separat: <span t-field="o.trip_exempt"/>.</p>
+            <p>Pontaj: <span t-field="o.worked_days"/> zile lucrate, <span t-field="o.paid_leave_days"/> zile CO, <span t-field="o.unpaid_days"/> zile fără plată.</p>
+            <p t-field="o.notes"/>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+  <template id="trip_document">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+          <div class="page">
+            <h2>Ordin de deplasare și decont DEMO</h2>
+            <h3 t-field="o.name"/>
+            <p>DATE FICTIVE — FĂRĂ VALOARE FISCALĂ</p>
+            <p>Angajat: <span t-field="o.employee_id.name"/>. Destinație: <span t-field="o.destination"/>, <span t-field="o.country_id.name"/>.</p>
+            <p>Scop: <span t-field="o.purpose"/></p>
+            <p>Plecare: <span t-field="o.departure"/>. Sosire: <span t-field="o.arrival"/>.</p>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Zile diurnă</td>
+                  <td>
+                    <span t-field="o.days"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diurnă acordată / zi</td>
+                  <td>
+                    <span t-field="o.rate"/>
+                    <span t-field="o.allowance_currency_id.name"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Curs RON</td>
+                  <td>
+                    <span t-field="o.fx_rate"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diurnă totală RON</td>
+                  <td>
+                    <span t-field="o.allowance"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Parte neimpozabilă</td>
+                  <td>
+                    <span t-field="o.exempt_amount"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Parte impozabilă</td>
+                  <td>
+                    <span t-field="o.taxable_amount"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Transport</td>
+                  <td>
+                    <span t-field="o.transport_amount"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cazare</td>
+                  <td>
+                    <span t-field="o.lodging_amount"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Avans</td>
+                  <td>
+                    <span t-field="o.advance_amount"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diferență de plată / de restituit</td>
+                  <td>
+                    <span t-field="o.remaining_amount"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p t-field="o.receipt_note"/>
+            <p>Întocmit: __________________ Aprobat: __________________</p>
+          </div>
+        </t>
+      </t>
+    </t>
+  </template>
+</odoo>
