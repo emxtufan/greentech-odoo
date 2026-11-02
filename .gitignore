@@ -16,7 +16,9 @@ motor/odoo/
 motor/data/
 motor/data-runtime/
 motor/logs/
-motor/tools/
+motor/tools/*
+!motor/tools/anaf/
+motor/tools/anaf/**/hs_err*.log
 motor/output/
 motor/tmp/
 motor/custom_addons/
