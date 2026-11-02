@@ -1,0 +1,17 @@
+{
+  "source": "https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/D300Validator_11022026_2.zip",
+  "archive": "D300Validator_11022026_2.zip",
+  "archive_sha256": "95f58433495c57012a76ee4c773250e6100d54310896cef856bf988f6839b11c",
+  "files": {
+    "DUKIntegrator.jar": "2ed516cd3932e1b454d6436642e5973e9b38471e20ea775f5e4df825eb8af4d9",
+    "lib/bcmail-jdk15-145.jar": "27328c7b99c76e23904a701ea48ad35d84d263f18623527fc4812d84e3f66f1b",
+    "lib/bcprov-jdk15-145.jar": "67289a6e750691bd9bb83975dd193b0b5717ed50a2cce9b579c6c973c9141c99",
+    "lib/DecPdf.jar": "3b12ff6298c8ad3ea822adb83928dbb21b76db5e80f61ae52bf727bfee009e00",
+    "lib/DecValidation.jar": "1dc524cc090bb5c377215a7e67f8b60d5e74d33718fecd9be118fd0e5907bd55",
+    "lib/iText-5.0.4.jar": "f1224d0bc9b0070088d7451721205ef4a6971b9ed433be41f7f6390c73b20cf5",
+    "lib/Validator.jar": "65da58846114f1bec28a743a74121f9a8fc70d4bf3ba61897755cecd4775e5ea",
+    "lib/D300Validator.jar": "91a252f5669c5a6de680af3953cd1e62e162ed236563fc0e249161432c750ee8",
+    "lib/D300Pdf.jar": "31d355678d5f87c743044d87125a99276eca74a803a80cf4ca508059c325755a",
+    "config/config.properties": "5a92d8a35c0728b5b9b8ac7e8378ac0acdd181710c40c0c17ac96b04081ead9c"
+  }
+}

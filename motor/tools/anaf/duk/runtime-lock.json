@@ -1,0 +1,19 @@
+{
+  "source": "C:\\SAGA C.3.0\\FreeTab\\dist",
+  "official_index": "https://static.anaf.ro/static/10/Anaf/Declaratii_R/112.html",
+  "copied_at": "2026-10-20T07:49:10.335527+00:00",
+  "note": "Local ANAF distribution used by SAGA. Hashes identify these files; not a certification of fiscal currency.",
+  "files": {
+    "DUKIntegrator.jar": "2ed516cd3932e1b454d6436642e5973e9b38471e20ea775f5e4df825eb8af4d9",
+    "lib/D112Validator.jar": "47f89d110d5a1c2d557fe73219c614541a18947329d09b9f65d5728e86a83759",
+    "lib/D112Pdf.jar": "d0e3a86b1db7c346b2743a330a1e380b8fbc4ed75e619e0beb7b32358209f0c4",
+    "lib/DecValidation.jar": "1dc524cc090bb5c377215a7e67f8b60d5e74d33718fecd9be118fd0e5907bd55",
+    "lib/DecPdf.jar": "3b12ff6298c8ad3ea822adb83928dbb21b76db5e80f61ae52bf727bfee009e00",
+    "lib/Validator.jar": "65da58846114f1bec28a743a74121f9a8fc70d4bf3ba61897755cecd4775e5ea",
+    "lib/iText-5.0.4.jar": "f1224d0bc9b0070088d7451721205ef4a6971b9ed433be41f7f6390c73b20cf5",
+    "lib/bcprov-jdk15-145.jar": "67289a6e750691bd9bb83975dd193b0b5717ed50a2cce9b579c6c973c9141c99",
+    "lib/bcmail-jdk15-145.jar": "27328c7b99c76e23904a701ea48ad35d84d263f18623527fc4812d84e3f66f1b",
+    "config/config.properties": "8c259e1aaba867beb4aff3525c33ecb27c3b805ee22e19ff5053d4121fab68c6"
+  },
+  "local_configuration": "Offline validation only, added 2026-10-20; no signing settings"
+}

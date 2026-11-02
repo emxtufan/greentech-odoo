@@ -1,0 +1,19 @@
+{
+  "source": "Existing local ANAF DUK shared libraries; D406 jars from SAGA C.3.0/FreeTab/dist/lib. No business data imported.",
+  "latest_official_binary_identity_verified": false,
+  "launcher": "GtD406Runner calls unchanged ANAF Validator.parseDocument(xml, errors, year, month, type) and Pdf_v0.createPdf; legacy DUK launcher cannot supply the period.",
+  "files": {
+    "config/config.properties": "d4d3281f293f1383ba2812ae5b028698c6009685c6a7647c5ce4a0435bd0e71d",
+    "DUKIntegrator.jar": "2ed516cd3932e1b454d6436642e5973e9b38471e20ea775f5e4df825eb8af4d9",
+    "GtD406Runner.class": "0ec82e5646a4aff610835fcbefc687b5b92f329a2f8782118c6b9939eb3de908",
+    "GtD406Runner.java": "2022d6d99ee9d19ca59f7b6e7bb5f952bd1a027c467ce39f8d336456db74dee2",
+    "lib/bcmail-jdk15-145.jar": "27328c7b99c76e23904a701ea48ad35d84d263f18623527fc4812d84e3f66f1b",
+    "lib/bcprov-jdk15-145.jar": "67289a6e750691bd9bb83975dd193b0b5717ed50a2cce9b579c6c973c9141c99",
+    "lib/D406Pdf.jar": "79613a26cb35525c8f778ed22cb1ffce04878be95c5f614592495db7383c746f",
+    "lib/D406Validator.jar": "197fd169721022c43f8a3ae5ba66950a7dc2354cf1355b0dd012ceada9a32373",
+    "lib/DecPdf.jar": "3b12ff6298c8ad3ea822adb83928dbb21b76db5e80f61ae52bf727bfee009e00",
+    "lib/DecValidation.jar": "1dc524cc090bb5c377215a7e67f8b60d5e74d33718fecd9be118fd0e5907bd55",
+    "lib/iText-5.0.4.jar": "f1224d0bc9b0070088d7451721205ef4a6971b9ed433be41f7f6390c73b20cf5",
+    "lib/Validator.jar": "65da58846114f1bec28a743a74121f9a8fc70d4bf3ba61897755cecd4775e5ea"
+  }
+}
